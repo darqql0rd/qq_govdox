@@ -1,0 +1,54 @@
+{
+  "id": "43_konkursandrohung_de",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Konkursandrohung",
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-10-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-002244"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 18613.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderung",
+        "betrag_chf": 18450.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Betreibungskosten bisher",
+        "betrag_chf": 113.3,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Konkursandrohung",
+        "betrag_chf": 50.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Forstbetrieb Hochwald AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-16",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "verwechslung_zahlungsbefehl",
+    "konkursandrohung",
+    "layout_A"
+  ]
+}

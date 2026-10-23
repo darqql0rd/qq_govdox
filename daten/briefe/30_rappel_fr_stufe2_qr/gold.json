@@ -1,0 +1,71 @@
+{
+  "id": "30_rappel_fr_stufe2_qr",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Commune de Valmont",
+    "briefdatum": "2026-08-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "52.0938"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-08317"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-08318"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 52093 82026 08317"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 762.4,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Taxe d'épuration et eau potable 2026",
+        "betrag_chf": 612.4,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Taxe de base déchets 2026",
+        "betrag_chf": 120.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 30.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-08-28",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2
+  },
+  "zustelldatum_annahme": "2026-08-18",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-08-28"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe2",
+    "qr_rechnung",
+    "betragsformat_leerzeichen_komma",
+    "layout_A"
+  ]
+}

@@ -1,0 +1,13 @@
+# Agent
+langgraph
+langchain-openai
+pydantic>=2
+
+# Notebooks
+ipykernel
+
+# Datengenerator (nur zum Neuerzeugen der Testbriefe, siehe datengenerator/README.md)
+reportlab
+pypdf
+opencv-python-headless
+numpy

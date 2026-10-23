@@ -1,0 +1,38 @@
+{
+  "id": "40_werbebrief_de_amtlich",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Werbebrief eines Steuerberatungsbüros (amtlich aufgemacht)",
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Steuer-Service Plus GmbH",
+    "briefdatum": "2026-11-09",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "SSP-26-4410"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": null,
+    "zahlungsrichtung": "information",
+    "posten": [],
+    "frist_im_brief": "2026-12-15",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-11",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "werbung",
+    "verwechslung_steuer",
+    "layout_C"
+  ]
+}

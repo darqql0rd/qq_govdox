@@ -1,0 +1,69 @@
+{
+  "id": "26_mahnung_de_stufe2",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Talwil",
+    "briefdatum": "2026-10-23",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "30.4471"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-11452"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-11453"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 30447 12026 11452"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 506.35,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Wasser- und Abwassergebühren 1. Halbjahr 2026",
+        "betrag_chf": 398.85,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Grundgebühr Abfall 2026",
+        "betrag_chf": 87.5,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-06",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2
+  },
+  "zustelldatum_annahme": "2026-10-27",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-06"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe2",
+    "layout_A"
+  ]
+}

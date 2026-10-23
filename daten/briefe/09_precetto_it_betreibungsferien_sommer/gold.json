@@ -1,0 +1,61 @@
+{
+  "id": "09_precetto_it_betreibungsferien_sommer",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Ufficio di esecuzione e fallimenti di Castelvecchio",
+    "briefdatum": "2026-07-02",
+    "zustelldatum_im_brief": "2026-07-06",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-041127"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 1030.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 980.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 50.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Carrozzeria Fontana SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Fattura n. 2026/318 del 15.04.2026 per riparazione carrozzeria",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-05-15"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-07-06",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-08-05"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-08-05"
+    }
+  ],
+  "testzweck": [
+    "betreibungsferien",
+    "zustelldatum_handschrift",
+    "betragsformat_leerzeichen_komma",
+    "layout_D"
+  ]
+}

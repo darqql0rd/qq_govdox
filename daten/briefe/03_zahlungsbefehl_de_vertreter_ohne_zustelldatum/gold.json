@@ -1,0 +1,66 @@
+{
+  "id": "03_zahlungsbefehl_de_vertreter_ohne_zustelldatum",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-11-16",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-010455"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 13135.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 12750.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Inkassokosten",
+        "betrag_chf": 285.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 100.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Wohnbau Linth AG",
+    "glaeubiger_vertreter": "Inkassobüro Zentralis AG",
+    "forderungsgrund": "Ausstehende Mietzinse Mai bis Juli 2026 gemäss Mietvertrag vom 01.10.2023",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-07-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-18",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-30"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-12-08"
+    }
+  ],
+  "testzweck": [
+    "vertreter",
+    "zustelldatum_leer",
+    "wochenende",
+    "layout_B"
+  ]
+}

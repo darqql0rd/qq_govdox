@@ -1,0 +1,63 @@
+{
+  "id": "17_tassazione_it_rueckerstattung",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Divisione delle contribuzioni del Cantone di Valcastello",
+    "briefdatum": "2026-10-12",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "613.920.447"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": -401.5,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 3420.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Valverde",
+        "betrag_chf": 2736.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 642.5,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -7200.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-14",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-11-13"
+    }
+  ],
+  "testzweck": [
+    "rueckerstattung",
+    "ohne_abweichung",
+    "layout_C"
+  ]
+}

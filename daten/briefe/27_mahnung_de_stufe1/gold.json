@@ -1,0 +1,57 @@
+{
+  "id": "27_mahnung_de_stufe1",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Bergmatt",
+    "briefdatum": "2026-09-15",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "11.0932"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0718"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 11093 22026 07180"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 120.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Hundetaxe 2026",
+        "betrag_chf": 120.0,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": "2026-09-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 1
+  },
+  "zustelldatum_annahme": "2026-09-17",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-09-30"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe1",
+    "ohne_betreibungsdrohung",
+    "betragsformat_fr_praefix",
+    "layout_C"
+  ]
+}

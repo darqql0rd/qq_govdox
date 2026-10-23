@@ -1,0 +1,61 @@
+{
+  "id": "11_zahlungsbefehl_de_unlesbar",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-11-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-009964"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 2405.5,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 2335.2,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Garage Moser AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Rechnung Nr. 44102 vom 30.06.2026 (Service und Reifenwechsel)",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-08-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-04",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-16"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-11-24"
+    }
+  ],
+  "testzweck": [
+    "unlesbar",
+    "zustelldatum_leer",
+    "wochenende",
+    "layout_A"
+  ]
+}

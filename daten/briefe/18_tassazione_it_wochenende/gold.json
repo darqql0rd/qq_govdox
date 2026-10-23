@@ -1,0 +1,64 @@
+{
+  "id": "18_tassazione_it_wochenende",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Divisione delle contribuzioni del Cantone di Valcastello",
+    "briefdatum": "2026-10-06",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "618.207.554"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 1235.4,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 7960.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Pradello",
+        "betrag_chf": 5970.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 2105.4,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -14800.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 1200.0,
+    "abweichungsgrund": "Spese di trasporto limitate al costo dei mezzi pubblici",
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-08",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-11-09"
+    }
+  ],
+  "testzweck": [
+    "wochenende",
+    "abweichung",
+    "betragsformat_leerzeichen_komma",
+    "layout_D"
+  ]
+}

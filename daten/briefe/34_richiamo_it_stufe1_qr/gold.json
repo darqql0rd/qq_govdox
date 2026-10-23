@@ -1,0 +1,58 @@
+{
+  "id": "34_richiamo_it_stufe1_qr",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Comune di Pradello",
+    "briefdatum": "2026-09-28",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "20.1174"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0611"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 20117 42026 06110"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 80.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Tassa sui cani 2026",
+        "betrag_chf": 80.0,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": "2026-10-15",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 1
+  },
+  "zustelldatum_annahme": "2026-09-30",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-10-15"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe1",
+    "qr_rechnung",
+    "ohne_betreibungsdrohung",
+    "betragsformat_leerzeichen_komma",
+    "layout_B"
+  ]
+}

@@ -1,0 +1,47 @@
+    GB
+
+                                                  Herr
+Gemeinde Bergmatt
+                                                  Reto Schneider
+Gemeindekasse
+Kirchweg 1, 8996 Bergmatt                         Alpenblick 5
+Tel. 099 555 14 10 ·                              8996 Bergmatt
+kasse@bergmatt.example
+
+
+Debitoren-Nr.
+11.0932                                                                                                                         Bergmatt, 15. September 2026
+
+Objekt
+Hundetaxe 2026                                    Zahlungserinnerung
+Sachbearbeitung                                   Sehr geehrter Herr Schneider
+E. Kälin
+                                                  Bei der Durchsicht unserer Buchhaltung haben wir festgestellt, dass die folgende
+                                                  Rechnung noch offen ist. Vielleicht ist Ihnen die Zahlung entgangen.
+                                                   Rechnung                                                        Datum          Fällig            Betrag
+                                                   2026-0718 Hundetaxe 2026 (1 Hund)                               15.07.2026     31.08.2026     Fr. 120.00
+                                                   Total offener Betrag                                                                          Fr. 120.00
+
+                                                  Wir bitten Sie, den Betrag von Fr. 120.00 bis 30. September 2026 zu überweisen.
+
+                                                    Zahlungsangaben
+                                                    Zahlbar an: Gemeinde Bergmatt, Gemeindekasse, 8996 Bergmatt
+                                                    IBAN: CH00 0077 0000 1109 3200 0 (fiktiv)
+                                                    Referenz: 00 00000 00000 11093 22026 07180 (fiktiv)
+                                                    Betrag: Fr. 120.00
+
+                                                  Hat sich Ihre Zahlung mit diesem Schreiben gekreuzt, betrachten Sie es bitte als
+                                                  gegenstandslos.
+
+
+                                                  Freundliche Grüsse
+
+
+                                                  Gemeinde Bergmatt
+                                                  E. Kälin
+
+
+
+
+      Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                             Seite 1
+

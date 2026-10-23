@@ -1,0 +1,64 @@
+{
+  "id": "13_steuerveranlagung_de_rueckerstattung",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Kantonales Steueramt Hochwald",
+    "briefdatum": "2026-06-15",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "138.402.611"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": -638.2,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 3040.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Bergmatt",
+        "betrag_chf": 2979.2,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 742.6,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -7400.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-06-17",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-07-17"
+    }
+  ],
+  "testzweck": [
+    "rueckerstattung",
+    "ohne_abweichung",
+    "betragsformat_fr_praefix",
+    "layout_C"
+  ]
+}

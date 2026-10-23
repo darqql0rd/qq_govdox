@@ -1,0 +1,63 @@
+{
+  "id": "19_taxation_fr_unlesbar",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Administration cantonale des impôts du Haut-Lac",
+    "briefdatum": "2026-10-26",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "755.611.290"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": -548.34,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 3840.6,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Valmont",
+        "betrag_chf": 1734.46,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 476.6,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -6600.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-28",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-11-27"
+    }
+  ],
+  "testzweck": [
+    "unlesbar",
+    "ohne_abweichung",
+    "layout_A"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "15_taxation_fr_feiertag",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Administration cantonale des impôts du Haut-Lac",
+    "briefdatum": "2026-11-23",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "755.304.118"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 653.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 6640.2,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Valmont",
+        "betrag_chf": 2998.8,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 1214.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -10200.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 810.0,
+    "abweichungsgrund": "Frais de repas ramenés au forfait (cantine subventionnée)",
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-25",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-12-28"
+    }
+  ],
+  "testzweck": [
+    "feiertag",
+    "abweichung",
+    "betragsformat_leerzeichen_komma",
+    "layout_B"
+  ]
+}

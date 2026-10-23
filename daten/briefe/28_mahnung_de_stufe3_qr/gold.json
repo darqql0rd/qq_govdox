@@ -1,0 +1,71 @@
+{
+  "id": "28_mahnung_de_stufe3_qr",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Oberhalden",
+    "briefdatum": "2026-11-12",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "45.2210"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-3391"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 45221 02026 33910"
+      }
+    ],
+    "periode": "2026-08",
+    "hauptbetrag_chf": 680.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Elternbeitrag schulergänzende Betreuung August 2026",
+        "betrag_chf": 640.0,
+        "periode": "2026-08"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 10.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 30.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-23",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-10-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 3
+  },
+  "zustelldatum_annahme": "2026-11-16",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-23"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe3",
+    "qr_rechnung",
+    "verzugszins",
+    "betragsformat_leerzeichen_komma",
+    "layout_D"
+  ]
+}

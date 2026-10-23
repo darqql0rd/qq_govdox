@@ -1,0 +1,61 @@
+{
+  "id": "10_precetto_it_standard",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Ufficio di esecuzione di Valverde",
+    "briefdatum": "2026-10-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-088310"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 1330.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 1260.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Centro Fitness Vitalis Sagl",
+    "glaeubiger_vertreter": "Incassi Ticinesi Associati SA",
+    "forderungsgrund": "Abbonamento annuale 2026, fattura del 01.02.2026",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-06-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-06",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-10-16"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-10-26"
+    }
+  ],
+  "testzweck": [
+    "zustelldatum_leer",
+    "vertreter",
+    "ohne_verschiebung",
+    "layout_B"
+  ]
+}

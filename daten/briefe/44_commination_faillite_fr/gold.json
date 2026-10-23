@@ -1,0 +1,55 @@
+{
+  "id": "44_commination_faillite_fr",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Konkursandrohung",
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Office des poursuites du district de Clairvaux",
+    "briefdatum": "2026-11-04",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-109932"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 10003.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Créance",
+        "betrag_chf": 9870.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Frais de poursuite",
+        "betrag_chf": 83.3,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Frais de la commination",
+        "betrag_chf": 50.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Bois du Jura SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-06",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "verwechslung_zahlungsbefehl",
+    "konkursandrohung",
+    "betragsformat_leerzeichen_komma",
+    "layout_C"
+  ]
+}

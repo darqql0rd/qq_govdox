@@ -1,0 +1,60 @@
+{
+  "id": "01_zahlungsbefehl_de_wochenende",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-10-26",
+    "zustelldatum_im_brief": "2026-10-28",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-004817"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 1915.9,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 1845.6,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Elektro Brunner GmbH",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Rechnung Nr. 2026-0331 vom 15.04.2026 für Elektroinstallationsarbeiten",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-06-15"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-28",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-09"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-11-17"
+    }
+  ],
+  "testzweck": [
+    "wochenende",
+    "zustelldatum_handschrift",
+    "layout_A"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "29_mahnung_de_wasserzeichen",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Linthausen",
+    "briefdatum": "2026-08-20",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "52.1180"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-2205"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 52118 02026 22050"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 380.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Anwohnerparkkarte 2026",
+        "betrag_chf": 360.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-09-03",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2
+  },
+  "zustelldatum_annahme": "2026-08-24",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-09-03"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe2",
+    "wasserzeichen",
+    "layout_B"
+  ]
+}

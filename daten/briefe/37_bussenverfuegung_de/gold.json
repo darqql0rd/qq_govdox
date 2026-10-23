@@ -1,0 +1,49 @@
+{
+  "id": "37_bussenverfuegung_de",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Bussenverfügung (Übertretungsstrafsache)",
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Statthalteramt des Bezirks Talwil",
+    "briefdatum": "2026-10-07",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "andere",
+        "wert": "ST.2026.04412"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 400.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Busse",
+        "betrag_chf": 250.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Gebühren und Auslagen",
+        "betrag_chf": 150.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-09",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "ausser_scope",
+    "busse",
+    "layout_B"
+  ]
+}

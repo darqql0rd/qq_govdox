@@ -1,0 +1,69 @@
+{
+  "id": "33_richiamo_it_stufe2",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Comune di Valverde",
+    "briefdatum": "2026-11-05",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "61.2205"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-05529"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-05530"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 61220 52026 05529"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 401.7,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Tassa base rifiuti 2026",
+        "betrag_chf": 145.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Tassa uso canalizzazioni 2026",
+        "betrag_chf": 236.7,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-20",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2
+  },
+  "zustelldatum_annahme": "2026-11-09",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-20"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe2",
+    "layout_D"
+  ]
+}

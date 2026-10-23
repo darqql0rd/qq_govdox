@@ -1,0 +1,71 @@
+{
+  "id": "22_assurance_maladie_fr_single",
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA",
+    "briefdatum": "2026-10-20",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "4.302.661"
+      },
+      {
+        "art": "police",
+        "wert": "HV-2027-0915377"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 450.3,
+    "zahlungsrichtung": "information",
+    "posten": [
+      {
+        "bezeichnung": "Assurance de base LAMal, modèle Telmed, avec accidents (versicherte Person 1)",
+        "betrag_chf": 362.8,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Assurance de base LAMal, modèle Telmed, avec accidents (versicherte Person 1)",
+        "betrag_chf": 389.1,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Complémentaire Hospital Mi-privé (LCA) (versicherte Person 1)",
+        "betrag_chf": 61.2,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Complémentaire Hospital Mi-privé (LCA) (versicherte Person 1)",
+        "betrag_chf": 61.2,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-22",
+  "erwartete_fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30"
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31"
+    }
+  ],
+  "testzweck": [
+    "praemienvergleich",
+    "betragsformat_leerzeichen_komma",
+    "layout_C"
+  ]
+}

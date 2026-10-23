@@ -1,0 +1,60 @@
+{
+  "id": "06_commandement_fr_betreibungsferien",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Office des poursuites du district de Clairvaux",
+    "briefdatum": "2026-12-08",
+    "zustelldatum_im_brief": "2026-12-10",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-120418"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 2960.7,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 2890.4,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Clinique dentaire des Tilleuls SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Note d'honoraires n° 2026-445 du 30.06.2026 (traitement dentaire)",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-08-31"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-12-10",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2027-01-06"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2027-01-06"
+    }
+  ],
+  "testzweck": [
+    "betreibungsferien",
+    "zustelldatum_handschrift",
+    "layout_B"
+  ]
+}

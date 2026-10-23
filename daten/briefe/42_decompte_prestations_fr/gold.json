@@ -1,0 +1,47 @@
+{
+  "id": "42_decompte_prestations_fr",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Leistungsabrechnung der Krankenkasse",
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA",
+    "briefdatum": "2026-10-08",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "4.302.661"
+      },
+      {
+        "art": "andere",
+        "wert": "PR-2026-889104"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 121.14,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Remboursement assurance de base",
+        "betrag_chf": 121.14,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-12",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "verwechslung_krankenkasse",
+    "layout_B"
+  ]
+}

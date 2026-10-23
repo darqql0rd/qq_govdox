@@ -1,0 +1,62 @@
+{
+  "id": "07_commandement_fr_wasserzeichen",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Office des poursuites du district de Valmont",
+    "briefdatum": "2026-10-19",
+    "zustelldatum_im_brief": "2026-10-21",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-116770"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 517.05,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 486.75,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 30.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Électricité Combe-Verte SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Factures d'électricité des 1er et 2e trimestres 2026",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-06-30"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-21",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-02"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-11-10"
+    }
+  ],
+  "testzweck": [
+    "wasserzeichen",
+    "wochenende",
+    "zustelldatum_handschrift",
+    "betragsformat_fr_praefix",
+    "layout_C"
+  ]
+}

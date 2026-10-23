@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Umgebungen und Geheimnisse
+.venv/
+venv/
+.env
+
+# PyCharm: persönliche Einstellungen
+.idea/workspace.xml
+.idea/shelf/
+.idea/usage.statistics.xml
+
+# Ausgaben des Agenten
+ausgabe/

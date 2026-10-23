@@ -1,0 +1,48 @@
+{
+  "id": "38_redevance_radio_tv_fr",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Rechnung Radio- und Fernsehabgabe",
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Percevia SA",
+    "briefdatum": "2026-10-01",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "RT-90 551 208"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-1001-55120"
+      }
+    ],
+    "periode": "2026-11..2027-10",
+    "hauptbetrag_chf": 335.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Redevance des ménages",
+        "betrag_chf": 335.0,
+        "periode": "2026-11..2027-10"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-05",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "ausser_scope",
+    "radio_tv_abgabe",
+    "layout_D"
+  ]
+}

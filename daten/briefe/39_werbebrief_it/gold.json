@@ -1,0 +1,33 @@
+{
+  "id": "39_werbebrief_it",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Werbebrief eines Versicherungsbrokers",
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "AssiCheck Broker Sagl",
+    "briefdatum": "2026-10-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [],
+    "periode": null,
+    "hauptbetrag_chf": null,
+    "zahlungsrichtung": "information",
+    "posten": [],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-16",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "werbung",
+    "verwechslung_krankenkasse",
+    "layout_A"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "32_rappel_fr_krankenkasse",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA",
+    "briefdatum": "2026-10-01",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "4.302.661"
+      },
+      {
+        "art": "rechnung",
+        "wert": "P-2026-07"
+      },
+      {
+        "art": "rechnung",
+        "wert": "P-2026-08"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 04302 66120 26070 00000"
+      }
+    ],
+    "periode": "2026-07..2026-08",
+    "hauptbetrag_chf": 755.6,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Prime LAMal juillet 2026",
+        "betrag_chf": 362.8,
+        "periode": "2026-07..2026-08"
+      },
+      {
+        "bezeichnung": "Prime LAMal août 2026",
+        "betrag_chf": 362.8,
+        "periode": "2026-07..2026-08"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 30.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-10-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2
+  },
+  "zustelldatum_annahme": "2026-10-05",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-10-30"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe2",
+    "krankenkasse_mahnung",
+    "betragsformat_fr_praefix",
+    "layout_B"
+  ]
+}

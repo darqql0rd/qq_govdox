@@ -1,0 +1,80 @@
+{
+  "id": "25_cassa_malati_it_qr",
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Alpinea Assicurazione malattia e infortuni SA",
+    "briefdatum": "2026-10-09",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "77-640-517"
+      },
+      {
+        "art": "police",
+        "wert": "AL-27-70213"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 77640 51727 01000 00000"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 437.4,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Assicurazione di base LAMal, Telmed, con infortuni (versicherte Person 1)",
+        "betrag_chf": 389.7,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Assicurazione di base LAMal, Telmed, con infortuni (versicherte Person 1)",
+        "betrag_chf": 417.9,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Complementare ambulante (LCA) (versicherte Person 1)",
+        "betrag_chf": 19.5,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Complementare ambulante (LCA) (versicherte Person 1)",
+        "betrag_chf": 19.5,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-13",
+  "erwartete_fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30"
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-12-31"
+    }
+  ],
+  "testzweck": [
+    "praemienvergleich",
+    "qr_rechnung",
+    "betragsformat_leerzeichen_komma",
+    "layout_A"
+  ]
+}

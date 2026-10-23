@@ -1,0 +1,63 @@
+{
+  "id": "41_steuer_schlussrechnung_de",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Steuer-Schlussrechnung (keine Veranlagungsverfügung)",
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeindesteueramt Talwil",
+    "briefdatum": "2026-12-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "142.873.205"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 14287 32052 02500 00000"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 2106.1,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staatssteuer",
+        "betrag_chf": 5042.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Talwil",
+        "betrag_chf": 5798.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 1312.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -10046.2,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": "2027-01-15",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-12-04",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "verwechslung_steuer",
+    "qr_rechnung",
+    "layout_A"
+  ]
+}
