@@ -1,4 +1,4 @@
-"""State-Schema für den Behördenbrief-Erklärer – Version 2 (23.10.2026).
+"""State-Schema für den Behördenbrief-Erklärer – Version 2.2 (23.10.2026).
 
 Aufbau nach SW5, Folie 10 und 17:
 - Der Graph-State ist ein TypedDict (das, was zwischen den Knoten fliesst).
@@ -18,6 +18,13 @@ Aufbau nach SW5, Folie 10 und 17:
 - Krankenkasse: zweite Frist (Franchise-/Modellwechsel), Eingang massgebend
 - Fristen haben ein Erinnerungsdatum für den Kalender
 - Antwortentwurf: Teilbetrag (teilweiser Rechtsvorschlag) und Platzhalter
+
+Ergänzt in v2.2 (Abgleich mit dem Datensatz der 45 Briefe):
+- dokument_pfade: Liste statt einzelner Pfad (25 von 45 Briefen sind mehrseitig;
+  beim Zahlungsbefehl steht "Zugestellt am" immer auf Seite 2)
+- abweichung_von_deklaration: Differenz in CHF statt Ja/Nein
+- hauptbetrag_chf: Rückerstattungen negativ (Vorzeichen wie die Summe der Posten)
+- Extraktion.posten_plausibel(): deterministische Summenprüfung
 
 Ergänzt in v2.1 (für den erweiterten Testdatensatz):
 - brieftyp_vermutung: was ein "unbekannter" Brief vermutlich ist
@@ -112,7 +119,9 @@ class Referenz(BaseModel):
 class Betragsposten(BaseModel):
     bezeichnung: str = Field(description="Bezeichnung wie im Brief, z. B. 'Mahngebühr 2. Mahnung'")
     betrag_chf: float = Field(description="Betrag in CHF, Gutschriften negativ")
-    periode: str | None = Field(None, description="z. B. '2026' oder '2027' bei Prämienvergleich")
+    periode: str | None = Field(
+        None, description="z. B. '2025' oder beim Prämienvergleich '2026-monatlich' / '2027-monatlich'"
+    )
 
 
 class Zins(BaseModel):
@@ -145,8 +154,8 @@ class Extraktion(BaseModel):
     hauptbetrag_chf: float | None = Field(
         None,
         description="Der Betrag, um den es im Brief hauptsächlich geht: Total der Betreibung "
-        "(ohne Zins), offener Mahnbetrag, Steuer-Restbetrag bzw. Rückerstattung (positiv), "
-        "neue Monatsprämie total.",
+        "(ohne Zins), offener Mahnbetrag, Steuer-Restbetrag, neue Monatsprämie total. "
+        "Entspricht der Summe der Posten, Rückerstattungen sind daher negativ.",
     )
     zahlungsrichtung: Zahlungsrichtung | None = Field(
         None,
@@ -175,8 +184,10 @@ class Extraktion(BaseModel):
     )
 
     # --- Steuerveranlagung ---
-    abweichung_von_deklaration: bool | None = Field(
-        None, description="True, wenn das Amt von der eigenen Steuererklärung abgewichen ist"
+    abweichung_von_deklaration: float | None = Field(
+        None,
+        description="Steuerbares Einkommen veranlagt minus deklariert in CHF. "
+        "0 = keine Abweichung. Leer bei anderen Brieftypen.",
     )
     abweichungsgrund: str | None = Field(None, description="Begründung des Amts in wenigen Worten")
 
@@ -187,6 +198,19 @@ class Extraktion(BaseModel):
         default_factory=list,
         description="Für die wichtigsten Felder (Betrag, Fristen, Gläubiger) je eine Belegstelle",
     )
+
+
+    def posten_plausibel(self) -> bool | None:
+        """Ergibt die Summe der Posten den Hauptbetrag? None, wenn nicht prüfbar.
+
+        Beim Prämienvergleich zählen nur die Posten des neuesten Jahres.
+        Kann im Analyse-Node als deterministischer Check dienen.
+        """
+        if self.hauptbetrag_chf is None or not self.posten:
+            return None
+        monatlich = sorted({p.periode for p in self.posten if p.periode and p.periode.endswith("-monatlich")})
+        relevant = [p for p in self.posten if p.periode == monatlich[-1]] if monatlich else self.posten
+        return abs(sum(p.betrag_chf for p in relevant) - self.hauptbetrag_chf) < 0.01
 
 
 # ENTSCHEID: Ein flaches Modell mit optionalen Feldern ist für kleinere Modelle
@@ -329,7 +353,7 @@ def zaehler_addieren(alt: dict[str, int] | None, neu: dict[str, int] | None) -> 
 
 class BriefState(TypedDict, total=False):
     # Eingabe
-    dokument_pfad: str                 # PDF oder Foto; Pfad, nicht Bytes
+    dokument_pfade: list[str]          # PDF oder ein Foto pro Seite; Pfade, nicht Bytes
     nutzersprache: Sprache             # Sprache der Erklärung
 
     # Texterkennung (Nayan)
@@ -379,7 +403,7 @@ class BriefState(TypedDict, total=False):
 # ---------------------------------------------------------------------------
 
 FELDER_PRO_NODE: dict[str, list[str]] = {
-    "eingabe": ["dokument_pfad", "nutzersprache"],
+    "eingabe": ["dokument_pfade", "nutzersprache"],
     "ocr": ["textquelle", "rohtext", "seiten", "text_lesbar", "text_konfidenz",
             "versuche", "abbruch_grund"],
     "analyse": [
