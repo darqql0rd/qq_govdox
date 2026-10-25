@@ -2,6 +2,8 @@
 langgraph
 langchain-openai
 pydantic>=2
+python-dotenv
+langsmith
 
 # Notebooks
 ipykernel
