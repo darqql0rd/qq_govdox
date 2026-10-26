@@ -42,7 +42,6 @@ def _frist(art, datum, basis, ausgang=None, grundlage=None, hinweise=None) -> di
         "erinnerung": datum - timedelta(days=ERINNERUNG_TAGE_VORHER),
     }
 
-
 @tool
 def fristen_berechnen(brieftyp: str, zustelldatum: date | None = None,
                       frist_im_brief: date | None = None,

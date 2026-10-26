@@ -19,12 +19,17 @@
       }
     ],
     "periode": null,
-    "hauptbetrag_chf": 121.14,
-    "zahlungsrichtung": "rueckerstattung",
+    "hauptbetrag_chf": 163.46,
+    "zahlungsrichtung": "zu_zahlen",
     "posten": [
       {
-        "bezeichnung": "Remboursement assurance de base",
-        "betrag_chf": 121.14,
+        "bezeichnung": "Consultation médecin de famille",
+        "betrag_chf": 284.6,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Prise en charge par l'assurance de base",
+        "betrag_chf": -121.14,
         "periode": null
       }
     ],

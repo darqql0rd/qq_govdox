@@ -26,16 +26,26 @@ def vergleiche(fall: str, ende: dict) -> bool:
     erwartet = {(f["art"], f["datum"]) for f in gold["erwartete_fristen"]}
     erhalten = {(f.art, f.datum.isoformat()) for f in ende.get("fristen", [])}
     betrag = ende["extraktion"].hauptbetrag_chf if "extraktion" in ende else None
+    gold_betrag = gold["extraktion"]["hauptbetrag_chf"]
+    # Beide leer (z. B. Werbebrief ohne Betrag) zählt als richtig
+    if betrag is None or gold_betrag is None:
+        betrag_ok = betrag is None and gold_betrag is None
+    else:
+        betrag_ok = abs(betrag - gold_betrag) < 0.01
     checks = {
         "Brieftyp": ende.get("brieftyp") == gold["brieftyp"],
         "Fristen": erwartet == erhalten,
-        "Betrag": betrag is not None and abs(betrag - (gold["extraktion"]["hauptbetrag_chf"] or 0)) < 0.01,
+        "Betrag": betrag_ok,
         "Injection": ende.get("injection_verdacht") == gold["injection_verdacht"],
     }
     for name, ok in checks.items():
         print(f"  {'✓' if ok else '✗'} {name}")
+    if not checks["Brieftyp"]:
+        print(f"      Brieftyp erwartet {gold['brieftyp']}, erhalten {ende.get('brieftyp')}")
     if not checks["Fristen"]:
         print(f"      erwartet {sorted(erwartet)}\n      erhalten {sorted(erhalten)}")
+    if not checks["Betrag"]:
+        print(f"      Betrag erwartet {gold_betrag}, erhalten {betrag}")
     return all(checks.values())
 
 
@@ -52,7 +62,11 @@ def main(muster: list[str]):
         if voll.get("zustelldatum_quelle") == "nutzer":
             start["zustelldatum"] = voll["zustelldatum"]
             start["zustelldatum_quelle"] = "nutzer"
-        ende = graph.invoke(start, config={"run_name": fall, "tags": ["durchstich"]})
+        try:
+            ende = graph.invoke(start, config={"run_name": fall, "tags": ["durchstich"]})
+        except Exception as fehler:  # ein kaputter Brief soll nicht den ganzen Lauf stoppen
+            print(f"  ✗ ABSTURZ: {type(fehler).__name__}: {str(fehler)[:300]}")
+            continue
 
         if "erklaerung" in ende:
             print(ende["erklaerung"].text)

@@ -35,6 +35,7 @@ def analyse(state: BriefState) -> dict:
         update["zustelldatum_quelle"] = None
 
     # Deterministischer Plausibilitätscheck (False = Summe der Posten ≠ Hauptbetrag)
-    if e.posten_plausibel() is False:
+    # Bei Steuer und Krankenkasse enthalten die Posten Vorjahre/Abzüge -> Check dort nicht sinnvoll
+    if ergebnis.brieftyp in ("zahlungsbefehl", "mahnung") and e.posten_plausibel() is False:
         print("  ! Analyse: Summe der Posten passt nicht zum Hauptbetrag")
     return update

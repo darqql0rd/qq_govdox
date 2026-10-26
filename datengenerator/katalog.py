@@ -521,8 +521,11 @@ A(dict(typ="neg", id="42_decompte_prestations_fr", vermutung="Leistungsabrechnun
              ("p", "État de votre franchise 2026 : 1'500.00 CHF atteinte.")],
        sign=["Avec nos meilleures salutations", "<br/>Helvaria, Service des prestations"],
        refs_gold=[("kunde", "4.302.661"), ("andere", "PR-2026-889104")],
-       posten_gold=[{"bezeichnung": "Remboursement assurance de base", "betrag_chf": 121.14, "periode": None}],
-       richtung="rueckerstattung", testzweck=["negativfall", "verwechslung_krankenkasse"]))
+       # Hauptbetrag = "À votre charge" 163.46 (Summenzeile, was die Person selbst trägt);
+       # die Rückerstattung von 121.14 ist als negativer Posten enthalten (Summenregel).
+       posten_gold=[{"bezeichnung": "Consultation médecin de famille", "betrag_chf": 284.6, "periode": None},
+                    {"bezeichnung": "Prise en charge par l'assurance de base", "betrag_chf": -121.14, "periode": None}],
+       richtung="zu_zahlen", testzweck=["negativfall", "verwechslung_krankenkasse"]))
 A(dict(typ="neg", id="43_konkursandrohung_de", vermutung="Konkursandrohung", lang="de", template="A", font="helv", fmt="apo", logo=L("circle", "#8B1E2D", "BT"),
        datum=D(2026, 10, 14), ort="Talwil", sender=BA["talwil"]["sender"],
        empf=["Holzbau Gerber GmbH", "z.H. der Geschäftsführung", "Sägereiweg 4", "8999 Talwil"],
