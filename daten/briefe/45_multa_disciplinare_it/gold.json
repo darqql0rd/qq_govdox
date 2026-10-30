@@ -12,6 +12,10 @@
       {
         "art": "andere",
         "wert": "MD-2026-018833"
+      },
+      {
+        "art": "andere",
+        "wert": "VC 000 000"
       }
     ],
     "periode": null,
@@ -34,7 +38,14 @@
     "mahnstufe": null
   },
   "zustelldatum_annahme": "2026-09-14",
-  "erwartete_fristen": [],
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-10-14",
+      "regel": "Zahlung innert 30 Tagen (Beginn im Brief nicht angegeben; ab Zustellung gerechnet, ab Briefdatum wäre es 2026-10-12)",
+      "basis": "zustelldatum_annahme"
+    }
+  ],
   "testzweck": [
     "negativfall",
     "ausser_scope",
