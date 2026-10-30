@@ -1,64 +1,64 @@
 {
-  "id": "43_konkursandrohung_de",
+  "id": "44_commination_faillite_fr",
   "brieftyp": "unbekannt",
   "brieftyp_vermutung": "Konkursandrohung",
-  "briefsprache": "de",
+  "briefsprache": "fr",
   "injection_verdacht": false,
   "extraktion": {
-    "absender": "Betreibungsamt Talwil",
-    "briefdatum": "2026-10-14",
+    "absender": "Office des poursuites du district de Clairvaux",
+    "briefdatum": "2026-11-04",
     "zustelldatum_im_brief": null,
     "referenzen": [
       {
         "art": "betreibung",
-        "wert": "26-002244"
+        "wert": "26-109932"
       }
     ],
     "periode": null,
-    "hauptbetrag_chf": 18613.3,
+    "hauptbetrag_chf": 10003.3,
     "zahlungsrichtung": "zu_zahlen",
     "posten": [
       {
-        "bezeichnung": "Forderung",
-        "betrag_chf": 18450.0,
+        "bezeichnung": "Créance",
+        "betrag_chf": 9870.0,
         "periode": null
       },
       {
-        "bezeichnung": "Betreibungskosten bisher",
-        "betrag_chf": 113.3,
+        "bezeichnung": "Frais de poursuite à ce jour",
+        "betrag_chf": 83.3,
         "periode": null
       },
       {
-        "bezeichnung": "Kosten Konkursandrohung",
+        "bezeichnung": "Frais de la commination",
         "betrag_chf": 50.0,
         "periode": null
       }
     ],
     "frist_im_brief": null,
-    "glaeubiger": "Forstbetrieb Hochwald AG",
+    "glaeubiger": "Bois du Jura SA",
     "glaeubiger_vertreter": null,
     "forderungsgrund": null,
     "zins": {
       "satz_prozent": 5.0,
-      "seit": "2026-05-31",
-      "auf_betrag_chf": 18450.0
+      "seit": "2026-06-30",
+      "auf_betrag_chf": 9870.0
     },
     "abweichung_von_deklaration": null,
     "abweichungsgrund": null,
     "mahnstufe": null
   },
-  "zustelldatum_annahme": "2026-10-16",
+  "zustelldatum_annahme": "2026-11-06",
   "erwartete_fristen": [
     {
       "art": "beschwerde",
-      "datum": "2026-10-26",
-      "regel": "10 Tage seit Zustellung (Art. 17 SchKG)",
+      "datum": "2026-11-16",
+      "regel": "10 Tage seit Zustellung (Art. 17 SchKG / LP)",
       "basis": "zustelldatum_annahme"
     },
     {
       "art": "konkursbegehren_moeglich_ab",
-      "datum": "2026-11-06",
-      "regel": "Gläubiger kann nach Ablauf von 20 Tagen seit Zustellung das Konkursbegehren stellen (Frist endet 2026-11-05)",
+      "datum": "2026-11-27",
+      "regel": "Gläubiger kann nach Ablauf von 20 Tagen seit Zustellung das Konkursbegehren stellen (Frist endet 2026-11-26)",
       "basis": "zustelldatum_annahme"
     }
   ],
@@ -66,6 +66,7 @@
     "negativfall",
     "verwechslung_zahlungsbefehl",
     "konkursandrohung",
-    "layout_A"
+    "betragsformat_leerzeichen_komma",
+    "layout_C"
   ]
 }
