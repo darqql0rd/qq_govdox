@@ -48,20 +48,7 @@
     "mahnstufe": null
   },
   "zustelldatum_annahme": "2026-10-16",
-  "erwartete_fristen": [
-    {
-      "art": "beschwerde",
-      "datum": "2026-10-26",
-      "regel": "10 Tage seit Zustellung (Art. 17 SchKG)",
-      "basis": "zustelldatum_annahme"
-    },
-    {
-      "art": "konkursbegehren_moeglich_ab",
-      "datum": "2026-11-06",
-      "regel": "Gläubiger kann nach Ablauf von 20 Tagen seit Zustellung das Konkursbegehren stellen (Frist endet 2026-11-05)",
-      "basis": "zustelldatum_annahme"
-    }
-  ],
+  "erwartete_fristen": [],
   "testzweck": [
     "negativfall",
     "verwechslung_zahlungsbefehl",

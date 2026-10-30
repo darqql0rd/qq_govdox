@@ -43,20 +43,7 @@
     "mahnstufe": null
   },
   "zustelldatum_annahme": "2026-10-09",
-  "erwartete_fristen": [
-    {
-      "art": "einsprache",
-      "datum": "2026-10-19",
-      "regel": "10 Tage seit Zustellung",
-      "basis": "zustelldatum_annahme"
-    },
-    {
-      "art": "zahlung",
-      "datum": "2026-11-18",
-      "regel": "30 Tage ab Rechtskraft",
-      "basis": "Rechtskraft nach unbenutzter Einsprachefrist (ab 2026-10-20)"
-    }
-  ],
+  "erwartete_fristen": [],
   "testzweck": [
     "negativfall",
     "ausser_scope",
