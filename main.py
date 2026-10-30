@@ -55,16 +55,16 @@ def main(muster: list[str]):
     ok = 0
     for fall in faelle:
         print(f"\n=== {fall} ===")
-        voll = aus_gold(fall, "pdf")
-        start = {k: v for k, v in voll.items() if k in EINGABE}
-        # Platzhalter für den Node zustelldatum_erfragen: Steht kein Zustelldatum im Brief,
-        # tun wir so, als hätte die Person es angegeben (wie aus_gold es vorsieht).
-        if voll.get("zustelldatum_quelle") == "nutzer":
-            start["zustelldatum"] = voll["zustelldatum"]
-            start["zustelldatum_quelle"] = "nutzer"
         try:
+            voll = aus_gold(fall, "pdf")
+            start = {k: v for k, v in voll.items() if k in EINGABE}
+            # Platzhalter für den Node zustelldatum_erfragen: Steht kein Zustelldatum im Brief,
+            # tun wir so, als hätte die Person es angegeben (wie aus_gold es vorsieht).
+            if voll.get("zustelldatum_quelle") == "nutzer":
+                start["zustelldatum"] = voll["zustelldatum"]
+                start["zustelldatum_quelle"] = "nutzer"
             ende = graph.invoke(start, config={"run_name": fall, "tags": ["durchstich"]})
-        except Exception as fehler:  # ein kaputter Brief soll nicht den ganzen Lauf stoppen
+        except Exception as fehler:  # ein kaputter Brief (oder Gold-File) soll nicht den ganzen Lauf stoppen
             print(f"  ✗ ABSTURZ: {type(fehler).__name__}: {str(fehler)[:300]}")
             continue
 

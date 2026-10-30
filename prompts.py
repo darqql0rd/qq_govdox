@@ -26,7 +26,9 @@ Extraktion:
 - hauptbetrag_chf ist immer das Total inkl. Kosten und Gebühren, nie nur die Forderung.
 - Beträge als Zahl in CHF ("1'845.60", "1 845,60" und "Fr. 1845.60" sind alle 1845.60).
 - Relative Fristen ("innert 10 Tagen nach Zustellung") NICHT in ein Datum umrechnen.
-- zustelldatum_im_brief nur, wenn im Feld "Zugestellt am" wirklich ein Datum steht.
+- zustelldatum_im_brief: das Datum im Feld "Zugestellt am" / "Notifié le" / "Notificato il"
+  (Zustellbescheinigung, meist Seite 2, oft handschriftlich). Steht dort ein Datum, immer übernehmen;
+  ist das Feld leer, leer lassen.
 - Keine Namen, Adressen oder Geburtsdaten von Privatpersonen extrahieren (Schuldner, Empfänger),
   auch nicht innerhalb anderer Felder wie forderungsgrund (z. B. "am Birkenweg 7" weglassen).
 """

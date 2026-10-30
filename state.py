@@ -153,7 +153,8 @@ class Extraktion(BaseModel):
     zustelldatum_im_brief: BriefDatum | None = Field(
         None,
         description="Nur wenn ein Zustelldatum ausgefüllt auf dem Brief steht. Ein leeres "
-        "Feld 'Zugestellt am: ____' bedeutet: leer lassen. Nie das Briefdatum verwenden. "
+        "Feld 'Zugestellt am / Notifié le / Notificato il: ____' bedeutet: leer lassen. "
+        "Steht dort ein (oft handschriftliches) Datum, IMMER übernehmen. Nie das Briefdatum verwenden. "
         "Genau so abschreiben, wie es im Feld steht, z. B. '28.10.26'.",
     )
     referenzen: list[Referenz] = Field(
@@ -273,7 +274,9 @@ class AnalyseErgebnis(BaseModel):
         # Manche Modelle (auch Haiku) liefern das verschachtelte Objekt als JSON-String
         if isinstance(v, str):
             import json
-            return json.loads(v)
+            # raw_decode: nimmt das erste JSON-Objekt, auch wenn das Modell danach noch Text anhängt
+            objekt, _ = json.JSONDecoder().raw_decode(v.strip())
+            return objekt
         return v
 
 
