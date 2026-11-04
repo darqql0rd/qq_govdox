@@ -5,11 +5,14 @@ pydantic>=2
 python-dotenv
 langsmith
 
+# Texterkennung (nodes/ocr.py)
+python-doctr[torch]
+pypdf
+
 # Notebooks
 ipykernel
 
 # Datengenerator (nur zum Neuerzeugen der Testbriefe, siehe datengenerator/README.md)
 reportlab
-pypdf
 opencv-python-headless
 numpy

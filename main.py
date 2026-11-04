@@ -3,9 +3,10 @@
     python main.py 01                 # ein Brief (Anfang der Fall-ID genügt)
     python main.py 01 02 03           # mehrere
     python main.py zahlungsbefehl     # alle Briefe, deren ID das Wort enthält
+    python main.py 01 --variante foto # Handyfoto statt PDF-Text, mit OCR-Node (auch: scan)
 """
 
-import sys
+import argparse
 from datetime import date
 
 from dotenv import load_dotenv
@@ -49,23 +50,34 @@ def vergleiche(fall: str, ende: dict) -> bool:
     return all(checks.values())
 
 
-def main(muster: list[str]):
+def main(muster: list[str], variante: str = "pdf"):
     graph = baue_graph()
+    # pdf: Rohtext ist text.txt (Idealfall, kein OCR); scan/foto: nur die Bilder, der OCR-Node liest
+    felder = EINGABE if variante == "pdf" else set(FELDER_PRO_NODE["eingabe"])
     faelle = [f for f in fall_ids() if any(f.startswith(m) or m in f for m in muster)]
     ok = 0
     for fall in faelle:
         print(f"\n=== {fall} ===")
         try:
-            voll = aus_gold(fall, "pdf")
-            start = {k: v for k, v in voll.items() if k in EINGABE}
+            voll = aus_gold(fall, variante)
+            start = {k: v for k, v in voll.items() if k in felder}
             # Platzhalter für den Node zustelldatum_erfragen: Steht kein Zustelldatum im Brief,
             # tun wir so, als hätte die Person es angegeben (wie aus_gold es vorsieht).
             if voll.get("zustelldatum_quelle") == "nutzer":
                 start["zustelldatum"] = voll["zustelldatum"]
                 start["zustelldatum_quelle"] = "nutzer"
-            ende = graph.invoke(start, config={"run_name": fall, "tags": ["durchstich"]})
+            ende = graph.invoke(start, config={"run_name": fall, "tags": ["durchstich", variante]})
         except Exception as fehler:  # ein kaputter Brief (oder Gold-File) soll nicht den ganzen Lauf stoppen
             print(f"  ✗ ABSTURZ: {type(fehler).__name__}: {str(fehler)[:300]}")
+            continue
+
+        # Absichtlich unlesbare Fotos (11, 19, 36): richtig ist nur, sie als unlesbar zu erkennen
+        unlesbar_erwartet = not voll["text_lesbar"]
+        if unlesbar_erwartet or not ende["text_lesbar"]:
+            richtig = unlesbar_erwartet and not ende["text_lesbar"]
+            print(f"  {'✓' if richtig else '✗'} Unlesbar (erwartet {unlesbar_erwartet}, "
+                  f"erkannt {not ende['text_lesbar']}, Konfidenz {ende.get('text_konfidenz')})")
+            ok += richtig
             continue
 
         if "erklaerung" in ende:
@@ -79,4 +91,8 @@ def main(muster: list[str]):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:] or ["01"])
+    ap = argparse.ArgumentParser()
+    ap.add_argument("muster", nargs="*", default=["01"])
+    ap.add_argument("--variante", choices=["pdf", "scan", "foto"], default="pdf")
+    args = ap.parse_args()
+    main(args.muster, args.variante)
