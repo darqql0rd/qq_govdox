@@ -1,0 +1,125 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\18_tassazione_it_wochenende\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "                      Divisione delle contribuzioni del Cantone di Valcastello\n    DC\n                      Ufficio di tassazione delle persone fisiche · Piazza Governo 2, 6990 Castelvecchio · Tel. 099 555 60 00 ·\n                      tassazione@contribuzioni-valcastello.example\n\n\n\n\n                                                                                            Signori\n                                                                                            Paolo e Anna Rezzonico\n                                                                                            Strada Vecchia 17\n                                                                                            6997 Pradello\n\n\n\n                                                                                                                           Castelvecchio, 6 ottobre 2026\n N. contribuente                       618.207.554\n Periodo fiscale                       2025 (01.01.-31.12.2025)\n Comune                                Pradello (75 %)\n Tariffa                               Coniugati, 2 figli\n Tassatore                             F. Cattaneo, tel. 099 555 60 45\n\n\n\nDecisione di tassazione 2025\nImposte cantonale e comunale e imposta federale diretta\nGentili Signori Rezzonico,\nsulla base della dichiarazione d'imposta del 20.05.2026 e dei documenti allegati, per il periodo fiscale 2025 la\ntassazione è la seguente:\nReddito\n                                                                                                                     Dichiarato               Tassato\n Reddito da attività dipendente (marito)                                                                                98 600                  98 600\n Reddito da attività dipendente (moglie)                                                                                41 200                  41 200\n Spese professionali                                                                                                     -4 800                 -3 600\n Premi assicurativi                                                                                                      -7 400                 -7 400\n Contributi pilastro 3a                                                                                                 -14 516                -14 516\n Deduzione per figli                                                                                                    -11 200                -11 200\n Reddito imponibile cantonale                                                                                          101 884                103 084\n\nMotivo della correzione: le spese di trasporto sono state limitate al costo dell'abbonamento dei mezzi pubblici.\nSostanza\n Sostanza imponibile                                                                                                                           245 000\n\n\nCalcolo dell'imposta\n                                                                                                                                                  CHF\n Imposta cantonale sul reddito                                                                                                                7 510,00\n Imposta cantonale sulla sostanza                                                                                                               450,00\n Imposta cantonale (100 %)                                                                                                                    7 960,00\n Imposta comunale Pradello (moltiplicatore 75 %)                                                                                              5 970,00\n Imposta federale diretta (reddito imponibile 106 500)                                                                                        2 105,40\n Totale imposte 2025                                                                                                                         16 035,40\n Acconti versati, incl. interessi rimunerativi                                                                                              -14 800,00\n Saldo a Suo carico                                                                                                                          1 235,40\n\nIl conteggio finale con la polizza di versamento Le sarà inviato separatamente. Il saldo è pagabile entro 30 giorni\ndal ricevimento del conteggio; in seguito sarà riscosso un interesse di ritardo.\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                Pagina 1\n\f  Rimedi giuridici\n  Contro la presente decisione può essere presentato reclamo scritto e motivato all'Ufficio di tassazione delle persone\n  fisiche entro 30 giorni dalla notificazione. Il reclamo deve contenere le conclusioni e la motivazione; i mezzi di prova\n  devono essere allegati o indicati. Lo stesso termine vale per l'imposta federale diretta (art. 132 LIFD). Il termine non è\n  prorogabile.\n\n\n\nDistinti saluti\n\n\nDivisione delle contribuzioni del Cantone di Valcastello\nF. Cattaneo, tassatrice\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.         Pagina 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Divisione delle contribuzioni del Cantone di Valcastello",
+    "briefdatum": "2026-10-06",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "618.207.554"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 1235.4,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Imposta cantonale sul reddito",
+        "betrag_chf": 7510.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta cantonale sulla sostanza",
+        "betrag_chf": 450.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta cantonale (100 %)",
+        "betrag_chf": 7960.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta comunale Pradello (moltiplicatore 75 %)",
+        "betrag_chf": 5970.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta federale diretta",
+        "betrag_chf": 2105.4,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Totale imposte 2025",
+        "betrag_chf": 16035.4,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Acconti versati, incl. interessi rimunerativi",
+        "betrag_chf": -14800.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Divisione delle contribuzioni del Cantone di Valcastello",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Saldo dell'imposta cantonale, comunale e federale diretta 2025",
+    "zins": null,
+    "abweichung_von_deklaration": 2.0,
+    "abweichungsgrund": "Le spese di trasporto sono state limitate al costo dell'abbonamento dei mezzi pubblici.",
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Saldo a Suo carico 1 235,40",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "abweichung_von_deklaration",
+        "textstelle": "Reddito imponibile cantonale 101 884 103 084",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "briefdatum",
+        "textstelle": "Castelvecchio, 6 ottobre 2026",
+        "konfidenz": 0.98
+      }
+    ]
+  },
+  "zustelldatum": "2026-10-08",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-11-09",
+      "basis": "tag_nach_zustellung",
+      "ausgangsdatum": "2026-10-08",
+      "rechtsgrundlage": "DBG Art. 132",
+      "hinweise": [
+        "wochenende_verschoben"
+      ],
+      "erinnerung": "2026-11-04",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa è una decisione di tassazione. L'autorità fiscale del Cantone di Valcastello le comunica l'imposta per l'anno 2025. Il documento è datato 06.10.2026 e Lei lo ha ricevuto il 08.10.2026.\n\nIl totale delle imposte 2025 è di CHF 16'035.40 (cantonale, comunale e federale diretta). Da questo importo vengono detratti gli acconti già versati di CHF 14'800.00, compresi gli interessi. Il saldo da pagare è di CHF 1'235.40.\n\nL'autorità indica una correzione rispetto alla Sua dichiarazione: le spese di trasporto sono state limitate al costo dell'abbonamento dei mezzi pubblici. Questa differenza è di CHF 2.00.\n\nSe non è d'accordo con la decisione, può presentare un'opposizione (Einsprache). Il termine scade il 09.11.2026. Questo termine si basa su un'ipotesi, perché la data di ricezione è stata indicata da Lei. Il termine è stato spostato a causa del fine settimana.",
+    "naechste_schritte": [
+      "Controlli la decisione e confronti gli importi con la Sua dichiarazione d'imposta.",
+      "Se è d'accordo, paghi il saldo di CHF 1'235.40 con il numero di riferimento 618.207.554.",
+      "Se non è d'accordo, invii l'opposizione in tempo utile, al più tardi entro il 09.11.2026.",
+      "In caso di dubbi, si rivolga a un consulente fiscale o allo sportello di consulenza del Cantone prima della scadenza."
+    ],
+    "quellen": [
+      "DBG Art. 132"
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

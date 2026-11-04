@@ -1,0 +1,93 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\16_taxation_fr_standard\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "Administration cantonale des impôts du Haut-Lac\nSection des personnes physiques\nAvenue de la Fiscalité 5, 1990 Lac-Ville\nTél. 099 555 50 00 · personnes.physiques@impots-hautlac.example\n\n\n\n                                                                                                      Monsieur et Madame\n                                                                                                      Nicolas et Claire Girard\n                                                                                                      Chemin du Crêt 4\n                                                                                                      1997 Combe-Verte\n\n\n\n                                                                                                                              Lac-Ville, le 3 septembre 2026\nN° de contribuable                        756.981.003\nPériode fiscale                           2025 (01.01.-31.12.2025)\nCommune                                   Combe-Verte (65 %)\nBarème                                    Couple marié, 2 enfants\nTaxateur                                  P. Gilliéron, tél. 099 555 50 71\n\n\nDécision de taxation 2025\nImpôts cantonal et communal et impôt fédéral direct\nMadame, Monsieur,\nsur la base de votre déclaration d'impôt du 12.03.2026 et des pièces produites, vous êtes taxé(e)(s) pour la période\nfiscale 2025 comme suit :\nRevenu\n                                                                                                                             Déclaré                 Taxé\n Revenu de l'activité dépendante                                                                                             112'400               112'400\n Frais professionnels                                                                                                         -5'620                -5'620\n Primes d'assurances                                                                                                          -6'000                -6'000\n Cotisations au 3e pilier A                                                                                                  -14'516               -14'516\n Déduction pour enfants                                                                                                      -14'000               -14'000\n Revenu imposable ICC                                                                                                         72'264                72'264\n\nLa taxation est conforme à votre déclaration.\nFortune\n Fortune imposable                                                                                                                                 128'000\n\n\nCalcul de l'impôt\n                                                                                                                                                     CHF\n Impôt de base sur le revenu                                                                                                                      3'420.30\n Impôt de base sur la fortune                                                                                                                       115.60\n Impôt cantonal (coefficient 155 %)                                                                                                               5'480.65\n Impôt communal Combe-Verte (coefficient 65 %)                                                                                                    2'298.35\n Impôt fédéral direct (revenu imposable 76'900)                                                                                                     498.00\n Total des impôts 2025                                                                                                                            8'277.00\n Acomptes versés, y c. intérêts rémunératoires                                                                                                    -8'100.00\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                              Page 1\n\f Solde en votre défaveur                                                                                                     177.00\n\nLe décompte final accompagné du bulletin de versement vous parviendra séparément. Le solde est payable dans\nles 30 jours dès réception du décompte ; passé ce délai, un intérêt moratoire sera perçu.\n\n  Voies de droit\n  La présente décision peut faire l'objet d'une réclamation écrite et motivée auprès de l'Administration cantonale des\n  impôts du Haut-Lac dans les 30 jours dès sa notification. La réclamation doit contenir les conclusions et les motifs ; les\n  moyens de preuve doivent être joints ou désignés. Le même délai s'applique à l'impôt fédéral direct (art. 132 LIFD). Ce\n  délai ne peut pas être prolongé.\n\n\n\nVeuillez agréer nos salutations distinguées.\n\n\nAdministration cantonale des impôts du Haut-Lac\nP. Gilliéron, taxatrice\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.      Page 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Administration cantonale des impôts du Haut-Lac",
+    "briefdatum": "2026-09-03",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "756.981.003"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 177.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Total des impôts 2025",
+        "betrag_chf": 8277.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Acomptes versés, y c. intérêts rémunératoires",
+        "betrag_chf": -8100.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Solde en votre défaveur 177.00",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "abweichung_von_deklaration",
+        "textstelle": "La taxation est conforme à votre déclaration.",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-09-07",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-10-07",
+      "basis": "tag_nach_zustellung",
+      "ausgangsdatum": "2026-09-07",
+      "rechtsgrundlage": "DBG Art. 132",
+      "hinweise": [],
+      "erinnerung": "2026-10-02",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Il s'agit d'une décision de taxation fiscale de l'Administration cantonale des impôts du Haut-Lac, datée du 03.09.2026, pour l'année fiscale 2025. Numéro de contribuable : 756.981.003.\n\nSelon la lettre, le total des impôts 2025 est de 8'277.00 CHF. Vous avez déjà versé 8'100.00 CHF d'acomptes, intérêts compris. Il reste donc à payer 177.00 CHF.\n\nVous pouvez faire opposition (une réclamation écrite contre cette décision) jusqu'au 07.10.2026. Le délai court à partir du jour suivant la réception, que vous avez indiquée comme étant le 07.09.2026. Ce délai est calculé à partir de cette date, qui est une indication de votre part et non une date vérifiée.\n\nCe document ne constitue pas un conseil juridique. Ce texte est un prototype de cours de la FHNW, non un service officiel.",
+    "naechste_schritte": [
+      "Vérifiez le montant de 177.00 CHF et comparez-le avec vos versements d'acomptes.",
+      "Si vous voulez payer, effectuez le paiement de 177.00 CHF avant l'échéance indiquée sur la lettre.",
+      "Si vous contestez la taxation, envoyez votre opposition écrite à l'administration au plus tard le 07.10.2026.",
+      "En cas de doute, demandez conseil à un service d'aide ou à un professionnel avant le 07.10.2026."
+    ],
+    "quellen": [
+      "DBG Art. 132"
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
