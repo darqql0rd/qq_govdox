@@ -1,0 +1,121 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\03_zahlungsbefehl_de_vertreter_ohne_zustelldatum\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "                  Betreibungsamt Talwil\n                  Kanton Hochwald\n   BT             Dorfstrasse 12, 8999 Talwil\n                  Tel. 099 555 12 40 · betreibungsamt@talwil.example\n                  Schalter: Mo-Fr 08.30-11.30 / 14.00-16.30\n\n\nHerr                                                                           Betreibung Nr.             26-010455\nDaniele Rossi                                                                  Ausgestellt am             16.11.2026\n                                                                               Sachbearbeitung            S. Widmer\nFeldstrasse 21\n8999 Talwil\n\n\n\n                                                                                                                        Talwil, 16. November 2026\n\n\nZahlungsbefehl\nOrdentliche Betreibung (Art. 69 SchKG). Gestützt auf das Betreibungsbegehren des nachgenannten Gläubigers wird\nIhnen folgender Zahlungsbefehl zugestellt:\n\nGläubiger                            Wohnbau Linth AG, Seeweg 2, 8995 Linthausen\nVertreter                            Inkassobüro Zentralis AG, Postfach 210, 8990 Hochwald-Stadt\nSchuldner                            Rossi Daniele, geb. 19.01.1988, Feldstrasse 21, 8999 Talwil\n\n\nForderung\nPosition                                                                                                                                   CHF\nForderungsbetrag nebst Zins zu 5 % seit 01.07.2026                                                                                     12'750.00\nVerzugsschaden / Inkassokosten                                                                                                           285.00\nKosten dieses Zahlungsbefehls inkl. Zustellung (vom Gläubiger vorgeschossen)                                                             100.30\nTotal (ohne Zins)                                                                                                                     13'135.30\n\nForderungsurkunde / Grund der Forderung: Ausstehende Mietzinse Mai bis Juli 2026 (3 x CHF 4'250.00) gemäss\nMietvertrag vom 01.10.2023.\nDer Schuldner wird aufgefordert, den Gläubiger für die angegebene Forderung samt Betreibungskosten innert 20\nTagen nach Zustellung zu befriedigen. Die Zahlung kann an das Betreibungsamt geleistet werden.\nWill der Schuldner die Forderung oder einen Teil davon oder das Recht, sie auf dem Betreibungsweg geltend zu\nmachen, bestreiten, so hat er dies innert 10 Tagen nach Zustellung dieses Zahlungsbefehls dem Betreibungsamt\nmündlich oder schriftlich zu erklären (Rechtsvorschlag). Wird nur ein Teil der Forderung bestritten, ist der\nbestrittene Betrag genau anzugeben; andernfalls gilt die ganze Forderung als bestritten. Eine Begründung ist nicht\nerforderlich.\nKommt der Schuldner diesem Zahlungsbefehl nicht nach und erhebt er keinen Rechtsvorschlag, so kann der\nGläubiger nach Ablauf von 20 Tagen seit der Zustellung das Fortsetzungsbegehren stellen.\nBetreibungsferien (Art. 56 und 63 SchKG): 7 Tage vor bis 7 Tage nach Ostern und Weihnachten sowie 15. bis 31. Juli. Die Fristen laufen\nwährend dieser Zeit weiter; endet eine Frist in den Betreibungsferien, verlängert sie sich bis zum dritten Werktag nach deren Ende.\n\n\n Rechtsvorschlag\n [ ] Der Schuldner erhebt Rechtsvorschlag gegen die ganze Forderung.\n [ ] Der Schuldner erhebt Rechtsvorschlag für den Betrag von CHF ______________.\n\n Ort, Datum: ______________________ Unterschrift Schuldner: ______________________\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                       Seite 1\n\f Zustellungsbescheinigung\n Zugestellt am: ______________ an:\n [ ] Schuldner persönlich [ ] Hausgenosse [ ] Arbeitnehmer\n\n Unterschrift Zustellbeamter: ______________________\n\n\n\nBetreibungsamt Talwil\n\n\nR. Hofmann, Betreibungsbeamter\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.   Seite 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.98,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-11-16",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-010455"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 13135.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag nebst Zins zu 5 % seit 01.07.2026",
+        "betrag_chf": 12750.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Verzugsschaden / Inkassokosten",
+        "betrag_chf": 285.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten dieses Zahlungsbefehls inkl. Zustellung (vom Gläubiger vorgeschossen)",
+        "betrag_chf": 100.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Wohnbau Linth AG",
+    "glaeubiger_vertreter": "Inkassobüro Zentralis AG",
+    "forderungsgrund": "Ausstehende Mietzinse Mai bis Juli 2026 (3 x CHF 4'250.00) gemäss Mietvertrag vom 01.10.2023",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-07-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total (ohne Zins) 13'135.30",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Gläubiger Wohnbau Linth AG, Seeweg 2, 8995 Linthausen",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "zins",
+        "textstelle": "Forderungsbetrag nebst Zins zu 5 % seit 01.07.2026",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "zustelldatum_im_brief",
+        "textstelle": "Zugestellt am: ______________",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-11-18",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-30",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-11-18",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [
+        "wochenende_verschoben"
+      ],
+      "erinnerung": "2026-11-25",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-12-08",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-11-18",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [],
+      "erinnerung": "2026-12-03",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben einen Zahlungsbefehl vom Betreibungsamt Talwil erhalten. Die Firma Wohnbau Linth AG verlangt von Ihnen Geld. Vertreten wird sie vom Inkassobüro Zentralis AG. Es geht um ausstehende Mietzinse für Mai bis Juli 2026. Insgesamt sollen Sie CHF 13'135.30 bezahlen. Darin sind Zins zu 5 % seit 01.07.2026, Inkassokosten von CHF 285.00 und Kosten des Zahlungsbefehls von CHF 100.30 enthalten. Das Dokument trägt die Betreibungsnummer 26-010455. Ob die Forderung berechtigt ist, können wir nicht beurteilen. Sie haben zwei Möglichkeiten: Sie können zahlen. Oder Sie können innerhalb der Frist Rechtsvorschlag erheben, also schriftlich widersprechen. Das Datum des Zustellungsdatums stammt von Ihrer Angabe.",
+    "naechste_schritte": [
+      "Prüfen Sie den Zahlungsbefehl und die Forderung in Ruhe.",
+      "Erheben Sie bis 30.11.2026 Rechtsvorschlag, wenn Sie der Forderung widersprechen wollen; das Schreiben muss bis dahin beim Betreibungsamt ankommen.",
+      "Zahlen Sie den Betrag bis 08.12.2026, wenn Sie die Forderung anerkennen.",
+      "Bei Fragen wenden Sie sich an das Betreibungsamt Talwil."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

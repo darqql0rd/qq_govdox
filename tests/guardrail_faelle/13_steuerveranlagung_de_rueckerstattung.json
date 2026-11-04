@@ -1,0 +1,105 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\13_steuerveranlagung_de_rueckerstattung\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "     SH\n\n                                                   Herr\nKantonales Steueramt\n                                                   Thomas Brunner\nHochwald\n                                                   Sonnenhalde 12\nAbteilung Natürliche Personen\nSteuerplatz 1, 8990                                8996 Bergmatt\nHochwald-Stadt\nTel. 099 555 40 00 · natuerlich\ne.personen@steueramt-hochw\nald.example                                                                                                                       Hochwald-Stadt, 15. Juni 2026\n\nSteuer-Nr.                                         Veranlagungsverfügung 2025\n138.402.611\n                                                   Staats- und Gemeindesteuern sowie direkte Bundessteuer\nSteuerperiode\n2025 (01.01.-31.12.2025)                           Sehr geehrter Herr Brunner,\nGemeinde                                           gestützt auf Ihre Steuererklärung vom 27.02.2026 und die eingereichten Unterlagen\nBergmatt (98 %)                                    werden Sie für die Steuerperiode 2025 wie folgt veranlagt:\nTarif                                              Einkommen\nGrundtarif\n                                                                                                                               Selbstdeklarati   Veranlagung\nSachbearbeitung\n                                                                                                                                           on\nM. Kunz, Tel. 099 555 40 31\n                                                    Einkünfte aus unselbständiger Erwerbstätigkeit                                      74800           74800\n                                                    Wertschriftenertrag                                                                   420             420\n                                                    Berufsauslagen                                                                      -3900           -3900\n                                                    Versicherungsprämien und Zinsen von                                                 -2900           -2900\n                                                    Sparkapitalien\n                                                    Beiträge Säule 3a                                                                   -7258           -7258\n                                                    Steuerbares Einkommen Staats- und                                                   61162           61162\n                                                    Gemeindesteuern\n\n                                                   Die Veranlagung entspricht Ihrer Selbstdeklaration.\n                                                   Vermögen\n                                                    Steuerbares Vermögen                                                                                96000\n\n\n                                                   Steuerberechnung\n                                                                                                                                                       Betrag\n                                                    Einfache Staatssteuer Einkommen                                                                Fr. 2980.00\n                                                    Einfache Staatssteuer Vermögen                                                                   Fr. 60.00\n                                                    Staatssteuer (100 %)                                                                           Fr. 3040.00\n                                                    Gemeindesteuer Bergmatt (98 %)                                                                 Fr. 2979.20\n                                                    Direkte Bundessteuer (steuerbares Einkommen 63500)                                              Fr. 742.60\n                                                    Total Steuern 2025                                                                             Fr. 6761.80\n                                                    Abzüglich geleistete Vorauszahlungen inkl. Vergütungszins                                     -Fr. 7400.00\n                                                    Guthaben zu Ihren Gunsten                                                                      -Fr. 638.20\n\n\n\n\n       Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                               Seite 1\n\fDas Guthaben wird Ihnen innert 30 Tagen auf das bekannte Konto überwiesen.\n\n                        Rechtsmittelbelehrung\n                        Gegen diese Verfügung kann innert 30 Tagen nach Zustellung beim Kantonalen\n                        Steueramt Hochwald schriftlich Einsprache erhoben werden. Die Einsprache muss\n                        einen Antrag und eine Begründung enthalten; Beweismittel sind beizulegen oder zu\n                        bezeichnen. Für die direkte Bundessteuer gilt dieselbe Frist (Art. 132 DBG). Die Frist\n                        kann nicht erstreckt werden.\n\n\n\nFreundliche Grüsse\n\n\nKantonales Steueramt Hochwald\nM. Kunz, Steuerkommissär\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.   Seite 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Kantonales Steueramt Hochwald",
+    "briefdatum": "2026-06-15",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "138.402.611"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": -638.2,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Einfache Staatssteuer Einkommen",
+        "betrag_chf": 2980.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Einfache Staatssteuer Vermögen",
+        "betrag_chf": 60.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Staatssteuer (100 %)",
+        "betrag_chf": 3040.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Bergmatt (98 %)",
+        "betrag_chf": 2979.2,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 742.6,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Total Steuern 2025",
+        "betrag_chf": 6761.8,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Abzüglich geleistete Vorauszahlungen inkl. Vergütungszins",
+        "betrag_chf": -7400.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": []
+  },
+  "zustelldatum": "2026-06-17",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-07-17",
+      "basis": "tag_nach_zustellung",
+      "ausgangsdatum": "2026-06-17",
+      "rechtsgrundlage": "DBG Art. 132",
+      "hinweise": [],
+      "erinnerung": "2026-07-12",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Das Kantonale Steueramt Hochwald hat Ihnen eine Steuerveranlagung für das Jahr 2025 geschickt. Dabei wird Ihre Steuer endgültig berechnet und mit den bereits bezahlten Vorauszahlungen verglichen.\n\nDas Ergebnis ist gut für Sie: Die Steuern 2025 betragen insgesamt 6761.80 CHF. Sie haben aber 7400.00 CHF (inkl. Vergütungszins) im Voraus bezahlt. Deshalb erhalten Sie 638.20 CHF zurück.\n\nDie Steuern setzen sich aus der Staatssteuer (3040.00 CHF), der Gemeindesteuer Bergmatt (2979.20 CHF) und der Direkten Bundessteuer (742.60 CHF) zusammen.\n\nWenn Sie mit der Berechnung nicht einverstanden sind, können Sie Einsprache erheben. Das ist ein schriftlicher Einwand gegen die Veranlagung. Die Frist dafür beginnt am Tag nach dem Erhalt des Briefes. Das Datum beruht auf der Annahme, dass Sie den Brief am 17.06.2026 erhalten haben.",
+    "naechste_schritte": [
+      "Prüfen Sie die Berechnung anhand der Aufstellung im Brief.",
+      "Wenn Sie einverstanden sind, müssen Sie nichts weiter tun; die Rückerstattung folgt.",
+      "Falls Sie Einwände haben, reichen Sie die Einsprache bis spätestens 17.07.2026 schriftlich ein.",
+      "Bei Fragen wenden Sie sich an das Kantonale Steueramt Hochwald."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\10_precetto_it_standard\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "                      Ufficio di esecuzione di Valverde\n    UE                Cantone di Valcastello\n                      Via Cantonale 8, 6999 Valverde\n                      Tel. 099 555 33 10 · esecuzioni@valverde.example\n                      Sportello: lu-ve 08.30-11.30 / 14.00-16.00\n\nSignora                                                                                            Esecuzione n.     26-088310\nGiulia Pedrazzi                                                                                    Emesso il         02.10.2026\n                                                                                                   Funzionario       D. Gianini\nVia alla Chiesa 6\n6999 Valverde\n\n\n\n                                                                                                                                  Valverde, 2 ottobre 2026\n\n\nPrecetto esecutivo\nEsecuzione ordinaria (art. 69 LEF). Sulla base della domanda d'esecuzione del creditore sotto indicato, Le viene\nnotificato il seguente precetto esecutivo:\n Creditore                                     Centro Fitness Vitalis Sagl, Via Lago 3, 6999 Valverde\n Rappresentante                                Incassi Ticinesi Associati SA, Casella postale 77, 6990 Castelvecchio\n Debitore                                      Pedrazzi Giulia, nato/a il 14.04.1999, Via alla Chiesa 6, 6999 Valverde\n\n\nCredito\n Voce                                                                                                                                                    CHF\n Importo del credito con interessi al 5 % dal 01.06.2026                                                                                             1'260.00\n Spese del presente precetto, incl. notifica (anticipate dal creditore)                                                                                 70.30\n Totale (senza interessi)                                                                                                                           1'330.30\n\nTitolo del credito o causa dell'obbligazione: Abbonamento annuale 2026, fattura del 01.02.2026; richiami del\n01.04.2026 e 01.05.2026.\nIl debitore è invitato a pagare al creditore, entro 20 giorni dalla notificazione, il credito indicato e le spese\nd'esecuzione. Il pagamento può essere effettuato presso l'Ufficio di esecuzione.\nSe il debitore intende contestare il debito, o una parte di esso, o il diritto di procedere in via esecutiva, deve\ndichiararlo all'Ufficio di esecuzione, verbalmente o per iscritto, entro 10 giorni dalla notificazione del presente\nprecetto (interporre opposizione). Se contesta solo una parte del credito, deve indicarne esattamente l'importo;\naltrimenti si considera contestato l'intero credito. L'opposizione non deve essere motivata.\nSe il debitore non paga né interpone opposizione, il creditore potrà chiedere la continuazione dell'esecuzione\ndecorsi 20 giorni dalla notificazione.\nFerie esecutive (art. 56 e 63 LEF): 7 giorni prima e 7 giorni dopo Pasqua e Natale, nonché dal 15 al 31 luglio. I termini continuano a decorrere; se un termine\nscade durante le ferie, è prorogato fino al terzo giorno feriale successivo alla loro fine.\n\n\n  Opposizione\n  [ ] Il debitore interpone opposizione contro l'intero credito.\n  [ ] Il debitore interpone opposizione per l'importo di CHF ______________.\n\n  Luogo, data: ______________________ Firma: ______________________\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                        Pagina 1\n\f  Attestazione di notifica\n  Notificato il: ______________ a:\n  [ ] debitore personalmente [ ] persona convivente [ ] dipendente\n\n  Firma dell'agente notificatore: ______________________\n\n\n\nUfficio di esecuzione di Valverde\n\n\nM. Lepori, ufficiale\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.   Pagina 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Ufficio di esecuzione di Valverde",
+    "briefdatum": "2026-10-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-088310"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 1330.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Importo del credito con interessi al 5 % dal 01.06.2026",
+        "betrag_chf": 1260.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Spese del presente precetto, incl. notifica",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Centro Fitness Vitalis Sagl",
+    "glaeubiger_vertreter": "Incassi Ticinesi Associati SA",
+    "forderungsgrund": "Abbonamento annuale 2026, fattura del 01.02.2026; richiami del 01.04.2026 e 01.05.2026",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-06-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale (senza interessi) 1'330.30",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Centro Fitness Vitalis Sagl",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "zins",
+        "textstelle": "Importo del credito con interessi al 5 % dal 01.06.2026",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-10-06",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-10-16",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-10-06",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [],
+      "erinnerung": "2026-10-11",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-10-26",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-10-06",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [],
+      "erinnerung": "2026-10-21",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Lei ha ricevuto un precetto esecutivo (Zahlungsbefehl) dell'Ufficio di esecuzione di Valverde, numero di pratica 26-088310. Il creditore è Centro Fitness Vitalis Sagl, rappresentato da Incassi Ticinesi Associati SA. Il motivo indicato è un abbonamento annuale 2026 (fattura del 01.02.2026) con due richiami (01.04.2026 e 01.05.2026).\n\nLei deve pagare in totale CHF 1'330.30. Questo importo è composto da CHF 1'260.00 di credito con interessi al 5 % dal 01.06.2026, più CHF 70.30 di spese di precetto e notifica.\n\nLa data di notifica indicata è 06.10.2026. Questa data è stata indicata da Lei: non è verificata.\n\nLei ha due possibilità:\n- pagare l'importo entro il termine;\n- fare opposizione (Rechtsvorschlag) entro il termine, se non è d'accordo con la richiesta. Non stiamo valutando se la richiesta sia giustificata.",
+    "naechste_schritte": [
+      "Entro il 16.10.2026 decida se fare opposizione (Rechtsvorschlag) presso l'Ufficio di esecuzione di Valverde.",
+      "Entro il 26.10.2026 paghi CHF 1'330.30 oppure si accordi con il creditore o con il suo rappresentante.",
+      "Conservi la busta e il precetto con il numero di pratica 26-088310 come prova della data di notifica.",
+      "Se non è sicuro di cosa fare, si rivolga a un consultorio legale o a un avvocato prima dei termini."
+    ],
+    "quellen": [
+      "SchKG Art. 69",
+      "SchKG Art. 74"
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

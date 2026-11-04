@@ -1,0 +1,98 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\27_mahnung_de_stufe1\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "    GB\n\n                                                  Herr\nGemeinde Bergmatt\n                                                  Reto Schneider\nGemeindekasse\nKirchweg 1, 8996 Bergmatt                         Alpenblick 5\nTel. 099 555 14 10 ·                              8996 Bergmatt\nkasse@bergmatt.example\n\n\nDebitoren-Nr.\n11.0932                                                                                                                         Bergmatt, 15. September 2026\n\nObjekt\nHundetaxe 2026                                    Zahlungserinnerung\nSachbearbeitung                                   Sehr geehrter Herr Schneider\nE. Kälin\n                                                  Bei der Durchsicht unserer Buchhaltung haben wir festgestellt, dass die folgende\n                                                  Rechnung noch offen ist. Vielleicht ist Ihnen die Zahlung entgangen.\n                                                   Rechnung                                                        Datum          Fällig            Betrag\n                                                   2026-0718 Hundetaxe 2026 (1 Hund)                               15.07.2026     31.08.2026     Fr. 120.00\n                                                   Total offener Betrag                                                                          Fr. 120.00\n\n                                                  Wir bitten Sie, den Betrag von Fr. 120.00 bis 30. September 2026 zu überweisen.\n\n                                                    Zahlungsangaben\n                                                    Zahlbar an: Gemeinde Bergmatt, Gemeindekasse, 8996 Bergmatt\n                                                    IBAN: CH00 0077 0000 1109 3200 0 (fiktiv)\n                                                    Referenz: 00 00000 00000 11093 22026 07180 (fiktiv)\n                                                    Betrag: Fr. 120.00\n\n                                                  Hat sich Ihre Zahlung mit diesem Schreiben gekreuzt, betrachten Sie es bitte als\n                                                  gegenstandslos.\n\n\n                                                  Freundliche Grüsse\n\n\n                                                  Gemeinde Bergmatt\n                                                  E. Kälin\n\n\n\n\n      Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                             Seite 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Bergmatt, Gemeindekasse",
+    "briefdatum": "2026-09-15",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "11.0932"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0718"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 11093 22026 07180"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 120.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Hundetaxe 2026 (1 Hund)",
+        "betrag_chf": 120.0,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": "2026-09-30",
+    "glaeubiger": "Gemeinde Bergmatt",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Hundetaxe 2026 (1 Hund)",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 1,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total offener Betrag Fr. 120.00",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "bis 30. September 2026 zu überweisen",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "mahnstufe",
+        "textstelle": "Zahlungserinnerung",
+        "konfidenz": 0.8
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-09-30",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-09-25",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Dies ist eine Mahnung der Gemeinde Bergmatt, Gemeindekasse, vom 15.09.2026. Die Gemeinde verlangt eine Zahlung von 120.00 CHF. Es geht um die Hundetaxe 2026 für einen Hund. Die Rechnung hat die Nummer 2026-0718. Ihre Debitorennummer ist 11.0932.\n\nBitte zahlen Sie den Betrag bis zum 30.09.2026. Das Datum steht so im Brief. Die Zahlungsreferenz steht ebenfalls auf dem Brief: 00 00000 00000 11093 22026 07180. Geben Sie sie bei der Zahlung an, damit das Geld richtig zugeordnet wird.\n\nWenn Sie schon bezahlt haben, können Sie diesen Brief ignorieren. Wenn Sie unsicher sind, ob die Rechnung stimmt, oder den Betrag nicht zahlen können, wenden Sie sich direkt an die Gemeindekasse Bergmatt. Dort können Sie Fragen klären und nach einer Lösung fragen.",
+    "naechste_schritte": [
+      "Prüfen Sie, ob die Hundetaxe 2026 über 120.00 CHF bereits bezahlt ist.",
+      "Zahlen Sie bis 30.09.2026 mit der Zahlungsreferenz 00 00000 00000 11093 22026 07180.",
+      "Kontaktieren Sie bei Fragen oder finanziellen Schwierigkeiten die Gemeindekasse Bergmatt vor dem 30.09.2026."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
