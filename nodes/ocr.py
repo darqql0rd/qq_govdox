@@ -1,5 +1,7 @@
 """OCR-Node (Owner: Nayan): Text aus PDF-Textebene oder Foto/Scan (docTR).
 
+Ist rohtext schon im State (main.py --variante pdf), wird er nur durchgereicht.
+
 Bewusste Entscheide:
 - docTR statt Tesseract (Alternative laut Arbeitsplan; Tesseract liess sich unter macOS
   nicht installieren). docTR hat keinen lang-Parameter wie Tesseract; das Standardmodell
@@ -118,7 +120,14 @@ def texterkennung(pfade: list[str]) -> dict:
 
 
 def ocr(state: BriefState) -> dict:
-    update = texterkennung(state["dokument_pfade"])
+    if state.get("rohtext"):
+        # Rohtext schon vorhanden (python main.py --variante pdf liefert text.txt) -> kein OCR
+        update = {"textquelle": state.get("textquelle", "pdf_text"), "rohtext": state["rohtext"],
+                  "seiten": state.get("seiten", len(state.get("dokument_pfade", [])) or 1),
+                  "text_lesbar": state.get("text_lesbar", True),
+                  "text_konfidenz": state.get("text_konfidenz")}
+    else:
+        update = texterkennung(state["dokument_pfade"])
     update["versuche"] = {"ocr": 1}  # Reducer zählt zusammen
     versuche = state.get("versuche", {}).get("ocr", 0) + 1
     if not update["text_lesbar"] and versuche >= MAX_VERSUCHE["ocr"]:
