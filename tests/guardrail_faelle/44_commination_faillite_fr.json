@@ -1,0 +1,86 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\44_commination_faillite_fr\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "     OP\n\n                                                       Menuiserie Vuilleumier Sàrl\nOffice des poursuites du\n                                                       à l'att. de la gérance\ndistrict de Clairvaux\n                                                       Rue de l'Atelier 3\nCanton du Haut-Lac\nPlace de l'Église 7, 1998                              1998 Clairvaux\nClairvaux\nTél. 099 555 27 30 ·\nop.clairvaux@hautlac.example\n                                                                                                                                    Clairvaux, le 4 novembre 2026\nPoursuite n°\n26-109932\n                                                       Commination de faillite\nCommandement notifié le\n                                                       Sur réquisition de continuer la poursuite présentée par le créancier désigné ci-après,\n02.09.2026\n                                                       la faillite vous est communiquée comme imminente (art. 159 ss LP).\n                                                         Créancier                                Bois du Jura SA, Route des Scieries 8, 1997 Combe-Verte\n                                                         Créance                                  CHF 9 870,00 avec intérêts à 5 % dès le 30.06.2026\n                                                         Frais de poursuite à ce                  CHF 83,30\n                                                         jour\n                                                         Frais de la commination                  CHF 50,00\n\n                                                       Le créancier pourra requérir la faillite auprès du tribunal au plus tôt 20 jours après la\n                                                       notification de la présente commination. Une opposition n'est plus possible.\n                                                       Une plainte à l'autorité de surveillance peut être déposée dans les 10 jours dès la\n                                                       notification si la commination viole la loi (art. 17 LP).\n\n\n                                                       Office des poursuites du district de Clairvaux\n\n\n                                                       F. Python, préposé\n\n\n\n\n       Document de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                            Page 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": "Konkursandrohung (Commination de faillite)",
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Office des poursuites du district de Clairvaux",
+    "briefdatum": "2026-11-04",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-109932"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 9943.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Créance",
+        "betrag_chf": 9870.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Frais de poursuite à ce jour",
+        "betrag_chf": 83.3,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Frais de la commination",
+        "betrag_chf": 50.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Bois du Jura SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-06-30"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "CHF 9 870,00 avec intérêts à 5 % dès le 30.06.2026; Frais de poursuite à ce jour CHF 83,30; Frais de la commination CHF 50,00",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "referenzen",
+        "textstelle": "Poursuite n° 26-109932",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Ce courrier vient très probablement de l'Office des poursuites du district de Clairvaux. Il s'agit sans doute d'une commination de faillite : c'est un avertissement avant une éventuelle procédure de faillite. Le créancier est Bois du Jura SA. Le numéro de poursuite est 26-109932. Le montant principal demandé est de 9943.30 CHF. Il se compose de la créance (9870.00 CHF), des frais de poursuite à ce jour (83.30 CHF) et des frais de la commination (50.00 CHF). Un intérêt de 5 % par an est aussi demandé depuis le 30.06.2026. Le courrier ne contient pas de délai clairement indiqué dans nos données. Nous ne pouvons donc pas vous dire de date limite. Nous ne pouvons pas non plus dire si la somme est juste. Ce document est un prototype de cours (FHNW) et non un service officiel.",
+    "naechste_schritte": [
+      "Lisez attentivement le courrier entier et cherchez une date limite de paiement.",
+      "Contactez l'Office des poursuites du district de Clairvaux pour demander quel délai s'applique et ce qu'il faut faire.",
+      "Si vous avez des doutes sur la créance, demandez conseil à un service juridique ou à un conseiller spécialisé."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

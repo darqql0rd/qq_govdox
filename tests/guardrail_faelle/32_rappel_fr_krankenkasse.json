@@ -1,0 +1,112 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\32_rappel_fr_krankenkasse\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "                      Helvaria Assurance-maladie SA\n                      Service encaissement\n                      Place de la Gare 1, 3999 Bernfeld\n                      Tél. 0800 000 001 · encaissement@helvaria.example\n\n\nMadame                                                                                           N° de débiteur                 4.302.661\nSophie Rochat                                                                                    Objet                          Primes LAMal\n                                                                                                 Gestionnaire                   Service encaissement\nChemin des Vignes 15\n1999 Valmont\n\n\n\n                                                                                                                                      Bernfeld, le 1er octobre 2026\n\n\n2e rappel - Sommation\nMadame,\nMalgré notre rappel du 2 septembre 2026, nous constatons que la facture ci-dessous demeure impayée à ce jour :\n Facture                                                                                       Date                          Échéance                    Montant\n P-2026-07 Prime assurance de base juillet 2026                                                15.06.2026                    01.07.2026                 Fr. 362.80\n P-2026-08 Prime assurance de base août 2026                                                   15.07.2026                    01.08.2026                 Fr. 362.80\n Frais de sommation                                                                                                                                      Fr. 30.00\n Total dû                                                                                                                                              Fr. 755.60\n\nNous vous prions de verser le montant de Fr. 755.60 au plus tard le 30 octobre 2026. À défaut de paiement dans\nce délai, nous engagerons une procédure de poursuite sans autre avis. Les frais qui en découleront seront à votre\ncharge.\nConformément à l'art. 64a LAMal, si les montants dus ne sont pas réglés dans ce délai, nous serons tenus\nd'introduire une poursuite.\nSi vous rencontrez des difficultés financières, nous vous invitons à prendre contact avec nous avant l'échéance afin\nd'examiner un arrangement de paiement.\n\n  Informations de paiement\n  Payable à : Helvaria Assurance-maladie SA, 3999 Bernfeld\n  IBAN : CH00 0900 0000 4302 6610 0 (fictif)\n  Référence : 00 00000 04302 66120 26070 00000 (fictive)\n  Montant : Fr. 755.60\n\nSi votre paiement a croisé le présent courrier, nous vous prions de ne pas en tenir compte.\n\n\nVeuillez agréer nos salutations distinguées.\n\n\nHelvaria Assurance-maladie SA\nService encaissement\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                                     Page 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA, Service encaissement",
+    "briefdatum": "2026-10-01",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "4.302.661"
+      },
+      {
+        "art": "rechnung",
+        "wert": "P-2026-07"
+      },
+      {
+        "art": "rechnung",
+        "wert": "P-2026-08"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 04302 66120 26070 00000"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 755.6,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "P-2026-07 Prime assurance de base juillet 2026",
+        "betrag_chf": 362.8,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "P-2026-08 Prime assurance de base août 2026",
+        "betrag_chf": 362.8,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Frais de sommation",
+        "betrag_chf": 30.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-10-30",
+    "glaeubiger": "Helvaria Assurance-maladie SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Prämien Grundversicherung LAMal (Juli und August 2026) inkl. Frais de sommation",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total dû Fr. 755.60",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "au plus tard le 30 octobre 2026",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "mahnstufe",
+        "textstelle": "2e rappel - Sommation",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-10-30",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-10-25",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Il s'agit d'un rappel de paiement (2e rappel) de la caisse-maladie Helvaria Assurance-maladie SA, daté du 01.10.2026. Il concerne les primes de l'assurance de base LAMal pour juillet 2026 (362.80 CHF) et août 2026 (362.80 CHF), ainsi que des frais de sommation (30.00 CHF). Le montant total à payer est de 755.60 CHF. Le délai de paiement indiqué dans la lettre est le 30.10.2026. Pour payer, utilisez le bulletin de versement avec la référence de paiement 00 00000 04302 66120 26070 00000 et le numéro de débiteur 4.302.661. Si vous avez des questions sur le montant, contactez directement l'assurance. Ce document a été généré par un prototype de la FHNW et n'est pas un service officiel.",
+    "naechste_schritte": [
+      "Vérifiez les montants des primes de juillet et août 2026 et les frais de sommation sur vos documents.",
+      "Effectuez le paiement de 755.60 CHF avec la référence de paiement indiquée au plus tard le 30.10.2026.",
+      "Si vous avez une question sur ce montant, contactez Helvaria Assurance-maladie SA avant la date limite."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

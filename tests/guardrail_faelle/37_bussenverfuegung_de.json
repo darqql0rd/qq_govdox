@@ -1,0 +1,79 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\37_bussenverfuegung_de\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "                  Statthalteramt des Bezirks Talwil\n                  Übertretungsstrafsachen\n   SA             Amtshausgasse 1, 8999 Talwil\n                  Tel. 099 555 11 00 · statthalteramt@talwil.example\n\n\n\nHerr                                                                            Geschäfts-Nr.              ST.2026.04412\nPascal Lüthi                                                                    Kontrollschild             HW 000 000 (fiktiv)\n\nBahnhofstrasse 40\n8997 Oberhalden\n\n\n\n                                                                                                                         Talwil, 7. Oktober 2026\n\n\nStrafbefehl (Bussenverfügung)\nIn der Strafsache gegen Sie wegen Verletzung der Verkehrsregeln wird verfügt:\n\nTatbestand                                     Überschreiten der zulässigen Höchstgeschwindigkeit innerorts um 17 km/h (nach\n                                               Abzug der Sicherheitsmarge), am 14.08.2026, 21.42 Uhr, Seestrasse, Talwil\nBusse                                          CHF 250.00\nGebühren und Auslagen                          CHF 150.00\nTotal                                          CHF 400.00\n\nDer Betrag ist innert 30 Tagen ab Rechtskraft zu bezahlen. Bei schuldhafter Nichtbezahlung tritt an die Stelle der\nBusse eine Ersatzfreiheitsstrafe von 3 Tagen.\n\n Rechtsmittelbelehrung\n Gegen diesen Strafbefehl kann innert 10 Tagen seit Zustellung beim Statthalteramt schriftlich Einsprache erhoben\n werden. Ohne gültige Einsprache wird der Strafbefehl zum rechtskräftigen Urteil.\n\n\n\nStatthalteramt des Bezirks Talwil\n\n\nlic. iur. H. Bachmann, Statthalter\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                      Seite 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": "Strafbefehl (Bussenverfügung) wegen Geschwindigkeitsübertretung",
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Statthalteramt des Bezirks Talwil",
+    "briefdatum": "2026-10-07",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "andere",
+        "wert": "ST.2026.04412"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 400.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Busse",
+        "betrag_chf": 250.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Gebühren und Auslagen",
+        "betrag_chf": 150.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Statthalteramt des Bezirks Talwil",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Überschreiten der zulässigen Höchstgeschwindigkeit innerorts um 17 km/h, Busse und Gebühren",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total CHF 400.00",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "forderungsgrund",
+        "textstelle": "Überschreiten der zulässigen Höchstgeschwindigkeit innerorts um 17 km/h",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Ihr Brief stammt vermutlich vom Statthalteramt des Bezirks Talwil. Er ist wahrscheinlich ein Strafbefehl, also eine Bussenverfügung wegen zu schnellem Fahren. Im Brief steht eine Busse über 250 CHF und Gebühren und Auslagen über 150 CHF. Insgesamt sollen Sie 400 CHF zahlen. Der Brief ist vom 07.10.2026 und trägt das Aktenzeichen ST.2026.04412. Im Brief steht keine Frist, die wir sicher erkennen konnten. Deshalb können wir Ihnen nicht sagen, bis wann Sie reagieren müssen. Wir können auch nicht beurteilen, ob die Busse berechtigt ist. Bitte prüfen Sie den Brief genau und fragen Sie beim Absender nach, was Sie tun müssen und bis wann.",
+    "naechste_schritte": [
+      "Lesen Sie den ganzen Brief genau durch und suchen Sie nach einer Frist oder einem Hinweis auf Zahlung.",
+      "Rufen Sie beim Statthalteramt des Bezirks Talwil an oder schreiben Sie dorthin, und nennen Sie das Aktenzeichen ST.2026.04412.",
+      "Fragen Sie nach, bis wann Sie reagieren müssen und welche Möglichkeiten Sie haben.",
+      "Bewahren Sie den Brief und alle Unterlagen gut auf."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

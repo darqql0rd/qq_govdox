@@ -1,0 +1,73 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\45_multa_disciplinare_it\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "                      Polizia comunale di Valverde\n    PC\n                      Ufficio contravvenzioni · Piazza Municipio 2, 6999 Valverde · Tel. 099 555 33 90 · polizia@valverde.example\n\n\n\n\n                                                                                                Signor\n                                                                                                Luca Bernasconi\n                                                                                                Via dei Gelsi 21\n                                                                                                6999 Valverde\n\n\n\n                                                                                                                     Valverde, 10 settembre 2026\n N. multa                                MD-2026-018833\n Targa                                   VC 000 000 (fittizia)\n\n\n\nMulta disciplinare\nIn base alla legge sulle multe disciplinari Le notifichiamo la seguente contravvenzione:\n\n Infrazione                                           Superamento della durata di parcheggio consentita fino a 2 ore\n Luogo, data                                          Piazza Lago, Valverde, 02.09.2026, 15.10\n Importo                                              CHF 40.00\n\nLa multa va pagata entro 30 giorni. In caso di mancato pagamento sarà avviata la procedura ordinaria, con spese\nsupplementari.\n\n\nPolizia comunale di Valverde\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                        Pagina 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.85,
+  "brieftyp_vermutung": "Ordnungsbusse (Parkbusse, Multa disciplinare) der Gemeindepolizei",
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Polizia comunale di Valverde",
+    "briefdatum": "2026-09-10",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "andere",
+        "wert": "MD-2026-018833"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 40.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Multa disciplinare",
+        "betrag_chf": 40.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Superamento della durata di parcheggio consentita fino a 2 ore",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Importo CHF 40.00",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "forderungsgrund",
+        "textstelle": "Superamento della durata di parcheggio consentita fino a 2 ore",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questo documento sembra essere una multa per parcheggio, emessa dalla Polizia comunale di Valverde. La lettera è datata 10.09.2026. Motivo indicato: superamento della durata di parcheggio consentita, che è di 2 ore. Importo da pagare: CHF 40.00. Numero di riferimento: MD-2026-018833. Non è stata indicata alcuna scadenza precisa nel documento che abbiamo potuto verificare. Non possiamo dire se la multa sia giustificata. Per questo è meglio contattare direttamente la Polizia comunale di Valverde, indicando il numero di riferimento, per chiarire il pagamento e le possibilità che hanno a disposizione. Questa spiegazione è un prototipo didattico della FHNW e non è un servizio ufficiale.",
+    "naechste_schritte": [
+      "Controlli il documento originale e il numero di riferimento MD-2026-018833.",
+      "Contatti la Polizia comunale di Valverde per chiedere la scadenza e le modalità di pagamento.",
+      "Chieda al Comune quali possibilità ci sono, se non è d'accordo con la multa."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

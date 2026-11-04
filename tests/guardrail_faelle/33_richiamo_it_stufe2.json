@@ -1,0 +1,112 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\33_richiamo_it_stufe2\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "                      Comune di Valverde\n    CV\n                      Servizio finanze · Piazza Municipio 1, 6999 Valverde · Tel. 099 555 33 00 · finanze@valverde.example\n\n\n\n\n                                                                                                Signora\n                                                                                                Giulia Pedrazzi\n                                                                                                Via alla Chiesa 6\n                                                                                                6999 Valverde\n\n\n\n                                                                                                                                  Valverde, 5 novembre 2026\n N. debitore                             61.2205\n Oggetto                                 Via alla Chiesa 6, mappale n. 389\n Funzionario                             S. Conti, tel. 099 555 33 08\n\n\n\nSecondo richiamo - Diffida di pagamento\nGentile Signora Pedrazzi,\nNonostante il nostro richiamo del 16 settembre 2026, constatiamo che la fattura sotto indicata risulta ancora\nscoperta:\n\n Fattura                                                                                 Data                        Scadenza                        CHF\n 2026-05529 Tassa base rifiuti 2026                                                      01.07.2026                  31.07.2026                    145.00\n 2026-05530 Tassa uso canalizzazioni 2026                                                01.07.2026                  31.07.2026                    236.70\n Spese di richiamo                                                                                                                                  20.00\n Totale dovuto                                                                                                                                     401.70\n\nLa invitiamo a versare l'importo di CHF 401.70 entro il 20 novembre 2026. In mancanza del pagamento entro tale\ntermine, avvieremo la procedura esecutiva senza ulteriore preavviso. Le spese che ne deriveranno saranno a Suo\ncarico.\nQualora si trovasse in difficoltà finanziarie, La preghiamo di contattarci prima della scadenza: valuteremo volentieri\nun piano di pagamento rateale.\n\n  Dati di pagamento\n  Pagabile a: Comune di Valverde, Servizio finanze, 6999 Valverde\n  IBAN: CH00 0900 0000 6122 0500 0 (fittizio)\n  Riferimento: 00 00000 00000 61220 52026 05529 (fittizio)\n  Importo: CHF 401.70\n\n\nSe il pagamento si fosse incrociato con la presente, La preghiamo di non tenerne conto.\n\n\nDistinti saluti\n\n\nComune di Valverde\nS. Conti\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                   Pagina 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Comune di Valverde, Servizio finanze",
+    "briefdatum": "2026-11-05",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "61.2205"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-05529"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-05530"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 61220 52026 05529"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 401.7,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Fattura 2026-05529 Tassa base rifiuti 2026",
+        "betrag_chf": 145.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Fattura 2026-05530 Tassa uso canalizzazioni 2026",
+        "betrag_chf": 236.7,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Spese di richiamo",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-20",
+    "glaeubiger": "Comune di Valverde",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Tassa base rifiuti 2026 und Tassa uso canalizzazioni 2026",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale dovuto 401.70",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "entro il 20 novembre 2026",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "mahnstufe",
+        "textstelle": "Secondo richiamo - Diffida di pagamento",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-20",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-11-15",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa è una sollecitazione di pagamento (secondo richiamo) del Comune di Valverde, Servizio finanze, datata 05.11.2026. Il Comune chiede il pagamento di CHF 401.70 per la tassa rifiuti 2026 e la tassa uso canalizzazioni 2026, più CHF 20.00 di spese di richiamo. Le fatture interessate sono la 2026-05529 e la 2026-05530. Per il pagamento trova la zahlungsreferenz 00 00000 00000 61220 52026 05529. Il termine indicato nella lettera è il 20.11.2026. Se non può pagare entro questa data, contatti il Comune per chiedere una soluzione. Questo testo è solo una spiegazione generale e non una consulenza legale.",
+    "naechste_schritte": [
+      "Controlli che le fatture 2026-05529 e 2026-05530 corrispondano ai suoi conti.",
+      "Effettui il pagamento di CHF 401.70 più CHF 20.00 entro il 20.11.2026, usando la zahlungsreferenz indicata.",
+      "Se ha domande o non può pagare, contatti il Servizio finanze del Comune di Valverde prima del 20.11.2026."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
