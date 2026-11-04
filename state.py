@@ -352,6 +352,7 @@ class GuardrailErgebnis(BaseModel):
     bestanden: bool
     verstoesse: list[Verstoss] = Field(default_factory=list)
     # ENTSCHEID: Springen wir bei "fail" gezielt zurück oder immer zu beiden?
+    # Vorschlag Melvin (04.11.2026): gezielt zurück; "beide" startet bei der Erklärung.
     zurueck_zu: Literal["erklaerung", "antwort", "beide"] | None = None
 
 
@@ -362,6 +363,7 @@ class GuardrailErgebnis(BaseModel):
 class Bestaetigung(BaseModel):
     bestaetigt: bool
     # ENTSCHEID: Darf der Nutzer Fristen/Entwurf korrigieren oder nur Ja/Nein?
+    # Vorschlag Melvin (04.11.2026): nur Ja/Nein; die Korrektur-Felder bleiben False.
     fristen_korrigiert: bool = False
     entwurf_angepasst: bool = False
 

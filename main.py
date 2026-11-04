@@ -7,6 +7,7 @@
 
 import sys
 from datetime import date
+from uuid import uuid4
 
 from dotenv import load_dotenv
 
@@ -58,12 +59,17 @@ def main(muster: list[str]):
         try:
             voll = aus_gold(fall, "pdf")
             start = {k: v for k, v in voll.items() if k in EINGABE}
+            start.pop("versuche", None)  # zählt der OCR-Node selbst, sonst doppelt
             # Platzhalter für den Node zustelldatum_erfragen: Steht kein Zustelldatum im Brief,
             # tun wir so, als hätte die Person es angegeben (wie aus_gold es vorsieht).
             if voll.get("zustelldatum_quelle") == "nutzer":
                 start["zustelldatum"] = voll["zustelldatum"]
                 start["zustelldatum_quelle"] = "nutzer"
-            ende = graph.invoke(start, config={"run_name": fall, "tags": ["durchstich"]})
+            # Eigene thread_id pro Lauf: Der Checkpointer würde sonst bei einem zweiten Lauf
+            # desselben Briefs (z. B. eval.py, 3 Läufe) den alten Thread fortsetzen.
+            config = {"configurable": {"thread_id": f"{fall}-{uuid4().hex[:8]}"},
+                      "run_name": fall, "tags": ["durchstich"]}
+            ende = graph.invoke(start, config=config)
         except Exception as fehler:  # ein kaputter Brief (oder Gold-File) soll nicht den ganzen Lauf stoppen
             print(f"  ✗ ABSTURZ: {type(fehler).__name__}: {str(fehler)[:300]}")
             continue
@@ -73,7 +79,7 @@ def main(muster: list[str]):
             for s in ende["erklaerung"].naechste_schritte:
                 print("  •", s)
         else:
-            print("  (keine Erklärung – Zustelldatum fehlt, Node zustelldatum_erfragen kommt noch)")
+            print(f"  (keine Erklärung – Abbruch: {ende.get('abbruch_grund')})")
         ok += vergleiche(fall, ende)
     print(f"\n{ok}/{len(faelle)} Fälle vollständig korrekt")
 
