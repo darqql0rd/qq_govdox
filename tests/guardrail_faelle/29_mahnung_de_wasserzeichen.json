@@ -1,0 +1,87 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\29_mahnung_de_wasserzeichen\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "                  Gemeinde Linthausen\n                  Finanzen und Steuern\n                  Lindenplatz 4, 8995 Linthausen\n                  Tel. 099 555 16 00 · finanzen@linthausen.example\n\n\n\nHerr                                                                            Debitoren-Nr.              52.1180\nStefan Frei                                                                     Objekt                     Anwohnerparkkarte Zone B\n                                                                                Sachbearbeitung            J. Wyss\nRebbergstrasse 9\n8995 Linthausen\n\n\n\n                                                                                                                    Linthausen, 20. August 2026\n\n\n2. Mahnung\nSehr geehrter Herr Frei\nTrotz unserer Zahlungserinnerung vom 16. Juli 2026 konnten wir für die nachstehende Rechnung bis heute keinen\n\n                                                                                                                            CH\n                                                                                                                          S\nZahlungseingang feststellen:\n\nRechnung\n2026-2205 Anwohnerparkkarte 2026, Zone B\n                                                                              Datum\n                                                                              04.05.2026\n                                                                                                       Fällig\n                                                                                                       03.06.2026\n                                                                                                                   T I                   CHF\n                                                                                                                                       360.00\nMahngebühr\nTotal offener Betrag\n\n                                                                                                  H E                                   20.00\n                                                                                                                                       380.00\n\n\n\n\n                                                                    N T\nWir bitten Sie, den offenen Betrag von CHF 380.00 bis spätestens 3. September 2026 zu überweisen. Erfolgt die\nZahlung nicht fristgerecht, sehen wir uns gezwungen, ohne weitere Ankündigung die Betreibung einzuleiten. Die\ndadurch entstehenden Kosten gehen zu Ihren Lasten.\n\n\n\n                                                                 S Y\nSollten Sie sich in finanziellen Schwierigkeiten befinden, nehmen Sie bitte vor Ablauf der Frist mit uns Kontakt auf.\nGerne prüfen wir eine Ratenzahlung.\n\n                                                          -\n                                        R\n Zahlungsangaben\n\n\n\n                                      E\n Zahlbar an: Gemeinde Linthausen, 8995 Linthausen\n IBAN: CH00 0900 0000 5211 8000 0 (fiktiv)\n\n Betrag: CHF 380.00\n\n                      S T\n Referenz: 00 00000 00000 52118 02026 22050 (fiktiv)\n\n\n\n\n   MU\nHat sich Ihre Zahlung mit diesem Schreiben gekreuzt, betrachten Sie es bitte als gegenstandslos.\n\n\nFreundliche Grüsse\n\n\nGemeinde Linthausen\nJ. Wyss\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                     Seite 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Linthausen, Finanzen und Steuern",
+    "briefdatum": "2026-08-20",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "52.1180"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-2205"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 52118 02026 22050"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 380.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Anwohnerparkkarte 2026, Zone B",
+        "betrag_chf": 360.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-09-03",
+    "glaeubiger": "Gemeinde Linthausen",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Rechnung 2026-2205 Anwohnerparkkarte 2026, Zone B",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2,
+    "belege": []
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-09-03",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-08-29",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben eine Mahnung der Gemeinde Linthausen erhalten, Finanzen und Steuern. Der Brief ist vom 20.08.2026. Es handelt sich um die zweite Mahnung (Mahnstufe 2). Die Gemeinde verlangt eine Zahlung für die Anwohnerparkkarte 2026, Zone B (Rechnung 2026-2205). Der Betrag ist 360.00 CHF für die Parkkarte und 20.00 CHF Mahngebühr. Zusammen sind es 380.00 CHF. Bitte zahlen Sie bis zum 03.09.2026. Für die Zahlung finden Sie im Brief die Zahlungsreferenz 00 00000 00000 52118 02026 22050 sowie die Debitorennummer 52.1180. Wenn Sie schon bezahlt haben, können Sie diesen Brief ignorieren. Wenn Sie Fragen haben, wenden Sie sich an die Gemeinde Linthausen. Hinweis: Dieser Text stammt von einem Prototyp aus einer Lehrveranstaltung der FHNW und ist kein offizieller Dienst. Er ersetzt keine Rechtsberatung.",
+    "naechste_schritte": [
+      "Prüfen Sie, ob Sie die Rechnung 2026-2205 schon bezahlt haben.",
+      "Zahlen Sie CHF 380.00 mit der Zahlungsreferenz 00 00000 00000 52118 02026 22050 bis 03.09.2026.",
+      "Rufen Sie bei der Gemeinde Linthausen an, wenn Sie Fragen zur Rechnung haben."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

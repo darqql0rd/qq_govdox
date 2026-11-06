@@ -1,0 +1,112 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\26_mahnung_de_stufe2\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "Gemeinde Talwil\nFinanzverwaltung\nDorfstrasse 10, 8999 Talwil\nTel. 099 555 12 00 · finanzen@talwil.example\n\n\n\n\n                                                                                    Frau\n                                                                                    Nicole Baumann\n                                                                                    Bachweg 2\n                                                                                    8999 Talwil\n\n\n\n                                                                                                                        Talwil, 23. Oktober 2026\nDebitoren-Nr.                     30.4471\nObjekt                            Bachweg 2, Kat.-Nr. 1187\nSachbearbeitung                   T. Graf, Tel. 099 555 12 06\n\n\n\n2. Mahnung\nSehr geehrte Frau Baumann\nTrotz unserer Zahlungserinnerung vom 15. September 2026 konnten wir für die nachstehende Rechnung bis heute\nkeinen Zahlungseingang feststellen:\n\nRechnung                                                                      Datum                    Fällig                             CHF\n2026-11452 Wasser- und Abwassergebühren 1. Halbjahr                           15.07.2026               14.08.2026                       398.85\n2026\n2026-11453 Grundgebühr Abfall 2026                                            15.07.2026               14.08.2026                        87.50\nMahngebühr 2. Mahnung                                                                                                                    20.00\nTotal offener Betrag                                                                                                                    506.35\n\nWir bitten Sie, den offenen Betrag von CHF 506.35 bis spätestens 6. November 2026 zu überweisen. Erfolgt die\nZahlung nicht fristgerecht, sehen wir uns gezwungen, ohne weitere Ankündigung die Betreibung einzuleiten. Die\ndadurch entstehenden Kosten gehen zu Ihren Lasten.\nSollten Sie sich in finanziellen Schwierigkeiten befinden, nehmen Sie bitte vor Ablauf der Frist mit uns Kontakt auf.\nGerne prüfen wir eine Ratenzahlung.\n\n Zahlungsangaben\n Zahlbar an: Gemeinde Talwil, Finanzverwaltung, 8999 Talwil\n IBAN: CH00 0900 0000 3044 7100 0 (fiktiv)\n Referenz: 00 00000 00000 30447 12026 11452 (fiktiv)\n Betrag: CHF 506.35\n\n\nHat sich Ihre Zahlung mit diesem Schreiben gekreuzt, betrachten Sie es bitte als gegenstandslos.\n\n\nFreundliche Grüsse\n\n\nGemeinde Talwil\nT. Graf\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                      Seite 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Talwil, Finanzverwaltung",
+    "briefdatum": "2026-10-23",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "30.4471"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-11452"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-11453"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 30447 12026 11452"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 506.35,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Wasser- und Abwassergebühren 1. Halbjahr 2026 (Rechnung 2026-11452)",
+        "betrag_chf": 398.85,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Grundgebühr Abfall 2026 (Rechnung 2026-11453)",
+        "betrag_chf": 87.5,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr 2. Mahnung",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-06",
+    "glaeubiger": "Gemeinde Talwil, Finanzverwaltung",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Wasser- und Abwassergebühren 1. Halbjahr 2026 und Grundgebühr Abfall 2026",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total offener Betrag 506.35",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "bis spätestens 6. November 2026",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "mahnstufe",
+        "textstelle": "2. Mahnung",
+        "konfidenz": 0.99
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-06",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-11-01",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben eine zweite Mahnung von der Gemeinde Talwil, Finanzverwaltung, vom 23.10.2026 erhalten. Die Gemeinde verlangt von Ihnen eine Zahlung von insgesamt CHF 506.35. Darin enthalten sind: Wasser- und Abwassergebühren für das 1. Halbjahr 2026 (CHF 398.85), die Grundgebühr Abfall 2026 (CHF 87.50) und eine Mahngebühr für die 2. Mahnung (CHF 20.00). Die Rechnungen tragen die Nummern 2026-11452 und 2026-11453. Die Zahlungsfrist endet am 06.11.2026. Für die Zahlung finden Sie im Brief die Zahlungsreferenz 00 00000 00000 30447 12026 11452. Ob die Forderung stimmt, können wir hier nicht beurteilen. Wenn Sie Fragen zu den Beträgen haben, wenden Sie sich am besten direkt an die Gemeinde.",
+    "naechste_schritte": [
+      "Prüfen Sie die Rechnungen 2026-11452 und 2026-11453 und vergleichen Sie die Beträge mit Ihren Unterlagen.",
+      "Zahlen Sie den Betrag von CHF 506.35 mit der Zahlungsreferenz 00 00000 00000 30447 12026 11452 bis spätestens 06.11.2026.",
+      "Falls Sie die Beträge nicht nachvollziehen können oder Zahlung nicht möglich ist, kontaktieren Sie die Gemeinde Talwil, Finanzverwaltung, vor Ablauf der Frist."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

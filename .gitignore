@@ -15,3 +15,6 @@ venv/
 
 # Ausgaben des Agenten
 ausgabe/
+
+# macOS
+.DS_Store

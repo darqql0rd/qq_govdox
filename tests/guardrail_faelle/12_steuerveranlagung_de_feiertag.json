@@ -1,0 +1,124 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\12_steuerveranlagung_de_feiertag\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "Kantonales Steueramt Hochwald\nAbteilung Natürliche Personen\nSteuerplatz 1, 8990 Hochwald-Stadt                                                                                               SH\nTel. 099 555 40 00 · natuerliche.personen@steueramt-hochwald.example\n\n\n\n\n                                                                                    Herr und Frau\n                                                                                    Daniel und Petra Meier\n                                                                                    Lindenstrasse 3\n                                                                                    8999 Talwil\n\n\n\n                                                                                                         Hochwald-Stadt, 23. November 2026\nSteuer-Nr.                        142.873.205\nSteuerperiode                     2025 (01.01.-31.12.2025)\nGemeinde                          Talwil (115 %)\nTarif                             Verheiratetentarif, 2 Kinder\nSachbearbeitung                   L. Schmid, Tel. 099 555 40 27\n\n\n\nVeranlagungsverfügung 2025\nStaats- und Gemeindesteuern sowie direkte Bundessteuer\nSehr geehrte Frau Meier, sehr geehrter Herr Meier,\ngestützt auf Ihre Steuererklärung vom 18.03.2026 und die eingereichten Unterlagen werden Sie für die\nSteuerperiode 2025 wie folgt veranlagt:\nEinkommen\n                                                                                                 Selbstdeklaration           Veranlagung\nEinkünfte aus unselbständiger Erwerbstätigkeit                                                                128'400             128'400\nWertschriftenertrag                                                                                              1'250              1'250\nBerufsauslagen                                                                                                   -6'800            -5'400\nVersicherungsprämien und Zinsen von Sparkapitalien                                                               -5'200            -5'200\nBeiträge Säule 3a                                                                                                -7'056            -7'056\nKinderabzug (2 Kinder)                                                                                         -18'000            -18'000\nSteuerbares Einkommen Staats- und Gemeindesteuern                                                               92'594             93'994\n\nBegründung der Abweichung: Die Fahrkosten wurden auf die Kosten des öffentlichen Verkehrs reduziert, da die\nBenützung des Privatfahrzeugs nicht notwendig ist (Zeitersparnis unter einer Stunde pro Tag).\nVermögen\nSteuerbares Vermögen                                                                                                              184'000\n\n\nSteuerberechnung\n                                                                                                                                    CHF\nEinfache Staatssteuer Einkommen                                                                                                  4'812.00\nEinfache Staatssteuer Vermögen                                                                                                     230.00\nStaatssteuer (100 %)                                                                                                             5'042.00\nGemeindesteuer Talwil (115 %)                                                                                                    5'798.30\nDirekte Bundessteuer (steuerbares Einkommen 98'494)                                                                              1'312.00\nTotal Steuern 2025                                                                                                              12'152.30\nAbzüglich geleistete Vorauszahlungen inkl. Vergütungszins                                                                      -10'046.20\nRestbetrag zu Ihren Lasten                                                                                                       2'106.10\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                Seite 1\n\fDie definitive Schlussrechnung folgt separat. Der Restbetrag ist innert 30 Tagen nach Zustellung der\nSchlussrechnung zu bezahlen; danach wird ein Verzugszins erhoben.\n\n Rechtsmittelbelehrung\n Gegen diese Verfügung kann innert 30 Tagen nach Zustellung beim Kantonalen Steueramt Hochwald schriftlich\n Einsprache erhoben werden. Die Einsprache muss einen Antrag und eine Begründung enthalten; Beweismittel sind\n beizulegen oder zu bezeichnen. Für die direkte Bundessteuer gilt dieselbe Frist (Art. 132 DBG). Die Frist kann nicht\n erstreckt werden.\n\n\n\nFreundliche Grüsse\n\n\nKantonales Steueramt Hochwald\nL. Schmid, Steuerkommissärin\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.   Seite 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Kantonales Steueramt Hochwald",
+    "briefdatum": "2026-11-23",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "142.873.205"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 2106.1,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Einfache Staatssteuer Einkommen",
+        "betrag_chf": 4812.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Einfache Staatssteuer Vermögen",
+        "betrag_chf": 230.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Staatssteuer (100 %)",
+        "betrag_chf": 5042.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Talwil (115 %)",
+        "betrag_chf": 5798.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 1312.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Total Steuern 2025",
+        "betrag_chf": 12152.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Abzüglich geleistete Vorauszahlungen inkl. Vergütungszins",
+        "betrag_chf": -10046.2,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Restbetrag zu Ihren Lasten",
+        "betrag_chf": 2106.1,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Kantonales Steueramt Hochwald",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 1400.0,
+    "abweichungsgrund": "Fahrkosten auf ÖV reduziert, da Benützung des Privatfahrzeugs nicht notwendig ist (Zeitersparnis unter einer Stunde pro Tag)",
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Restbetrag zu Ihren Lasten 2'106.10",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "abweichung_von_deklaration",
+        "textstelle": "Steuerbares Einkommen ... 92'594 ... 93'994",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-11-25",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-12-28",
+      "basis": "tag_nach_zustellung",
+      "ausgangsdatum": "2026-11-25",
+      "rechtsgrundlage": "DBG Art. 132",
+      "hinweise": [
+        "feiertag_verschoben"
+      ],
+      "erinnerung": "2026-12-23",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben vom Kantonalen Steueramt Hochwald einen Brief zur Steuerveranlagung für das Jahr 2025 erhalten. Der Brief ist vom 23.11.2026. Die Steuern betragen insgesamt 12'152.30 CHF. Davon wurden bereits 10'046.20 CHF bezahlt (Vorauszahlungen inklusive Vergütungszins). Es bleibt ein Restbetrag von 2'106.10 CHF, den Sie noch zahlen müssen.\n\nDer Brief enthält Posten wie die Staatssteuer, die Gemeindesteuer Talwil und die direkte Bundessteuer. Die Steuerbehörde weicht außerdem um 1'400 CHF von Ihrer Steuererklärung ab. Grund: Die Fahrkosten mit dem öffentlichen Verkehr wurden gekürzt, weil die Nutzung des Privatfahrzeugs nicht nötig ist.\n\nWenn Sie nicht einverstanden sind, können Sie Einsprache erheben. Das ist eine schriftliche Beschwerde gegen die Veranlagung. Die Frist dafür endet am 28.12.2026. Diese Frist beruht auf dem Zustelldatum 25.11.2026, das Sie angegeben haben. Das Datum wurde wegen eines Feiertags verschoben.",
+    "naechste_schritte": [
+      "Prüfen Sie die Berechnung und die Abweichung von 1'400 CHF mit Ihren Unterlagen.",
+      "Falls Sie nicht einverstanden sind, erheben Sie bis spätestens 28.12.2026 Einsprache.",
+      "Bei Fragen zum Restbetrag von 2'106.10 CHF wenden Sie sich an das Kantonale Steueramt Hochwald, Steuernummer 142.873.205."
+    ],
+    "quellen": [
+      "DBG Art. 132"
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

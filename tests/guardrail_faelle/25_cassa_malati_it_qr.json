@@ -1,0 +1,113 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\25_cassa_malati_it_qr\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "Alpinea Assicurazione malattia e infortuni SA\nServizio assicurati\nSeestrasse 80, 6997 Uferdorf\nTel. 099 555 90 92 · servizio.it@alpinea.example\n\n\n\n                                                                                                       Signora\n                                                                                                       Sara Bianchi\n                                                                                                       Via Monte Ceneri 3\n                                                                                                       6990 Castelvecchio\n\n\n\n                                                                                                                              Uferdorf, 9 ottobre 2026\nN. cliente                                77-640-517\nN. polizza                                AL-27-70213\nRegione di premio                         Cantone di Valcastello, regione 2\n\n\nLa Sua polizza assicurativa 2027\nGentile Signora Bianchi,\nLe inviamo la nuova polizza assicurativa valida dal 1° gennaio 2027. I premi dell'assicurazione obbligatoria delle\ncure medico-sanitarie (assicurazione di base LAMal) sono stati approvati dall'Ufficio federale della sanità\npubblica. L'evoluzione dei costi sanitari comporta anche nel 2027 un aumento dei premi.\nPanoramica delle Sue assicurazioni (premi mensili)\n Persona / prodotto                                                                                              Franchigia    2026             2027\n Bianchi Sara, 1997 - Assicurazione di base LAMal, Telmed, con                                                        2'500   389,70          417,90\n infortuni\n Bianchi Sara, 1997 - Complementare ambulante (LCA)                                                                       -    19,50           19,50\n Totale mensile                                                                                                               409,20          437,40\n\nEventuali sussidi per la riduzione dei premi saranno dedotti direttamente dalle fatture non appena l'ufficio\ncompetente ci comunicherà il Suo diritto.\nInformazioni importanti\nCambio di assicuratore: può disdire l'assicurazione di base per il 31 dicembre 2026 con un preavviso di un mese.\nLa disdetta deve pervenirci al più tardi il 30 novembre 2026.\nFranchigia e modello: il passaggio a una franchigia più alta va comunicato entro il 31 dicembre 2026. Per il\npassaggio a una franchigia più bassa o a un altro modello vale il termine del 30 novembre 2026.\nCopertura infortuni: chi lavora più di 8 ore settimanali presso un datore di lavoro è assicurato obbligatoriamente\ncontro gli infortuni tramite quest'ultimo.\nLe assicurazioni complementari (LCA) non sono interessate dall'adeguamento dei premi dell'assicurazione di base.\nIl premio di gennaio 2027 di CHF 437,40 è pagabile entro il 31 dicembre 2026; la sezione pagamento si trova\nall'ultima pagina.\nAllegati: polizza assicurativa 2027, condizioni generali (estratto)\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                              Pagina 1\n\fCordiali saluti\n\n\nAlpinea Assicurazione malattia e infortuni SA\nIl Suo team Alpinea\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.   Pagina 2\n\f                                  Alpinea Assicurazione malattia e infortuni SA\n                                  Servizio assicurati\n                                  Seestrasse 80, 6997 Uferdorf\n\n\n\n\n              Sezione pagamento relativa al nostro scritto del 09.10.2026\n\n              Per il pagamento utilizzi la sezione sottostante. (Modello sintetico: i dati del conto non sono validi.)\n\n\n\n\n              Documento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.\n\n\n\n\nRicevuta                                                          Sezione pagamento                                         Conto / Pagabile a\n                                                                                                                            CH00 8000 0000 7764 0517 0\nConto / Pagabile a                                                                                                          Alpinea Assicurazione malattia e infortuni SA\nCH00 8000 0000 7764 0517 0                                                                                                  Seestrasse 80\nAlpinea Assicurazione malattia e infortuni SA\nSeestrasse 80                                                                                                               6997 Uferdorf\n6997 Uferdorf                                                                                                               Riferimento\nRiferimento                                                                                                                 00 00000 77640 51727 01000 00000\n00 00000 77640 51727 01000 00000\n                                                                                                                            Informazioni supplementari\nPagabile da\nSara Bianchi\n                                                                                                                            Premio gennaio 2027\nVia Monte Ceneri 3                                                                                                          Polizza AL-27-70213\n6990 Castelvecchio\n                                                                                                                            Pagabile da\n                                                                                                                            Sara Bianchi\n                                                                                                                            Via Monte Ceneri 3\n                                                                                                                            6990 Castelvecchio\nValuta        Importo                                             Valuta          Importo\nCHF           437.40                                              CHF             437.40\n\n\n\n                                  Punto di accettazione\n\f",
+  "seiten": 3,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Alpinea Assicurazione malattia e infortuni SA",
+    "briefdatum": "2026-10-09",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "77-640-517"
+      },
+      {
+        "art": "police",
+        "wert": "AL-27-70213"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 77640 51727 01000 00000"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 437.4,
+    "zahlungsrichtung": "information",
+    "posten": [
+      {
+        "bezeichnung": "Assicurazione di base LAMal, Telmed, con infortuni (franchigia 2'500), 2027",
+        "betrag_chf": 417.9,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Complementare ambulante (LCA), 2027",
+        "betrag_chf": 19.5,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": "Alpinea Assicurazione malattia e infortuni SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale mensile 437,40",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "La disdetta deve pervenirci al più tardi il 30 novembre 2026.",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30",
+      "basis": "fixdatum",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": "KVG Art. 7 Abs. 2",
+      "hinweise": [
+        "eingang_massgebend"
+      ],
+      "erinnerung": "2026-11-25",
+      "bestaetigt": false
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31",
+      "basis": "fixdatum",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [
+        "eingang_massgebend"
+      ],
+      "erinnerung": "2026-12-26",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa è una lettera della sua cassa malati, Alpinea Assicurazione malattia e infortuni SA, datata 09.10.2026. Riguarda i premi per il 2027. La lettera è un'informazione: non è una richiesta di pagamento con scadenza immediata. Il premio mensile per l'assicurazione di base LAMal, con Telmed e infortuni (franchigia 2'500 franchi), è di 417.90 CHF. L'assicurazione complementare ambulatoriale (LCA) costa 19.50 CHF al mese. Il totale indicato è di 437.40 CHF al mese. Nella lettera c'è un termine: entro il 30.11.2026 può disdire l'assicurazione o cambiare franchigia entro il 31.12.2026. Per questi termini conta che la lettera arrivi alla cassa entro la data indicata. Per dubbi, contatti direttamente la cassa malati.",
+    "naechste_schritte": [
+      "Controlli il premio di 437.40 CHF al mese per il 2027 nella lettera.",
+      "Se vuole cambiare cassa, invii la disdetta in modo che arrivi alla cassa entro il 30.11.2026.",
+      "Se vuole cambiare la franchigia, la richiesta deve arrivare alla cassa entro il 31.12.2026.",
+      "Per domande contatti la sua cassa malati, indicando il numero cliente 77-640-517."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
