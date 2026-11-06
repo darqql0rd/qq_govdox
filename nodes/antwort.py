@@ -64,11 +64,14 @@ def antwort(state: BriefState) -> dict:
         print(f"  ! Antwort-Agent: {type(fehler).__name__}: {str(fehler)[:200]}")
         return {"antwortentwurf": None}
 
+    # ISO-Daten aus dem JSON ("2026-09-03") gehören nicht in einen Brief -> TT.MM.JJJJ
+    text = re.sub(r"\b(\d{4})-(\d{2})-(\d{2})\b", r"\3.\2.\1", entwurf.text)
     return {"antwortentwurf": entwurf.model_copy(update={
+        "text": text,
         "art": art,
         "sprache": sprache,
         "empfaenger": extraktion.absender or entwurf.empfaenger,
         "teilbetrag_chf": None,
         # Platzhalter aus dem Text lesen statt dem LLM zu glauben
-        "platzhalter": list(dict.fromkeys(re.findall(r"\[[^\[\]\n]{1,40}\]", entwurf.text))),
+        "platzhalter": list(dict.fromkeys(re.findall(r"\[[^\[\]\n]{1,40}\]", text))),
     })}
