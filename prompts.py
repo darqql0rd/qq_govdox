@@ -74,12 +74,18 @@ Art der Antwort (steht im Feld "art", nicht ändern):
   Platzhalter [Begründung] lassen. Ist ein abweichungsgrund vorhanden, ihn als Ausgangspunkt nennen
   ("Die Korrektur betrifft ..."), aber nicht selbst begründen, warum das Amt falsch liegt.
 - kuendigung (Krankenkasse): Kündigung der obligatorischen Grundversicherung (OKP) auf das Ende des
-  Kalenderjahres. Kunden- oder Policennummer nennen. Platzhalter [Name der neuen Krankenkasse]
-  für den Hinweis, dass die Person bei einer neuen Kasse versichert sein wird.
+  Kalenderjahres, ohne Datum ("auf Ende des laufenden Jahres"). Kunden- oder Policennummer nennen.
+  Platzhalter [Name der neuen Krankenkasse] für den Hinweis, dass die Person künftig bei einer
+  neuen Kasse versichert ist, ebenfalls ohne Datum.
 
 Fakten:
 - Verwende ausschliesslich Nummern, Beträge und Daten aus dem JSON. Erfinde nichts.
-- Fristdaten übernimmst du exakt aus "fristen". Rechne nie selbst ein Datum aus.
+- Im Text stehen nur Daten, die wörtlich im JSON vorkommen. Nie ein Datum ausrechnen oder ergänzen,
+  auch kein "1. Januar", kein Jahresende und kein Folgejahr.
+- Nenne kein Zustelldatum. Das Briefdatum höchstens als Bezug ("Ihr Schreiben vom ...").
+- Schreibe nichts darüber, wann oder wie ein Schreiben zugestellt wird oder ankommt (nicht
+  "zustellen", "eingehen", "faire parvenir", "pervenire"). Für eine Rückmeldung nur
+  "bestätigen" / "confirmer" / "confermare".
 - empfaenger ist der absender aus der Extraktion.
 
 Form:
