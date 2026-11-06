@@ -11,8 +11,14 @@ Der Checkpointer (MemorySaver) ist Pflicht, sonst funktioniert interrupt() nicht
     python graph.py      # Graph als Mermaid ausgeben
 """
 
+import inspect
+
 from langgraph.checkpoint.memory import MemorySaver
+from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
 from langgraph.graph import END, START, StateGraph
+from pydantic import BaseModel
+
+import state as state_modul
 
 from nodes.analyse import analyse
 from nodes.antwort import antwort
@@ -29,6 +35,13 @@ from state import MAX_VERSUCHE, BriefState
 BRAUCHT_ZUSTELLDATUM = {"zahlungsbefehl", "steuerveranlagung"}
 # Bei Mahnung und unbekannten Briefen gibt es keinen Antwortentwurf
 BRAUCHT_ANTWORT = {"zahlungsbefehl", "steuerveranlagung", "krankenkasse_praemie"}
+
+# Nach einem interrupt() lädt der Checkpointer den State neu. Unsere Pydantic-Modelle aus
+# state.py ausdrücklich erlauben, sonst warnt LangGraph (und blockiert sie in Zukunft).
+ERLAUBTE_MODELLE = [
+    ("state", name) for name, klasse in inspect.getmembers(state_modul, inspect.isclass)
+    if issubclass(klasse, BaseModel) and klasse.__module__ == "state"
+]
 
 
 def nach_ocr(state: BriefState) -> str:
@@ -97,7 +110,10 @@ def baue_graph(checkpointer=None):
                             ["bestaetigung", "erklaerung", "antwort", END])
     b.add_conditional_edges("bestaetigung", nach_bestaetigung, ["kalender", END])
     b.add_edge("kalender", END)
-    return b.compile(checkpointer=checkpointer or MemorySaver())
+    if checkpointer is None:
+        serde = JsonPlusSerializer(allowed_msgpack_modules=ERLAUBTE_MODELLE)
+        checkpointer = MemorySaver(serde=serde)
+    return b.compile(checkpointer=checkpointer)
 
 
 if __name__ == "__main__":

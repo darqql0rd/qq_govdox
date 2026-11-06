@@ -13,6 +13,8 @@ from dotenv import load_dotenv
 
 load_dotenv()  # vor den LangChain-Imports, damit LangSmith-Tracing aktiv ist
 
+from langgraph.types import Command             # noqa: E402
+
 from graph import baue_graph                    # noqa: E402
 from mocks import aus_gold, fall_ids, lade_gold  # noqa: E402
 from state import FELDER_PRO_NODE               # noqa: E402
@@ -50,6 +52,20 @@ def vergleiche(fall: str, ende: dict) -> bool:
     return all(checks.values())
 
 
+def automatische_antwort(fall: str, frage: dict):
+    """Beantwortet einen Interrupt so, wie es die Person im Testfall tun würde.
+
+    Zustelldatum: die Annahme aus gold.json, als Text wie von Hand eingetippt.
+    Bestätigung: immer Ja.
+    """
+    if frage["typ"] == "zustelldatum":
+        annahme = lade_gold(fall).get("zustelldatum_annahme")
+        return date.fromisoformat(annahme).strftime("%d.%m.%Y") if annahme else "weiss nicht"
+    if frage["typ"] == "bestaetigung":
+        return "ja"
+    raise ValueError(f"Unbekannter Interrupt: {frage}")
+
+
 def main(muster: list[str]):
     graph = baue_graph()
     faelle = [f for f in fall_ids() if any(f.startswith(m) or m in f for m in muster)]
@@ -60,16 +76,17 @@ def main(muster: list[str]):
             voll = aus_gold(fall, "pdf")
             start = {k: v for k, v in voll.items() if k in EINGABE}
             start.pop("versuche", None)  # zählt der OCR-Node selbst, sonst doppelt
-            # Platzhalter für den Node zustelldatum_erfragen: Steht kein Zustelldatum im Brief,
-            # tun wir so, als hätte die Person es angegeben (wie aus_gold es vorsieht).
-            if voll.get("zustelldatum_quelle") == "nutzer":
-                start["zustelldatum"] = voll["zustelldatum"]
-                start["zustelldatum_quelle"] = "nutzer"
             # Eigene thread_id pro Lauf: Der Checkpointer würde sonst bei einem zweiten Lauf
             # desselben Briefs (z. B. eval.py, 3 Läufe) den alten Thread fortsetzen.
             config = {"configurable": {"thread_id": f"{fall}-{uuid4().hex[:8]}"},
                       "run_name": fall, "tags": ["durchstich"]}
             ende = graph.invoke(start, config=config)
+            # Human-in-the-loop: Der Graph hält bei jeder Frage an und wird mit der Antwort fortgesetzt
+            while "__interrupt__" in ende:
+                frage = ende["__interrupt__"][0].value
+                antwort = automatische_antwort(fall, frage)
+                print(f"  ? {frage['frage']}  -> {antwort}")
+                ende = graph.invoke(Command(resume=antwort), config=config)
         except Exception as fehler:  # ein kaputter Brief (oder Gold-File) soll nicht den ganzen Lauf stoppen
             print(f"  ✗ ABSTURZ: {type(fehler).__name__}: {str(fehler)[:300]}")
             continue
@@ -80,6 +97,8 @@ def main(muster: list[str]):
                 print("  •", s)
         else:
             print(f"  (keine Erklärung – Abbruch: {ende.get('abbruch_grund')})")
+        if ende.get("antwortentwurf"):
+            print(f"  Antwortentwurf: {ende['antwortentwurf'].betreff}")
         ok += vergleiche(fall, ende)
     print(f"\n{ok}/{len(faelle)} Fälle vollständig korrekt")
 
