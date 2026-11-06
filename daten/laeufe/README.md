@@ -14,3 +14,11 @@ nicht im Git).
 | 2026-11-04_1139_ocr_auswertung.txt | pdf/scan/foto | – | nur OCR-Textqualität, Log von `ocr_auswertung.py` (Tabelle: `daten/ocr_auswertung.md`) |
 | 2026-11-06_0934_foto.txt | foto | 36/45 | 9-Node-Graph mit Guardrail |
 | 2026-11-06_0946_scan.txt | scan | 37/45 | 9-Node-Graph mit Guardrail; 03 und 04 mit `Connection error` zum Proxy abgebrochen |
+
+## Befunde
+
+- **Brief 44 (commination de faillite, FR), Betrag falsch** in den Läufen vom 06.11.
+  (foto 9'943.30, scan 9'993.30, erwartet 10'003.30): Die OCR liest alle Beträge richtig
+  (CHF 9 870,00 + 83,30 + 50,00), aber der Brief nennt kein Total, und das LLM zählt die
+  Posten falsch zusammen. Die Summenprüfung `posten_plausibel()` in `nodes/analyse.py`
+  läuft nur bei Zahlungsbefehl und Mahnung, deshalb fällt der Fehler nicht auf.
