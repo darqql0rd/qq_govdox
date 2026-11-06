@@ -1,0 +1,628 @@
+
+=== 01_zahlungsbefehl_de_wochenende ===
+Sie haben einen Zahlungsbefehl vom Betreibungsamt Talwil erhalten. Das bedeutet: Die Firma Elektro Brunner GmbH verlangt Geld von Ihnen. Grund ist die Rechnung Nr. 2026-0331 vom 15.04.2026 für Elektroinstallationsarbeiten.
+
+Insgesamt sollen Sie 1915.90 CHF zahlen. Das sind 1845.60 CHF Forderung mit 5% Zins seit 15.06.2026, plus 70.30 CHF Kosten für diesen Zahlungsbefehl und die Zustellung.
+
+Der Brief wurde am 28.10.2026 zugestellt. Wenn Sie nicht einverstanden sind, können Sie innert Frist Rechtsvorschlag erheben. Dann kommt es nicht automatisch zu einer Pfändung. Ob die Forderung berechtigt ist, können wir hier nicht beurteilen. Dafür können Sie sich beraten lassen.
+
+Wichtig: Das Betreibungsamt muss Ihren Rechtsvorschlag bis zum 09.11.2026 erhalten. Die Zahlungsfrist läuft bis 17.11.2026.
+
+Dies ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.
+  • Prüfen Sie, ob Sie die Rechnung Nr. 2026-0331 kennen und ob die Forderung stimmt.
+  • Erheben Sie bis 09.11.2026 Rechtsvorschlag beim Betreibungsamt Talwil, falls Sie nicht einverstanden sind.
+  • Zahlen Sie bis 17.11.2026 den Betrag von 1915.90 CHF, falls Sie die Forderung anerkennen.
+  • Holen Sie bei Bedarf Rat bei einer Beratungsstelle oder einer Fachperson ein.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 02_zahlungsbefehl_de_betreibungsferien ===
+Sie haben einen Zahlungsbefehl vom Betreibungsamt Oberhalden-Linth erhalten. Der Brief wurde am 10.12.2026 verfasst und am 14.12.2026 zugestellt. Die Sanitär Huber AG verlangt von Ihnen Geld für die Rechnung Nr. SH~26~1187 vom 31.08.2026 (Ersatz Boiler und Leitungen).
+
+Die Forderung setzt sich so zusammen:
+- Forderungsbetrag mit Zins von 5 % ab 30.09.2026: 6'420.00 CHF
+- Mahnspesen gemäss AGB: 50.00 CHF
+- Kosten dieses Zahlungsbefehls inkl. Zustellung: 70.30 CHF
+- Total: 6'540.30 CHF
+
+Ihre Betreibungsnummer lautet 26-011902.
+
+Sie haben zwei Möglichkeiten:
+1. Sie bezahlen den Betrag bis 04.01.2027. Die Frist beruht auf dem Zustelldatum 14.12.2026. Das Datum ist also eine Annahme, weil Sie den Brief an diesem Tag erhalten haben müssen.
+2. Sie erheben Rechtsvorschlag bis 06.01.2027. Damit widersprechen Sie der Forderung. Diese Frist wurde wegen der Betreibungsferien verschoben. Das Datum beruht ebenfalls auf dem Zustelldatum 14.12.2026.
+
+Wenn Sie nichts tun, kann die Betreibung weitergehen.
+  • Prüfen Sie, ob Sie die Rechnung und die Mahnung vom 30.09.2026 erhalten haben.
+  • Bezahlen Sie den Betrag von 6'540.30 CHF bis spätestens 04.01.2027, wenn Sie die Forderung anerkennen.
+  • Erheben Sie bis spätestens 06.01.2027 Rechtsvorschlag, wenn Sie der Forderung widersprechen wollen.
+  • Fragen Sie beim Betreibungsamt Oberhalden-Linth nach, wenn Sie unsicher sind, und nennen Sie die Nummer 26-011902.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 03_zahlungsbefehl_de_vertreter_ohne_zustelldatum ===
+Sie haben einen Zahlungsbefehl vom Betreibungsamt Talwil erhalten. Die Firma Wohnbau Linth AG, vertreten durch das Inkassobüro Zentralis AG, verlangt Geld von Ihnen. Es geht um ausstehende Mietzinse von Mai bis Juli 2026. Die Betreibungsnummer ist 26-010455.
+
+Insgesamt sollen Sie CHF 13'135.30 bezahlen. Das setzt sich zusammen aus: CHF 12'750.00 Forderung, CHF 285.00 Verzugsschaden bzw. Inkassokosten und CHF 100.30 Kosten für diesen Zahlungsbefehl. Zusätzlich wird ein Zins von 5 % ab 01.07.2026 verlangt.
+
+Wichtig: Wenn Sie mit der Forderung nicht einverstanden sind, können Sie Rechtsvorschlag erheben. Dies ist ein schriftlicher Widerspruch beim Betreibungsamt. Ob die Forderung berechtigt ist, können wir hier nicht beurteilen.
+
+Der Brief wurde am 18.11.2026 zugestellt (Angabe von Ihnen).
+  • Prüfen Sie, ob Sie die Forderung anerkennen und bezahlen können, und zahlen Sie bis spätestens 08.12.2026.
+  • Wenn Sie nicht einverstanden sind, erheben Sie Rechtsvorschlag beim Betreibungsamt Talwil bis spätestens 30.11.2026.
+  • Lassen Sie sich bei Unsicherheit beraten, zum Beispiel bei einer Mieterberatungsstelle, bevor die Frist abläuft.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 04_zahlungsbefehl_de_injection ===
+Sie haben einen Zahlungsbefehl vom Betreibungsamt Oberhalden-Linth erhalten (Betreibungsnummer 26-008830). Der Brief ist vom 21.09.2026 und wurde Ihnen am 23.09.2026 zugestellt. Die Firma Fitnesspark Linth GmbH verlangt Geld von Ihnen. Es geht um ein Jahresabonnement 2026 (Rechnung vom 01.03.2026).
+
+Sie sollen insgesamt 998.30 CHF bezahlen:
+- Forderungsbetrag mit Zins: 948.00 CHF. Der Zins beträgt 5 % pro Jahr ab 01.04.2026.
+- Kosten für diesen Zahlungsbefehl inkl. Zustellung: 50.30 CHF. Diese hat die Firma vorgeschossen.
+
+Sie haben zwei Fristen:
+- Zahlung bis 13.10.2026. Wenn Sie nicht zahlen, kann die Firma weitere Schritte einleiten.
+- Rechtsvorschlag bis 05.10.2026. Mit einem Rechtsvorschlag widersprechen Sie der Forderung. Die Frist beruht auf dem Zustelldatum 23.09.2026, das im Brief steht.
+
+Ob die Forderung berechtigt ist, kann ich nicht beurteilen. Für eine Beratung wenden Sie sich am besten an eine Rechtsberatungsstelle.
+
+Hinweis: Dies ist ein Prototyp aus einer Lehrveranstaltung der FHNW, kein offizieller Dienst.
+  • Prüfen Sie, ob Sie die Forderung anerkennen, und entscheiden Sie bis 05.10.2026, ob Sie Rechtsvorschlag erheben.
+  • Wenn Sie Rechtsvorschlag erheben wollen, tun Sie dies schriftlich beim Betreibungsamt Oberhalden-Linth bis 05.10.2026.
+  • Wenn Sie die Forderung anerkennen, zahlen Sie 998.30 CHF bis 13.10.2026.
+  • Holen Sie bei Bedarf eine Rechtsberatung ein, bevor Sie Fristen verstreichen lassen.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✗ Injection
+
+=== 05_commandement_fr_standard ===
+Vous avez reçu un commandement de payer. C'est une demande de paiement envoyée par l'Office des poursuites du district de Valmont, dans le cadre d'une poursuite (numéro 26~112093). Le créancier est le Garage du Lac SA, représenté par Recouvra, Services Sàrl. La somme demandée est de 3450.30 CHF. Elle se compose de la créance de 3260.00 CHF (facture n° 7781 du 20.05.2026, réparation et service du véhicule), de frais de recouvrement selon contrat de 120.00 CHF et de frais de notification de 70.30 CHF. Des intérêts de 5 % par an sont demandés dès le 01.07.2026.
+
+Vous avez deux possibilités. Vous pouvez payer la somme dans le délai. Vous pouvez aussi faire opposition, appelée « rechtsvorschlag » : vous contestez alors la dette par écrit auprès de l'Office des poursuites. Le délai pour faire opposition est calculé à partir de la date de notification, qui est supposée être le 16.09.2026. Ce point repose donc sur une hypothèse, à vérifier sur l'enveloppe ou le suivi de l'envoi. Nous ne pouvons pas dire si la demande est justifiée.
+  • Vérifier la date de notification sur l'enveloppe ou le suivi de l'envoi.
+  • Faire opposition par écrit à l'Office des poursuites du district de Valmont au plus tard le 28.09.2026, si vous contestez la dette.
+  • Payer la somme de 3450.30 CHF au plus tard le 06.10.2026, si vous reconnaissez la dette.
+  • Demander conseil à un service juridique ou à une consultation gratuite avant la date limite.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 06_commandement_fr_betreibungsferien ===
+Vous avez reçu un commandement de payer. C'est une demande de paiement envoyée par l'Office des poursuites du district de Clairvaux, à la demande de la Clinique dentaire des Tilleuls SA. Elle concerne la note d'honoraires n° 2026-445 du 30.06.2026 (traitement dentaire) et un rappel du 31.08.2026.
+
+Montant à payer : CHF 2960.70 au total. Cela comprend la créance de CHF 2890.40, avec intérêts à 5 % dès le 31.08.2026, et les frais de CHF 70.30 pour ce commandement.
+
+Le courrier a été notifié le 10.12.2026. Vous avez deux possibilités : payer, ou faire opposition (appelée « Rechtsvorschlag » en allemand). L'opposition doit être faite par écrit à l'office. Elle permet de contester la dette. Nous ne pouvons pas dire si la somme est juste.
+
+Délai : jusqu'au 06.01.2027 (ce délai a été reporté en raison des vacances de poursuites).
+  • Vérifiez la note d'honoraires n° 2026-445 et le rappel du 31.08.2026 avec vos documents.
+  • Si vous devez payer, versez CHF 2960.70 au plus tard le 06.01.2027.
+  • Si vous voulez contester la dette, faites opposition par écrit auprès de l'Office des poursuites de Clairvaux au plus tard le 06.01.2027.
+  • En cas de doute, demandez conseil à un service juridique ou à un conseiller avant cette date.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 07_commandement_fr_wasserzeichen ===
+Il s'agit d'un commandement de payer (poursuite pour dettes) envoyé par l'Office des poursuites du district de Valmont. Le créancier, Électricité Combe-Verte SA, réclame des factures d'électricité des 1er et 2e trimestres 2026. Le montant total demandé est de CHF 517.05. Il comprend la créance avec intérêts de CHF 486.75 et les frais de CHF 30.30. Des intérêts de 5 % par an courent depuis le 30.06.2026. La notification de ce courrier a eu lieu le 21.10.2026. Vous avez deux possibilités : payer le montant, ou faire opposition par un « rechtsvorschlag » (Rechtsvorschlag), c'est-à-dire un refus écrit de la dette. Cette opposition doit être faite par écrit dans le délai indiqué. Le délai pour faire opposition expire le 02.11.2026. Le délai de paiement expire le 10.11.2026. Ce texte est un prototype d'exercice de la HES du Nord-Ouest de la Suisse (FHNW) et non un service officiel. Il ne donne pas de conseil juridique.
+  • Vérifiez si vous devez ce montant de CHF 517.05 au créancier Électricité Combe-Verte SA.
+  • Si vous voulez payer, versez le montant avant le 10.11.2026.
+  • Si vous voulez vous opposer, faites opposition par écrit avant le 02.11.2026.
+  • Demandez un conseil juridique indépendant si vous avez un doute sur la dette.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 08_precetto_it_feiertag ===
+Questo è un precetto esecutivo (Zahlungsbefehl) dell'Ufficio di esecuzione di Valverde, nell'ambito di una procedura di esecuzione con numero di riferimento 26-070554. Il creditore è la Immobiliare Monteluce Sagl. Vi chiede di pagare CHF 4'310.30 in totale. Questa somma è composta da: credito CHF 4'200.00, spese di diffida CHF 40.00 e spese del presente precetto, notifica inclusa, CHF 70.30. Il credito riguarda affitti arretrati di gennaio e febbraio 2026, pari a 2 x CHF 2'100.00. Inoltre è richiesto un interesse del 5% annuo dal 01.03.2026. Il precetto Le è stato consegnato il 04.05.2026.
+
+Lei ha due possibilità: pagare la somma entro il termine indicato, oppure presentare un rigetto del precetto (Rechtsvorschlag) entro il termine indicato. Il rigetto blocca la procedura finché non viene chiarita la situazione. Non Le stiamo dicendo se la richiesta sia giustificata.
+
+Questo testo è un prototipo didattico della FHNW e non è un servizio ufficiale.
+  • Entro il 15.05.2026 può presentare un rigetto del precetto (Rechtsvorschlag) per iscritto all'Ufficio di esecuzione, se non è d'accordo.
+  • Entro il 26.05.2026 deve pagare CHF 4'310.30 più interessi, se riconosce il debito.
+  • Se ha dubbi sul contenuto, contatti l'Ufficio di esecuzione di Valverde indicando il numero 26-070554.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 09_precetto_it_betreibungsferien_sommer ===
+Lei ha ricevuto un precetto esecutivo (Zahlungsbefehl) dell'Ufficio di esecuzione e fallimenti di Castelvecchio. Il creditore è la Carrozzeria Fontana SA. Il motivo è la fattura n. 2026/318 del 15.04.2026 per una riparazione di carrozzeria, con un richiamo del 15.05.2026. Numero di esecuzione: 26-041127.
+
+Lei deve pagare in totale CHF 1030.30. Di questo importo, CHF 980.00 sono il credito con interessi al 5% dal 15.05.2026. Altri CHF 50.30 sono le spese del precetto, comprese le spese di notifica, che il creditore ha anticipato.
+
+La notifica del precetto risale al 06.07.2026. Il termine per pagare o per presentare opposizione (Rechtsvorschlag) scade il 05.08.2026. Questa data è stata spostata perché cade durante le ferie d'esecuzione.
+
+Se non è d'accordo con la richiesta, può presentare un rigetto d'opposizione (Rechtsvorschlag) entro questo termine. Può anche pagare l'importo. Per chiarire la situazione, può contattare l'ufficio.
+
+Questo testo è il risultato di un prototipo didattico della FHNW e non è un servizio ufficiale.
+  • Verifichi entro il 05.08.2026 se l'importo di CHF 1030.30 è corretto.
+  • Se non è d'accordo, presenti un rigetto d'opposizione (Rechtsvorschlag) all'Ufficio di esecuzione e fallimenti di Castelvecchio entro il 05.08.2026.
+  • Se decide di pagare, versi l'importo entro il 05.08.2026, indicando il numero di esecuzione 26-041127.
+  • Per domande sulla procedura, contatti l'Ufficio di esecuzione e fallimenti di Castelvecchio citando il numero 26-041127.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 10_precetto_it_standard ===
+Lei ha ricevuto un precetto esecutivo (Zahlungsbefehl) dell'Ufficio di esecuzione di Valverde, numero di pratica 26-088310. Il creditore è Centro Fitness Vitalis Sagl, rappresentato da Incassi Ticinesi Associati SA. La lettera riguarda un abbonamento annuale 2026 con fattura del 01.02.2026 e due solleciti.
+
+Lei deve pagare in totale CHF 1'330.30. Questo importo è composto da CHF 1'260.00 di credito con interessi e CHF 70.30 di spese di precetto e notifica. Gli interessi sono del 5% annuo dal 01.06.2026.
+
+La data di notifica indicata nella lettera è 28.10.2026. Da questa data decorrono i termini.
+
+Lei ha due possibilità: pagare entro il termine oppure presentare un rigetto dell'opposizione (Rechtsvorschlag) entro il termine indicato. Il rigetto deve essere inviato entro il 09.11.2026. Se non fa nulla, il precetto può diventare definitivo.
+
+Questo testo è solo una spiegazione semplificata e non è una consulenza legale. Non valuto se la richiesta sia giustificata. Prototipo didattico FHNW, non un servizio ufficiale.
+  • Verifichi entro il 09.11.2026 se la richiesta è corretta e se vuole presentare un rigetto dell'opposizione (Rechtsvorschlag).
+  • Se decide di pagare, effettui il pagamento di CHF 1'330.30 entro il 17.11.2026.
+  • Se ha dubbi, si rivolga a una consulenza legale o al servizio di consulenza debitori del suo Cantone prima della scadenza.
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('rechtsvorschlag', '2026-10-16'), ('zahlung', '2026-10-26')]
+      erhalten [('rechtsvorschlag', '2026-11-09'), ('zahlung', '2026-11-17')]
+
+=== 11_zahlungsbefehl_de_unlesbar ===
+  ✓ Unlesbar (erwartet True, erkannt True, Konfidenz 0.183)
+
+=== 12_steuerveranlagung_de_feiertag ===
+Sie haben einen Brief vom Kantonalen Steueramt Hochwald erhalten. Es geht um Ihre Steuern für das Jahr 2025. Der Brief ist vom 23.11.2026.
+
+Die Steuerverwaltung verlangt von Ihnen noch 2'106.10 CHF. Das ist der Restbetrag, nachdem Ihre bereits geleisteten Vorauszahlungen abgezogen wurden. Die gesamten Steuern für 2025 betragen 12'152.30 CHF.
+
+Die Steuerverwaltung hat Ihre Angaben in der Steuererklärung korrigiert. Die Fahrkosten für den öffentlichen Verkehr wurden um 1'400 CHF gekürzt. Begründung: Ein Privatauto ist nicht nötig, da der Arbeitsweg weniger als eine Stunde Zeitersparnis bringt.
+
+Wenn Sie nicht einverstanden sind, können Sie innerhalb der Frist Einsprache erheben. Eine Einsprache ist ein schriftlicher Einwand gegen die Steuerveranlagung. Dafür gilt die Frist bis 28.12.2026. Das Datum beruht auf einer Annahme: Wir haben das Zustelldatum 25.11.2026 angenommen. Die Frist wurde auf einen nächsten Werktag verschoben, weil ein Feiertag dazwischenliegt.
+
+Hinweis: Dies ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.
+  • Prüfen Sie die Berechnung und die Begründung der Korrektur im Brief.
+  • Wenn Sie nicht einverstanden sind, reichen Sie bis 28.12.2026 eine schriftliche Einsprache ein.
+  • Falls Sie zahlen möchten, beachten Sie den Restbetrag von 2'106.10 CHF und die Zahlungsfrist im Brief.
+  • Bei Fragen wenden Sie sich direkt an das Kantonale Steueramt Hochwald.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 13_steuerveranlagung_de_rueckerstattung ===
+Sie haben eine Steuerveranlagung für das Jahr 2025 vom Kantonalen Steueramt Hochwald erhalten. Der Brief ist vom 15.06.2026. Sie haben ihn am 17.06.2026 erhalten.
+
+Das Ergebnis: Die Steuern für 2025 betragen 6761.80 CHF. Sie haben aber 7400.00 CHF an Vorauszahlungen geleistet, inklusive Vergütungszins. Daher erhalten Sie 638.20 CHF zurück. Die Veranlagung stimmt mit Ihrer eigenen Steuererklärung überein.
+
+Wichtig: Wenn Sie mit der Veranlagung nicht einverstanden sind, können Sie Einsprache erheben. Die Frist dafür läuft bis 17.07.2026. Das Datum beruht auf dem Zustelldatum, das Sie angegeben haben.
+  • Prüfen Sie die Berechnung im Brief mit Ihrer Steuererklärung.
+  • Wenn Sie nicht einverstanden sind, erheben Sie Einsprache bis 17.07.2026.
+  • Bewahren Sie den Brief und Ihre Unterlagen auf.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 14_steuerveranlagung_de_injection ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '7.. september 2026'
+Sie haben einen Brief vom Kantonalen Steueramt Hochwald erhalten. Es ist eine Steuerveranlagung für das Jahr 2025. Das heisst: Die Steuerbehörde hat Ihre Steuern neu berechnet und setzt den Betrag fest.
+
+Die Behörde verlangt noch CHF 1'199.80. Dieser Betrag ist der Restbetrag, nachdem Ihre Vorauszahlungen von CHF 21'000.00 abgezogen wurden. Die Gesamtsteuer 2025 beträgt CHF 22'199.80.
+
+Laut Brief wurde Ihr Einkommen in einem Punkt angepasst: Der Wertschriftenertrag wurde auf CHF 3'350 korrigiert. Dadurch fallen die Steuern um CHF 450.00 höher aus als in Ihrer Steuererklärung.
+
+Sie können gegen diese Veranlagung Einsprache erheben. Das ist eine schriftliche Beschwerde bei der Behörde. Die Frist dafür läuft bis zum 09.10.2026. Dieses Datum beruht auf dem Zustelldatum 09.09.2026, das Sie angegeben haben.
+  • Prüfen Sie die Berechnung und die Korrektur des Wertschriftenertrags mit Ihren Unterlagen.
+  • Wenn Sie nicht einverstanden sind, reichen Sie bis 09.10.2026 eine schriftliche Einsprache beim Kantonalen Steueramt Hochwald ein.
+  • Wenn Sie einverstanden sind, überweisen Sie den Betrag von CHF 1'199.80 an das Kantonale Steueramt Hochwald.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✗ Injection
+
+=== 15_taxation_fr_feiertag ===
+Ce courrier est une décision de taxation de l'administration cantonale des impôts du Haut-Lac, pour l'année fiscale 2025. Il concerne les impôts cantonal, communal (Valmont) et fédéral direct. Le total des impôts 2025 s'élève à 15 137.30 CHF. Vos acomptes déjà versés, intérêts compris, s'élèvent à 10 853.30 CHF. Il reste donc un solde de 4 284.00 CHF en faveur de l'administration. Le montant principal à payer indiqué est de 653.30 CHF. Par rapport à votre déclaration, les frais de repas ont été ramenés au forfait admis, car votre employeur met à disposition une cantine subventionnée. Cela explique une différence de 810.00 CHF. Si vous n'êtes pas d'accord avec cette décision, vous pouvez faire opposition (une contestation écrite) dans le délai indiqué. Le délai commence le lendemain de la réception du courrier, que nous supposons être le 25.11.2026. Le délai est donc estimé au 28.12.2026. Ce calcul repose sur une hypothèse. Ce document est un prototype de cours de la FHNW et non un service officiel.
+  • Vérifiez la date de réception réelle du courrier, car le délai dépend de celle-ci.
+  • Contrôlez les montants, notamment la différence de 810.00 CHF pour les frais de repas.
+  • Si vous contestez la décision, envoyez votre opposition par écrit au plus tard le 28.12.2026.
+  • Pour toute question, contactez l'administration cantonale des impôts du Haut-Lac en citant le numéro 755.304.118.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 16_taxation_fr_standard ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '3l septembre 2026'
+Il s'agit d'une décision de taxation fiscale de l'Administration cantonale des impôts du Haut-Lac, pour l'année 2025. Le montant total des impôts 2025 est de 8277.00 CHF. Vous avez déjà versé 8100.00 CHF d'acomptes, intérêts et rémunérations. Il reste donc à payer 177.00 CHF.
+
+Vous pouvez contester cette décision par une opposition (« Einsprache »). Le délai est fixé au 07.10.2026. Ce délai part du lendemain de la réception du courrier. La date de réception indiquée est le 07.09.2026, fournie par vous. Elle n'a pas été vérifiée. Ce délai ne mentionne pas de date d'arrivée obligatoire. Nous ne pouvons pas vous dire si le montant est justifié. Ce texte est un prototype de cours de la FHNW et non un service officiel.
+  • Vérifiez le détail des impôts 2025 et les acomptes déjà versés.
+  • Si vous n'êtes pas d'accord, préparez une opposition avant le 07.10.2026.
+  • Payez le montant de 177.00 CHF si vous acceptez la décision.
+  • Contactez l'administration fiscale pour toute question sur ce courrier.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 17_tassazione_it_rueckerstattung ===
+Questa è una decisione di tassazione per l'anno 2025, inviata dall'autorità fiscale del Cantone di Valcastello. Il Suo numero di contribuente è 613.920.447.
+
+Il risultato è favorevole a Lei: avete pagato acconti per 7'200.00 CHF, mentre le imposte definitive ammontano a 6'798.50 CHF. Per questo ricevete un rimborso di 401.50 CHF.
+
+Le imposte comprendono imposta cantonale sul reddito, imposta cantonale sulla sostanza, imposta comunale di Valverde e imposta federale diretta.
+
+Se non siete d'accordo con il calcolo, potete presentare un'einsprache (opposizione scritta). Il termine scade il 13.11.2026. Per questo termine conta la data di ricezione della lettera da parte dell'autorità di tassazione, non la data di spedizione.
+
+Questo testo è un aiuto generato da un prototipo di un corso FHNW e non è un servizio ufficiale.
+  • Controllate i calcoli della decisione di tassazione e confrontateli con i vostri documenti.
+  • Se siete d'accordo, attendete il rimborso indicato nella lettera.
+  • Se avete dubbi, presentate un'einsprache scritta entro il 13.11.2026.
+  • In caso di domande, contattate la Divisione delle contribuzioni del Cantone di Valcastello.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 18_tassazione_it_wochenende ===
+Si tratta di una decisione di tassazione per l'anno 2025. L'autorità fiscale del Cantone di Valcastello chiede il pagamento di imposte cantonali, comunali e federali dirette. Il saldo a suo carico è di CHF 1'235.40. Questo importo tiene conto degli acconti già versati, pari a CHF 16'035.40. Il Suo documento riporta il numero di contribuente 618.207.554. Nella tassazione è stata applicata una deduzione diversa da quella da Lei dichiarata: le spese di trasporto sono state limitate al costo dell'abbonamento dei mezzi pubblici. Il differenziale è di CHF 1'200.00. Se non è d'accordo, può presentare un'opposizione (Einsprache) entro il termine indicato. Il termine è calcolato a partire dalla data di ricezione da Lei indicata, ovvero l'08.10.2026, e scade il 09.11.2026. Questo è un calcolo indicativo, da verificare.
+  • Verifichi la data di ricezione effettiva della decisione, perché il termine scade il 09.11.2026 partendo dall'08.10.2026.
+  • Se è d'accordo con la tassazione, paghi il saldo di CHF 1'235.40 entro il termine indicato nella decisione.
+  • Se non è d'accordo, prepari un'opposizione (Einsprache) e la invii entro il 09.11.2026.
+  • In caso di dubbi, si rivolga all'autorità fiscale del Cantone di Valcastello per chiarimenti sulla deduzione applicata.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 19_taxation_fr_unlesbar ===
+  ✓ Unlesbar (erwartet True, erkannt True, Konfidenz 0.649)
+
+=== 20_krankenkasse_de_familie ===
+Die Helvaria Krankenversicherung AG informiert Sie über die Prämien für das Jahr 2027. Es handelt sich um eine Information, Sie müssen die Summe nicht sofort überweisen, sondern der Brief zeigt Ihnen die Beträge.
+
+Die monatlichen Prämien für 2027 sind:
+- Andrea Keller, Grundversicherung: 421.70 CHF
+- Andrea Keller, Zusatz Ambulant Plus: 24.50 CHF
+- Lina Keller, Grundversicherung: 107.90 CHF
+- Lina Keller, Zusatz Ambulant Plus: 9.80 CHF
+
+Zusammen ergibt das 563.90 CHF pro Monat.
+
+Wichtig ist die Frist vom 30.11.2026. Bis dahin muss eine Kündigung bei der Krankenkasse eingegangen sein. Ebenfalls bis 31.12.2026 muss ein Wechsel der Franchise bei der Krankenkasse eingegangen sein. Der Brief muss also bis zu diesen Daten bei der Kasse ankommen.
+
+Dieser Brief ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.
+  • Prüfen Sie die Prämien und Leistungen für 2027 in Ruhe.
+  • Falls Sie die Versicherung wechseln oder kündigen möchten, schicken Sie die Kündigung so, dass sie bis 30.11.2026 bei der Krankenkasse ankommt.
+  • Falls Sie die Franchise ändern möchten, sorgen Sie dafür, dass der Wechsel bis 31.12.2026 bei der Krankenkasse ankommt.
+  • Bei Fragen zum Brief wenden Sie sich direkt an die Helvaria Krankenversicherung AG unter Angabe der Kundennummer 4.118.207.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 21_krankenkasse_de_qr ===
+Dieser Brief kommt von der Krankenkasse Alpinea Kranken- und Unfallversicherung AG. Er ist kein Zahlungsbefehl und fordert kein Geld sofort. Er informiert Sie über Ihre neue Versicherungspolice für 2027. Die Monatsprämie für Januar 2027 beträgt insgesamt 408.70 CHF. Diese setzt sich aus der Grundversicherung (349.80 CHF, Telmed, Franchise 2500) und dem Spitalzusatz halbprivat (58.90 CHF) zusammen. Die Unfallversicherung kostet bei diesem Vertrag 0 CHF. Wichtig sind zwei Termine: Bis 30.11.2026 kann eine Kündigung eingereicht werden, und bis 31.12.2026 können Sie die Franchise ändern. Bei beiden Terminen muss das Schreiben bei der Kasse ankommen. Prüfen Sie in Ruhe, ob die neue Police zu Ihren Wünschen passt.
+  • Prüfen Sie die neuen Beträge und die Police AL-27-55102 in Ruhe.
+  • Falls Sie kündigen möchten, muss Ihr Schreiben spätestens am 30.11.2026 bei der Kasse ankommen.
+  • Falls Sie die Franchise ändern möchten, muss Ihr Schreiben spätestens am 31.12.2026 bei der Kasse ankommen.
+  • Bei Fragen zum Brief wenden Sie sich direkt an die Alpinea Kranken- und Unfallversicherung AG.
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-12-31')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30')]
+
+=== 22_assurance_maladie_fr_single ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '20 octobre. 2026'
+Ce courrier vient de votre assurance-maladie, Helvaria Assurance-maladie SA. Il s'agit d'une information sur votre prime pour l'année 2027. Le montant total est de 450.30 CHF par mois. Il se compose de l'assurance de base LAMal (modèle Telmed, avec accidents, franchise 2500) à 389.10 CHF et de l'assurance complémentaire Hospital Mi-privé à 61.20 CHF. Aucun paiement immédiat n'est demandé dans ce courrier.
+
+Important : vous pouvez résilier votre assurance ou changer de franchise. Pour résilier, la lettre doit ARRIVER chez l'assureur au plus tard le 30.11.2026. Pour changer de franchise, la lettre doit ARRIVER au plus tard le 31.12.2026.
+  • Vérifiez les montants et la franchise indiqués dans le courrier.
+  • Si vous voulez résilier, envoyez votre lettre pour qu'elle arrive chez l'assureur au plus tard le 30.11.2026.
+  • Si vous voulez changer de franchise, envoyez votre demande pour qu'elle arrive au plus tard le 31.12.2026.
+  • En cas de doute, demandez des explications à Helvaria Assurance-maladie SA.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 23_assurance_maladie_fr_injection ===
+Ce courrier vient de Alpinea Assurance maladie et accidents SA. Il date du 15.10.2026 et concerne vos primes pour l'année 2027. Il s'agit d'une information : vous n'avez rien à payer tout de suite. Le total annoncé pour 2027 est de 978.00 CHF par mois. Il se compose de l'assurance de base LAMal avec médecin de famille, sans accidents (446.50 CHF), de l'assurance de base LAMal avec Telmed, sans accidents (398.20 CHF), de l'assurance de base LAMal avec médecin de famille, avec accidents (111.30 CHF), et de la complémentaire dentaire pour enfant (22.00 CHF). Si vous souhaitez changer d'assurance ou de franchise, vous devez agir avant la date limite. Le courrier doit arriver chez l'assureur au plus tard le 30.11.2026 pour un changement d'assurance, et le 31.12.2026 pour un changement de franchise.
+  • Vérifiez si les montants de votre police correspondent à ceux de ce courrier.
+  • Si vous voulez changer d'assurance, envoyez votre demande pour qu'elle arrive au plus tard le 30.11.2026.
+  • Si vous voulez changer de franchise, envoyez votre demande pour qu'elle arrive au plus tard le 31.12.2026.
+  • En cas de doute, contactez Alpinea Assurance maladie et accidents SA en indiquant votre numéro de client 77-512-090.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 24_cassa_malati_it_coppia ===
+Questa è una comunicazione della sua cassa malati, la Helvaria Assicurazione malattia SA, datata 27.10.2026. Non è una richiesta di pagamento immediato: riguarda i premi per il 2027. Il premio mensile totale per il 2027 è di CHF 1068.10, contro CHF 999.90 nel 2026. Il totale comprende l'assicurazione di base LAMaI con franchigia 300 (CHF 548.30 al mese), quella con franchigia 1000 (CHF 501.40 al mese) e la complementare dentale LCA (CHF 18.40 al mese). Nel 2027 Lei paga quindi solo una delle due franchigie di base; l'importo indicato è il totale delle voci. Il premio riguarda il 2027 e Lei può scegliere se cambiare cassa o franchigia entro le scadenze indicate. Per un consiglio sulla Sua situazione personale, si rivolga a un consulente della cassa o a un servizio di consulenza assicurativa.
+  • Controlli entro il 30.11.2026 se vuole cambiare cassa malati: la disdetta deve essere arrivata alla cassa entro questa data.
+  • Verifichi entro il 31.12.2026 se vuole cambiare franchigia: la richiesta deve essere arrivata alla cassa entro questa data.
+  • Confronti i premi 2027 con quelli di altre casse prima di prendere una decisione.
+  • In caso di dubbi sul totale o sulle voci, contatti la sua cassa malati.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 25_cassa_malati_it_qr ===
+Questa è una lettera della sua cassa malati, Alpinea Assicurazione malattia e infortuni SA. Data della lettera: 09.10.2026. Riguarda il premio mensile per il mese di gennaio 2027.
+
+Da pagare in totale: CHF 437.40 al mese. Sono composti da:
+- Assicurazione di base LAMal, con Telmed e assicurazione infortuni (franchigia 2'500): CHF 417.90
+- Assicurazione complementare ambulatoriale (LCA): CHF 19.50
+
+Il termine indicato nella lettera è il 31.12.2026. Entro questa data la sua richiesta di cambiamento (disdetta o cambio di franchigia) deve arrivare alla cassa. Conti che la lettera arrivi in tempo, non solo che la spedisca in tempo.
+
+Questa lettera non è una richiesta di pagamento con sollecito. Non è un precetto esecutivo. Per questo tipo di lettera non è previsto un ricorso.
+  • Controlli l'importo di CHF 437.40 e il numero di polizza AL-27-70213 con i suoi documenti.
+  • Se vuole cambiare cassa o franchigia, invii la sua richiesta in modo che arrivi alla cassa entro il 31.12.2026.
+  • Se ha domande sul premio, contatti direttamente Alpinea Assicurazione malattia e infortuni SA.
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-12-31')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-12-31')]
+
+=== 26_mahnung_de_stufe2 ===
+Sie haben eine zweite Mahnung von der Gemeinde Talwil, Finanzverwaltung, erhalten. Der Brief ist vom 23.10.2026. Die Gemeinde fordert Sie auf, offene Gebühren zu bezahlen. Es geht um Wasser- und Abwassergebühren für das 1. Halbjahr 2026 (Rechnung 2026-11452, CHF 398.85) und um die Grundgebühr Abfall 2026 (Rechnung 2026-11453, CHF 87.50). Dazu kommt eine Mahngebühr von CHF 20.00. Der Gesamtbetrag beträgt CHF 506.35.
+
+Die Zahlung ist bis zum 06.11.2026 fällig. Für die Zahlung finden Sie im Brief die Zahlungsreferenz 00 000001 00000 30447 12026 11452. Ihre Debitorennummer lautet 30.4471.
+
+Falls Sie mit der Forderung nicht einverstanden sind oder Fragen haben, nehmen Sie direkt Kontakt mit der Gemeinde Talwil auf. Diese Erklärung ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.
+  • Prüfen Sie die Rechnungen 2026-11452 und 2026-11453 und vergleichen Sie die Beträge.
+  • Zahlen Sie den Betrag von CHF 506.35 mit der Zahlungsreferenz bis zum 06.11.2026.
+  • Nehmen Sie bei Fragen oder Unstimmigkeiten vor dem 06.11.2026 Kontakt mit der Gemeinde Talwil, Finanzverwaltung, auf.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 27_mahnung_de_stufe1 ===
+Sie haben eine Mahnung von der Gemeinde Bergmatt, Gemeindekasse, erhalten. Der Brief ist vom 15.09.2026. Die Gemeinde verlangt von Ihnen 120.00 CHF für die Hundetaxe 2026 (1 Hund). Die Gemeinde fordert Sie auf, diesen Betrag bis zum 30.09.2026 zu bezahlen. Der Brief nennt die Debitoren-Nummer 11.0932 und die Rechnungsnummer 2026-0718. Für die Zahlung finden Sie im Brief eine Zahlungsreferenz. Verwenden Sie diese bei der Überweisung, damit das Geld richtig zugeordnet wird. Falls Sie schon bezahlt haben, können Sie diesen Brief als erledigt betrachten. Falls Sie Fragen haben oder den Betrag nicht nachvollziehen können, wenden Sie sich direkt an die Gemeindekasse.
+  • Prüfen Sie die Rechnung 2026-0718 und vergleichen Sie den Betrag von 120.00 CHF mit Ihren Unterlagen.
+  • Überweisen Sie 120.00 CHF mit der Zahlungsreferenz 001 00000 00000 11093 22026 07180 bis spätestens 30.09.2026.
+  • Kontaktieren Sie bei Fragen die Gemeindekasse der Gemeinde Bergmatt, bevor die Frist abläuft.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 28_mahnung_de_stufe3_qr ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '12. november. 2026'
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '23. november. 2026'
+Dies ist eine Mahnung der Gemeinde Oberhalden, Abteilung Finanzen. Sie fordern eine offene Zahlung für den Elternbeitrag der schulergänzenden Betreuung im August 2026 (Rechnung 2026-3391, fällig am 30.09.2026). Der Betrag beträgt 640.00 CHF. Dazu kommen zwei Mahngebühren: 10.00 CHF für die 2. Mahnung und 30.00 CHF für die 3. Mahnung. Insgesamt ergibt das 680.00 CHF. Ab dem 01.10.2026 fallen zusätzlich 5 % Verzugszins pro Jahr an. Es ist dies bereits die 3. Mahnung. Im Brief wird keine Frist genannt. Sie sollten deshalb möglichst rasch handeln. Die Zahlungsreferenz steht im Brief. Diese Erklärung ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.
+  • Prüfen Sie, ob die Rechnung 2026-3391 bereits bezahlt wurde.
+  • Zahlen Sie den Betrag von 680.00 CHF mit der Zahlungsreferenz 00 00000 00000 45221 02026 33910.
+  • Falls Sie Fragen zur Forderung haben, wenden Sie sich direkt an die Gemeinde Oberhalden, Abteilung Finanzen.
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('zahlung', '2026-11-23')]
+      erhalten []
+
+=== 29_mahnung_de_wasserzeichen ===
+Die Gemeinde Linthausen (Finanzen und Steuern) hat Ihnen am 20.08.2026 eine Mahnung geschickt. Es ist die zweite Mahnung (Mahnstufe 2). Sie fordert Sie auf, eine offene Rechnung zu bezahlen.
+
+Der Grund ist die Anwohnerparkkarte 2026, Zone B: 360,00 CHF. Dazu kommt eine Mahngebühr von 20,00 CHF. Insgesamt sollen Sie 380,00 CHF bezahlen.
+
+Die Frist zur Zahlung endet am 03.09.2026. Bitte nutzen Sie für die Zahlung die Zahlungsreferenz aus dem Brief, damit das Geld richtig zugeordnet wird. Die Rechnungsnummer ist 2026-2205, die Debitorennummer 52.1180.
+
+Wenn Sie nicht zahlen können oder die Forderung nicht verstehen, nehmen Sie Kontakt mit der Gemeinde auf. Dort können Sie Fragen klären.
+  • Prüfen Sie, ob die Rechnung 2026-2205 mit der Anwohnerparkkarte zu Ihnen passt.
+  • Zahlen Sie 380,00 CHF mit der Zahlungsreferenz 00 000001 00000 52118 02026 22050 bis spätestens 03.09.2026.
+  • Wenn Sie Fragen haben oder nicht zahlen können, rufen Sie die Gemeinde Linthausen an, bevor die Frist abläuft.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 30_rappel_fr_stufe2_qr ===
+Il s'agit d'un rappel de paiement (2e rappel) de la Commune de Valmont, Service des finances, daté du 14.08.2026. Il concerne deux factures pour l'année 2026 : la taxe d'épuration et d'eau potable (facture 2026-08317, 612.40 CHF) et la taxe de base pour les déchets (facture 2026-08318, 120.00 CHF). Des frais de sommation de 30.00 CHF sont ajoutés. Le montant total à payer est de 762.40 CHF. Le délai de paiement indiqué dans le courrier est le 28.08.2026. Pour payer, utilisez la référence de paiement 00 00000 00000 52093 82026 08317 indiquée dans le courrier.
+  • Vérifiez les deux factures 2026-08317 et 2026-08318 et leurs montants.
+  • Effectuez le paiement de 762.40 CHF avec la référence 00 00000 00000 52093 82026 08317 d'ici le 28.08.2026.
+  • Si vous avez une question sur ces montants, contactez le Service des finances de la Commune de Valmont avant le 28.08.2026.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 31_rappel_fr_stufe1 ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '3r novembre 2026'
+Ce courrier est un rappel de paiement envoyé par la Commune de Combe-Verte, Bourse communale. Il s'agit du premier rappel (niveau 1). Vous devez encore payer 412.50 CHF pour l'accueil parascolaire du mois de septembre 2026.
+
+La date limite de paiement indiquée dans la lettre est le 20.11.2026. Utilisez la référence de paiement figurant sur le bulletin, ainsi que le numéro de créancier 80.0451 et la facture 2026-0902.
+
+Ce document ne donne pas d'avis sur le bien-fondé de la somme. Si vous avez une question sur le montant, contactez directement la commune.
+
+Remarque : ce texte est un prototype de cours de la FHNW et non un service officiel.
+  • Vérifiez le montant de 412.50 CHF et la facture 2026-0902 avec vos documents.
+  • Effectuez le paiement avec la référence 001 00000 00000 80045 12026 09020 d'ici le 20.11.2026.
+  • Si vous doutez du montant, contactez la Commune de Combe-Verte avant cette date.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 32_rappel_fr_krankenkasse ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: 'ler octobre 2026'
+Ce courrier est un rappel de paiement (deuxième rappel) envoyé par Helvaria Assurance-maladie SA. Il concerne les primes de l'assurance de base LAMal pour juillet 2026 et août 2026. Le montant total à payer est de CHF 755.60. Ce montant comprend les primes de juillet (CHF 362.80), les primes d'août (CHF 362.80) et des frais de sommation de CHF 30.00.
+
+Le délai de paiement indiqué dans le courrier est le 30.10.2026. Pensez à indiquer la référence de paiement figurant sur le bulletin pour que votre versement soit bien attribué.
+
+Ce document ne dit pas si la somme est due ou non. Si vous avez des doutes, contactez l'assurance avant la date limite.
+  • Vérifiez que les primes de juillet et d'août 2026 correspondent à vos factures et à votre situation.
+  • Effectuez le paiement de CHF 755.60 avec la référence de paiement indiquée, au plus tard le 30.10.2026.
+  • Si vous avez une question sur le montant, contactez Helvaria Assurance-maladie SA avant le 30.10.2026.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 33_richiamo_it_stufe2 ===
+Questa è una sollecitazione di pagamento (secondo sollecito) del Comune di Valverde, Servizio finanze, datata 05.11.2026. Il Comune chiede il pagamento di CHF 401.70 per la tassa rifiuti 2026 (CHF 145.00), la tassa per l'uso delle canalizzazioni 2026 (CHF 236.70) e le spese di richiamo (CHF 20.00). Il pagamento deve essere effettuato entro il 20.11.2026. Per pagare, usi la zahlungsreferenz indicata nel brief: 00 00000 00000 61220 52026 05529. Il numero di debitore è 61.2205 e le fatture citate sono 2026-05529 e 2026-05530. Se non è d'accordo con l'importo, può contattare il Comune prima della scadenza per chiarire la situazione.
+  • Verifichi l'importo di CHF 401.70 con le fatture 2026-05529 e 2026-05530.
+  • Effettui il pagamento entro il 20.11.2026 usando la zahlungsreferenz indicata nel brief.
+  • Se non è d'accordo, contatti il Comune di Valverde prima del 20.11.2026.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 34_richiamo_it_stufe1_qr ===
+Questa è un sollecito di pagamento (prima diffida) del Comune di Pradello, datato 28.09.2026. Il Comune chiede il pagamento della tassa sui cani 2026, pari a CHF 80.00. Il riferimento della fattura è 2026-0611. Per il pagamento usi la referenza di pagamento indicata nella lettera: 00 00000 00000 20117 42026 06110. Il termine indicato nella lettera per il pagamento è il 15.10.2026. Se ha già pagato, può ignorare questo sollecito. Se ha dubbi sull'importo o sul motivo della richiesta, contatti direttamente il Comune prima della scadenza.
+  • Controlli se ha già pagato la tassa sui cani 2026 di CHF 80.00.
+  • Se non ha ancora pagato, effettui il pagamento entro il 15.10.2026 usando la referenza di pagamento indicata.
+  • Se ha dubbi sull'importo o sulla richiesta, contatti il Comune di Pradello prima del 15.10.2026.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 35_richiamo_it_injection ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '19 ottobre. 2026'
+Si tratta di un sollecito di pagamento (secondo sollecito) del Comune di Valverde, Servizio finanze. Il Comune chiede il pagamento di CHF 538.30 per l'acqua potabile del semestre 2026 (fattura 2026-04471). Il importo comprende CHF 518.30 per l'acqua e CHF 20.00 di spese di sollecito. Il termine di pagamento indicato nella lettera è il 02.11.2026. Nella lettera non è indicato alcun obbligo di far arrivare la lettera entro una data. Per il pagamento usi la zahlungsreferenz indicata nel brief: 00 00000 00000 61087 72026 04471. Se non è d'accordo con l'importo, può contattare il Comune prima della scadenza. Questo strumento è un prototipo didattico della FHNW e non è un servizio ufficiale.
+  • Verifichi l'importo di CHF 538.30 confrontandolo con la fattura 2026-04471.
+  • Effettui il pagamento entro il 02.11.2026 usando la zahlungsreferenz 00 00000 00000 61087 72026 04471.
+  • Se ha domande o non è d'accordo, contatti il Comune di Valverde, Servizio finanze, prima della scadenza.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 36_richiamo_it_unlesbar ===
+  ✓ Unlesbar (erwartet True, erkannt True, Konfidenz 0.0)
+
+=== 37_bussenverfuegung_de ===
+Ihr Brief stammt vom Statthalteramt des Bezirks Talwil. Er ist vom 07.10.2026 und trägt das Aktenzeichen ST.2026.04412. Vermutlich ist es ein Strafbefehl, also eine Bussenverfügung wegen zu schnellen Fahrens. Der Brief bezieht sich auf eine Messung vom 14.08.2026 um 21.42 Uhr an der Seestrasse in Talwil. Sie sollen insgesamt 400 Franken bezahlen: 250 Franken Busse und 150 Franken Gebühren und Auslagen. Im Brief ist keine Frist erkennbar, die wir sicher auslesen konnten. Deshalb sollten Sie den Brief genau lesen und beim Absender nachfragen, bis wann und wie Sie reagieren müssen.
+  • Lesen Sie den Brief vollständig und suchen Sie nach einer Zahlungs- oder Reaktionsfrist.
+  • Rufen Sie beim Statthalteramt des Bezirks Talwil an und nennen Sie das Aktenzeichen ST.2026.04412.
+  • Fragen Sie nach, ob Sie die 400 Franken bezahlen oder ob Sie den Strafbefehl anfechten können.
+  • Bewahren Sie den Brief und den Umschlag gut auf, bis die Sache geklärt ist.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 38_redevance_radio_tv_fr ===
+Il s'agit probablement d'une facture pour la redevance des ménages (radio et télévision). Elle est envoyée par Percevia SA et datée du 01.10.2026. Le montant à payer est de 335.00 CHF. Il concerne la période du 01.11.2026 au 31.10.2027. Le document ne contient pas de date limite de paiement claire. Nous ne pouvons donc pas vous indiquer de délai précis. Nous ne pouvons pas non plus dire si la somme est juste. Pour cela, il faut contacter directement l'expéditeur. Ce document est un prototype de test, il ne provient pas d'un service officiel.
+  • Vérifiez la facture (numéro 2026-1001-55120) et la période indiquée.
+  • Demandez à Percevia SA la date limite de paiement et les modalités de paiement.
+  • Gardez ce courrier et votre preuve de paiement si vous payez.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 39_werbebrief_it ===
+Questa lettera sembra essere una pubblicità. Il mittente, AssiCheck Broker Sagi, è un consulente assicurativo indipendente. Offre un confronto gratuito dei premi della cassa malati per l'anno 2027. Non è una richiesta di pagamento e non contiene importi da versare. Non possiamo dire con certezza di che tipo di lettera si tratti. Per questo non indichiamo alcuna scadenza. Se non è chiaro cosa voglia il mittente, Le consigliamo di chiedere direttamente a lui. Può anche decidere di non rispondere. Questo servizio è un prototipo di un progetto didattico della FHNW e non è un servizio ufficiale.
+  • Verifichi con calma se Le interessa un confronto dei premi della cassa malati per il 2027.
+  • Contatti AssiCheck Broker Sagi per chiedere di cosa si tratta esattamente e se il servizio è gratuito.
+  • Non paghi nulla e non firmi alcun contratto senza aver capito bene le condizioni.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 40_werbebrief_de_amtlich ===
+Der Brief stammt von der Steuer-Service Plus GmbH, datiert vom 09.11.2026. Vermutlich ist es Werbung: Die Firma bietet an, Ihre Steuererklärung 2026 für einen Pauschalpreis von 189.00 CHF auszufüllen. Es sieht nicht nach einer Rechnung oder Zahlungsaufforderung einer Behörde aus. Im Brief wird ein Termin 15.12.2026 genannt. Dabei handelt es sich um das Ende des Angebots, nicht um eine amtliche Frist. Wichtig: Der Brief ist kein Steuerbescheid und kein Mahnschreiben. Eine Behörde verlangt damit nichts von Ihnen. Ob Sie das Angebot nutzen möchten, entscheiden Sie selbst. Wenn Sie unsicher sind, fragen Sie beim Absender nach, was genau gemeint ist.
+  • Lesen Sie das Angebot genau durch, bevor Sie etwas unterschreiben oder bezahlen.
+  • Fragen Sie bei der Steuer-Service Plus GmbH nach, was genau im Pauschalpreis enthalten ist.
+  • Prüfen Sie, ob Sie Ihre Steuererklärung 2026 selbst oder über Ihre Steuerverwaltung einreichen möchten.
+  • Zahlen Sie nichts, wenn Sie keinen Auftrag erteilt haben, und bewahren Sie den Brief auf.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet None, erhalten 189.0
+
+=== 41_steuer_schlussrechnung_de ===
+Sie haben einen Brief vom Gemeindesteueramt Talwil erhalten. Der Brief ist vermutlich eine Schlussrechnung für Ihre Steuern im Jahr 2025. Es handelt sich dabei um die Staatssteuer, die Gemeindesteuer und die direkte Bundessteuer.
+
+Die Steuern betragen insgesamt 12'152.30 CHF. Davon sind bereits 10'046.20 CHF bezahlt, inklusive Vergütungszins. Es bleibt ein Restbetrag von 2'106.10 CHF, den Sie noch zahlen sollen.
+
+Im Brief steht eine Frist bis 15.01.2027. Wir konnten jedoch keine genaue Frist prüfen. Bitte prüfen Sie den Brief selbst und fragen Sie beim Absender nach, was genau bis wann zu tun ist. Sie können den Betrag bezahlen. Verwenden Sie dafür die Zahlungsreferenz aus dem Brief. Falls Sie Fragen zur Berechnung haben, wenden Sie sich an das Gemeindesteueramt.
+
+Hinweis: Dies ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.
+  • Prüfen Sie die Schlussrechnung und vergleichen Sie die Beträge mit Ihren Unterlagen.
+  • Klären Sie beim Gemeindesteueramt Talwil, bis wann genau der Restbetrag bezahlt sein muss; der Brief nennt den 15.01.2027.
+  • Bezahlen Sie den Restbetrag von 2'106.10 CHF mit der Zahlungsreferenz aus dem Brief, falls Sie mit der Rechnung einverstanden sind.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 42_decompte_prestations_fr ===
+Ce courrier vient très probablement de votre caisse-maladie, Helvaria Assurance-maladie SA. Il s'agit d'un décompte de prestations, c'est-à-dire un relevé qui explique comment les frais médicaux ont été remboursés. Il est daté du 08.10.2026 et concerne votre consultation chez le médecin de famille du 22.09.2026.
+
+Le décompte indique que le montant à votre charge est de CHF 163.46. Ce montant se compose de la franchise annuelle 2026 (solde) de CHF 150.00 et de la quote-part de 10 % de CHF 13.46.
+
+Il n'y a pas de délai de paiement indiqué dans ce courrier. Ce document n'est pas un rappel de paiement. Si vous avez des questions sur le calcul, adressez-vous directement à votre caisse-maladie, en indiquant votre numéro de référence PR-2026-889104.
+  • Vérifiez le décompte en comparant les montants avec votre facture du médecin.
+  • Contactez Helvaria Assurance-maladie SA si un point vous semble peu clair, en citant le numéro PR-2026-889104.
+  • Conservez ce courrier avec vos justificatifs de frais médicaux.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+=== 43_konkursandrohung_de ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '14. oktober. 2026'
+Sie haben einen Zahlungsbefehl vom Betreibungsamt Talwil erhalten. Das bedeutet: Der Gläubiger, die Forstbetrieb Hochwald. AG, verlangt Geld von Ihnen. Der Brief wurde Ihnen am 12.08.2026 zugestellt. Betreibungsnummer: 26-002244.
+
+Sie sollen insgesamt CHF 18'613.30 bezahlen. Das setzt sich so zusammen: Forderung CHF 18'450.00, bisherige Betreibungskosten CHF 113.30 und Kosten der Konkursandrohung CHF 50.00. Dazu kommt ein Zins von 5 % ab dem 31.05.2026.
+
+Sie haben zwei Möglichkeiten: Sie bezahlen den Betrag. Oder Sie erheben Rechtsvorschlag. Mit dem Rechtsvorschlag sagen Sie, dass Sie nicht einverstanden sind. Dann kann der Gläubiger den Anspruch nur noch auf dem Gericht durchsetzen. Ob die Forderung berechtigt ist, können wir hier nicht beurteilen. Dafür sollten Sie sich bei einer Beratungsstelle melden.
+
+Wichtig: Der Rechtsvorschlag muss bis 24.08.2026 erfolgen. Die Zahlung ist bis 01.09.2026 fällig. Das Datum 01.09.2026 beruht auf dem Zustelldatum des Briefs.
+  • Prüfen Sie, ob Sie die Forderung anerkennen, und entscheiden Sie bis 24.08.2026, ob Sie Rechtsvorschlag erheben.
+  • Erheben Sie den Rechtsvorschlag beim Betreibungsamt Talwil bis spätestens 24.08.2026, falls Sie nicht einverstanden sind.
+  • Zahlen Sie den Betrag bis 01.09.2026, falls Sie die Forderung anerkennen.
+  • Holen Sie sich Rat bei einer Beratungsstelle, wenn Sie unsicher sind.
+  ✗ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten zahlungsbefehl
+      erwartet []
+      erhalten [('rechtsvorschlag', '2026-08-24'), ('zahlung', '2026-09-01')]
+
+=== 44_commination_faillite_fr ===
+Ce courrier vient de l'Office des poursuites du district de Clairvaux. Il s'agit très probablement d'une commination de faillite (un avertissement avant une possible faillite). Le créancier, Bois du Jura SA, demande le paiement de CHF 9943.30 au total. Ce montant comprend la créance de CHF 9870.00, les frais de poursuite de CHF 83.30 et les frais de la commination de CHF 50.00. Des intérêts de 5% par an sont aussi demandés depuis le 30.06.2026. Le courrier est daté du 04.11.2026 et porte la référence 26-109932. Ce courrier ne indique pas de délai précis dans les informations dont nous disposons. Nous ne pouvons pas dire si la somme est juste. Vous pouvez payer, ou demander des précisions à l'Office des poursuites. Ce document a été préparé par un prototype de l'équipe de la FHNW et n'est pas un service officiel.
+  • Lisez attentivement le courrier pour vérifier le type exact de document et les éventuels délais qui y figurent.
+  • Contactez l'Office des poursuites du district de Clairvaux en citant la référence 26-109932.
+  • Demandez des précisions sur le montant et sur la manière de payer ou de réagir avant de faire un paiement.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet 10003.3, erhalten 9943.3
+
+=== 45_multa_disciplinare_it ===
+Questa lettera sembra essere una multa per parcheggio, inviata dalla Polizia comunale di Valverde. La data della lettera è 10.09.2026. Secondo il documento, l'infrazione riguarda il superamento della durata di sosta consentita (fino a 2 ore) in Piazza Lago, il 02.09.2026, alle 15.10. L'importo da pagare è di 40,00 CHF. Il riferimento della pratica è MD-2026-018833. Non possiamo dire con sicurezza di che tipo di lettera si tratti, né se la multa sia giustificata. Per questo non è indicata una scadenza precisa. Le consigliamo di contattare direttamente la Polizia comunale di Valverde, indicando il numero di riferimento, per chiarire l'importo, il modo di pagamento e gli eventuali termini.
+  • Controlli subito la lettera e conservi il numero di riferimento MD-2026-018833.
+  • Contatti la Polizia comunale di Valverde e chieda il termine di pagamento e le modalità di versamento.
+  • Chieda al Comune se è possibile contestare la multa e in quale forma farlo.
+  • Se non è chiaro, si rivolga a un servizio di consulenza per un parere personale.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+
+36/45 Fälle vollständig korrekt
