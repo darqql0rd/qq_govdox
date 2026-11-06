@@ -1,0 +1,113 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\30_rappel_fr_stufe2_qr\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "Commune de Valmont\nService des finances\nPlace de l'Hôtel-de-Ville 1, 1999 Valmont                                                                                                  CV\nTél. 099 555 21 40 · finances@valmont.example\n\n\n\n\n                                                                                        Monsieur\n                                                                                        Pierre Dubois\n                                                                                        Route du Moulin 11\n                                                                                        1999 Valmont\n\n\n\n                                                                                                                             Valmont, le 14 août 2026\nN° de débiteur                      52.0938\nObjet                               Route du Moulin 11, parcelle n° 642\nGestionnaire                        N. Bovet, tél. 099 555 21 44\n\n\n\n2e rappel - Sommation\nMonsieur,\nMalgré notre rappel du 15 juillet 2026, nous constatons que la facture ci-dessous demeure impayée à ce jour :\n\n Facture                                                                          Date                      Échéance                           CHF\n 2026-08317 Taxe d'épuration et eau potable 2026                                  30.04.2026                30.05.2026                       612,40\n 2026-08318 Taxe de base déchets 2026                                             30.04.2026                30.05.2026                       120,00\n Frais de sommation                                                                                                                           30,00\n Total dû                                                                                                                                   762,40\n\nNous vous prions de verser le montant de CHF 762,40 au plus tard le 28 août 2026. À défaut de paiement dans ce\ndélai, nous engagerons une procédure de poursuite sans autre avis. Les frais qui en découleront seront à votre\ncharge.\nSi vous rencontrez des difficultés financières, nous vous invitons à prendre contact avec nous avant l'échéance afin\nd'examiner un arrangement de paiement.\nVeuillez utiliser la section paiement ci-jointe.\nSi votre paiement a croisé le présent courrier, nous vous prions de ne pas en tenir compte.\n\n\nVeuillez agréer nos salutations distinguées.\n\n\nCommune de Valmont\nN. Bovet\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                      Page 1\n\f                               Commune de Valmont\n                               Service des finances\n                 CV            Place de l'Hôtel-de-Ville 1, 1999 Valmont\n\n\n\n\n              Section paiement relative à notre courrier du 14.08.2026\n\n              Veuillez utiliser la section paiement ci-dessous. (Modèle synthétique : les coordonnées bancaires sont invalides.)\n\n\n\n\n              Document de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.\n\n\n\n\nRécépissé                                                  Section paiement                                 Compte / Payable à\n                                                                                                            CH00 0076 7000 5209 3800 0\nCompte / Payable à                                                                                          Commune de Valmont\nCH00 0076 7000 5209 3800 0                                                                                  Place de l'Hôtel-de-Ville 1\nCommune de Valmont\nPlace de l'Hôtel-de-Ville 1                                                                                 1999 Valmont\n1999 Valmont                                                                                                Référence\nRéférence                                                                                                   00 00000 00000 52093 82026 08317\n00 00000 00000 52093 82026 08317\n                                                                                                            Informations supplémentaires\nPayable par\nPierre Dubois\n                                                                                                            Factures 2026-08317/08318\nRoute du Moulin 11                                                                                          Payable par\n1999 Valmont                                                                                                Pierre Dubois\n                                                                                                            Route du Moulin 11\n                                                                                                            1999 Valmont\n\nMonnaie       Montant                                      Monnaie      Montant\nCHF           762.40                                       CHF          762.40\n\n\n\n                               Point de dépôt\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Commune de Valmont, Service des finances",
+    "briefdatum": "2026-08-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "rechnung",
+        "wert": "2026-08317"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-08318"
+      },
+      {
+        "art": "debitor",
+        "wert": "52.0938"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 52093 82026 08317"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 762.4,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Taxe d'épuration et eau potable 2026",
+        "betrag_chf": 612.4,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Taxe de base déchets 2026",
+        "betrag_chf": 120.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Frais de sommation",
+        "betrag_chf": 30.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-08-28",
+    "glaeubiger": "Commune de Valmont",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Taxe d'épuration et eau potable 2026, Taxe de base déchets 2026",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total dû 762,40",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "au plus tard le 28 août 2026",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "mahnstufe",
+        "textstelle": "2e rappel - Sommation",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-08-28",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-08-23",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Il s'agit d'un rappel de paiement (2e rappel) envoyé par la Commune de Valmont, Service des finances, daté du 14.08.2026. Il concerne deux factures : 2026-08317 et 2026-08318. Le montant total à payer est de CHF 762.40. Il se compose de la taxe d'épuration et d'eau potable 2026 (CHF 612.40), de la taxe de base déchets 2026 (CHF 120.00) et de frais de sommation (CHF 30.00). Le paiement est demandé jusqu'au 28.08.2026. Pour payer, utilisez la référence de paiement indiquée sur le bulletin : 00 00000 00000 52093 82026 08317. Si vous avez déjà payé, gardez la preuve de paiement. Si vous ne pouvez pas payer dans ce délai, contactez le service des finances avant la date limite pour discuter d'une solution.",
+    "naechste_schritte": [
+      "Vérifiez les montants et les factures 2026-08317 et 2026-08318 sur votre courrier.",
+      "Effectuez le paiement de CHF 762.40 avec la référence de paiement indiquée, au plus tard le 28.08.2026.",
+      "Si vous ne pouvez pas payer à temps, contactez le Service des finances de la Commune de Valmont avant le 28.08.2026.",
+      "Conservez la preuve de paiement."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\40_werbebrief_de_amtlich\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "     SP\n\n                                                   Herr\nSteuer-Service Plus\n                                                   Thomas Brunner\nGmbH\n                                                   Sonnenhalde 12\nSteuererklärungen für\nPrivatpersonen                                     8996 Bergmatt\nMarktgasse 15, 8990\nHochwald-Stadt\nTel. 099 555 81 00 · info@steu\nerserviceplus.example                                                                                                                           Hochwald-Stadt, 9. November 2026\n\nIhre Kunden-Nr.                                    Wichtige Mitteilung zu Ihrer Steuererklärung 2026\nSSP-26-4410\n                                                   Sehr geehrter Herr Brunner\n                                                   die Steuererklärung 2026 ist im kommenden Frühjahr fällig. Viele Steuerpflichtige\n                                                   zahlen jedes Jahr zu viel Steuern, weil Abzüge vergessen gehen.\n                                                   Lassen Sie Ihre Steuererklärung von unseren Fachleuten ausfüllen: Pauschalpreis\n                                                   CHF 189.00 für Einzelpersonen. Melden Sie sich bis 15. Dezember 2026 an und\n                                                   profitieren Sie von 20 % Frühbucherrabatt.\n                                                   Die Steuer-Service Plus GmbH ist ein privates Unternehmen und steht in keiner Verbindung zu einer Steuerbehörde. Werbesendung.\n\n\n\n                                                   Freundliche Grüsse\n\n\n                                                   Steuer-Service Plus GmbH\n\n\n\n\n       Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                                                        Seite 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": "Werbesendung eines privaten Steuer-Dienstleisters (Angebot für Steuererklärung-Ausfüllung)",
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Steuer-Service Plus GmbH",
+    "briefdatum": "2026-11-09",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "SSP-26-4410"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 189.0,
+    "zahlungsrichtung": "information",
+    "posten": [
+      {
+        "bezeichnung": "Pauschalpreis Steuererklärung für Einzelpersonen",
+        "betrag_chf": 189.0,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": "2026-12-15",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "absender",
+        "textstelle": "Steuer-Service Plus GmbH ist ein privates Unternehmen und steht in keiner Verbindung zu einer Steuerbehörde. Werbesendung.",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Pauschalpreis CHF 189.00 für Einzelpersonen",
+        "konfidenz": 0.8
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "Melden Sie sich bis 15. Dezember 2026 an",
+        "konfidenz": 0.6
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Dieser Brief ist vermutlich eine Werbung. Die Steuer-Service Plus GmbH bietet an, Ihre Steuererklärung für das Jahr 2026 auszufüllen. Der Preis für eine Einzelperson wird mit 189.00 CHF angegeben. Es ist kein Zahlungsbefehl und keine Steuerrechnung der Behörde. Im Brief wird ein Datum genannt: 15.12.2026. Ob dieses Datum für Sie wichtig ist, ist unklar, weil der Brief kein Pflicht-Verfahren nennt. Wenn Sie unsicher sind, fragen Sie beim Absender nach. Sie können Ihre Steuererklärung auch selbst ausfüllen oder bei einer Gemeinde- oder Kantonsstelle um Hilfe bitten. Dieser Text ist ein Prototyp aus einer Lehrveranstaltung der FHNW und kein offizieller Dienst.",
+    "naechste_schritte": [
+      "Prüfen Sie, ob Sie das Angebot wirklich brauchen, bevor Sie etwas bezahlen.",
+      "Fragen Sie bei der Steuer-Service Plus GmbH nach, was das Datum 15.12.2026 bedeutet.",
+      "Wenden Sie sich bei Fragen zur Steuererklärung an Ihre Steuerverwaltung im Kanton."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

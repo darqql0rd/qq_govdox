@@ -1,0 +1,98 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\31_rappel_fr_stufe1\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "                                                   Monsieur et Madame\nCommune de                                         Nicolas et Claire Girard\nCombe-Verte\n                                                   Chemin du Crêt 4\nBourse communale\nRoute du Village 2, 1997\n                                                   1997 Combe-Verte\nCombe-Verte\nTél. 099 555 24 00 ·\nbourse@combe-verte.example\n\n                                                                                                                             Combe-Verte, le 3 novembre 2026\nN° de débiteur\n80.0451\n                                                   Rappel\nObjet\nAccueil parascolaire                               Madame, Monsieur,\n\nGestionnaire                                       Sauf erreur de notre part, la facture ci-dessous n'a pas encore été réglée. Il s'agit\nS. Cuendet                                         peut-être d'un oubli.\n\n                                                    Facture                                                        Date              Échéance         CHF\n                                                    2026-0902 Accueil parascolaire septembre                       01.10.2026        31.10.2026     412.50\n                                                    2026\n                                                    Total dû                                                                                        412.50\n\n                                                   Nous vous prions de bien vouloir verser le montant de CHF 412.50 d'ici au 20\n                                                   novembre 2026.\n\n                                                     Informations de paiement\n                                                     Payable à : Commune de Combe-Verte, 1997 Combe-Verte\n                                                     IBAN : CH00 0076 7000 8004 5100 0 (fictif)\n                                                     Référence : 00 00000 00000 80045 12026 09020 (fictive)\n                                                     Montant : CHF 412.50\n\n\n                                                   Si votre paiement a croisé le présent courrier, nous vous prions de ne pas en tenir\n                                                   compte.\n\n\n                                                   Veuillez agréer nos salutations distinguées.\n\n\n                                                   Commune de Combe-Verte\n                                                   S. Cuendet, boursière\n\n\n\n\n        Document de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                     Page 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Commune de Combe-Verte, Bourse communale",
+    "briefdatum": "2026-11-03",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "80.0451"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0902"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 80045 12026 09020"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 412.5,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Accueil parascolaire septembre 2026",
+        "betrag_chf": 412.5,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": "2026-11-20",
+    "glaeubiger": "Commune de Combe-Verte",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Accueil parascolaire septembre 2026",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 1,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total dû 412.50",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "d'ici au 20 novembre 2026",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Commune de Combe-Verte",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-20",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-11-15",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Vous avez reçu une lettre de rappel (1er rappel) de la Commune de Combe-Verte, Bourse communale. Elle date du 03.11.2026. Il s'agit d'une facture de 412.50 CHF pour l'accueil parascolaire de septembre 2026. La commune vous demande de payer ce montant d'ici le 20.11.2026. Le paiement doit se faire avec la référence de paiement indiquée sur la lettre (00 00000 00000 80045 12026 09020). La facture porte le numéro 2026-0902 et votre numéro de débiteur est 80.0451. Si vous avez déjà payé, vous pouvez ignorer ce rappel. Si vous avez une question sur le montant, contactez directement la commune avant la date limite.",
+    "naechste_schritte": [
+      "Vérifiez que la facture 2026-0902 correspond bien à l'accueil parascolaire de septembre 2026.",
+      "Effectuez le paiement de 412.50 CHF avec la référence 00 00000 00000 80045 12026 09020 d'ici le 20.11.2026.",
+      "Si vous avez une question sur le montant, contactez la Commune de Combe-Verte avant le 20.11.2026."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

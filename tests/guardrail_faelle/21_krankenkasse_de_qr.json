@@ -1,0 +1,113 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\21_krankenkasse_de_qr\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "                    Alpinea Kranken- und Unfallversicherung AG\n                    Versichertenservice\n                    Seestrasse 80, 6997 Uferdorf\n                    Tel. 099 555 90 90 · service@alpinea.example\n\n\nHerr                                                                                     Kundennummer                       77-310-224\nReto Schneider                                                                           Policennummer                      AL-27-55102\n                                                                                         Prämienregion                      Kanton Hochwald, Region 2\nAlpenblick 5\n8996 Bergmatt\n\n\n\n                                                                                                                                   Uferdorf, 27. Oktober 2026\n\n\nIhre Versicherungspolice 2027\nSehr geehrter Herr Schneider\nWir senden Ihnen die neue Versicherungspolice, die ab dem 1. Januar 2027 gilt. Die Prämien der obligatorischen\nKrankenpflegeversicherung (Grundversicherung nach KVG) wurden vom Bundesamt für Gesundheit genehmigt.\nDie Kostenentwicklung im Gesundheitswesen führt auch 2027 zu höheren Prämien.\nÜbersicht Ihrer Versicherungen (Monatsprämien)\n Person / Produkt                                                                                      Franchise                        2026                2027\n Schneider Reto, 1992 - Grundversicherung KVG, Telmed, ohne                                                   2'500                Fr. 326.40       Fr. 349.80\n Unfall\n Schneider Reto, 1992 - Spitalzusatz halbprivat (VVG)                                                                   -           Fr. 58.90           Fr. 58.90\n Total pro Monat                                                                                                                  Fr. 385.30        Fr. 408.70\n\nAllfällige Prämienverbilligungen werden direkt mit Ihren Rechnungen verrechnet, sobald uns die zuständige Stelle\nden Anspruch meldet.\nWichtige Hinweise\nWechsel der Grundversicherung: Sie können die Grundversicherung unter Einhaltung einer einmonatigen Frist\nauf den 31. Dezember 2026 kündigen. Die Kündigung muss spätestens am 30. November 2026 bei uns eintreffen.\nFranchise und Modell: Den Wechsel zu einer höheren Franchise teilen Sie uns bis spätestens 31. Dezember 2026\nmit. Für den Wechsel zu einer tieferen Franchise oder in ein anderes Versicherungsmodell gilt die Frist vom 30.\nNovember 2026.\nUnfalldeckung: Sind Sie mehr als 8 Stunden pro Woche bei einem Arbeitgeber angestellt, sind Sie über diesen\nobligatorisch gegen Unfall versichert. Bitte melden Sie uns Änderungen.\nDie Zusatzversicherungen nach VVG sind von der Prämienanpassung der Grundversicherung nicht betroffen.\nDie Prämie für Januar 2027 von Fr. 408.70 ist bis 31. Dezember 2026 zahlbar; den Zahlteil finden Sie auf der\nletzten Seite.\nBeilagen: Versicherungspolice 2027, Allgemeine Versicherungsbedingungen (Auszug)\n\n\nFreundliche Grüsse\n\n\nAlpinea Kranken- und Unfallversicherung AG\nIhr Alpinea-Team\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                                        Seite 1\n\f                                  Alpinea Kranken- und Unfallversicherung AG\n                                  Versichertenservice\n                                  Seestrasse 80, 6997 Uferdorf\n\n\n\n\n                Zahlteil zu unserem Schreiben vom 27.10.2026\n\n                Bitte verwenden Sie für die Zahlung den untenstehenden Zahlteil. (Synthetisches Muster: die Kontoangaben sind\n                ungültig.)\n\n\n\n\n                Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.\n\n\n\n\nEmpfangsschein                                                 Zahlteil                                            Konto / Zahlbar an\n                                                                                                                   CH00 8000 0000 7731 0224 0\nKonto / Zahlbar an                                                                                                 Alpinea Kranken- und Unfallversicherung AG\nCH00 8000 0000 7731 0224 0                                                                                         Seestrasse 80\nAlpinea Kranken- und Unfallversicherung AG\nSeestrasse 80                                                                                                      6997 Uferdorf\n6997 Uferdorf                                                                                                      Referenz\nReferenz                                                                                                           00 00000 77310 22427 01000 00000\n00 00000 77310 22427 01000 00000\n                                                                                                                   Zusätzliche Informationen\nZahlbar durch\nReto Schneider\n                                                                                                                   Prämie Januar 2027\nAlpenblick 5                                                                                                       Police AL-27-55102\n8996 Bergmatt\n                                                                                                                   Zahlbar durch\n                                                                                                                   Reto Schneider\n                                                                                                                   Alpenblick 5\n                                                                                                                   8996 Bergmatt\nWährung      Betrag                                            Währung       Betrag\nCHF          408.70                                            CHF           408.70\n\n\n\n                                  Annahmestelle\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Alpinea Kranken- und Unfallversicherung AG",
+    "briefdatum": "2026-10-27",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "police",
+        "wert": "AL-27-55102"
+      },
+      {
+        "art": "kunde",
+        "wert": "77-310-224"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 77310 22427 01000 00000"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 408.7,
+    "zahlungsrichtung": "information",
+    "posten": [
+      {
+        "bezeichnung": "Grundversicherung KVG, Telmed, ohne Unfall, Franchise 2'500 (Monatsprämie 2027)",
+        "betrag_chf": 349.8,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Spitalzusatz halbprivat (VVG) (Monatsprämie 2027)",
+        "betrag_chf": 58.9,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": "Alpinea Kranken- und Unfallversicherung AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total pro Monat Fr. 408.70",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "Die Kündigung muss spätestens am 30. November 2026 bei uns eintreffen.",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30",
+      "basis": "fixdatum",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": "KVG Art. 7 Abs. 2",
+      "hinweise": [
+        "eingang_massgebend"
+      ],
+      "erinnerung": "2026-11-25",
+      "bestaetigt": false
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31",
+      "basis": "fixdatum",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [
+        "eingang_massgebend"
+      ],
+      "erinnerung": "2026-12-26",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben einen Brief der Krankenkasse Alpinea Kranken- und Unfallversicherung AG vom 27.10.2026 erhalten. Der Brief informiert Sie über die Prämien für das Jahr 2027. Sie müssen nichts bezahlen, nur weil Sie diesen Brief erhalten haben.\n\nDie Prämien für 2027 betragen pro Monat:\n- Grundversicherung (Telmed, ohne Unfall, Franchise 2'500): 349.80 CHF\n- Spitalzusatz halbprivat: 58.90 CHF\n- Total: 408.70 CHF pro Monat\n\nWichtig ist die Frist: Wenn Sie die Krankenkasse wechseln möchten, muss Ihr Schreiben bis 30.11.2026 bei der Kasse eingegangen sein. Wenn Sie die Franchise ändern möchten, muss dies bis 31.12.2026 bei der Kasse eingegangen sein.\n\nDer Brief enthält keine Zahlungsaufforderung. Bitte prüfen Sie die Angaben in Ruhe.",
+    "naechste_schritte": [
+      "Prüfen Sie die Prämien für 2027 und vergleichen Sie diese mit anderen Krankenkassen.",
+      "Wenn Sie die Kasse wechseln möchten, muss Ihr Schreiben bis 30.11.2026 bei der Kasse eingegangen sein.",
+      "Wenn Sie die Franchise ändern möchten, muss dies bis 31.12.2026 bei der Kasse eingegangen sein.",
+      "Bei Fragen wenden Sie sich direkt an die Alpinea Kranken- und Unfallversicherung AG."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

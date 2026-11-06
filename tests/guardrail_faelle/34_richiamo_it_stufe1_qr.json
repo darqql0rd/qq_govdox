@@ -1,0 +1,98 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\34_richiamo_it_stufe1_qr\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "                    Comune di Pradello\n                    Cancelleria e contabilità\n    CP              Via alla Chiesa 1, 6997 Pradello\n                    Tel. 099 555 35 00 · contabilita@pradello.example\n\n\n\nSignori                                                                                 N. debitore                  20.1174\nPaolo e Anna Rezzonico                                                                  Oggetto                      Tassa sui cani\n                                                                                        Funzionario                  R. Bettelini\nStrada Vecchia 17\n6997 Pradello\n\n\n\n                                                                                                                             Pradello, 28 settembre 2026\n\n\nPromemoria di pagamento\nGentili Signori Rezzonico,\nDai nostri controlli risulta che la fattura sotto indicata non è ancora stata pagata. Forse si tratta di una svista.\n\n Fattura                                                                              Data                       Scadenza                         CHF\n 2026-0611 Tassa sui cani 2026                                                        31.07.2026                 31.08.2026                      80,00\n Totale dovuto                                                                                                                                   80,00\n\nLa preghiamo di versare l'importo di CHF 80,00 entro il 15 ottobre 2026.\nPer il pagamento utilizzi la sezione pagamento allegata.\nSe il pagamento si fosse incrociato con la presente, La preghiamo di non tenerne conto.\n\n\nDistinti saluti\n\n\nComune di Pradello\nR. Bettelini\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                Pagina 1\n\f                                Comune di Pradello\n                                Cancelleria e contabilità\n                     CP         Via alla Chiesa 1, 6997 Pradello\n\n\n\n\n              Sezione pagamento relativa al nostro scritto del 28.09.2026\n\n              Per il pagamento utilizzi la sezione sottostante. (Modello sintetico: i dati del conto non sono validi.)\n\n\n\n\n              Documento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.\n\n\n\n\nRicevuta                                                     Sezione pagamento                                  Conto / Pagabile a\n                                                                                                                CH00 0076 4000 2011 7400 0\nConto / Pagabile a                                                                                              Comune di Pradello\nCH00 0076 4000 2011 7400 0                                                                                      Via alla Chiesa 1\nComune di Pradello\nVia alla Chiesa 1                                                                                               6997 Pradello\n6997 Pradello                                                                                                   Riferimento\nRiferimento                                                                                                     00 00000 00000 20117 42026 06110\n00 00000 00000 20117 42026 06110\n                                                                                                                Informazioni supplementari\nPagabile da\nPaolo e Anna Rezzonico\n                                                                                                                Fattura 2026-0611\nStrada Vecchia 17                                                                                               Pagabile da\n6997 Pradello                                                                                                   Paolo e Anna Rezzonico\n                                                                                                                Strada Vecchia 17\n                                                                                                                6997 Pradello\n\nValuta        Importo                                        Valuta        Importo\nCHF           80.00                                          CHF           80.00\n\n\n\n                                Punto di accettazione\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Comune di Pradello, Cancelleria e contabilità",
+    "briefdatum": "2026-09-28",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "rechnung",
+        "wert": "2026-0611"
+      },
+      {
+        "art": "andere",
+        "wert": "20.1174"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 20117 42026 06110"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 80.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Tassa sui cani 2026",
+        "betrag_chf": 80.0,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": "2026-10-15",
+    "glaeubiger": "Comune di Pradello",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Tassa sui cani 2026 (Fattura 2026-0611)",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 1,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale dovuto 80,00",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "entro il 15 ottobre 2026",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Comune di Pradello",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-10-15",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-10-10",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa lettera è un sollecito di pagamento (primo sollecito) del Comune di Pradello, Cancelleria e contabilità, datato 28.09.2026. Chiede il pagamento di CHF 80.00 per la tassa sui cani 2026, come da fattura 2026-0611. Il termine di pagamento indicato nella lettera è il 15.10.2026. Non si tratta di una tassa da contestare con ricorso: è una richiesta di pagamento. Se ha già pagato, controlli il conto e, se necessario, contatti il Comune. Per pagare, usi il numero di riferimento per pagamenti indicato nella lettera: 00 00000 00000 20117 42026 06110. Se non è sicuro di quanto dovuto o della fattura, chieda chiarimenti al Comune prima della scadenza. Questo strumento è un prototipo didattico della FHNW e non è un servizio ufficiale.",
+    "naechste_schritte": [
+      "Verifichi entro il 15.10.2026 se ha già pagato la tassa sui cani di CHF 80.00.",
+      "Se non ha ancora pagato, effettui il pagamento entro il 15.10.2026 con il numero di riferimento indicato nella lettera.",
+      "In caso di dubbi su importo o fattura 2026-0611, contatti il Comune di Pradello prima della scadenza."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
