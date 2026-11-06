@@ -1,0 +1,117 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\09_precetto_it_betreibungsferien_sommer\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "                        Ufficio di esecuzione e fallimenti di Castelvecchio\n    UF\n                        Cantone di Valcastello · Piazza Grande 14, 6990 Castelvecchio · Tel. 099 555 37 00 ·\n                        uef.castelvecchio@valcastello.example\n\n\n\n\n                                                                                                       Signora\n                                                                                                       Elena Ferrari\n                                                                                                       Via San Gottardo 44\n                                                                                                       6999 Valverde\n\n\n\n                                                                                                                             Castelvecchio, 2 luglio 2026\n Esecuzione n.                              26-041127\n Emesso il                                  02.07.2026\n Funzionario                                A. Pedrini\n\n\nPrecetto esecutivo\nEsecuzione ordinaria (art. 69 LEF). Sulla base della domanda d'esecuzione del creditore sotto indicato, Le viene\nnotificato il seguente precetto esecutivo:\n Creditore                                     Carrozzeria Fontana SA, Via Industria 12, 6990 Castelvecchio\n Rappresentante                                -\n Debitore                                      Ferrari Elena, nato/a il 08.08.1986, Via San Gottardo 44, 6999 Valverde\n\n\nCredito\n Voce                                                                                                                                                    CHF\n Importo del credito con interessi al 5 % dal 15.05.2026                                                                                               980,00\n Spese del presente precetto, incl. notifica (anticipate dal creditore)                                                                                 50,30\n Totale (senza interessi)                                                                                                                           1 030,30\n\nTitolo del credito o causa dell'obbligazione: Fattura n. 2026/318 del 15.04.2026 per riparazione carrozzeria;\nrichiamo del 15.05.2026.\nIl debitore è invitato a pagare al creditore, entro 20 giorni dalla notificazione, il credito indicato e le spese\nd'esecuzione. Il pagamento può essere effettuato presso l'Ufficio di esecuzione.\nSe il debitore intende contestare il debito, o una parte di esso, o il diritto di procedere in via esecutiva, deve\ndichiararlo all'Ufficio di esecuzione, verbalmente o per iscritto, entro 10 giorni dalla notificazione del presente\nprecetto (interporre opposizione). Se contesta solo una parte del credito, deve indicarne esattamente l'importo;\naltrimenti si considera contestato l'intero credito. L'opposizione non deve essere motivata.\nSe il debitore non paga né interpone opposizione, il creditore potrà chiedere la continuazione dell'esecuzione\ndecorsi 20 giorni dalla notificazione.\nFerie esecutive (art. 56 e 63 LEF): 7 giorni prima e 7 giorni dopo Pasqua e Natale, nonché dal 15 al 31 luglio. I termini continuano a decorrere; se un termine\nscade durante le ferie, è prorogato fino al terzo giorno feriale successivo alla loro fine.\n\n\n  Opposizione\n  [ ] Il debitore interpone opposizione contro l'intero credito.\n  [ ] Il debitore interpone opposizione per l'importo di CHF ______________.\n\n  Luogo, data: ______________________ Firma: ______________________\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                        Pagina 1\n\f  Attestazione di notifica\n\n  Notificato il:       06.07.26\n                           a:\n  [X] debitore personalmente [ ] persona convivente [ ] dipendente\n\n  Firma dell'agente notificatore:                 A. Pedr.\n\nUfficio di esecuzione e fallimenti di Castelvecchio\n\n\nG. Righetti, ufficiale\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.   Pagina 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Ufficio di esecuzione e fallimenti di Castelvecchio",
+    "briefdatum": "2026-07-02",
+    "zustelldatum_im_brief": "2026-07-06",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-041127"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026/318"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 1030.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Importo del credito con interessi al 5 % dal 15.05.2026",
+        "betrag_chf": 980.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Spese del presente precetto, incl. notifica",
+        "betrag_chf": 50.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Carrozzeria Fontana SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Fattura n. 2026/318 del 15.04.2026 per riparazione carrozzeria; richiamo del 15.05.2026",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-05-15"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale (senza interessi) 1 030,30",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "zustelldatum_im_brief",
+        "textstelle": "Notificato il: 06.07.26",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "referenzen",
+        "textstelle": "Esecuzione n. 26-041127",
+        "konfidenz": 0.97
+      }
+    ]
+  },
+  "zustelldatum": "2026-07-06",
+  "zustelldatum_quelle": "brief",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-08-05",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-07-06",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [
+        "betreibungsferien_verschoben"
+      ],
+      "erinnerung": "2026-07-31",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-08-05",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-07-06",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [
+        "betreibungsferien_verschoben"
+      ],
+      "erinnerung": "2026-07-31",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questo è un precetto esecutivo (Zahlungsbefehl) dell'Ufficio di esecuzione e fallimenti di Castelvecchio. Il creditore è la Carrozzeria Fontana SA. Lei deve pagare CHF 1'030.30. Questo importo è composto da CHF 980.00 di credito con interessi al 5 % dal 15.05.2026 (fattura n. 2026/318 del 15.04.2026 per una riparazione della carrozzeria) e da CHF 50.30 di spese di questo precetto, inclusa la notifica.\n\nIl termine per pagare o per fare opposizione scade il 05.08.2026. Il termine parte dalla notifica del 06.07.2026, quindi questa data è corretta. Il termine è stato spostato perché rientra nelle ferie d'esecuzione.\n\nLei ha due possibilità: pagare entro il termine, oppure fare un rigetto (Rechtsvorschlag) scritto entro lo stesso termine. Con il rigetto il creditore non può ancora ottenere il pagamento senza un giudice. Il rigetto non deve essere motivato. Questo testo non dice se il credito sia giustificato.",
+    "naechste_schritte": [
+      "Verifichi entro il 05.08.2026 se il debito è corretto e se il conteggio è giusto.",
+      "Se vuole pagare, versi CHF 1'030.30 entro il 05.08.2026 e conservi la ricevuta.",
+      "Se non è d'accordo, invii un rigetto scritto (Rechtsvorschlag) all'Ufficio di esecuzione entro il 05.08.2026.",
+      "Se ha domande sul precetto, chieda all'Ufficio di esecuzione di Castelvecchio o a un consulente legale."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

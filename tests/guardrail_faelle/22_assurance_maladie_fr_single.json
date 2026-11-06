@@ -1,0 +1,109 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\22_assurance_maladie_fr_single\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "                                                   Madame\nHelvaria                                           Sophie Rochat\nAssurance-maladie SA\n                                                   Chemin des Vignes 15\nService clientèle\nPlace de la Gare 1, 3999\n                                                   1999 Valmont\nBernfeld\nTél. 0800 000 000 ·\nservice@helvaria.example\n\n                                                                                                                                     Bernfeld, le 20 octobre 2026\nN° de client\n4.302.661\n                                                   Votre police d'assurance 2027\nN° de police\nHV-2027-0915377                                    Madame,\n\nRégion de primes                                   Vous trouverez ci-joint votre nouvelle police d'assurance valable dès le 1er janvier\nCanton du Haut-Lac, région 2                       2027. Les primes de l'assurance obligatoire des soins (assurance de base LAMal)\n                                                   ont été approuvées par l'Office fédéral de la santé publique. L'évolution des coûts de\n                                                   la santé entraîne une hausse des primes en 2027.\n                                                   Aperçu de vos assurances (primes mensuelles)\n                                                    Personne / produit                                                       Franchi          2026         2027\n                                                                                                                                  se\n                                                    Rochat Sophie, 1990 - Assurance de base LAMal,                               1'500      362,80       389,10\n                                                    modèle Telmed, avec accidents\n                                                    Rochat Sophie, 1990 - Complémentaire Hospital                                    -       61,20        61,20\n                                                    Mi-privé (LCA)\n                                                    Total par mois                                                                          424,00       450,30\n\n                                                   D'éventuels subsides seront déduits directement de vos factures dès que l'organe\n                                                   compétent nous aura communiqué votre droit.\n                                                   Informations importantes\n                                                   Changement d'assureur : vous pouvez résilier l'assurance de base pour le 31\n                                                   décembre 2026 moyennant un préavis d'un mois. Votre résiliation doit nous parvenir\n                                                   au plus tard le 30 novembre 2026.\n                                                   Franchise et modèle : le passage à une franchise plus élevée doit nous être\n                                                   communiqué au plus tard le 31 décembre 2026. Le passage à une franchise plus\n                                                   basse ou à un autre modèle est soumis au délai du 30 novembre 2026.\n                                                   Couverture accidents : si vous travaillez plus de 8 heures par semaine pour un\n                                                   employeur, vous êtes obligatoirement assuré(e) contre les accidents par celui-ci.\n                                                   Les assurances complémentaires (LCA) ne sont pas concernées par l'adaptation des\n                                                   primes de l'assurance de base.\n                                                   Annexes : police d'assurance 2027, conditions générales (extrait)\n\n\n                                                   Nous vous prions d'agréer nos salutations les meilleures.\n\n\n                                                   Helvaria Assurance-maladie SA\n                                                   Service clientèle\n\n\n\n\n        Document de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                          Page 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA",
+    "briefdatum": "2026-10-20",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "4.302.661"
+      },
+      {
+        "art": "police",
+        "wert": "HV-2027-0915377"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 450.3,
+    "zahlungsrichtung": "information",
+    "posten": [
+      {
+        "bezeichnung": "Assurance de base LAMal, modèle Telmed, avec accidents (Franchise 1'500)",
+        "betrag_chf": 389.1,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Complémentaire Hospital Mi-privé (LCA)",
+        "betrag_chf": 61.2,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total par mois 424,00 450,30",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "Votre résiliation doit nous parvenir au plus tard le 30 novembre 2026.",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30",
+      "basis": "fixdatum",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": "KVG Art. 7 Abs. 2",
+      "hinweise": [
+        "eingang_massgebend"
+      ],
+      "erinnerung": "2026-11-25",
+      "bestaetigt": false
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31",
+      "basis": "fixdatum",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [
+        "eingang_massgebend"
+      ],
+      "erinnerung": "2026-12-26",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Ce courrier vient de votre assurance-maladie, Helvaria Assurance-maladie SA. Il date du 20.10.2026 et concerne vos primes pour l'année 2027. Il s'agit d'une information : aucun paiement n'est demandé dans cette lettre.\n\nVotre assurance de base LAMal (modèle Telmed, avec accidents, franchise 1'500) coûte 389.10 CHF par mois. Votre complémentaire Hospital mi-privé (LCA) coûte 61.20 CHF par mois. Au total, cela fait 450.30 CHF par mois en 2027.\n\nLe courrier fixe deux dates importantes. Pour changer d'assureur (résiliation), le courrier doit arriver chez l'assureur au plus tard le 30.11.2026. Pour changer de franchise, la date limite est le 31.12.2026. Dans les deux cas, c'est la date d'arrivée qui compte, pas la date d'envoi.\n\nSi vous ne souhaitez rien changer, vous n'avez rien à faire.",
+    "naechste_schritte": [
+      "Vérifiez les montants de vos primes 2027 (389.10 CHF et 61.20 CHF par mois).",
+      "Si vous voulez changer d'assureur, envoyez votre résiliation de sorte qu'elle arrive au plus tard le 30.11.2026.",
+      "Si vous voulez changer de franchise, faites la demande de sorte qu'elle arrive au plus tard le 31.12.2026.",
+      "En cas de doute, contactez directement Helvaria Assurance-maladie SA en indiquant votre numéro de client 4.302.661."
+    ],
+    "quellen": []
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
