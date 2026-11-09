@@ -2,6 +2,8 @@
 
 Bekommt nur geprüfte Fakten (Extraktion + Fristen), NICHT den Rohtext des Briefs.
 So kann eine Prompt Injection im Brief die Erklärung nicht direkt beeinflussen.
+
+Den Hinweis "Prototyp der FHNW, kein offizieller Dienst" hängt Python an (HINWEIS_PROTOTYP).
 """
 
 import json
@@ -9,7 +11,7 @@ import json
 from langchain_core.messages import HumanMessage, SystemMessage
 
 from llm import strukturiert
-from prompts import ERKLAER_SYSTEM
+from prompts import ERKLAER_SYSTEM, HINWEIS_PROTOTYP
 from state import BriefState, Erklaerung
 
 
@@ -30,4 +32,7 @@ def erklaerung(state: BriefState) -> dict:
         SystemMessage(ERKLAER_SYSTEM),
         HumanMessage(json.dumps(fakten, ensure_ascii=False, indent=2, default=str)),
     ])
-    return {"erklaerung": ergebnis}
+    # Fester Hinweis aus Python statt vom LLM: steht so immer gleich und in der richtigen Sprache
+    sprache = fakten["ausgabesprache"] or ergebnis.sprache or "de"  # verlangte Sprache zählt
+    hinweis = HINWEIS_PROTOTYP.get(sprache, HINWEIS_PROTOTYP["de"])
+    return {"erklaerung": ergebnis.model_copy(update={"text": f"{ergebnis.text.rstrip()}\n\n{hinweis}"})}
