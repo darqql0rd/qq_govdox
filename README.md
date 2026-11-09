@@ -15,6 +15,7 @@ Bestätigung in den Kalender ein.
 | `notebooks/00_state_und_mocks.ipynb` | Übersicht: Schema, Mocks, Datensatz, Graph-Skelett mit Dummy-Nodes |
 | `daten/briefe/` | 45 synthetische Testbriefe mit PDF, Scan, Handyfoto, Textebene und Gold-Label |
 | `datengenerator/` | Skripte, mit denen die Testbriefe erzeugt werden (siehe dortiges README) |
+| `mcp_kalender/` | Kalender-MCP-Server: trägt bestätigte Fristen in den Google Kalender ein (siehe unten) |
 
 ## Loslegen
 
@@ -38,10 +39,29 @@ state = aus_gold("01_zahlungsbefehl_de_wochenende", "foto")   # Fall aus dem Dat
 
 | Person | Agent | Weitere Bausteine |
 |---|---|---|
-| Melvin | Antwort-Agent | LangGraph-Graph, State, Routing, Human-in-the-loop, Kalender-MCP |
-| Nayan | Analyse-Agent | Texterkennung/OCR, Apertus-Vision-Test |
+| Melvin | Antwort-Agent | LangGraph-Graph, State, Routing, Human-in-the-loop |
+| Nayan | Analyse-Agent | Texterkennung/OCR, Kalender-MCP, Apertus-Vision-Test |
 | Vendon | Erklär-Agent | RAG über Infoblätter, Fristenrechner |
 | Florian | Guardrail-Agent | Evaluation, Apertus-Vergleich, UI |
+
+## Kalender (Google Kalender über MCP)
+
+Der Kalender-Node (`nodes/kalender.py`) startet den MCP-Server `mcp_kalender/server.py`
+selbst und ruft dessen Tool `frist_eintragen` auf. Standard ist `KALENDER_KANAL=ics` in
+`.env`: Dann entsteht nur eine `.ics`-Datei in `ausgabe/`, der echte Kalender bleibt leer.
+Dasselbe passiert, wenn Google nicht erreichbar oder das Login abgelaufen ist.
+
+Google einrichten (einmalig):
+
+1. In der Google Cloud Console die Google Calendar API aktivieren und einen OAuth-Client
+   vom Typ „Desktop-App“ erstellen, das JSON als `credentials.json` in den Repo-Ordner legen.
+   Das eigene Google-Konto als Testnutzer eintragen.
+2. In `.env`: `KALENDER_KANAL=google` und `GOOGLE_CALENDAR_ID=<Kalender-ID>`.
+3. `python mcp_kalender/login.py` – Browser-Login, danach liegt `token.json` im Repo-Ordner.
+   Im Google-Status „Testing“ läuft das Login nach 7 Tagen ab, dann nochmals ausführen.
+
+`credentials.json` und `token.json` stehen in `.gitignore` und gehören nie ins Repo.
+Tools von Hand testen: `mcp dev mcp_kalender/server.py` (MCP Inspector).
 
 ## Datenschutz
 

@@ -18,3 +18,7 @@ ausgabe/
 
 # macOS
 .DS_Store
+
+# Google-Kalender (OAuth, nie ins Git)
+credentials.json
+token.json
