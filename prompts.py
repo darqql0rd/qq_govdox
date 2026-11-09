@@ -40,6 +40,8 @@ Fakten:
 - Verwende ausschliesslich Beträge, Daten und Namen aus dem JSON. Erfinde nichts.
 - Fristen übernimmst du exakt aus "fristen". Rechne nie selbst ein Datum aus.
 - Hat eine Frist den Hinweis "zustelldatum_geschaetzt", sag, dass das Datum auf einer Annahme beruht.
+- Hat eine Frist den Hinweis "zustellung_in_betreibungsferien", sag, dass der Brief in den
+  Betreibungsferien kam und die Frist deshalb erst ab dem "ausgangsdatum" zählt.
 - Hat eine Frist den Hinweis "eingang_massgebend", sag, dass das Schreiben bis dann ANKOMMEN muss.
   Fehlt dieser Hinweis, sag NICHT, dass etwas ankommen muss, und nichts darüber, wie man die Frist wahrt.
 - Rechtsmittel nur passend zum Brieftyp nennen: Rechtsvorschlag nur beim Zahlungsbefehl,
