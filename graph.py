@@ -19,6 +19,7 @@ from langgraph.graph import END, START, StateGraph
 from pydantic import BaseModel
 
 import state as state_modul
+from llm import LLM_RETRY
 
 from nodes.analyse import analyse
 from nodes.antwort import antwort
@@ -87,13 +88,15 @@ def nach_bestaetigung(state: BriefState) -> str:
 
 def baue_graph(checkpointer=None):
     b = StateGraph(BriefState)
+    # LLM_RETRY nur bei Nodes mit LLM-Aufruf. Nicht bei interrupt()-Nodes: ein Retry würde
+    # die Frage an die Person nochmals stellen. OCR läuft lokal, Fristen sind reines Python.
     b.add_node("ocr", ocr)
-    b.add_node("analyse", analyse)
+    b.add_node("analyse", analyse, retry_policy=LLM_RETRY)
     b.add_node("zustelldatum_erfragen", zustelldatum_erfragen)
     b.add_node("fristen", fristen)
-    b.add_node("erklaerung", erklaerung)
-    b.add_node("antwort", antwort)
-    b.add_node("guardrail", guardrail)
+    b.add_node("erklaerung", erklaerung, retry_policy=LLM_RETRY)
+    b.add_node("antwort", antwort, retry_policy=LLM_RETRY)
+    b.add_node("guardrail", guardrail, retry_policy=LLM_RETRY)
     b.add_node("bestaetigung", bestaetigung)
     b.add_node("kalender", kalender)
 

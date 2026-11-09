@@ -13,7 +13,7 @@ import re
 
 from langchain_core.messages import HumanMessage, SystemMessage
 
-from llm import strukturiert
+from llm import VORUEBERGEHEND, strukturiert
 from prompts import ANTWORT_SYSTEM
 from state import Antwortentwurf, BriefState
 
@@ -60,6 +60,8 @@ def antwort(state: BriefState) -> dict:
             SystemMessage(ANTWORT_SYSTEM),
             HumanMessage(json.dumps(fakten, ensure_ascii=False, indent=2, default=str)),
         ])
+    except VORUEBERGEHEND:
+        raise  # Proxy kurz weg: die RetryPolicy in graph.py versucht den Node nochmals
     except Exception as fehler:  # ein Entwurf ist optional, der Graph soll weiterlaufen
         print(f"  ! Antwort-Agent: {type(fehler).__name__}: {str(fehler)[:200]}")
         return {"antwortentwurf": None}

@@ -8,10 +8,35 @@ Test der Verbindung:  python llm.py
 
 import os
 
+import openai
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+from langgraph.types import RetryPolicy
 
 load_dotenv()  # liest .env im Repo-Root (Keys, Modellname, Tracing)
+
+# Vorübergehende Fehler des LiteLLM-Proxys: nochmals versuchen lohnt sich.
+# Ein falsches Schema, ein falscher Key oder ein Bug bleiben Fehler (kein Retry).
+# langchain_openai.OpenAIConnectionError ist eine Unterklasse von APIConnectionError.
+VORUEBERGEHEND = (
+    openai.APIConnectionError,   # Proxy nicht erreichbar ("Connection error.")
+    openai.APITimeoutError,
+    openai.RateLimitError,       # 429
+    openai.InternalServerError,  # 5xx
+)
+
+# Stufe 1: der OpenAI-Client wiederholt selbst, aber nur mit kurzen Pausen (< 10 s).
+LLM_TIMEOUT_S = 120  # grosszügig: Apertus-70B braucht für lange Antworten teils deutlich länger als Haiku
+LLM_MAX_RETRIES = 3
+
+# Stufe 2: LangGraph wiederholt den ganzen Node mit längeren Pausen (ca. 5 s, 10 s, 20 s).
+# Nur für Nodes mit LLM-Aufruf und ohne interrupt() verwenden (siehe graph.py).
+LLM_RETRY = RetryPolicy(
+    max_attempts=4,
+    initial_interval=5.0,
+    backoff_factor=2.0,
+    retry_on=VORUEBERGEHEND,
+)
 
 
 def get_llm(model: str | None = None) -> ChatOpenAI:
@@ -28,6 +53,8 @@ def get_llm(model: str | None = None) -> ChatOpenAI:
         model=model or os.environ["LLM_MODEL"],
         base_url=os.environ["LLM_BASE_URL"],
         api_key=os.environ["LLM_API_KEY"],
+        timeout=LLM_TIMEOUT_S,
+        max_retries=LLM_MAX_RETRIES,
         **extra,
     )
 
