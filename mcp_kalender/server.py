@@ -30,16 +30,19 @@ mcp = FastMCP("qq_govdox-kalender", log_level="WARNING")  # INFO pro Aufruf stö
 
 
 @mcp.tool()
-def frist_eintragen(titel: str, datum: str, beschreibung: str, schluessel: str,
-                    erinnerung: str | None = None) -> str:
+def frist_eintragen(titel: str, datum: str, beschreibung: str, art: str,
+                    referenzen: list[str] | None = None, erinnerung: str | None = None) -> str:
     """Trägt eine Frist als ganztägigen Termin in den Google Kalender ein.
+
+    Steht am selben Tag schon eine Frist derselben Art mit einer gemeinsamen Referenz,
+    wird kein zweiter Termin angelegt (z. B. wenn derselbe Brief zweimal läuft).
 
     Args:
         titel: Titel des Termins, z. B. "Frist Rechtsvorschlag – Betreibungsamt Talwil"
         datum: letzter Tag der Frist, ISO-Format JJJJ-MM-TT
         beschreibung: Text im Termin (Rechtsgrundlage, Referenz, Betrag, Hinweise)
-        schluessel: fester Schlüssel der Frist; gibt es schon einen Termin damit,
-            wird kein zweiter angelegt
+        art: Fristart, z. B. "rechtsvorschlag", "zahlung", "einsprache"
+        referenzen: Nummern aus dem Brief (Betreibungs-Nr., Rechnungs-Nr., ...)
         erinnerung: Tag der Erinnerung (JJJJ-MM-TT), Erinnerung um 09:00. Ohne Angabe am Vortag.
 
     Returns:
@@ -50,7 +53,8 @@ def frist_eintragen(titel: str, datum: str, beschreibung: str, schluessel: str,
         datum=date.fromisoformat(datum),
         beschreibung=beschreibung,
         erinnerung=date.fromisoformat(erinnerung) if erinnerung else None,
-        key=schluessel,
+        art=art,
+        referenzen=referenzen or [],
     )
     return json.dumps({"event_id": termin["id"], "link": termin.get("htmlLink"), "neu": neu})
 

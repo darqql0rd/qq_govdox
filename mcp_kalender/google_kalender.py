@@ -68,22 +68,37 @@ def erinnerung_minuten(datum: date, erinnerung: date | None) -> int:
     return max(0, min(minuten, MAX_ERINNERUNG_MINUTEN))
 
 
-def termin_finden(svc, key: str) -> dict | None:
+def _refs(referenzen: list[str]) -> set[str]:
+    """Referenzen vergleichbar machen: ohne Leerzeichen, Grossbuchstaben."""
+    return {"".join(r.split()).upper() for r in referenzen if r and r.strip()}
+
+
+def termin_finden(svc, art: str, datum: date, referenzen: list[str]) -> dict | None:
+    """Gleiche Frist schon eingetragen? Gleiche Art, gleicher Tag und eine gemeinsame Referenz.
+
+    Nicht über einen festen Schlüssel aus allen Referenzen: Das LLM liest bei einem zweiten
+    Lauf manchmal eine Referenz mehr oder weniger aus (z. B. zusätzlich die Rechnungsnummer).
+    Hat eine Seite gar keine Referenz, genügen Art und Tag.
+    """
     antwort = svc.events().list(
         calendarId=kalender_id(),
-        privateExtendedProperty=f"qq_govdox={key}",
+        privateExtendedProperty=[f"qq_art={art}", f"qq_datum={datum.isoformat()}"],
         showDeleted=False,
-        maxResults=1,
+        maxResults=50,
     ).execute()
-    treffer = antwort.get("items", [])
-    return treffer[0] if treffer else None
+    neu = _refs(referenzen)
+    for termin in antwort.get("items", []):
+        alt = set(filter(None, termin["extendedProperties"]["private"].get("qq_refs", "").split("|")))
+        if not alt or not neu or alt & neu:
+            return termin
+    return None
 
 
-def termin_eintragen(titel: str, datum: date, beschreibung: str,
-                     erinnerung: date | None, key: str) -> tuple[dict, bool]:
+def termin_eintragen(titel: str, datum: date, beschreibung: str, erinnerung: date | None,
+                     art: str, referenzen: list[str]) -> tuple[dict, bool]:
     """Ganztägigen Termin anlegen. Gibt (Termin, neu) zurück; existiert er schon, neu=False."""
     svc = dienst()
-    vorhanden = termin_finden(svc, key)
+    vorhanden = termin_finden(svc, art, datum, referenzen)
     if vorhanden:
         return vorhanden, False
     termin = {
@@ -94,7 +109,12 @@ def termin_eintragen(titel: str, datum: date, beschreibung: str,
         "reminders": {"useDefault": False, "overrides": [
             {"method": "popup", "minutes": erinnerung_minuten(datum, erinnerung)},
         ]},
-        "extendedProperties": {"private": {"qq_govdox": key}},
+        "extendedProperties": {"private": {
+            "qq_govdox": "1",              # Markierung: von qq_govdox angelegt
+            "qq_art": art,
+            "qq_datum": datum.isoformat(),
+            "qq_refs": "|".join(sorted(_refs(referenzen))),
+        }},
         "transparency": "transparent",  # blockiert den Tag nicht als "beschäftigt"
     }
     return svc.events().insert(calendarId=kalender_id(), body=termin).execute(), True

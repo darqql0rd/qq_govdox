@@ -12,8 +12,8 @@ Bewusste Entscheide:
   Das Tool wird deterministisch aufgerufen (wie der Fristenrechner im Fristen-Node);
   ein LLM würde hier nur Datumsfehler riskieren. Titel und Beschreibung aus Vorlage.
 - Standard ist .ics, damit Testläufe über 45 Briefe nicht den echten Kalender füllen.
-- Fester Schlüssel pro Frist: ein zweiter Lauf desselben Briefs legt keinen
-  doppelten Termin an.
+- Keine Duplikate: Der MCP-Server legt keinen zweiten Termin an, wenn am selben Tag
+  schon eine Frist derselben Art mit einer gemeinsamen Referenz steht.
 """
 
 import asyncio
@@ -67,11 +67,6 @@ def _sprache(state: BriefState) -> str:
     return state.get("nutzersprache") or state.get("briefsprache") or "de"
 
 
-def schluessel(*teile: str) -> str:
-    """Fester Schlüssel pro Frist, damit ein zweiter Lauf keinen doppelten Termin anlegt."""
-    return hashlib.sha256("|".join(teile).encode()).hexdigest()[:16]
-
-
 def termin_daten(frist: Frist, state: BriefState) -> dict:
     """Argumente für das MCP-Tool frist_eintragen (auch Grundlage für .ics)."""
     sprache = _sprache(state)
@@ -98,8 +93,8 @@ def termin_daten(frist: Frist, state: BriefState) -> dict:
         "titel": titel,
         "datum": frist.datum.isoformat(),
         "beschreibung": "\n".join(zeilen),
-        "schluessel": schluessel(frist.art, frist.datum.isoformat(), absender or "",
-                                 *sorted(referenzen)),
+        "art": frist.art,
+        "referenzen": referenzen,
         "erinnerung": frist.erinnerung.isoformat() if frist.erinnerung else None,
     }
 
@@ -166,6 +161,11 @@ def _ics_text(s: str) -> str:
     return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 
+def _uid(t: dict) -> str:
+    teile = [t["art"], t["datum"], *sorted(t["referenzen"])]
+    return hashlib.sha256("|".join(teile).encode()).hexdigest()[:16]
+
+
 def ics_schreiben(termine: list[dict], state: BriefState) -> str:
     e = state.get("extraktion")
     ref = e.referenzen[0].wert if e and e.referenzen else datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -180,7 +180,7 @@ def ics_schreiben(termine: list[dict], state: BriefState) -> str:
         erinnerung = date.fromisoformat(t["erinnerung"]) if t["erinnerung"] else tag - timedelta(days=1)
         zeilen += [
             "BEGIN:VEVENT",
-            f"UID:{t['schluessel']}@qq_govdox",
+            f"UID:{_uid(t)}@qq_govdox",
             f"DTSTAMP:{stempel}",
             f"DTSTART;VALUE=DATE:{tag:%Y%m%d}",
             f"DTEND;VALUE=DATE:{tag + timedelta(days=1):%Y%m%d}",
