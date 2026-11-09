@@ -181,12 +181,83 @@ def personendaten_aus_rohtext(state: BriefState) -> set[str]:
 # Deterministische Checks
 # ---------------------------------------------------------------------------
 
+# "Ankommen" wird pro Satz geprüft (Lauf 09.11.: "Der Brief ist in den Betreibungsferien
+# angekommen" ist richtig, "... so, dass er bis dahin dort ankommt" ist falsch):
+# - Grundform/Präsens (ankommt, eintrifft, parvienne ...) zusammen mit Modalverb oder Fristwort
+# - Partizip (angekommen, parvenu ...) nur zusammen mit Modalverb ("muss angekommen sein")
+_SATZENDE = re.compile(r"(?<!\d)[.!?](?!\d)|\n")  # Punkte in 09.11.2026 trennen keine Sätze
 _ANKOMMEN = re.compile(
-    r"\b(ankommen|angekommen|eingehen|eingegangen|eintreffen|eingetroffen|nicht nur abgeschickt"
-    r"|doit arriver|doivent arriver|arriver à temps|parvenir|parvienne|être reçue?"
-    r"|pervenire|pervenga|deve arrivare|arrivi entro|giungere)\b",
+    r"\b(ankommen|ankommt|eingehen|eingeht|eintreffen|eintrifft|nicht nur abgeschickt"
+    r"|arriver|arrive|arrivent|parvenir|parvienne|parvient|être reçue?"
+    r"|arrivare|arrivi|arriva|pervenire|pervenga|perviene|giungere|giunga)\b",
     re.IGNORECASE,
 )
+_ANGEKOMMEN = re.compile(
+    r"\b(angekommen|eingegangen|eingetroffen|arrivée?s?|parvenue?s?"
+    r"|arrivat[oaie]|pervenut[oaie]|giunt[oaie])\b",
+    re.IGNORECASE,
+)
+_MODAL = re.compile(r"\b(muss|müssen|doit|doivent|deve|devono)\b", re.IGNORECASE)
+_FRISTWORT = re.compile(
+    r"\b(bis|spätestens|rechtzeitig|avant|au plus tard|à temps|entro|in tempo)\b", re.IGNORECASE)
+
+
+def _saetze(text: str) -> list[str]:
+    return [s for s in _SATZENDE.split(text) if s and s.strip()]
+
+
+def _ankommen_im_satz(text: str) -> str | None:
+    """Erste Formulierung "muss ankommen" (oder gleichbedeutend), sonst None."""
+    for satz in _saetze(text):
+        modal, frist = _MODAL.search(satz), _FRISTWORT.search(satz)
+        m = _ANKOMMEN.search(satz)
+        if m and (modal or frist):
+            return m[0]
+        m = _ANGEKOMMEN.search(satz)
+        if m and modal:
+            return m[0]
+        m = _MUSS_ERHALTEN.search(satz)
+        if m:
+            return m[0]
+    return None
+
+
+# Rechtsvorschlag/Einsprache = Forderung bestreiten, kein Weg, um nicht zu zahlen (Lauf 09.11.).
+# Nur im selben Satz wie das Rechtsmittel: "Wenn Sie nicht zahlen können, wenden Sie sich an
+# eine Schuldenberatung" bleibt erlaubt.
+_NICHT_ZAHLEN_WOLLEN = re.compile(
+    r"\bnicht\s+(be)?zahlen\s+(wollen|möchten|können|will|möchte|kann)\b"
+    r"|\b(wollen|möchten|können)\s+(Sie\s+)?nicht\s+(be)?zahlen\b"
+    r"|\bne\s+(voulez|souhaitez|pouvez|voulez-vous)\s+pas\s+payer\b"
+    r"|\bnon\s+(vuole|vuol|desidera|può|volete|potete)\s+pagare\b",
+    re.IGNORECASE,
+)
+_RECHTSMITTEL = re.compile(
+    r"\b(Rechtsvorschlag|Einsprache|opposition|réclamation|opposizione|reclamo)\b", re.IGNORECASE)
+
+# Beim Zahlungsbefehl fordert der Gläubiger, das Betreibungsamt stellt nur zu (Lauf 09.11.:
+# "Das Betreibungsamt Talwil verlangt im Auftrag der ... eine Zahlung"). Erlaubt bleiben
+# "Die Firma verlangt über das Betreibungsamt ..." und "Das Betreibungsamt fordert Sie auf, ...".
+_AMT_FORDERT = re.compile(
+    r"\b(?P<amt>Betreibungsamt\w*|office des poursuites|ufficio d'esecuzione"
+    r"|ufficio di esecuzione|ufficio esecuzioni)\b(?:[^.\n]|\.(?=\d)){0,40}?"
+    r"\b(?P<verb>fordert|verlangt|exige|réclame|esige|pretende)\b",
+    re.IGNORECASE,
+)
+_AMT_NICHT_SUBJEKT = {"beim", "über", "vom", "an", "dem", "zum", "durch", "via", "par",
+                      "tramite", "dall", "all", "presso", "auprès", "de", "à"}
+
+
+def _amt_als_glaeubiger(text: str) -> str | None:
+    for satz in _saetze(text):
+        for m in _AMT_FORDERT.finditer(satz):
+            vor = re.findall(r"[\w']+", satz[:m.start("amt")].lower())[-2:]  # z. B. "über das"
+            if any(w.split("'")[0] in _AMT_NICHT_SUBJEKT for w in vor):
+                continue  # "über das Betreibungsamt", "par l'office" -> Amt ist nicht Subjekt
+            if m["verb"].lower() == "fordert" and re.search(r"\bfordert\b.*\bauf\b", satz[m.start("verb"):]):
+                continue  # "fordert Sie auf, ... zu zahlen" = Zahlungsbefehl, richtig
+            return m[0].strip()
+    return None
 # Gleiche Bedeutung wie "ankommen", aber mit einem Wort, das allein harmlos ist
 # ("Sie haben einen Zahlungsbefehl erhalten"). Deshalb nur zusammen mit "muss/doit/deve"
 # im selben Satz (Punkte in Daten wie 09.11.2026 beenden den Satz nicht).
@@ -257,10 +328,27 @@ def pruefe_text(text: str, betrifft: str, state: BriefState, verlangte_sprache: 
     # "Muss ankommen" nur, wenn der Eingang massgebend ist (Krankenkasse)
     eingang = any("eingang_massgebend" in (_dump(f).get("hinweise") or [])
                   for f in state.get("fristen", []))
-    m = _ANKOMMEN.search(text) or _MUSS_ERHALTEN.search(text)
-    if m and not eingang:
+    wort = _ankommen_im_satz(text)
+    if wort and not eingang:
         v.append(Verstoss(regel="erfundene_fakten", betrifft=betrifft,
-                          detail=f"{m[0]!r}: Hier genügt die Postaufgabe am letzten Tag (SchKG Art. 32)"))
+                          detail=f"{wort!r}: Hier genügt die Postaufgabe am letzten Tag (SchKG Art. 32)"))
+
+    # Rechtsmittel als Weg, um nicht zu zahlen
+    for satz in _saetze(text):
+        m = _NICHT_ZAHLEN_WOLLEN.search(satz)
+        if m and _RECHTSMITTEL.search(satz):
+            v.append(Verstoss(regel="erfundene_fakten", betrifft=betrifft,
+                              detail=f"{m[0]!r}: Rechtsvorschlag/Einsprache heisst, die Forderung "
+                                     "zu bestreiten, nicht, nicht zahlen zu wollen"))
+            break
+
+    # Betreibungsamt als Gläubiger
+    if brieftyp == "zahlungsbefehl":
+        treffer = _amt_als_glaeubiger(text)
+        if treffer:
+            v.append(Verstoss(regel="erfundene_fakten", betrifft=betrifft,
+                              detail=f"{treffer!r}: Es fordert der Gläubiger, das Betreibungsamt "
+                                     "stellt nur zu"))
 
     # "Annahme" nur, wenn das Zustelldatum wirklich geschätzt ist
     geschaetzt = state.get("zustelldatum_quelle") == "geschaetzt" or any(
