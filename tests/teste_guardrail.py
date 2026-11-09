@@ -114,7 +114,17 @@ NEGATIVFAELLE = [
      "erfundene_fakten", False),
     ("Zahlung als Pflicht trotz Rechtsvorschlag (Lauf 09.11.)",
      mit_text("01", anhaengen=" Sie sind verpflichtet, die CHF 1915.90 zu bezahlen."),
-     "erfundene_fakten", True),
+     "erfundene_fakten", False),
+    ("'Sie müssen insgesamt ... bezahlen' (Lauf 09.11.)",
+     mit_text("01", anhaengen=" Sie müssen insgesamt CHF 1915.90 bezahlen."),
+     "erfundene_fakten", False),
+    ("'Vous devez payer au total' (FR)",
+     mit_text("05", anhaengen=" Vous devez payer au total 3450.30 CHF."),
+     "erfundene_fakten", False),
+    ("'rigetto' statt 'opposizione' (Brief 08)",
+     mit_text("10", ganzer_text="Lei ha ricevuto un precetto esecutivo. Entro il 16.10.2026 può "
+                                 "presentare il rigetto presso l'Ufficio di esecuzione."),
+     "erfundene_fakten", False),
     ("Betreibungsamt als Gläubiger (Lauf 09.11.)",
      mit_text("01", anhaengen=" Das Betreibungsamt Talwil fordert von Ihnen diesen Betrag."),
      "erfundene_fakten", False),
@@ -146,6 +156,9 @@ BEKANNTE_FEHLER = {
     "15": "parvenir",    # dazu 'supposée'
     "17": "stimato",
     "18": "ipotesi",
+    "08": "rigetto",       # falscher Fachbegriff für den Rechtsvorschlag (IT)
+    "09": "deve pagare",   # Zahlung beim Zahlungsbefehl als feststehende Pflicht
+    "10": "deve pagare",
 }
 
 # (Name, State) – ähnlich formuliert wie ein Negativfall, aber richtig: darf NICHT anschlagen
@@ -168,8 +181,18 @@ KONTROLLFAELLE = [
      mit_text("01", anhaengen=" Sie haben einen Zahlungsbefehl erhalten.")),
     ("'muss … vorliegen' bei der Krankenkasse (Eingang massgebend)",
      mit_text("20", anhaengen=" Die Kündigung muss bis 30.11.2026 bei der Krankenkasse vorliegen.")),
+    # Basis Brief 05 statt 10: Die gespeicherte Erklärung von 10 enthält selbst einen Fehler
+    # ("Lei deve pagare in totale ..."), den der LLM-Check am 09.11. in 1 von 3 Läufen meldete.
     ("'Annahme' bei geschätztem Zustelldatum",
-     mit_quelle("10", "geschaetzt", " Das Zustelldatum 06.10.2026 ist eine Annahme.")),
+     mit_quelle("05", "geschaetzt", " La date de notification du 16.09.2026 est une estimation.")),
+    ("'müssen ... bezahlen' mit Bedingung (Zahlungsbefehl)",
+     mit_text("01", anhaengen=" Wenn Sie die Forderung anerkennen, müssen Sie bis 17.11.2026 bezahlen.")),
+    ("'vous devez payer' mit Bedingung (FR)",
+     mit_text("05", anhaengen=" Si vous reconnaissez la créance, vous devez payer jusqu'au 06.10.2026.")),
+    ("'ob Sie zahlen müssen' (indirekte Frage, Brief 02)",
+     mit_text("01", anhaengen=" Dann entscheidet ein Gericht, ob Sie zahlen müssen.")),
+    ("'müssen nichts bezahlen' (Verneinung)",
+     mit_text("01", anhaengen=" Sie müssen jetzt noch nichts bezahlen.")),
 ]
 
 

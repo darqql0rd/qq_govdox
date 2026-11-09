@@ -235,6 +235,34 @@ _NICHT_ZAHLEN_WOLLEN = re.compile(
 _RECHTSMITTEL = re.compile(
     r"\b(Rechtsvorschlag|Einsprache|opposition|réclamation|opposizione|reclamo)\b", re.IGNORECASE)
 
+# Beim Zahlungsbefehl ist die Zahlung keine feststehende Pflicht: Mit dem Rechtsvorschlag kann
+# die Person die Forderung bestreiten. Gespeicherte Fälle 09/10: "Lei deve pagare CHF 1'030.30."
+# Der LLM-Check meldete das in 3 Läufen nur 1 von 9 Mal. Erlaubt bleiben Verneinungen ("Sie
+# müssen nichts bezahlen") und Bedingungen ("Wenn Sie anerkennen, müssen Sie ... bezahlen",
+# "deve pagare ..., se intende pagare", "Ein Gericht entscheidet, ob Sie zahlen müssen").
+# Bei der Steuer gilt die Regel nicht.
+_PFLICHT = re.compile(r"\b(müssen|muss|verpflichtet|devez|doit|doivent|dovete|deve|tenut[oa])\b",
+                      re.IGNORECASE)
+_ZAHLEN = re.compile(r"\b((be)?zahlen|payer|verser|pagare|versare)\b", re.IGNORECASE)
+_PFLICHT_AUSNAHME = re.compile(
+    r"\b(nichts|nicht|kein\w*|pas|rien|non|niente|nulla"
+    r"|wenn|falls|sofern|sobald|ob|si|s'il|se|qualora)\b", re.IGNORECASE)
+
+
+def _zahlung_als_pflicht(text: str) -> str | None:
+    for satz in _saetze(text):
+        p, z = _PFLICHT.search(satz), _ZAHLEN.search(satz)
+        if p and z and not _PFLICHT_AUSNAHME.search(satz):
+            return satz.strip()[:80]
+    return None
+
+
+# Fachbegriff für den Rechtsvorschlag (wie FACHBEGRIFF in nodes/antwort.py): IT "opposizione".
+# Gespeicherter Fall 08: "deve presentare il rigetto (Rechtsvorschlag)". "Rigetto
+# dell'opposizione" ist die Rechtsöffnung und bleibt erlaubt.
+_FALSCHER_FACHBEGRIFF = re.compile(r"\brigett[oi]\b(?!\s+dell'opposizione)", re.IGNORECASE)
+
+
 # Beim Zahlungsbefehl fordert der Gläubiger, das Betreibungsamt stellt nur zu (Lauf 09.11.:
 # "Das Betreibungsamt Talwil verlangt im Auftrag der ... eine Zahlung"). Erlaubt bleiben
 # "Die Firma verlangt über das Betreibungsamt ..." und "Das Betreibungsamt fordert Sie auf, ...".
@@ -341,6 +369,19 @@ def pruefe_text(text: str, betrifft: str, state: BriefState, verlangte_sprache: 
                               detail=f"{m[0]!r}: Rechtsvorschlag/Einsprache heisst, die Forderung "
                                      "zu bestreiten, nicht, nicht zahlen zu wollen"))
             break
+
+    # Zahlung als feststehende Pflicht und falscher Fachbegriff (nur Zahlungsbefehl)
+    if brieftyp == "zahlungsbefehl":
+        satz = _zahlung_als_pflicht(text)
+        if satz:
+            v.append(Verstoss(regel="erfundene_fakten", betrifft=betrifft,
+                              detail=f"{satz!r}: Beim Zahlungsbefehl ist die Zahlung keine "
+                                     "feststehende Pflicht (Rechtsvorschlag möglich)"))
+        m = _FALSCHER_FACHBEGRIFF.search(text)
+        if m:
+            v.append(Verstoss(regel="erfundene_fakten", betrifft=betrifft,
+                              detail=f"{m[0]!r}: Der Rechtsvorschlag heisst auf Italienisch "
+                                     "'opposizione'"))
 
     # Betreibungsamt als Gläubiger
     if brieftyp == "zahlungsbefehl":
