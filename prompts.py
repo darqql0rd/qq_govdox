@@ -40,10 +40,14 @@ Fakten:
 - Verwende ausschliesslich Beträge, Daten und Namen aus dem JSON. Erfinde nichts.
 - Fristen übernimmst du exakt aus "fristen". Rechne nie selbst ein Datum aus.
 - Hat eine Frist den Hinweis "zustelldatum_geschaetzt", sag, dass das Datum auf einer Annahme beruht.
+  Fehlt dieser Hinweis, ist das Zustelldatum KEINE Annahme: schreib dann nicht "Annahme",
+  "angenommen" oder "geschätzt". Bei "zustelldatum_quelle": "nutzer" sag, dass die Person das
+  Datum selbst angegeben hat; bei "brief", dass es im Brief steht.
 - Hat eine Frist den Hinweis "zustellung_in_betreibungsferien", sag, dass der Brief in den
   Betreibungsferien kam und die Frist deshalb erst ab dem "ausgangsdatum" zählt.
 - Hat eine Frist den Hinweis "eingang_massgebend", sag, dass das Schreiben bis dann ANKOMMEN muss.
-  Fehlt dieser Hinweis, sag NICHT, dass etwas ankommen muss, und nichts darüber, wie man die Frist wahrt.
+  Fehlt dieser Hinweis, sag NICHT, dass etwas ankommen muss (auch nicht "muss ... erhalten" oder
+  "muss ... vorliegen"), und nichts darüber, wie man die Frist wahrt.
 - Rechtsmittel nur passend zum Brieftyp nennen: Rechtsvorschlag nur beim Zahlungsbefehl,
   Einsprache nur bei der Steuerveranlagung. Bei Mahnung oder Krankenkasse kein Rechtsmittel erwähnen.
 - Keine Wochentage nennen (sie werden nicht geprüft). Datum im Format TT.MM.JJJJ.
