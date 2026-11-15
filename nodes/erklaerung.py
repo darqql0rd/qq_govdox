@@ -25,6 +25,14 @@ def erklaerung(state: BriefState) -> dict:
         "fristen": [f.model_dump(mode="json", exclude={"bestaetigt", "erinnerung"})
                     for f in state.get("fristen", [])],
     }
+    # Zweiter Versuch: Beanstandungen des Guardrails mitgeben
+    g = state.get("guardrail")
+    if g is not None and not g.bestanden:
+        korrekturen = [v.detail for v in g.verstoesse if v.betrifft == "erklaerung"]
+        if korrekturen and state.get("erklaerung"):
+            fakten["bisherige_erklaerung"] = state["erklaerung"].model_dump(
+                mode="json", include={"text", "naechste_schritte"})
+            fakten["korrekturen"] = korrekturen
     llm = strukturiert(Erklaerung)
     ergebnis: Erklaerung = llm.invoke([
         SystemMessage(ERKLAER_SYSTEM),
