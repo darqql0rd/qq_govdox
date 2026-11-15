@@ -9,6 +9,13 @@ langsmith
 python-doctr[torch]
 pypdf
 
+# Kalender-MCP (mcp_kalender/, nodes/kalender.py)
+# mcp < 2: langchain-mcp-adapters 0.3 läuft noch nicht mit mcp 2.x
+mcp[cli]<2
+langchain-mcp-adapters
+google-api-python-client
+google-auth-oauthlib
+
 # Notebooks
 ipykernel
 

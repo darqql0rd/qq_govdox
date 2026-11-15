@@ -111,6 +111,10 @@ def main(muster: list[str], variante: str = "pdf"):
             print(f"  (keine Erklärung – Abbruch: {ende.get('abbruch_grund')})")
         if ende.get("antwortentwurf"):
             print(f"  Antwortentwurf: {ende['antwortentwurf'].betreff}")
+        if ende.get("kalender"):
+            k = ende["kalender"]
+            ziel = f"{len(k.event_ids)} Termin(e) im Google Kalender" if k.event_ids else k.ics_pfad
+            print(f"  Kalender: {ziel}" + (f" (Fehler: {k.fehler})" if k.fehler else ""))
         ok += vergleiche(fall, ende)
     print(f"\n{ok}/{len(faelle)} Fälle vollständig korrekt")
 

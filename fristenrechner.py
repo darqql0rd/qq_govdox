@@ -3,14 +3,22 @@
 Bewusst unabhängig von datengenerator/fristen.py geschrieben (sonst prüft die
 Evaluation den Code gegen sich selbst). Umgesetzt nach Gesetzestext:
 
-- SchKG Art. 31: Fristende auf Samstag, Sonntag oder Feiertag -> nächster Werktag
+- SchKG Art. 31 i.V.m. ZPO Art. 142: Frist beginnt am Tag nach der Zustellung;
+  Fristende auf Samstag, Sonntag oder Feiertag -> nächster Werktag.
+  Ein Zahlungsbefehl, der am Samstag zugestellt wird, löst die Frist trotzdem aus
+  (ZPO Art. 142 Abs. 1bis gilt nur für gewöhnliche Post; OG SH 16.12.2025).
 - SchKG Art. 56/63: Betreibungsferien (7 Tage vor/nach Ostern und Weihnachten,
-  15.-31. Juli). Endet eine Frist darin, verlängert sie sich bis zum 3. Werktag
-  nach Ende der Ferien. Gilt nur für den Zahlungsbefehl.
-- Feiertage: nur die schweizweiten (siehe FEIERTAGE). Kantonale Feiertage fehlen bewusst;
-  dadurch wird eine Frist höchstens zu früh, nie zu spät berechnet (konservativ).
+  15.-31. Juli). Endet eine Frist darin, verlängert sie sich bis zum 3. Tag nach Ende
+  der Ferien; Sa, So und Feiertage zählen dabei nicht. Gilt nur für den Zahlungsbefehl.
+- Zustellung WÄHREND der Betreibungsferien: wirkt erst am ersten Tag nach den Ferien
+  (BGE 121 III 284 E. 2b, BGE 127 III 173 E. 3b). Erst ab dann läuft die Frist.
+- Feiertage: Bundesrechtlich ist nur der 1. August Feiertag (BV Art. 110 Abs. 3), alle
+  anderen legen die Kantone fest. Wir zählen nur Feiertage, die in (fast) allen Kantonen
+  gelten (siehe feiertage()). Karfreitag (nicht TI, VS) und Stephanstag (nicht VS) fehlen
+  deshalb bewusst. So wird eine Frist höchstens zu früh, nie zu spät berechnet.
 
-TODO Vendon: Prüfung gegen Fedlex, Krankenkasse Zahlungsfrist der Prämie.
+Rechtsprüfung vom 09.11.2026: siehe Projekt-Doc "Fristen-Rechtspruefung".
+TODO Vendon: Krankenkasse Zahlungsfrist der Prämie.
 """
 
 from datetime import date, timedelta
@@ -49,17 +57,21 @@ def ostersonntag(jahr: int) -> date:
 
 @lru_cache
 def feiertage(jahr: int) -> frozenset[date]:
-    """Schweizweite Feiertage. Kantonale (z. B. Berchtoldstag) bewusst nicht."""
+    """Feiertage, die in (fast) allen Kantonen gelten.
+
+    Nicht enthalten, weil nicht überall Feiertag: Berchtoldstag, Karfreitag (nicht TI, VS),
+    Stephanstag (nicht VS) und alle rein kantonalen Feiertage. Ostermontag und Pfingstmontag
+    gelten nicht in allen Kantonen gleich (Wallis: Quellen widersprechen sich), bleiben aber
+    drin, weil sie in fast der ganzen Schweiz gelten. Offen: gegen die BJ-Liste prüfen.
+    """
     ostern = ostersonntag(jahr)
     return frozenset({
         date(jahr, 1, 1),                    # Neujahr
-        ostern - timedelta(days=2),          # Karfreitag
         ostern + timedelta(days=1),          # Ostermontag
         ostern + timedelta(days=39),         # Auffahrt
         ostern + timedelta(days=50),         # Pfingstmontag
-        date(jahr, 8, 1),                    # Bundesfeier
+        date(jahr, 8, 1),                    # Bundesfeier (BV Art. 110 Abs. 3)
         date(jahr, 12, 25),                  # Weihnachten
-        date(jahr, 12, 26),                  # Stephanstag
     })
 
 
@@ -80,6 +92,19 @@ def betreibungsferien(d: date) -> tuple[date, date] | None:
         if beginn <= d <= ende:
             return beginn, ende
     return None
+
+
+def wirksame_zustellung(zustelldatum: date, mit_betreibungsferien: bool) -> tuple[date, list[str]]:
+    """Zustellung in den Betreibungsferien wirkt erst am ersten Tag nach den Ferien.
+
+    BGE 121 III 284 E. 2b: weder nichtig noch anfechtbar, aber aufgeschobene Wirkung.
+    Massgebend ist der Kalendertag nach Ferienende, auch wenn er ein Samstag oder
+    Feiertag ist (BGE 113 III 5: 2. Januar). Die Frist beginnt am Tag danach.
+    """
+    ferien = betreibungsferien(zustelldatum) if mit_betreibungsferien else None
+    if ferien is None:
+        return zustelldatum, []
+    return ferien[1] + timedelta(days=1), ["zustellung_in_betreibungsferien"]
 
 
 def _fristende(ende: date, mit_betreibungsferien: bool) -> tuple[date, list[str]]:
@@ -128,12 +153,13 @@ def fristen_berechnen(brieftyp: str, zustelldatum: date | None = None,
     if brieftyp in REGELN:
         if zustelldatum is None:
             return []  # ohne Zustelldatum keine Frist (Graph fragt vorher nach)
+        mit_ferien = brieftyp == "zahlungsbefehl"
+        wirksam, hinweis_ferien = wirksame_zustellung(zustelldatum, mit_ferien)
         fristen = []
         for art, tage, basis, grundlage in REGELN[brieftyp]:
-            ende, hinweise = _fristende(zustelldatum + timedelta(days=tage),
-                                        mit_betreibungsferien=(brieftyp == "zahlungsbefehl"))
-            fristen.append(_frist(art, ende, basis, zustelldatum, grundlage,
-                                  hinweise + hinweis_zustellung))
+            ende, hinweise = _fristende(wirksam + timedelta(days=tage), mit_ferien)
+            fristen.append(_frist(art, ende, basis, wirksam, grundlage,
+                                  hinweis_ferien + hinweise + hinweis_zustellung))
         return fristen
 
     if brieftyp == "mahnung" and frist_im_brief:

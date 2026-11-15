@@ -14,6 +14,11 @@ nicht im Git).
 | 2026-11-04_1139_ocr_auswertung.txt | pdf/scan/foto | – | nur OCR-Textqualität, Log von `ocr_auswertung.py` (Tabelle: `daten/ocr_auswertung.md`) |
 | 2026-11-06_0934_foto.txt | foto | 36/45 | 9-Node-Graph mit Guardrail |
 | 2026-11-06_0946_scan.txt | scan | 37/45 | 9-Node-Graph mit Guardrail; 03 und 04 mit `Connection error` zum Proxy abgebrochen |
+| 2026-11-09_foto_1.txt | foto | 38/45 | nach #8–#13 (Fristen-Rechtsprüfung, Retry, Guardrail-/Prompt-Regeln); 5 Briefe am Guardrail-Limit |
+| 2026-11-09_foto_2.txt | foto | 36/45 | wie foto_1; 4 Briefe am Guardrail-Limit |
+| 2026-11-09_foto_3.txt | foto | 34/45 | wie foto_1; 5 Briefe am Guardrail-Limit, 2 Abstürze (ValidationError) |
+| 2026-11-09_scan_1.txt | scan | 39/45 | wie foto_1; 2 Briefe am Guardrail-Limit |
+| 2026-11-09_auswertung.md | – | – | Auswertung der vier Läufe vom 09.11. im Vergleich zum 06.11. |
 
 ## Befunde
 

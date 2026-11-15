@@ -77,6 +77,7 @@ Fristhinweis = Literal[
     "wochenende_verschoben",
     "feiertag_verschoben",
     "betreibungsferien_verschoben",
+    "zustellung_in_betreibungsferien",  # wirkt erst ab dem Tag nach den Ferien (ausgangsdatum)
     "zustelldatum_geschaetzt",
     "eingang_massgebend",    # muss beim Empfänger eintreffen, Poststempel genügt nicht
 ]
