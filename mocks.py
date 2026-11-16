@@ -118,7 +118,6 @@ ZAHLUNGSBEFEHL: BriefState = {
             "Falls nicht: bis 06.11.2026 Rechtsvorschlag beim Betreibungsamt Talwil erheben.",
             "Falls ja: bis 16.11.2026 bezahlen, auch direkt beim Betreibungsamt möglich.",
         ],
-        quellen=["infoblatt_betreibung_rechtsvorschlag"],
     ),
     "antwortentwurf": Antwortentwurf(
         sprache="de",
