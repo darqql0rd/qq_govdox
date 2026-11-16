@@ -1,6 +1,7 @@
 """Erklär-Node testen, ohne LLM: fester Prototyp-Hinweis aus Python (HINWEIS_PROTOTYP).
 
-1. Der Hinweis steht genau einmal am Schluss, in der verlangten Sprache (DE/FR/IT).
+1. Der Hinweis steht genau einmal am Schluss, in der verlangten Sprache (DE/FR/IT),
+   auch beim Neuversuch, wenn das LLM die bisherige Erklärung samt Hinweis übernimmt.
 2. Er löst im Guardrail keinen neuen Alarm aus: alle 45 gespeicherten Fälle mit und
    ohne Hinweis prüfen, die Meldungen müssen gleich bleiben.
 
@@ -62,6 +63,41 @@ def teste_hinweis() -> int:
     return fehler
 
 
+class UebernimmtBisherigeErklaerung:
+    """Wie Haiku am 16.11.: gibt beim Neuversuch den Text samt Hinweis zurück."""
+
+    def __call__(self, schema, model=None):
+        return self
+
+    def invoke(self, nachrichten):
+        import json
+        fakten = json.loads(nachrichten[-1].content)
+        self.gesehen = fakten.get("bisherige_erklaerung", {}).get("text", "")
+        return Erklaerung(sprache="de", text="Korrigiert. " + self.gesehen
+                          + "\n\n" + HINWEIS_PROTOTYP["de"])
+
+
+def teste_hinweis_neuversuch() -> int:
+    from state import GuardrailErgebnis, Verstoss
+    echt = erklaer_modul.strukturiert
+    llm = UebernimmtBisherigeErklaerung()
+    try:
+        erklaer_modul.strukturiert = llm
+        state = mock_bis("zahlungsbefehl", "fristen")
+        state["nutzersprache"] = "de"
+        state["erklaerung"] = Erklaerung(
+            sprache="de", text=f"Alter Text.\n\n{HINWEIS_PROTOTYP['de']}")
+        state["guardrail"] = GuardrailErgebnis(bestanden=False, zurueck_zu="erklaerung", verstoesse=[
+            Verstoss(regel="erfundene_fakten", betrifft="erklaerung", detail="Test")])
+        text = erklaer_modul.erklaerung(state)["erklaerung"].text
+    finally:
+        erklaer_modul.strukturiert = echt
+    ok = ("FHNW" not in llm.gesehen and text.count("FHNW") == 1
+          and text.endswith(HINWEIS_PROTOTYP["de"]))
+    return pruefe("Neuversuch: Hinweis genau einmal (Lauf 16.11.)", ok,
+                  f"{text.count('FHNW')}× im Text, ans LLM {'mit' if 'FHNW' in llm.gesehen else 'ohne'} Hinweis")
+
+
 def teste_guardrail_unveraendert() -> int:
     abweichend = []
     for datei in sorted(FAELLE.glob("*.json")):
@@ -81,6 +117,6 @@ def teste_guardrail_unveraendert() -> int:
 
 
 if __name__ == "__main__":
-    total = teste_hinweis() + teste_guardrail_unveraendert()
+    total = teste_hinweis() + teste_hinweis_neuversuch() + teste_guardrail_unveraendert()
     print("Alle Tests bestanden" if total == 0 else f"{total} Fehler")
     sys.exit(1 if total else 0)

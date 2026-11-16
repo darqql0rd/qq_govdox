@@ -193,6 +193,11 @@ KONTROLLFAELLE = [
      mit_text("01", anhaengen=" Dann entscheidet ein Gericht, ob Sie zahlen müssen.")),
     ("'müssen nichts bezahlen' (Verneinung)",
      mit_text("01", anhaengen=" Sie müssen jetzt noch nichts bezahlen.")),
+    # Lauf 16.11., Brief 06: Satz endete mit Datum, "doit" und "arrivé" galten als ein Satz
+    ("Satzende nach Datum: 'doit … 28.09.2026. Comme … est arrivé …' (Lauf 16.11., Brief 06)",
+     mit_text("05", anhaengen=" Cette opposition doit être faite avant le 28.09.2026. Comme le "
+                               "commandement est arrivé pendant les vacances de poursuites, le délai "
+                               "commence plus tard.")),
 ]
 
 

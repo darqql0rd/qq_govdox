@@ -186,7 +186,10 @@ def personendaten_aus_rohtext(state: BriefState) -> set[str]:
 # angekommen" ist richtig, "... so, dass er bis dahin dort ankommt" ist falsch):
 # - Grundform/Präsens (ankommt, eintrifft, parvienne ...) zusammen mit Modalverb oder Fristwort
 # - Partizip (angekommen, parvenu ...) nur zusammen mit Modalverb ("muss angekommen sein")
-_SATZENDE = re.compile(r"(?<!\d)[.!?](?!\d)|\n")  # Punkte in 09.11.2026 trennen keine Sätze
+# Punkte in 09.11.2026 trennen keine Sätze. Ein Punkt NACH einem Datum schon, wenn ein neuer Satz
+# folgt (Lauf 16.11., Brief 06: "... avant le 06.01.2027. Comme le brief est arrivé ..." wurde
+# sonst ein Satz, und "doit" + "arrivé" ergab einen Fehlalarm).
+_SATZENDE = re.compile(r"(?<!\d)[.!?](?!\d)|(?<=\d)\.(?=\s+[A-ZÄÖÜÀÂÉÈÊÎÔÙÛÇ])|\n")
 _ANKOMMEN = re.compile(
     r"\b(ankommen|ankommt|eingehen|eingeht|eintreffen|eintrifft|nicht nur abgeschickt"
     r"|arriver|arrive|arrivent|parvenir|parvienne|parvient|être reçue?"
