@@ -12,7 +12,7 @@ nicht im Git).
 |---|---|---|---|
 | 2026-11-04_1054_foto_v1.txt | foto | 29/45 | erster Foto-Lauf, vor dem Graph-Gerüst |
 | 2026-11-04_1129_foto_v2.txt | foto | 37/45 | vor dem Graph-Gerüst (Analyse → Fristen → Erklärung) |
-| 2026-11-04_1139_ocr_auswertung.txt | pdf/scan/foto | – | nur OCR-Textqualität, Log von `ocr_auswertung.py` (Tabelle: `daten/ocr_auswertung.md`) |
+| 2026-11-04_1139_ocr_auswertung.txt | pdf/scan/foto | – | nur OCR-Textqualität, Log von `skripte/ocr_auswertung.py` (Tabelle: `daten/ocr_auswertung.md`) |
 | 2026-11-06_0934_foto.txt | foto | 36/45 | 9-Node-Graph mit Guardrail |
 | 2026-11-06_0946_scan.txt | scan | 37/45 | 9-Node-Graph mit Guardrail; 03 und 04 mit `Connection error` zum Proxy abgebrochen |
 | 2026-11-09_foto_1.txt | foto | 38/45 | nach #8–#13 (Fristen-Rechtsprüfung, Retry, Guardrail-/Prompt-Regeln); 5 Briefe am Guardrail-Limit |

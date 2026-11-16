@@ -1,7 +1,7 @@
 """Guardrail testen, ohne den ganzen Graphen (Owner: Florian).
 
 - Positivfälle: die 45 gespeicherten End-States (tests/guardrail_faelle/, erzeugt mit
-  speichere_faelle.py). Hier soll der Guardrail möglichst NICHT anschlagen.
+  skripte/speichere_faelle.py). Hier soll der Guardrail möglichst NICHT anschlagen.
 - Negativfälle: echte Fehler aus unseren Läufen, in einen Positivfall eingesetzt.
   Hier MUSS die erwartete Regel anschlagen.
 

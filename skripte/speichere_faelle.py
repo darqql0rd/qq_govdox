@@ -4,8 +4,8 @@ Schickt Briefe durch den heutigen Graphen (Analyse -> Fristen -> Erklärung) und
 speichert den End-State pro Brief als JSON in tests/guardrail_faelle/.
 Diese Fälle sind die Positivbeispiele für den Guardrail.
 
-    python speichere_faelle.py            # alle 45 Briefe
-    python speichere_faelle.py 01 26      # nur ausgewählte
+    python skripte/speichere_faelle.py            # alle 45 Briefe
+    python skripte/speichere_faelle.py 01 26      # nur ausgewählte
 """
 
 import json
@@ -14,13 +14,15 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv()
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+load_dotenv(ROOT / ".env")
 
 from graph import baue_graph       # noqa: E402
 from main import EINGABE           # noqa: E402
 from mocks import aus_gold, fall_ids  # noqa: E402
 
-ZIEL = Path("tests/guardrail_faelle")
+ZIEL = ROOT / "tests" / "guardrail_faelle"
 
 
 def als_json(objekt):

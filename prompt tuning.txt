@@ -1,5 +1,0 @@
-Personendaten: „am Birkenweg 7 in Talwil“ ist die Adresse des Schuldners. Laut euren Regeln gehören Privatadressen nicht in die Extraktion. Das Modell hat beim forderungsgrund den ganzen Satz inklusive „Liegenschaft Birkenweg 7“ übernommen. Das ist genau ein Fall für eure Guardrail-Regel personendaten.
-
-Zins leicht missverständlich: Der Text sagt „Insgesamt CHF 1'915.90 … davon die Forderung mit 5 % Zins“. Im Brief steht aber „Total ohne Zins“, der Zins kommt also noch dazu. Ein Laie könnte denken, mit 1'915.90 sei alles bezahlt.
-
-Letzter Punkt holprig: „diese Hilfe ist kein offizieller Dienst“ ist durcheinandergeraten. Gemeint war, dass der Agent kein offizieller Dienst ist.

@@ -31,7 +31,7 @@ Ergänzt in v2.1 (für den erweiterten Testdatensatz):
 - injection_verdacht: Analyse-Agent markiert Anweisungen im Brief früh
 
 Owner: Melvin. Änderungen nur per Pull Request, damit kein Node still bricht.
-Offene Teamentscheide sind mit "ENTSCHEID:" markiert.
+Teamentscheide sind mit "Entscheid:" kommentiert.
 """
 
 from __future__ import annotations
@@ -93,10 +93,10 @@ Zahlungsrichtung = Literal[
     "information",     # Krankenkasse: neue Prämie, keine sofortige Zahlung
 ]
 
-# Höchstzahl Versuche pro Schleife (Werte = ENTSCHEID, hier Vorschlag)
+# Entscheid: Höchstzahl Versuche pro Schleife
 MAX_VERSUCHE = {"ocr": 2, "guardrail": 2}
 
-# Erinnerung im Kalender so viele Tage vor Fristablauf (ENTSCHEID)
+# Entscheid: Erinnerung im Kalender so viele Tage vor Fristablauf
 ERINNERUNG_TAGE_VORHER = 5
 
 
@@ -252,7 +252,7 @@ class Extraktion(BaseModel):
         return abs(sum(p.betrag_chf for p in relevant) - self.hauptbetrag_chf) < 0.01
 
 
-# ENTSCHEID: Ein flaches Modell mit optionalen Feldern ist für kleinere Modelle
+# Entscheid: Ein flaches Modell mit optionalen Feldern ist für kleinere Modelle
 # (Apertus) einfacher als typenspezifische Unterklassen. Wenn die Extraktion
 # zu ungenau wird: zuerst klassifizieren, dann mit typenspezifischem Schema extrahieren.
 

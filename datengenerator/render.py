@@ -1,5 +1,5 @@
 """PDF-Rendering: 4 Layout-Vorlagen, Logos, Fusszeile, optionales Wasserzeichen, QR-Zahlteil."""
-import os, io, math, datetime as dt
+import os, io, math
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.lib import colors
