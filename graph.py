@@ -1,11 +1,12 @@
-"""Graph-Gerüst mit allen 9 Nodes (Owner: Melvin).
+"""Graph-Gerüst mit allen 10 Nodes (Owner: Melvin).
 
 OCR -> Analyse -> (Zustelldatum erfragen) -> Fristen -> Erklärung -> (Antwort)
--> Guardrail -> Bestätigung -> Kalender. Noch nicht fertige Nodes sind Platzhalter
+-> Guardrail -> (Sichere Ausgabe) -> Bestätigung -> Kalender. Noch nicht fertige Nodes sind Platzhalter
 in nodes/, die nur ihre eigenen Felder aus FELDER_PRO_NODE zurückgeben.
 
 Die Routing-Funktionen lesen nur. abbruch_grund setzt der jeweilige Node selbst
-(ocr: "unlesbar", guardrail: "guardrail_limit", bestaetigung: "nicht_bestaetigt").
+(ocr: "unlesbar", bestaetigung: "nicht_bestaetigt"). Am Guardrail-Limit gibt es keinen
+Abbruch: sichere_ausgabe ersetzt die beanstandeten Texte, danach geht es normal weiter.
 Der Checkpointer (MemorySaver) ist Pflicht, sonst funktioniert interrupt() nicht.
 
     python graph.py      # Graph als Mermaid ausgeben
@@ -29,6 +30,7 @@ from nodes.fristen import fristen
 from nodes.guardrail import guardrail
 from nodes.kalender import kalender
 from nodes.ocr import ocr
+from nodes.sichere_ausgabe import sichere_ausgabe
 from nodes.zustelldatum_erfragen import zustelldatum_erfragen
 from state import MAX_VERSUCHE, BriefState
 
@@ -70,14 +72,15 @@ def nach_erklaerung(state: BriefState) -> str:
 
 
 def nach_guardrail(state: BriefState) -> str:
-    """Bestanden -> Bestätigung; sonst gezielt zurück, solange Versuche übrig sind."""
+    """Bestanden -> Bestätigung; sonst gezielt zurück, solange Versuche übrig sind;
+    am Limit -> sichere_ausgabe (Fallback aus geprüften Fakten)."""
     ergebnis = state.get("guardrail")
     if ergebnis is None or ergebnis.bestanden:
         return "bestaetigung"
     if state.get("versuche", {}).get("guardrail", 0) < MAX_VERSUCHE["guardrail"]:
         # "beide" -> zuerst Erklärung, die Antwort folgt über nach_erklaerung
         return "antwort" if ergebnis.zurueck_zu == "antwort" else "erklaerung"
-    return END
+    return "sichere_ausgabe"
 
 
 def nach_bestaetigung(state: BriefState) -> str:
@@ -97,6 +100,7 @@ def baue_graph(checkpointer=None):
     b.add_node("erklaerung", erklaerung, retry_policy=LLM_RETRY)
     b.add_node("antwort", antwort, retry_policy=LLM_RETRY)
     b.add_node("guardrail", guardrail, retry_policy=LLM_RETRY)
+    b.add_node("sichere_ausgabe", sichere_ausgabe)  # reines Python, kein Retry nötig
     b.add_node("bestaetigung", bestaetigung)
     b.add_node("kalender", kalender)
 
@@ -110,7 +114,8 @@ def baue_graph(checkpointer=None):
     b.add_conditional_edges("erklaerung", nach_erklaerung, ["antwort", "guardrail"])
     b.add_edge("antwort", "guardrail")
     b.add_conditional_edges("guardrail", nach_guardrail,
-                            ["bestaetigung", "erklaerung", "antwort", END])
+                            ["bestaetigung", "erklaerung", "antwort", "sichere_ausgabe"])
+    b.add_edge("sichere_ausgabe", "bestaetigung")
     b.add_conditional_edges("bestaetigung", nach_bestaetigung, ["kalender", END])
     b.add_edge("kalender", END)
     if checkpointer is None:

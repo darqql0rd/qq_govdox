@@ -10,13 +10,16 @@ import os
 
 import openai
 from dotenv import load_dotenv
+from langchain_core.exceptions import OutputParserException
 from langchain_openai import ChatOpenAI
 from langgraph.types import RetryPolicy
+from pydantic import ValidationError
 
 load_dotenv()  # liest .env im Repo-Root (Keys, Modellname, Tracing)
 
 # Vorübergehende Fehler des LiteLLM-Proxys: nochmals versuchen lohnt sich.
-# Ein falsches Schema, ein falscher Key oder ein Bug bleiben Fehler (kein Retry).
+# Ein falscher Key oder ein Bug bleiben Fehler (kein Retry). Kaputte strukturierte
+# Ausgabe (STRUKTURFEHLER) wird dagegen wiederholt, siehe unten.
 # langchain_openai.OpenAIConnectionError ist eine Unterklasse von APIConnectionError.
 VORUEBERGEHEND = (
     openai.APIConnectionError,   # Proxy nicht erreichbar ("Connection error.")
@@ -24,6 +27,12 @@ VORUEBERGEHEND = (
     openai.RateLimitError,       # 429
     openai.InternalServerError,  # 5xx
 )
+
+# Kaputte strukturierte Ausgabe: Das Modell liefert JSON, das nicht zum Schema passt
+# oder gar keinen Tool-Aufruf. Läufe 09.11., Briefe 24 und 35: ValidationError in der Analyse,
+# einmal fehlte "extraktion", zweimal stand darin XML statt JSON ('<parameter name="absen...').
+# Ein neuer Aufruf liefert meist eine gültige Antwort (Haiku läuft mit temperature=1).
+STRUKTURFEHLER = (ValidationError, OutputParserException)
 
 # Stufe 1: der OpenAI-Client wiederholt selbst, aber nur mit kurzen Pausen (< 10 s).
 LLM_TIMEOUT_S = 120  # grosszügig: Apertus-70B braucht für lange Antworten teils deutlich länger als Haiku
@@ -35,7 +44,7 @@ LLM_RETRY = RetryPolicy(
     max_attempts=4,
     initial_interval=5.0,
     backoff_factor=2.0,
-    retry_on=VORUEBERGEHEND,
+    retry_on=VORUEBERGEHEND + STRUKTURFEHLER,
 )
 
 
