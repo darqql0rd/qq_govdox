@@ -55,8 +55,18 @@ Test ohne LLM: `python tests/teste_app.py`.
 |---|---|---|
 | Melvin | Antwort-Agent | LangGraph-Graph, State, Routing, Human-in-the-loop |
 | Nayan | Analyse-Agent | Texterkennung/OCR, Kalender-MCP, Apertus-Vision-Test |
-| Vendon | Erklär-Agent | RAG über Infoblätter, Fristenrechner |
+| Vendon | Erklär-Agent | Fristenrechner |
 | Florian | Guardrail-Agent | Evaluation, Apertus-Vergleich, UI |
+
+## Warum kein RAG
+
+Ursprünglich geplant war RAG über offizielle Infoblätter. Wir haben bewusst darauf verzichtet:
+
+- Das nötige Wissen ist klein und stabil (vier Brieftypen, ihre Rechtsmittel und Fristen) und
+  steht direkt im Prompt.
+- Fristen berechnet der Fristenrechner deterministisch in Python, nicht das LLM.
+- Der Guardrail prüft jede Aussage gegen die Fakten im State (Extraktion, Fristen). Texte aus
+  einem Retrieval liessen sich so nicht prüfen und wären eine zusätzliche Fehlerquelle.
 
 ## Kalender (Google Kalender über MCP)
 

@@ -83,8 +83,7 @@
       "Vérifiez le détail de la facture du médecin et le décompte de l'assurance.",
       "Contactez Helvaria Assurance-maladie SA en indiquant le numéro de client 4.302.661 et la référence PR-2026-889104.",
       "Demandez au service des prestations quelle est la date limite de paiement."
-    ],
-    "quellen": []
+    ]
   },
   "versuche": {
     "ocr": 1

@@ -310,9 +310,6 @@ class Erklaerung(BaseModel):
     naechste_schritte: list[str] = Field(
         default_factory=list, description="Konkrete Handlungen, je ein kurzer Satz"
     )
-    quellen: list[str] = Field(
-        default_factory=list, description="IDs der verwendeten Infoblätter aus dem RAG"
-    )
 
 
 class Antwortentwurf(BaseModel):
@@ -341,7 +338,7 @@ class Verstoss(BaseModel):
         "betrag_abweichung",    # Betrag im Text ≠ Extraktion
         "rechtsberatung",       # verbindliche Rechtsauskunft statt Erklärung
         "injection_befolgt",    # Anweisung aus dem Brief wurde ausgeführt
-        "erfundene_fakten",     # nicht in Extraktion/Fristen/RAG belegt
+        "erfundene_fakten",     # nicht in Extraktion/Fristen belegt
         "falsche_sprache",
         "personendaten",        # Namen, Geburtsdaten etc. im Output
     ]
@@ -476,6 +473,7 @@ FELDER_PRO_NODE: dict[str, list[str]] = {
 
 NODE_REIHENFOLGE: list[str] = list(FELDER_PRO_NODE)
 
-# ENTSCHEID: Welche Felder darf der Erklär-Agent sehen? Vorschlag: Extraktion,
-# Fristen, RAG-Treffer und den Rohtext in <brief>-Tags abgegrenzt.
-# Der Antwort-Agent bekommt KEINEN Rohtext, nur Extraktion und Fristen.
+# ENTSCHIEDEN: Erklär- und Antwort-Agent bekommen nur geprüfte Fakten (Extraktion, Fristen),
+# KEINEN Rohtext (Prompt Injection). Kein RAG: Das nötige Wissen (vier Brieftypen, Rechtsmittel,
+# Fristen) ist klein und stabil und steht im Prompt; Fristen rechnet Python; der Guardrail
+# prüft gegen die Fakten im State.
