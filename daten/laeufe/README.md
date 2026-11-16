@@ -2,7 +2,8 @@
 
 Ausgaben von `python main.py _ --variante <pdf|scan|foto>` über alle 45 Testbriefe,
 geprüft gegen `gold.json` (Brieftyp, Fristen, Betrag, Injection; bei unlesbaren Fotos
-nur die Erkennung als unlesbar). Modell: `azure_ai/claude-haiku-5-5` über LiteLLM.
+nur die Erkennung als unlesbar). Modell: `azure_ai/claude-haiku-5-5` über LiteLLM; ab 16.11.
+zusätzlich `swiss-ai/Apertus-v1.5-70B` (CSCS) zum Vergleich. Läufe vom 16.11. mit `laeufe.ps1`.
 
 Dateiname: `<Datum>_<Uhrzeit>_<Variante>.txt` (Zeitpunkt des Laufs). Neue Läufe hier ablegen (`ausgabe/` ist
 nicht im Git).
@@ -19,6 +20,11 @@ nicht im Git).
 | 2026-11-09_foto_3.txt | foto | 34/45 | wie foto_1; 5 Briefe am Guardrail-Limit, 2 Abstürze (ValidationError) |
 | 2026-11-09_scan_1.txt | scan | 39/45 | wie foto_1; 2 Briefe am Guardrail-Limit |
 | 2026-11-09_auswertung.md | – | – | Auswertung der vier Läufe vom 09.11. im Vergleich zum 06.11. |
+| 2026-11-16_foto_haiku_1.txt | foto | 42/45 | **finaler Stand**, Haiku; 41 vom Guardrail freigegeben, 1 am Limit |
+| 2026-11-16_foto_haiku_2.txt | foto | 42/45 | wie haiku_1; 42 freigegeben, 1 am Limit |
+| 2026-11-16_foto_haiku_3.txt | foto | 41/45 | wie haiku_1; 40 freigegeben, 1 am Limit |
+| 2026-11-16_foto_apertus.txt | foto | 20/45 | gleicher Stand mit Apertus-v1.5-70B, `temperature=0`; 16 freigegeben, 6 am Limit, 48 min |
+| 2026-11-16_auswertung.md | – | – | Auswertung der Läufe vom 16.11.: Haiku vs. Apertus, Guardrail-Befund |
 
 ## Befunde
 
@@ -27,3 +33,12 @@ nicht im Git).
   (CHF 9 870,00 + 83,30 + 50,00), aber der Brief nennt kein Total, und das LLM zählt die
   Posten falsch zusammen. Die Summenprüfung `posten_plausibel()` in `nodes/analyse.py`
   läuft nur bei Zahlungsbefehl und Mahnung, deshalb fällt der Fehler nicht auf.
+- **Brief 13 (Steuer-Rückerstattung), Betrag falsch** in allen Haiku-Läufen vom 16.11.:
+  extrahiert −7400.00 (Vorauszahlungen) statt −638.20 (Guthaben). Gold ist korrekt. Die
+  Erklärung nennt das Guthaben trotzdem richtig; `posten_plausibel()` läuft bei Steuerbriefen
+  nicht, deshalb fällt es nicht auf.
+- **Guardrail prüft Konsistenz, nicht Richtigkeit** (Läufe vom 16.11.): Ist die Analyse falsch,
+  gibt der Guardrail die dazu passende Erklärung frei. Bei Apertus gingen so 23 falsche Ergebnisse
+  durch, z. B. Konkursandrohung als Zahlungsbefehl mit Rechtsvorschlagsfrist. Details in
+  `2026-11-16_auswertung.md`.
+- **Stand 16.11. ist final** für die Präsentation; danach keine Anpassungen an Prompts oder Graph mehr.
