@@ -61,12 +61,14 @@ Test ohne LLM: `python tests/teste_app.py`.
 ## Graph in LangGraph Studio (LangSmith)
 
 ```bash
-langgraph dev --tunnel --no-reload
+langgraph dev --tunnel --no-reload --allow-blocking
 ```
 
 Startet einen lokalen Server mit einer öffentlichen https-Adresse (`…trycloudflare.com`, bei
 jedem Start neu). `--no-reload` ist nötig, sonst lädt der Server wegen eigener Dateien
-(`.langgraph_api/`) ständig neu. Ohne Tunnel blockieren Firefox, Brave und Safari den Zugriff
+(`.langgraph_api/`) ständig neu. `--allow-blocking` ist nötig für den Google-Kalender:
+Der Kalender-Node startet den MCP-Server als Unterprozess, was der Dev-Server sonst als
+«BlockingError» abbricht (in UI und `main.py` kein Problem). Ohne Tunnel blockieren Firefox, Brave und Safari den Zugriff
 auf localhost meist.
 
 Verbinden (getestet mit Firefox, Tracking-Schutz für smith.langchain.com aus):
