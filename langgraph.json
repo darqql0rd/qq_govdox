@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "qq_govdox": "./studio.py:graph"
+  },
+  "env": ".env"
+}

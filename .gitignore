@@ -22,3 +22,6 @@ ausgabe/
 # Google-Kalender (OAuth, nie ins Git)
 credentials.json
 token.json
+
+# LangGraph Studio (langgraph dev)
+.langgraph_api/

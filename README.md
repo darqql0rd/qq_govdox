@@ -58,6 +58,20 @@ Test ohne LLM: `python tests/teste_app.py`.
 | Vendon | Erklär-Agent | Fristenrechner |
 | Florian | Guardrail-Agent | Evaluation, Apertus-Vergleich, UI |
 
+## Graph in LangGraph Studio (LangSmith)
+
+```bash
+langgraph dev
+```
+
+Startet einen lokalen Server und öffnet LangGraph Studio im Browser
+(https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024, LangSmith-Login nötig).
+Dort sieht man den Graphen, kann einen Brief starten (Eingabe z. B.
+`{"dokument_pfade": ["daten/briefe/03_zahlungsbefehl_de_vertreter_ohne_zustelldatum/brief.pdf"], "nutzersprache": "de"}`),
+die Fragen (Zustelldatum, Bestätigung) beantworten und den State nach jedem Node ansehen.
+Konfiguration: `langgraph.json`, Einstieg `studio.py` (ohne eigenen Checkpointer, den stellt der Server).
+Brave/Safari blockieren den Zugriff auf localhost teils, dann Chrome/Edge oder `langgraph dev --tunnel`.
+
 ## Warum kein RAG
 
 Ursprünglich geplant war RAG über offizielle Infoblätter. Wir haben bewusst darauf verzichtet:

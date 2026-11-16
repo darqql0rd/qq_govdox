@@ -19,6 +19,9 @@ google-auth-oauthlib
 # Oberfläche (app.py)
 streamlit>=1.40
 
+# LangGraph Studio (langgraph dev, siehe studio.py)
+langgraph-cli[inmem]
+
 # Notebooks
 ipykernel
 
