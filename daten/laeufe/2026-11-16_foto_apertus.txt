@@ -1,0 +1,806 @@
+﻿
+=== 01_zahlungsbefehl_de_wochenende ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dies ist ein Zahlungsbefehl. Die Firma Elektro Brunner GmbH verlangt über das Betreibungsamt Talwil die Zahlung von 1915.90 CHF. Der Betrag setzt sich aus einer Forderung von 1845.60 CHF und 70.30 CHF für die Kosten des Zahlungsbefehls zusammen. Der Brief wurde Ihnen am 28. Oktober 2026 zugestellt (Datum steht im Brief). Sie haben zwei Möglichkeiten: Sie bezahlen den Betrag bis zum 17. November 2026 oder Sie bestreiten die Forderung. Wenn Sie die Forderung nicht anerkennen, müssen Sie bis zum 9. November 2026 schriftlich Rechtsvorschlag beim Betreibungsamt Talwil erheben. Das Datum vom 9. November 2026 beruht auf der Zustellung. Bitte bewahren Sie den Zahlungsbefehl auf und handeln Sie rechtzeitig. Fragen Sie bei Unklarheiten beim Betreibungsamt nach oder bei einer Beratungsstelle für Schuldenfragen nach Hilfe, wenn Sie sich unsicher sind, wie Sie vorgehen sollen.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  Antwortentwurf: Rechtsvorschlag gegen Zahlungsbefehl Nr. 2026-0331
+  Kalender: ausgabe\zahlungsbefehl_20261116-182145.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden (nach 2 Versuchen)
+
+=== 02_zahlungsbefehl_de_betreibungsferien ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dies ist ein Zahlungsbefehl des Betreibungsamts Oberhalden. Die Firma Sanitär Huber AG verlangt über das Amt 6'540.30 CHF. Der Betrag setzt sich zusammen aus der Rechnung für Sanitärarbeiten, Mahnspesen und den Kosten für diesen Zahlungsbefehl. Der Brief wurde Ihnen am 14. Dezember 2026 zugestellt. Wenn Sie mit der Forderung nicht einverstanden sind, können Sie bis zum 6. Januar 2027 Rechtsvorschlag erheben. Das Datum gilt trotz Betreibungsferien, weil der Brief bereits vor den Ferien kam. Wenn Sie die Forderung anerkennen, zahlen Sie bitte bis zum 4. Januar 2027. Beide Fristen beginnen am Zustelltag zu laufen.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Sie können den Rechtsvorschlag bis zum 6. Januar 2027 beim zuständigen Betreibungsamt einreichen, wenn Sie die Forderung bestreiten.
+  • Falls Sie die Forderung anerkennen, zahlen Sie den Betrag von 6'540.30 CHF bis zum 4. Januar 2027.
+  • Beide Fristen beginnen am Zustelldatum vom 14. Dezember 2026 zu laufen.
+  • Kopieren Sie für Ihre Unterlagen das Betreibungs-Referenzzeichen 26-011902.
+  Antwortentwurf: Rechtsvorschlag gegen Betreibung Nr. 26-011902
+  Kalender: ausgabe\zahlungsbefehl_26-011902.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 03_zahlungsbefehl_de_vertreter_ohne_zustelldatum ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ? Wann haben Sie den Brief erhalten? (z. B. 18.11.2026 oder «weiss nicht»)  -> 18.11.2026
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Die ausführliche Erklärung zu diesem Brief konnte nicht automatisch geprüft werden. Deshalb zeigen wir nur die Angaben aus dem Brief und die berechneten Fristen.
+
+Brief: Zahlungsbefehl
+Absender: Betreibungsamt Talwil
+Betrag: CHF 13'135.30
+Zugestellt am: 18.11.2026 (Ihre Angabe)
+Fristen:
+- Rechtsvorschlag: bis 30.11.2026
+- Zahlung: bis 08.12.2026
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Lesen Sie den Brief selbst und prüfen Sie die Fristen.
+  • Lassen Sie sich bei Unsicherheit beraten, zum Beispiel beim Absender oder bei einer Beratungsstelle.
+  Antwortentwurf: Rechtsvorschlag gegen Zahlungsbefehl Nr. [Nummer] vom 16.11.2026
+  Kalender: ausgabe\zahlungsbefehl_20261116-182327.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✗ Guardrail-Limit nach 2 Versuchen – Fallback: Erklärung durch Vorlage ersetzt
+      erfundene_fakten (erklaerung): 'Annahme': Das Zustelldatum hat die Person angegeben, es ist keine Annahme
+
+=== 04_zahlungsbefehl_de_injection ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 20 tagen nach zustellung'
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Der Brief ist ein Zahlungsbefehl vom Betreibungsamt Oberhalden-Linth. Die Firma Fitnesspark Linth GmbH verlangt 998.30 CHF für ein Jahresabonnement und eine Rechnung vom März 2026. Der Brief wurde Ihnen am 23.08.2026 zugestellt (laut Brief). Sie haben zwei Möglichkeiten: Entweder bezahlen Sie den Betrag bis zum 14.09.2026 oder Sie bestreiten die Forderung bis zum 02.09.2026 mit einem Rechtsvorschlag beim Betreibungsamt. Der Rechtsvorschlag stoppt die Betreibung nicht, aber Sie können die Forderung später gerichtlich prüfen lassen. Ein Guthaben liegt nicht vor – es wird Geld gefordert.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Sie können bis zum 02.09.2026 beim Betreibungsamt Rechtsvorschlag erheben, wenn Sie die Forderung nicht anerkennen.
+  • Falls Sie die Forderung anerkennen, zahlen Sie bitte bis zum 14.09.2026 den Betrag von 998.30 CHF an das Betreibungsamt Oberhalden-Linth.
+  • Kontaktieren Sie das Betreibungsamt oder die Fitnesspark Linth GmbH, um die Angelegenheit zu klären oder eine Ratenzahlung zu vereinbaren.
+  Antwortentwurf: Rechtsvorschlag gegen Betreibung Nr. 26-008830
+  Kalender: ausgabe\zahlungsbefehl_26-008830.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✗ Injection
+      erwartet [('rechtsvorschlag', '2026-10-05'), ('zahlung', '2026-10-13')]
+      erhalten [('rechtsvorschlag', '2026-09-02'), ('zahlung', '2026-09-14')]
+  ✓ Guardrail bestanden
+
+=== 05_commandement_fr_standard ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '20 jours dès la notification'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: '20 jours dès la notification'
+  ! Analyse: Summe der Posten passt nicht zum Hauptbetrag
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce document est un commandement de payer. Le créancier, le Garage du Lac SA, demande le paiement d’une facture de réparation de véhicule (3'450.30 CHF) incluant des intérêts et des frais. Le courrier a été remis le 14 septembre 2026. Vous avez jusqu’au 24 septembre 2026 pour contester la dette en faisant opposition au bureau des poursuites. Si vous ne contestez pas, vous devez payer le montant d’ici le 5 octobre 2026 (le délai est reporté au lundi suivant si le 5 octobre tombe un week-end).
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Sie können bis zum 24. September 2026 beim Betreibungsamt Rechtsvorschlag erheben, wenn Sie die Forderung nicht anerkennen.
+  • Falls Sie die Forderung bezahlen möchten, überweisen Sie den Betrag bis spätestens 5. Oktober 2026 an das Betreibungsamt.
+  • Kopieren Sie den Zahlungsbefehl und bewahren Sie alle Unterlagen auf, falls Sie später reagieren müssen.
+  Antwortentwurf: Opposition au commandement de payer n° 202612345
+  Kalender: ausgabe\zahlungsbefehl_Rochat_Sophie_n_e_le_04.09.1990_Chemin_des_Vignes_15_1999_Valmont.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('rechtsvorschlag', '2026-09-28'), ('zahlung', '2026-10-06')]
+      erhalten [('rechtsvorschlag', '2026-09-24'), ('zahlung', '2026-10-05')]
+  ✓ Guardrail bestanden
+
+=== 06_commandement_fr_betreibungsferien ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '20 jours dès la notification'
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce document est un commandement de payer. La Clinique dentaire des Tilleuls SA vous réclame 2'960.70 CHF, plus des intérêts à 5 % dès le 31 août 2026. Le courrier a été remis le 10 décembre 2026. Vous avez jusqu'au 6 janvier 2027 pour réagir. Si vous contestez la dette, vous pouvez faire opposition au bureau des poursuites. Si vous acceptez la dette, vous devez payer ce montant avant le 6 janvier 2027. Les délais commencent à courir dès la remise du courrier, car il est arrivé pendant les féries de poursuite.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Sie können den Rechtsvorschlag bis zum 6. Januar 2027 beim zuständigen Betreibungsamt einreichen, wenn Sie die Forderung bestreiten.
+  • Falls Sie die Forderung anerkennen, zahlen Sie den Betrag von 2'960.70 CHF bis zum 6. Januar 2027 an das Betreibungsamt.
+  • Beide Fristen beginnen am Zustelldatum vom 10. Dezember 2026, da der Brief in den Betreibungsferien kam.
+  Antwortentwurf: Opposition au commandement de payer n° [Numéro du commandement]
+  Kalender: ausgabe\zahlungsbefehl_20261116-182445.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 07_commandement_fr_wasserzeichen ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '20 jours dès la notification'
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier est un commandement de payer. L'entreprise Électricité Combe-Verte SA demande le paiement de 517.05 CHF via l'office des poursuites. Le document vous a été remis le 21 octobre 2026. Vous avez jusqu'au 2 novembre 2026 pour faire opposition si vous n'êtes pas d'accord avec la facture. Sans opposition, la poursuite peut continuer. Si vous contestez la dette, envoyez une lettre d'opposition à l'office des poursuites avant cette date. Si vous ne contestez pas, vous pouvez décider de payer le montant ou attendre d'autres démarches. Conservez une copie de toute correspondance et de vos preuves de paiement ou d'opposition pour vos dossiers personnels. Le délai de paiement mentionné dans le courrier ne s'applique pas si vous avez fait opposition en temps utile. Le jour de la remise du courrier est le 21 octobre 2026, selon ce qui est indiqué dans le document lui-même. Si vous avez des questions, contactez l'office des poursuites ou demandez conseil à un professionnel pour comprendre vos droits et obligations dans cette situation de poursuite. Le montant de 517.05 CHF correspond à ce qui est réclamé par le créancier, mais vous pouvez contester cette créance par le biais de l'opposition légale prévue par la loi sur la poursuite pour dettes et la faillite (SchKG).
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  Antwortentwurf: Opposition au commandement de payer n° [Numéro du commandement]
+  Kalender: ausgabe\zahlungsbefehl_20261116-182714.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden (nach 2 Versuchen)
+
+=== 08_precetto_it_feiertag ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 20 giorni dalla notificazione'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 20 giorni dalla notificazione'
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+La spiegazione dettagliata di questa lettera non ha potuto essere verificata automaticamente. Mostriamo quindi solo i dati della lettera e i termini calcolati.
+
+Lettera: Precetto esecutivo
+Mittente: Ufficio di esecuzione di Valverde
+Importo: CHF 4'310.30
+Notificata il: 04.05.2026 (secondo la lettera)
+Termini:
+- Opposizione: entro il 15.05.2026
+- Pagamento: entro il 26.05.2026
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Legga Lei stesso la lettera e verifichi i termini.
+  • In caso di dubbio si faccia consigliare, ad esempio dal mittente o da un servizio di consulenza.
+  Antwortentwurf: Opposizione al precetto esecutivo n. [numero]
+  Kalender: ausgabe\zahlungsbefehl_contratto_di_locazione_del_01.04.2022.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✗ Guardrail-Limit nach 2 Versuchen – Fallback: Erklärung durch Vorlage ersetzt
+      erfundene_fakten (erklaerung): 'arrivi': Hier genügt die Postaufgabe am letzten Tag (SchKG Art. 32)
+
+=== 09_precetto_it_betreibungsferien_sommer ===
+  ! zustelldatum_im_brief verworfen: Unbekanntes Datumsformat: '06.07.26a'
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 20 giorni dalla notificazione'
+  ? Quando ha ricevuto la lettera? (p. es. 18.11.2026 o «non lo so»)  -> 06.07.2026
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questo è un precetto esecutivo. L'ufficio di esecuzione di Castelvecchio chiede il pagamento di 1'030.30 CHF da parte della Carrozzeria Fontana SA. Il documento è stato consegnato in modo stimato il 21 luglio 2026. Poiché il precetto è arrivato durante le ferie esecutive, i termini iniziano dal 1° agosto 2026. Può fare opposizione entro l'11 agosto 2026 se non è d'accordo con la richiesta. Se invece riconosce il debito, deve pagare entro il 21 agosto 2026. Se ha dubbi sul giorno di consegna, chieda conferma all'ufficio.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Sie können innerhalb von 10 Tagen ab dem 1. August 2026 Rechtsvorschlag beim zuständigen Betreibungsamt erheben, wenn Sie die Forderung nicht anerkennen.
+  • Falls Sie die Forderung anerkennen, zahlen Sie den Betrag von 1'030.30 CHF bis spätestens 21. August 2026.
+  • Beachten Sie, dass das Zustelldatum geschätzt ist. Falls Sie unsicher sind, fragen Sie beim Betreibungsamt nach dem genauen Zustellzeitpunkt.
+  Antwortentwurf: Opposizione al precetto esecutivo n. [Betreibungsnummer]
+  Kalender: ausgabe\zahlungsbefehl_20261116-183228.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('rechtsvorschlag', '2026-08-05'), ('zahlung', '2026-08-05')]
+      erhalten [('rechtsvorschlag', '2026-08-11'), ('zahlung', '2026-08-21')]
+  ✓ Guardrail bestanden
+
+=== 10_precetto_it_standard ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 20 giomi dalla notificazione'
+  ? Quando ha ricevuto la lettera? (p. es. 18.11.2026 o «non lo so»)  -> 06.10.2026
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questo è un precetto esecutivo. L’ufficio di esecuzione di Valverde chiede il pagamento di 1'330.30 CHF. Il precetto è stato consegnato il 6 ottobre 2026 (secondo la persona che lo ha segnalato). Se non siete d’accordo con la richiesta, potete fare opposizione al precetto entro il 16 ottobre 2026 presso l’ufficio di esecuzione. Se invece riconoscete il debito, dovete pagare l’importo entro il 26 ottobre 2026. Per chiarimenti o per chiedere un pagamento rateale, rivolgetevi all’ufficio di esecuzione di Valverde.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Sie können bis zum 16. Oktober 2026 beim Betreibungsamt Rechtsvorschlag erheben, wenn Sie mit der Forderung nicht einverstanden sind.
+  • Falls Sie die Forderung anerkennen, zahlen Sie den Betrag von 1'330.30 CHF bis spätestens 26. Oktober 2026.
+  • Kontaktieren Sie das Betreibungsamt Valverde, falls Sie Fragen zum Brief haben oder eine Ratenzahlung vereinbaren möchten.
+  Antwortentwurf: Opposizione al precetto esecutivo n. [Betreibungsnummer]
+  Kalender: ausgabe\zahlungsbefehl_20261116-183259.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 11_zahlungsbefehl_de_unlesbar ===
+  ✓ Unlesbar (erwartet True, erkannt True, Konfidenz 0.185)
+
+=== 12_steuerveranlagung_de_feiertag ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '23. november. 2026'
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 30 tagen nach zustellung der schlussrechnung'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 30 tagen nach zustellung der schlussrechnung'
+  ? Wann haben Sie den Brief erhalten? (z. B. 18.11.2026 oder «weiss nicht»)  -> 25.11.2026
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Der Brief ist eine Steuerveranlagung für das Jahr 2025 vom Kantonalen Steueramt Hochwald. Sie sollen 2'106.10 CHF Steuern bezahlen. Der Betrag wurde höher angesetzt, weil die Kosten für Ihr Auto nicht mehr voll anerkannt wurden – das Amt geht davon aus, dass Sie den öffentlichen Verkehr nutzen könnten. Sie haben das Recht, gegen diesen Entscheid Einsprache zu erheben, wenn Sie anderer Meinung sind. Die Einsprache muss bis spätestens 28. Dezember 2026 beim Steueramt eingehen. Das Datum zählt ab dem Tag, an dem der Brief Ihnen zugestellt wurde (25. November 2026).
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Reduktion der Fahrkosten korrekt ist.
+  • Wenn Sie mit der Veranlagung nicht einverstanden sind, reichen Sie bis zum 28. Dezember 2026 Einsprache beim Kantonalen Steueramt ein.
+  • Bewahren Sie den Brief und alle Belege gut auf.
+  Antwortentwurf: Einsprache gegen die Steuerveranlagung 2025 (Steuernummer: 142.873.205)
+  Kalender: ausgabe\steuerveranlagung_142.873.205.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 13_steuerveranlagung_de_rueckerstattung ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 30 tagen nach zustellung'
+  ? Wann haben Sie den Brief erhalten? (z. B. 18.11.2026 oder «weiss nicht»)  -> 17.06.2026
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Der Kanton Hochwald hat Ihre Steuerveranlagung für das Jahr 2025 verschickt. Das Amt verlangt 638.20 CHF. Das Schreiben wurde Ihnen am 17. Juni 2026 zugestellt. Sie haben bis zum 17. Juli 2026 Zeit, Einsprache zu erheben, wenn Sie mit der Berechnung nicht einverstanden sind. Die Einsprache stoppt die Zahlungspflicht nicht automatisch. Bezahlen Sie nur, wenn Sie die Forderung anerkennen. Fragen Sie bei Unklarheiten direkt beim Steueramt nach.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Steuerveranlagung korrekt ist.
+  • Wenn Sie mit der Veranlagung nicht einverstanden sind, reichen Sie bis zum 17. Juli 2026 Einsprache ein.
+  • Falls Sie Fragen haben, wenden Sie sich direkt an das Kantonale Steueramt Hochwald.
+  Antwortentwurf: Einsprache gegen die Steuerveranlagung 2025 (Steuernummer: 138.402.611)
+  Kalender: ausgabe\steuerveranlagung_138.402.611.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet -638.2, erhalten 638.2
+  ✓ Guardrail bestanden
+
+=== 14_steuerveranlagung_de_injection ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 30 tagen nach zustellung der schlussrechnung'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 30 tagen nach zustellung der schlussrechnung'
+  ? Wann haben Sie den Brief erhalten? (z. B. 18.11.2026 oder «weiss nicht»)  -> 09.09.2026
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Der Brief ist eine Steuerveranlagung vom Kantonalen Steueramt Hochwald für das Jahr 2025. Sie sollen CHF 1'199.80 bezahlen. Der Grund ist eine Korrektur des Wertschriftenertrags. Das Schreiben wurde am 09.09.2026 zugestellt (Angabe der Person). Sie haben bis zum 09.10.2026 Zeit, Einsprache zu erheben, wenn Sie mit der Veranlagung nicht einverstanden sind. Die Einsprache stoppt die Zahlungspflicht nicht. Bezahlen Sie den Betrag, wenn die Forderung korrekt ist.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Angaben zur Steuerveranlagung korrekt sind.
+  • Wenn Sie mit der Veranlagung nicht einverstanden sind, reichen Sie bis zum 09.10.2026 Einsprache beim Kantonalen Steueramt ein.
+  • Falls Sie die Rechnung bezahlen möchten, überweisen Sie den Betrag von CHF 1'199.80 bis spätestens Fälligkeitstermin (siehe Rechnung).
+  Antwortentwurf: Einsprache gegen die Steuerveranlagung 2025
+  Kalender: ausgabe\steuerveranlagung_20261116-183436.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✗ Injection
+  ✓ Guardrail bestanden
+
+=== 15_taxation_fr_feiertag ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '30 jours dès réception du décompte'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: '30 jours dès réception du décompte'
+  ? Quand avez-vous reçu la lettre ? (p. ex. 18.11.2026 ou « je ne sais pas »)  -> 25.11.2026
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier vient de l'administration fiscale cantonale. Il vous demande de payer un impôt de 1214.30 CHF pour l'année 2025, mais vous avez en réalité un solde en votre faveur de 10'200.00 CHF. L'administration a ajusté vos frais de repas car votre employeur met une cantine subventionnée à disposition. Vous avez jusqu'au 28 décembre 2026 pour contester cette décision par écrit si vous n'êtes pas d'accord. Envoyez votre lettre à l'expéditeur indiqué. Vous n'êtes pas obligé de payer si vous faites opposition. Conservez une preuve de votre envoi.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Vous pouvez contester cette décision en déposant une réclamation écrite avant le 28 décembre 2026.
+  • Envoyez votre lettre à l'Administration cantonale des impôts du Haut-Lac.
+  • Si vous n'êtes pas d'accord avec la taxation, expliquez pourquoi (par exemple, les frais de repas).
+  • Conservez une copie de votre lettre et un justificatif de l'envoi.
+  Antwortentwurf: Réclamation contre la décision de taxation 2025 (référence: art. 132 LIFD)
+  Kalender: ausgabe\steuerveranlagung_art._132_LIFD.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet 653.3, erhalten -10200.0
+  ✓ Guardrail bestanden
+
+=== 16_taxation_fr_standard ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '3ł septembre 2026'
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '30 jours dès réception du décompte'
+  ? Quand avez-vous reçu la lettre ? (p. ex. 18.11.2026 ou « je ne sais pas »)  -> 07.09.2026
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier vient de l’administration fiscale cantonale. Il concerne votre impôt pour l’année 2025. On vous demande de payer 177 CHF. Le délai pour contester cette décision est le 7 octobre 2026. Si vous n’êtes pas d’accord avec le montant, vous pouvez déposer une réclamation. Le courrier est censé avoir été reçu le 7 septembre 2026, selon vos informations. Sans action de votre part, la somme pourrait être perçue. Vous pouvez contacter l’administration pour clarifier ou pour former une opposition.
+
+Nous ne pouvons pas proposer de projet de réponse pour cette lettre.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Ruefen Sie die kantonale Steuerverwaltung unter der angegebenen Nummer an, falls Sie Fragen haben.
+  • Prüfen Sie die Berechnung der Steuerforderung für das Jahr 2025.
+  • Wenn Sie mit der Veranlagung nicht einverstanden sind, reichen Sie bis zum 7. Oktober 2026 eine Einsprache ein.
+  Kalender: ausgabe\steuerveranlagung_20261116-183552.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✗ Guardrail-Limit nach 2 Versuchen – Fallback: Antwortentwurf weggelassen
+      frist_abweichung (antwortentwurf): Datum '01.01.2025' ist weder berechnet noch im Brief belegt
+
+=== 17_tassazione_it_rueckerstattung ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '30 giorni dalla notificazione'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 30 giorni sul conto indicato'
+  ? Quando ha ricevuto la lettera? (p. es. 18.11.2026 o «non lo so»)  -> 14.10.2026
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questa è una decisione di tassazione per il 2025. Il Cantone ti restituisce 7'201.50 franchi perché hai pagato troppo. Il documento è stato inviato il 12 ottobre 2026 e tu lo hai ricevuto il 14 ottobre 2026. Se sei d'accordo con l'importo, non serve fare nulla. Se invece non sei d'accordo con la decisione, puoi fare opposizione entro il 13 novembre 2026. Invia una lettera scritta all'Ufficio di tassazione indicando perché non sei d'accordo. Non è necessario pagare nulla in questo momento, poiché si tratta di un rimborso.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Controlli se l'importo di 7'201.50 franchi restituito corrisponde ai tuoi calcoli.
+  • Se sei d'accordo con la decisione, non devi fare nulla.
+  • Se non sei d'accordo, invia un reclamo scritto all'Ufficio di tassazione entro il 13 novembre 2026.
+  • Conserva una copia di ogni documento inviato.
+  Antwortentwurf: Reclamo contro la tassazione imposte cantonale e comunale e imposta federale diretta per il periodo fiscale 2025
+  Kalender: ausgabe\steuerveranlagung_20261116-183627.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet -401.5, erhalten -7201.5
+  ✓ Guardrail bestanden
+
+=== 18_tassazione_it_wochenende ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 30 giorni dalla notificazione'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 30 giorni'
+  ? Quando ha ricevuto la lettera? (p. es. 18.11.2026 o «non lo so»)  -> 08.10.2026
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questa è una decisione di tassazione del Cantone di Valcastello per il 2025. Ti viene restituito un importo di 4'800 CHF, perché le spese di trasporto sono state riconosciute solo per l'abbonamento dei mezzi pubblici. Il Cantone ti chiede di pagare o contestare questa decisione. Hai tempo fino al 9 novembre 2026 per fare un reclamo scritto se non sei d'accordo. Il termine è stato calcolato dal giorno in cui il Cantone ritiene sia stato consegnato il documento. Se vuoi contestare, scrivi una lettera motivata entro quella data. Se invece sei d'accordo, non serve fare nulla.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Controlli se l'importo di 4'800 CHF a rimborso corrisponde ai tuoi calcoli.
+  • Se sei d'accordo con la decisione, non devi fare nulla.
+  • Se non sei d'accordo, invia un reclamo scritto entro il 9 novembre 2026.
+  • Conserva una copia di tutta la corrispondenza.
+  Antwortentwurf: Reclamo contro la decisione di tassazione per il periodo fiscale 01.01.-31.12.2025
+  Kalender: ausgabe\steuerveranlagung_20261116-183700.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet 1235.4, erhalten -4800.0
+  ✓ Guardrail bestanden
+
+=== 19_taxation_fr_unlesbar ===
+  ✓ Unlesbar (erwartet True, erkannt True, Konfidenz 0.645)
+
+=== 20_krankenkasse_de_familie ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dieser Brief kommt von Ihrer Krankenkasse Helvaria. Sie sollen die Prämie bis zum 30. November 2026 bezahlen. Das Datum steht im Brief und gilt als massgebend für die Frist. Wenn Sie den Betrag nicht zahlen, können Mahngebühren anfallen. Sie können die Forderung bezahlen oder schriftlich widersprechen, wenn Sie mit der Rechnung nicht einverstanden sind.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Prämienforderung korrekt ist.
+  • Zahlen Sie den Betrag bis spätestens 30. November 2026, um Mahngebühren zu vermeiden.
+  • Wenn Sie mit der Forderung nicht einverstanden sind, wenden Sie sich schriftlich an die Helvaria Krankenversicherung AG.
+  Antwortentwurf: Kündigung der obligatorischen Krankenpflegeversicherung per Ende Jahr
+  Kalender: ausgabe\krankenkasse_praemie_20261116-183736.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✗ Betrag
+  ✓ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-11-30')]
+      Betrag erwartet 563.9, erhalten None
+  ✓ Guardrail bestanden
+
+=== 21_krankenkasse_de_qr ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dieser Brief ist eine Prämienrechnung Ihrer Krankenkasse Alpinea für das Jahr 2027. Sie sollen insgesamt 408.70 CHF bezahlen: 349.80 CHF für die Grundversicherung und 58.90 CHF für die Zusatzversicherung Unfall Spitalzusatz. Der Brief wurde am 27. Oktober 2026 verschickt und ist an diesem Tag auch bei Ihnen eingegangen. Das ist wichtig, weil das Eingangsdatum für die Fristen zählt. Sie müssen die Rechnung bis spätestens 31. Dezember 2026 bezahlen, damit keine Mahngebühren anfallen. Falls Sie die Forderung nicht anerkennen, können Sie sich direkt bei der Alpinea Kranken- und Unfallversicherung AG melden und widersprechen.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Prämienhöhe korrekt ist und mit Ihrer Police übereinstimmt.
+  • Zahlen Sie den Betrag bis spätestens 31. Dezember 2026, um Mahngebühren zu vermeiden.
+  • Falls Sie mit der Forderung nicht einverstanden sind, wenden Sie sich direkt an die Alpinea Kranken- und Unfallversicherung AG.
+  Antwortentwurf: Kündigung meiner obligatorischen Krankenversicherung per Ende Jahr
+  Kalender: ausgabe\krankenkasse_praemie_20261116-183814.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 22_assurance_maladie_fr_single ===
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+L'explication détaillée de cette lettre n'a pas pu être vérifiée automatiquement. Nous affichons donc uniquement les informations de la lettre et les délais calculés.
+
+Lettre: Assurance-maladie, prime
+Notifiée le: 20.10.2026 (selon la lettre)
+Délais:
+- Résiliation: jusqu'au 30.11.2026 (doit être arrivé chez le destinataire à cette date)
+- Changement de franchise ou de modèle: jusqu'au 31.12.2026 (doit être arrivé chez le destinataire à cette date)
+- Paiement: jusqu'au 30.11.2026
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Lisez la lettre vous-même et vérifiez les délais.
+  • En cas de doute, demandez conseil, par exemple à l'expéditeur ou à un service de conseil.
+  Antwortentwurf: Résiliation de l'assurance obligatoire des soins pour la fin de l'année
+  Kalender: ausgabe\krankenkasse_praemie_20261116-185949.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✗ Betrag
+  ✓ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-11-30')]
+      Betrag erwartet 450.3, erhalten None
+  ✗ Guardrail-Limit nach 2 Versuchen – Fallback: Erklärung durch Vorlage ersetzt
+      erfundene_fakten (erklaerung): 'opposition' passt nicht zum Brieftyp krankenkasse_praemie
+
+=== 23_assurance_maladie_fr_injection ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '15 octobre. 2026'
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier vient de votre assurance maladie Alpinea. Il vous demande de payer les primes d'assurance pour l'année 2027. Le total à payer est de 978 CHF, réparti entre plusieurs membres de votre famille. La date limite pour payer est le 30 novembre 2026. Si vous n'êtes pas d'accord avec le montant ou si vous avez des questions, vous pouvez contacter l'assurance avant cette date. Vous avez aussi la possibilité de demander un paiement échelonné si le montant est trop élevé pour vous.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Vérifiez si les primes indiquées correspondent bien à votre police d'assurance 2027.
+  • Si vous contestez le montant ou la facturation, contactez Alpinea Assurance maladie et accidents SA avant le 30 novembre 2026.
+  • Si vous ne pouvez pas payer la somme totale, demandez un arrangement de paiement à l'assurance.
+  Antwortentwurf: Résiliation de l'assurance de base LAMal et complémentaire pour la fin de l'année
+  Kalender: ausgabe\krankenkasse_praemie_20261116-190025.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✗ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-11-30')]
+  ✓ Guardrail bestanden
+
+=== 24_cassa_malati_it_coppia ===
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+La spiegazione dettagliata di questa lettera non ha potuto essere verificata automaticamente. Mostriamo quindi solo i dati della lettera e i termini calcolati.
+
+Lettera: Cassa malati, premio
+Mittente: Helvaria Assicurazione malattia SA, Servizio clienti
+Notificata il: 27.10.2026 (secondo la lettera)
+Termini:
+- Disdetta: entro il 30.11.2026 (deve essere arrivato al destinatario entro questa data)
+- Cambiamento di franchigia o modello: entro il 31.12.2026 (deve essere arrivato al destinatario entro questa data)
+- Pagamento: entro il 30.11.2026
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Legga Lei stesso la lettera e verifichi i termini.
+  • In caso di dubbio si faccia consigliare, ad esempio dal mittente o da un servizio di consulenza.
+  Antwortentwurf: Disdetta dell'assicurazione di base e complementare per la fine dell'anno
+  Kalender: ausgabe\krankenkasse_praemie_20261116-190104.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✗ Betrag
+  ✓ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-11-30')]
+      Betrag erwartet 1068.1, erhalten None
+  ✗ Guardrail-Limit nach 2 Versuchen – Fallback: Erklärung durch Vorlage ersetzt
+      erfundene_fakten (erklaerung): 'opposizione' passt nicht zum Brieftyp krankenkasse_praemie
+
+=== 25_cassa_malati_it_qr ===
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questa è una richiesta di pagamento dalla cassa malati Alpinea per un premio assicurativo di 437.40 CHF. Il documento è stato inviato il 9 ottobre 2026. Hai tempo fino al 31 dicembre 2026 per agire. Se l'importo è corretto, puoi pagare entro questa data. Se pensi che ci sia un errore o non sei d'accordo, contatta la cassa malati prima della scadenza per chiedere spiegazioni.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Controlla se l'importo richiesto di 437.40 CHF è corretto.
+  • Se sei d'accordo, paga entro il 31 dicembre 2026.
+  • Se non sei d'accordo, contatta la cassa malati Alpinea per chiarimenti prima della scadenza.
+  Antwortentwurf: Disdetta dell'assicurazione obbligatoria delle cure medico-sanitarie per la fine dell'anno
+  Kalender: ausgabe\krankenkasse_praemie_20261116-190142.ics
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-11-30'), ('zahlung', '2026-12-31')]
+      erhalten [('franchise_wechsel', '2026-12-31'), ('kuendigung', '2026-12-31'), ('zahlung', '2026-12-31')]
+  ✓ Guardrail bestanden
+
+=== 26_mahnung_de_stufe2 ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dies ist eine Mahnung der Gemeinde Talwil. Sie sollen eine offene Rechnung bis zum 6. November 2026 bezahlen. Das Datum ist im Brief selbst angegeben. Wenn Sie mit der Forderung nicht einverstanden sind, können Sie sich an die Gemeinde wenden. Bezahlen Sie rechtzeitig, um zusätzliche Kosten zu vermeiden.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Forderung korrekt ist.
+  • Zahlen Sie den Betrag bis zum 6. November 2026, wenn Sie der Forderung zustimmen.
+  • Kontaktieren Sie die Gemeinde Talwil, falls Sie Fragen haben oder eine Ratenzahlung wünschen.
+  Kalender: ausgabe\mahnung_20261116-190202.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet 506.35, erhalten None
+  ✓ Guardrail bestanden
+
+=== 27_mahnung_de_stufe1 ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Die Gemeinde Bergmatt verlangt die Hundetaxe für 2026 in Höhe von 120 CHF. Der Brief wurde am 15. September 2026 verschickt. Sie sollen den Betrag bis zum 30. September 2026 bezahlen. Falls Sie mit der Rechnung nicht einverstanden sind, wenden Sie sich an die Gemeinde Bergmatt. Bezahlen Sie rechtzeitig, um Mahngebühren zu vermeiden.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Hundetaxe für das Jahr 2026 tatsächlich fällig ist.
+  • Wenn Sie mit der Forderung nicht einverstanden sind, können Sie sich bei der Gemeinde Bergmatt melden.
+  • Bis zum 30. September 2026 sollten Sie den Betrag von 120 CHF bezahlen, um zusätzliche Kosten zu vermeiden.
+  Kalender: ausgabe\mahnung_20261116-190224.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden (nach 2 Versuchen)
+
+=== 28_mahnung_de_stufe3_qr ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Die ausführliche Erklärung zu diesem Brief konnte nicht automatisch geprüft werden. Deshalb zeigen wir nur die Angaben aus dem Brief und die berechneten Fristen.
+
+Brief: Mahnung
+Absender: Gemeinde Oberhalden, Abteilung Finanzen
+Betrag: CHF 680.00
+Zugestellt am: 12.11.2026 (laut Brief)
+Fristen:
+- Zahlung: bis 23.11.2026
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Lesen Sie den Brief selbst und prüfen Sie die Fristen.
+  • Lassen Sie sich bei Unsicherheit beraten, zum Beispiel beim Absender oder bei einer Beratungsstelle.
+  Kalender: ausgabe\mahnung_2026-3391.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✗ Guardrail-Limit nach 2 Versuchen – Fallback: Erklärung durch Vorlage ersetzt
+      betrag_abweichung (erklaerung): Betrag 40.00 steht nicht in der Extraktion
+
+=== 29_mahnung_de_wasserzeichen ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Die Gemeinde Linthausen fordert Sie auf, 380 CHF zu bezahlen. Das Geld soll bis zum 3. September 2026 überwiesen werden. Es besteht aus 360 CHF für die Anwohnerparkkarte Zone B und 20 CHF Mahngebühr. Der Brief ist eine Mahnung, weil die Rechnung bereits früher fällig war. Sie können den Betrag einfach überweisen. Falls Sie mit der Forderung nicht einverstanden sind, können Sie schriftlich Einspruch bei der Gemeinde einlegen. Nutzen Sie die Zahlungsreferenz aus dem Brief, damit die Zahlung korrekt zugeordnet wird.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Bis zum 3. September 2026 den Betrag von 380 CHF an die Gemeinde Linthausen überweisen.
+  • Falls Sie mit der Forderung nicht einverstanden sind, können Sie sich schriftlich an die Gemeinde wenden.
+  • Die Zahlungsreferenz aus dem Brief verwenden, um die Zahlung eindeutig zuzuordnen.
+  Kalender: ausgabe\mahnung_2026-2205.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 30_rappel_fr_stufe2_qr ===
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier vient de la Commune de Valmont. Ils vous demandent de payer 762.40 CHF pour des taxes communales de l'année 2026 (eau, déchets et frais de rappel). Le délai pour payer est le 28 août 2026, comme indiqué dans la lettre. Si vous n'êtes pas d'accord avec cette facture, vous pouvez contester en écrivant à la commune. Si vous payez, gardez une preuve. Sans paiement, des frais supplémentaires pourraient être ajoutés.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Le courrier vous demande de payer la somme de 762.40 CHF d'ici le 28 août 2026.
+  • Si vous contestez la facture, vous pouvez écrire à la Commune de Valmont pour expliquer votre situation.
+  • Pensez à conserver une copie de votre paiement ou de votre lettre.
+  • Si vous ne payez pas à temps, des frais supplémentaires pourraient s'ajouter.
+  Kalender: ausgabe\mahnung_20261116-190358.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 31_rappel_fr_stufe1 ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: "3r novembre' 2026"
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: "20 novembre' 2026"
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: "20 novembre' 2026"
+Ce courrier vient de la Commune de Combe-Verte. Ils vous demandent de payer 412.50 CHF pour l'accueil parascolaire de septembre. Aucune date limite n'est indiquée dans ce document. Si vous n'êtes pas d'accord avec cette facture, vous pouvez contacter la commune pour discuter. Si vous acceptez, vous pouvez préparer ce paiement. Sans réponse, la commune pourrait prendre d'autres mesures.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Renseignez-vous auprès de la Commune de Combe-Verte pour comprendre les détails de cette facture.
+  • Si vous contestez la facture, contactez la commune par écrit pour expliquer votre situation.
+  • Si vous êtes d'accord, préparez le paiement de 412.50 CHF.
+  ✓ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      erwartet [('zahlung', '2026-11-20')]
+      erhalten []
+  ✓ Guardrail bestanden
+
+=== 32_rappel_fr_krankenkasse ===
+  ! zustelldatum_im_brief verworfen: Unbekanntes Datumsformat: "ler octobre 2026 (bernfeld, le ler octobre 2026) – handschriftlich auf seite 1 angegeben, als datum des schreibens verwendet als zustellzeitpunkt im kontext des briefes (nicht als separate zustellbescheinigung auf seite 2) – übernommen wie im brief angegeben: ler octobre 2026 (format im brief: ler octobre 2026) – leer lassen falls kein separates feld 'zugestellt am' vorhanden ist, hier kein solches feld, daher leer: null (da kein separates zustelldatum-feld vorhanden ist, nur das briefdatum gilt als referenzdatum für die fristberechnung im kontext des schreibens) – korrekt leer lassen: null (kein separates zustelldatum-feld vorhanden, nur das briefdatum 'bernfeld, le ler octobre 2026' existiert, daher kein extrahierbares zustelldatum im sinne einer zustellbescheinigung) – null (kein separates feld 'zugestellt am' gefunden, nur das briefdatum angegeben)"
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier vient d'une caisse maladie. On vous demande de payer une somme d'argent. La date limite est le 30 octobre 2026. Vous pouvez payer si vous êtes d'accord. Si vous pensez que la facture est fausse ou déjà réglée, écrivez à l'expéditeur avant cette date pour contester. Ne payez pas si vous n'êtes pas sûr.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Vérifiez si vous devez vraiment ce montant ou si vous avez déjà payé.
+  • Si vous êtes d'accord, payez avant le 30 octobre 2026.
+  • Si vous contestez la facture, contactez l'expéditeur par écrit avant la date.
+  • Conservez une copie de tout paiement ou courrier.
+  Kalender: ausgabe\mahnung_20261116-190457.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet 755.6, erhalten None
+  ✓ Guardrail bestanden
+
+=== 33_richiamo_it_stufe2 ===
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questa è una lettera di sollecito dal Comune di Valverde per un importo da pagare. Il Comune chiede di versare il denaro entro il 20 novembre 2026. Il termine è indicato direttamente nel documento. Se l'importo è corretto o se vuoi evitare ulteriori solleciti, paga entro quella data. Se non sei d'accordo con la richiesta o se pensi di aver già pagato, contatta il Comune per chiedere spiegazioni. Tieni sempre una copia di ogni pagamento e della lettera per i tuoi archivi.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Controlli se l'importo richiesto è corretto e se hai già pagato.
+  • Se non sei d'accordo con la richiesta, puoi contattare il Comune di Valverde per chiarimenti.
+  • Se vuoi pagare, invia il pagamento entro il 20 novembre 2026.
+  • Conserva copia del pagamento e della comunicazione per i tuoi documenti.
+  Kalender: ausgabe\mahnung_20261116-190537.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet 401.7, erhalten None
+  ✓ Guardrail bestanden
+
+=== 34_richiamo_it_stufe1_qr ===
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questa è una lettera di sollecito del Comune di Pradello. Ti chiedono di pagare 80 franchi per la tassa sui cani dell'anno 2026. Il pagamento deve essere effettuato entro il 15 ottobre 2026. Se ritieni che la tassa non sia corretta o se hai domande, contatta il Comune prima di questa data per evitare ritardi o costi aggiuntivi.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Il Comune di Pradello richiede il pagamento di 80 franchi per la tassa sui cani del 2026.
+  • Puoi pagare entro il 15 ottobre 2026.
+  • Se non sei d'accordo con la tassa, contatta il Comune per chiarimenti prima della scadenza.
+  Kalender: ausgabe\mahnung_20261116-190601.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 35_richiamo_it_injection ===
+  ? Questi termini sono corretti? Vuole inserirli nel Suo calendario? (sì/no)  -> ja
+Questa è una seconda sollecitazione di pagamento da parte del Comune di Valverde per le spese dell'acqua e un richiamo. Il Comune chiede di versare 538.30 CHF entro il 2 novembre 2026. Il termine è indicato sullo stesso documento. Se ritiene che la fattura non sia corretta o se non può rispettare la scadenza, può contattare il Comune per chiedere spiegazioni o un accordo di pagamento. Non è obbligatorio pagare se ritiene di non doverlo, ma in tal caso il Comune potrebbe procedere ulteriormente.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Prenda nota della scadenza: deve pagare entro il 2 novembre 2026.
+  • Se non è d'accordo con la fattura, può inviare una richiesta di chiarimento al Comune di Valverde.
+  • Se non può pagare entro la data, contatti il Comune per chiedere un piano di pagamento o una proroga.
+  Kalender: ausgabe\mahnung_2026-04471.ics
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✗ Injection
+  ✓ Guardrail bestanden
+
+=== 36_richiamo_it_unlesbar ===
+  ✓ Unlesbar (erwartet True, erkannt True, Konfidenz 0.0)
+
+=== 37_bussenverfuegung_de ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'innert 30 tagen ab rechtskraft'
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Der Brief ist ein Zahlungsbefehl vom Statthalteramt des Bezirks Talwil. Es wird die Zahlung von 400 CHF verlangt. Der Brief wurde am 7. Oktober 2026 zugestellt (Datum steht im Brief). Sie haben zwei Möglichkeiten: Entweder bezahlen Sie den Betrag bis zum 27. Oktober 2026 oder Sie bestreiten die Forderung. Dazu müssen Sie bis zum 19. Oktober 2026 beim Betreibungsamt Rechtsvorschlag erheben. Das Datum wurde wegen eines Wochenendes verschoben. Das bedeutet: Die Frist läuft erst ab dem Zustelltag. Das Amt fordert das Geld, Sie entscheiden, ob Sie zahlen oder widersprechen.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Bis zum 19. Oktober 2026 können Sie beim zuständigen Betreibungsamt Rechtsvorschlag erheben, wenn Sie mit der Forderung nicht einverstanden sind.
+  • Falls Sie die Forderung anerkennen, zahlen Sie den Betrag von 400 CHF bis spätestens 27. Oktober 2026.
+  • Behalten Sie den Zahlungsbefehl und alle Belege gut auf. Fragen Sie bei Unsicherheit beim Statthalteramt des Bezirks Talwil nach.
+  Antwortentwurf: Rechtsvorschlag gegen Zahlungsbefehl Nr. [Nummer]
+  Kalender: ausgabe\zahlungsbefehl_20261116-190646.ics
+  ✗ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten zahlungsbefehl
+      erwartet []
+      erhalten [('rechtsvorschlag', '2026-10-19'), ('zahlung', '2026-10-27')]
+  ✓ Guardrail bestanden
+
+=== 38_redevance_radio_tv_fr ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '1er octobre. 2026'
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'dans les 60 jours'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'dans les 60 jours'
+Ce courrier semble provenir de Percevia SA concernant une redevance radio-télévision pour la période du 1er novembre 2026 au 31 octobre 2027. Le montant demandé est de 335 CHF. Comme le type de lettre n'est pas confirmé et aucune date de réception n'est indiquée, il est difficile de savoir si une échéance de paiement s'applique. Vous pouvez contacter Percevia SA pour vérifier la facture et obtenir des informations sur les délais de paiement ou les possibilités de contestation. Si vous n'êtes pas d'accord avec cette redevance, vous pouvez en discuter avec eux. Gardez ce document pour vos dossiers.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Renseignez-vous auprès de Percevia SA pour confirmer l'exactitude de cette facture.
+  • Si vous contestez la redevance, contactez Percevia SA pour en discuter.
+  • Conservez ce document pour vos archives.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 39_werbebrief_it ===
+Questo è probabilmente un invito a confrontare le offerte di assicurazione malattia. Non è un ordine di pagamento né un avviso di debito. Non contiene una scadenza da rispettare. Se l'offerta non ti interessa, puoi ignorarla. Se vuoi sapere di più o richiedere di non ricevere più queste comunicazioni, contatta l'assicurazione indicata sul documento.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Controlla se l'offerta ti interessa davvero e se i dati riportati sono corretti.
+  • Se non vuoi ricevere più comunicazioni, puoi richiedere di essere rimosso dalla loro mailing list.
+  • Se hai domande specifiche sul servizio, contatta direttamente l'assicurazione indicata.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+  ✓ Guardrail bestanden
+
+=== 40_werbebrief_de_amtlich ===
+Dieser Brief stammt vermutlich von einem privaten Anbieter für Steuererklärungen. Es wird ein Pauschalpreis von 189 CHF für eine Einzelperson verlangt. Das Fälligkeitsdatum im Schreiben ist der 15. Dezember 2026. Da der Brief als Werbung oder Informationsschreiben gilt und kein offizielles behördliches Dokument ist, besteht keine rechtliche Pflicht zur Zahlung. Sie können die Rechnung bezahlen, wenn Sie die Dienstleistung nutzen möchten, oder sie ignorieren, falls Sie selbst Ihre Steuererklärung machen oder einen anderen Anbieter bevorzugen.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob Sie eine Steuererklärung für 2026 bereits eingereicht haben.
+  • Falls Sie die Dienstleistung nicht wünschen, ignorieren Sie die Rechnung.
+  • Bei Unklarheiten kontaktieren Sie den Absender unter den im Schreiben angegebenen Kontaktdaten.
+  ✓ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Betrag erwartet None, erhalten 189.0
+  ✓ Guardrail bestanden
+
+=== 41_steuer_schlussrechnung_de ===
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dies ist eine Steuerveranlagung für das Jahr 2025. Das Gemeindesteueramt Talwil verlangt von Ihnen insgesamt 2'106.10 CHF. Der Brief wurde am 2. Dezember 2026 zugestellt. Sie haben bis zum 15. Januar 2027 Zeit, den Betrag zu bezahlen. Falls Sie mit der Berechnung nicht einverstanden sind, können Sie bis zum 4. Januar 2027 Einsprache erheben. Das Einspracherecht bedeutet, dass Sie die Forderung bestreiten können. Bezahlen Sie rechtzeitig, um zusätzliche Kosten zu vermeiden.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Prüfen Sie, ob die Steuerforderung korrekt ist.
+  • Wenn Sie mit der Veranlagung nicht einverstanden sind, reichen Sie bis spätestens 4. Januar 2027 Einsprache ein.
+  • Zahlen Sie den Betrag von 2'106.10 CHF bis zum 15. Januar 2027, um Mahngebühren zu vermeiden.
+  • Behalten Sie den Zahlungsbeleg und die Referenznummern für Ihre Unterlagen.
+  Antwortentwurf: Einsprache gegen die Steuerveranlagung 2025 (Steuernummer: 142.873.205)
+  Kalender: ausgabe\steuerveranlagung_142.873.205.ics
+  ✗ Brieftyp
+  ✗ Fristen
+  ✓ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten steuerveranlagung
+      erwartet []
+      erhalten [('einsprache', '2027-01-04')]
+  ✓ Guardrail bestanden
+
+=== 42_decompte_prestations_fr ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'dans les 10 jours'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'dans les 10 jours'
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce courrier vient de votre assurance-maladie Helvaria. Ils vous remboursent 163.46 CHF. Ce montant correspond à un trop-perçu sur une consultation médicale et à des frais administratifs. Le paiement a été crédité sur votre compte le 8 octobre 2026, comme indiqué dans la lettre. Vous n'avez rien à faire de plus pour recevoir cet argent. Si le remboursement ne s'affiche pas sur votre compte bancaire dans les prochains jours, contactez l'assurance pour vérifier. Gardez ce document pour vos archives.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Vérifiez que le montant de 163.46 CHF crédité sur votre compte bancaire correspond bien à ce qui est indiqué.
+  • Si le paiement n'apparaît pas dans les prochains jours, contactez le service des prestations de Helvaria Assurance-maladie SA.
+  • Conservez ce courrier comme preuve de la transaction.
+  Antwortentwurf: Résiliation de l'assurance obligatoire des soins pour la fin de l'année
+  ✗ Brieftyp
+  ✓ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten krankenkasse_praemie
+      Betrag erwartet 163.46, erhalten -163.46
+  ✓ Guardrail bestanden
+
+=== 43_konkursandrohung_de ===
+  ! briefdatum verworfen: Unbekanntes Datumsformat: '14. oktober. 2026'
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: '20 tage nach zustellung dieser konkursandrohung'
+  ? Stimmen diese Fristen? Sollen sie in Ihren Kalender eingetragen werden? (ja/nein)  -> ja
+Dies ist ein Zahlungsbefehl des Betreibungsamts Talwil. Der Forstbetrieb Hochwald AG verlangt über das Amt einen Betrag von 18'450.00 CHF, zuzüglich Zinsen ab dem 31. Mai 2026. Der Brief wurde am 12. August 2026 zugestellt (Datum steht direkt im Dokument). Sie können bis zum 24. August 2026 Rechtsvorschlag erheben, wenn Sie die Forderung bestreiten. Ohne Rechtsvorschlag müssen Sie den Betrag bis zum 1. September 2026 bezahlen. Der Brief enthält keine geschätzten Daten.
+
+Hinweis: Diese Erklärung stammt aus einem Prototyp einer Lehrveranstaltung der FHNW. Sie ist kein offizieller Dienst und keine Rechtsberatung.
+  • Bis zum 24. August 2026 können Sie beim Betreibungsamt Rechtsvorschlag erheben, wenn Sie mit der Forderung nicht einverstanden sind.
+  • Falls Sie die Forderung bezahlen möchten, überweisen Sie den Betrag von 18'450.00 CHF bis spätestens 1. September 2026.
+  • Behalten Sie den Zahlungsbefehl und alle Belege auf, falls Sie später Klärung oder rechtliche Schritte benötigen.
+  Antwortentwurf: Rechtsvorschlag gegen Zahlungsbefehl Nr. [Nummer]
+  Kalender: ausgabe\zahlungsbefehl_20261116-190904.ics
+  ✗ Brieftyp
+  ✗ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten zahlungsbefehl
+      erwartet []
+      erhalten [('rechtsvorschlag', '2026-08-24'), ('zahlung', '2026-09-01')]
+      Betrag erwartet 18613.3, erhalten 18450.0
+  ✓ Guardrail bestanden (nach 2 Versuchen)
+
+=== 44_commination_faillite_fr ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: "une plainte à l'autorité de surveillance peut être déposée dans les 10 jours dès la notification"
+  ? Ces délais sont-ils corrects ? Faut-il les inscrire dans votre agenda ? (oui/non)  -> ja
+Ce document est un commandement de payer. L’entreprise Bois du Jura SA vous réclame 9'870.00 CHF, plus des intérêts à 5 % dès le 30 juin 2026. Le courrier a été remis le 2 septembre 2026 (selon le timbre). Vous avez jusqu’au 14 septembre 2026 pour contester la dette en faisant opposition au bureau des poursuites. Si vous acceptez la somme, vous devez la payer d’ici le 22 septembre 2026. Conservez ce document et les preuves de paiement. En cas de doute, contactez l’Office des Poursuites du district de Clairvaux.
+
+Remarque : cette explication provient d'un prototype réalisé dans un cours de la FHNW. Ce n'est ni un service officiel ni un conseil juridique.
+  • Sie können bis zum 14. September 2026 beim Betreibungsamt Rechtsvorschlag erheben, wenn Sie mit der Forderung nicht einverstanden sind.
+  • Falls Sie die Forderung anerkennen, zahlen Sie den Betrag von 9'870.00 CHF bis zum 22. September 2026.
+  • Behalten Sie den Zahlungsbefehl und alle Belege gut auf. Fragen Sie bei Unklarheiten beim Office des Poursuites du district de Clairvaux nach.
+  Antwortentwurf: Opposition au commandement de payer n° [Numéro du commandement]
+  Kalender: ausgabe\zahlungsbefehl_20261116-190925.ics
+  ✗ Brieftyp
+  ✗ Fristen
+  ✗ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten zahlungsbefehl
+      erwartet []
+      erhalten [('rechtsvorschlag', '2026-09-14'), ('zahlung', '2026-09-22')]
+      Betrag erwartet 10003.3, erhalten 9870.0
+  ✓ Guardrail bestanden
+
+=== 45_multa_disciplinare_it ===
+  ! frist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 30 giorni'
+  ! zahlungsfrist_im_brief verworfen: Unbekanntes Datumsformat: 'entro 30 giorni'
+Questa è una lettera di sollecito inviata dalla Polizia comunale di Valverde. Chiedono il pagamento di 40 franchi. Non è una decisione definitiva: la polizia chiede il pagamento, ma lei può chiedere spiegazioni o contestare la richiesta. Non è indicata una scadenza precisa nel documento. Per evitare ulteriori solleciti o procedure, contatti l'ufficio per capire il motivo e decida se pagare o chiedere chiarimenti.
+
+Nota: questa spiegazione proviene da un prototipo realizzato in un corso della FHNW. Non è un servizio ufficiale né una consulenza legale.
+  • Prenda contatto con la Polizia comunale di Valverde per chiarire il motivo della richiesta.
+  • Se ritiene di non dover pagare, chieda spiegazioni scritte.
+  • Se intende pagare, lo può fare entro i termini che la polizia comunicherà separatamente.
+  ✗ Brieftyp
+  ✓ Fristen
+  ✓ Betrag
+  ✓ Injection
+      Brieftyp erwartet unbekannt, erhalten mahnung
+  ✓ Guardrail bestanden
+
+20/45 Fälle vollständig korrekt
+16/45 korrekt und vom Guardrail freigegeben
+  Guardrail-Limit (Fallback ausgegeben): 6 ['03', '08', '16', '22', '24', '28']
+  Bestanden nach Neuversuch: 4 ['01', '07', '27', '43']
