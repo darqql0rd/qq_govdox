@@ -433,13 +433,18 @@ class BriefState(TypedDict, total=False):
     # Guardrail-Agent (Florian)
     guardrail: GuardrailErgebnis
 
+    # Fallback bei Guardrail-Limit (Florian): ersetzte Texte bleiben zur Nachvollziehbarkeit
+    fallback: list[Literal["erklaerung", "antwortentwurf"]]  # was ersetzt/weggelassen wurde
+    erklaerung_verworfen: Erklaerung | None
+    antwortentwurf_verworfen: Antwortentwurf | None
+
     # Human-in-the-loop und Kalender (Melvin)
     bestaetigung: Bestaetigung
     kalender: KalenderErgebnis
 
     # Steuerung
     versuche: Annotated[dict[str, int], zaehler_addieren]
-    abbruch_grund: Literal["unlesbar", "nicht_bestaetigt", "guardrail_limit"] | None
+    abbruch_grund: Literal["unlesbar", "nicht_bestaetigt"] | None
 
 
 # ---------------------------------------------------------------------------
@@ -461,7 +466,10 @@ FELDER_PRO_NODE: dict[str, list[str]] = {
     "fristen": ["fristen"],
     "erklaerung": ["erklaerung"],
     "antwort": ["antwortentwurf"],
-    "guardrail": ["guardrail", "versuche", "abbruch_grund"],
+    "guardrail": ["guardrail", "versuche"],
+    # nur bei Guardrail-Limit: beanstandete Texte ersetzen (Erklärung) bzw. weglassen (Entwurf)
+    "sichere_ausgabe": ["fallback", "erklaerung", "erklaerung_verworfen",
+                        "antwortentwurf", "antwortentwurf_verworfen"],
     "bestaetigung": ["bestaetigung", "fristen", "antwortentwurf", "abbruch_grund"],
     "kalender": ["kalender"],
 }

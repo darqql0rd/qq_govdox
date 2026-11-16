@@ -13,6 +13,7 @@ Zwei Stufen:
    injection_befolgt. Abschaltbar mit GUARDRAIL_LLM=0 in .env (z. B. für schnelle Tests).
 
 Bei Verstoss springt der Graph zurück (zurueck_zu), höchstens MAX_VERSUCHE["guardrail"] Mal.
+Danach ersetzt nodes/sichere_ausgabe.py die beanstandeten Texte (Fallback ohne LLM).
 Der Rohtext wird nur deterministisch gelesen (Namen der Empfänger), nie ans LLM gegeben.
 """
 
@@ -24,7 +25,7 @@ from datetime import date
 from pydantic import BaseModel, Field
 
 from datum import MONATE
-from state import MAX_VERSUCHE, BriefState, GuardrailErgebnis, Verstoss
+from state import BriefState, GuardrailErgebnis, Verstoss
 
 # ---------------------------------------------------------------------------
 # Hilfsfunktionen: Daten und Beträge in Texten finden
@@ -511,8 +512,5 @@ def pruefe(state: BriefState, mit_llm: bool | None = None) -> GuardrailErgebnis:
 
 def guardrail(state: BriefState) -> dict:
     ergebnis = pruefe(state)
-    update: dict = {"guardrail": ergebnis, "versuche": {"guardrail": 1}}
-    bisher = (state.get("versuche") or {}).get("guardrail", 0) + 1
-    if not ergebnis.bestanden and bisher >= MAX_VERSUCHE["guardrail"]:
-        update["abbruch_grund"] = "guardrail_limit"
-    return update
+    # Am Limit entscheidet graph.nach_guardrail: weiter zu sichere_ausgabe (Fallback)
+    return {"guardrail": ergebnis, "versuche": {"guardrail": 1}}

@@ -56,8 +56,9 @@ def vergleiche(fall: str, ende: dict) -> bool:
 def guardrail_status(ende: dict) -> tuple[bool, int]:
     """Gibt aus, ob der Guardrail die Texte freigegeben hat, und gibt (freigegeben, Versuche) zurück.
 
-    Bei "guardrail_limit" endet der Graph vor der Bestätigung: Die Person würde die
-    Erklärung nicht sehen, auch wenn Fristen und Betrag stimmen.
+    Am Limit ersetzt sichere_ausgabe die beanstandeten Texte (Fallback ohne LLM). Die Person
+    bekommt dann Fristen und Fakten, aber nicht die ausführliche Erklärung: zählt deshalb
+    nicht als freigegeben.
     """
     ergebnis = ende.get("guardrail")
     versuche = (ende.get("versuche") or {}).get("guardrail", 0)
@@ -68,7 +69,10 @@ def guardrail_status(ende: dict) -> tuple[bool, int]:
         zusatz = f" (nach {versuche} Versuchen)" if versuche > 1 else ""
         print(f"  ✓ Guardrail bestanden{zusatz}")
         return True, versuche
-    print(f"  ✗ Guardrail-Limit nach {versuche} Versuchen – Person sieht die Erklärung nicht")
+    ersetzt = {"erklaerung": "Erklärung durch Vorlage ersetzt",
+               "antwortentwurf": "Antwortentwurf weggelassen"}
+    was = ", ".join(ersetzt[f] for f in ende.get("fallback", [])) or "kein Fallback"
+    print(f"  ✗ Guardrail-Limit nach {versuche} Versuchen – Fallback: {was}")
     for v in ergebnis.verstoesse:
         print(f"      {v.regel} ({v.betrifft}): {v.detail}")
     return False, versuche
@@ -149,7 +153,7 @@ def main(muster: list[str], variante: str = "pdf"):
             nach_neuversuch.append(fall[:2])
     print(f"\n{ok}/{len(faelle)} Fälle vollständig korrekt")
     print(f"{ok_freigabe}/{len(faelle)} korrekt und vom Guardrail freigegeben")
-    print(f"  Guardrail-Limit: {len(limit)} {limit}")
+    print(f"  Guardrail-Limit (Fallback ausgegeben): {len(limit)} {limit}")
     print(f"  Bestanden nach Neuversuch: {len(nach_neuversuch)} {nach_neuversuch}")
 
 

@@ -1,8 +1,9 @@
-"""Automatisches Wiederholen bei Verbindungsfehlern testen (RetryPolicy in graph.py).
+"""Automatisches Wiederholen bei Verbindungsfehlern und kaputter strukturierter Ausgabe testen
+(RetryPolicy in graph.py).
 
 Läuft im echten Graphen ab dem Node "erklaerung" (Mock-State nach "fristen").
 Das LLM wird ersetzt, es braucht also weder Key noch Netz. Die Pausen sind die echten
-(5 s, 10 s, 20 s), deshalb dauert der Test knapp eine Minute.
+(5 s, 10 s, 20 s), deshalb dauert der Test gut eine Minute.
 
     python tests/teste_retry.py          # ohne Netz, ca. 1 Minute
     python tests/teste_retry.py --netz   # zusätzlich: echter Aufruf an eine falsche Adresse
@@ -16,6 +17,8 @@ from pathlib import Path
 
 import httpx
 import openai
+from langchain_core.exceptions import OutputParserException
+from pydantic import ValidationError
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -25,9 +28,9 @@ os.environ.update(LLM_MODEL="test", LLM_BASE_URL="http://localhost:9/v1", LLM_AP
 
 import nodes.erklaerung as erklaer_modul  # noqa: E402
 from graph import baue_graph  # noqa: E402
-from llm import LLM_RETRY, VORUEBERGEHEND  # noqa: E402
+from llm import LLM_RETRY, STRUKTURFEHLER, VORUEBERGEHEND  # noqa: E402
 from mocks import mock_bis  # noqa: E402
-from state import Erklaerung  # noqa: E402
+from state import AnalyseErgebnis, Erklaerung  # noqa: E402
 
 ECHTES_STRUKTURIERT = erklaer_modul.strukturiert
 VERBINDUNGSFEHLER = openai.APIConnectionError(request=httpx.Request("POST", "http://localhost:9"))
@@ -94,6 +97,30 @@ def fall_bleibt_weg() -> int:
                   f"nach {llm.aufrufe} Versuchen und {dauer:.0f} s: {type(fehler).__name__}")
 
 
+def _echter_validation_error() -> ValidationError:
+    """Wie Lauf 09.11., Brief 35: AnalyseErgebnis ohne "extraktion"."""
+    try:
+        AnalyseErgebnis.model_validate({"brieftyp": "krankenkasse_praemie"})
+    except ValidationError as fehler:
+        return fehler
+    raise AssertionError("AnalyseErgebnis hätte nicht gültig sein dürfen")
+
+
+def fall_strukturfehler() -> int:
+    """Kaputte strukturierte Ausgabe (ValidationError, OutputParserException): nochmals."""
+    fehler_gesamt = 0
+    for name, fehler in [("ValidationError", _echter_validation_error()),
+                         ("OutputParserException", OutputParserException("kein Tool-Aufruf"))]:
+        llm = FalschesLlm(fehler, fehler_anzahl=1)
+        erklaer_modul.strukturiert = llm
+        ende, f, dauer = lauf_ab_erklaerung(f"struktur-{name}")
+        ok = (isinstance(fehler, STRUKTURFEHLER) and f is None
+              and ende.get("erklaerung") is not None and llm.aufrufe == 2)
+        fehler_gesamt += pruefe(f"{name} 1×, dann gültig", ok,
+                                f"{llm.aufrufe} Aufrufe, {dauer:.0f} s")
+    return fehler_gesamt
+
+
 def fall_kein_retry_bei_bug() -> int:
     llm = FalschesLlm(ValueError("falsches Schema"), fehler_anzahl=99)
     erklaer_modul.strukturiert = llm
@@ -132,7 +159,7 @@ def fall_netz() -> int:
 
 if __name__ == "__main__":
     fehler = (fall_konfiguration() + fall_kein_retry_bei_bug() + fall_antwort_reicht_weiter()
-              + fall_erholt_sich() + fall_bleibt_weg())
+              + fall_erholt_sich() + fall_strukturfehler() + fall_bleibt_weg())
     if "--netz" in sys.argv:
         fehler += fall_netz()
     erklaer_modul.strukturiert = ECHTES_STRUKTURIERT
