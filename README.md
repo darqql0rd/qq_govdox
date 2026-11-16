@@ -53,9 +53,9 @@ Test ohne LLM: `python tests/teste_app.py`.
 
 | Person | Agent | Weitere Bausteine |
 |---|---|---|
-| Melvin | Antwort-Agent | LangGraph-Graph, State, Routing, Human-in-the-loop |
+| Melvin | Antwort-Agent | LangGraph-Graph, Routing, Human-in-the-loop |
 | Nayan | Analyse-Agent | Texterkennung/OCR, Kalender-MCP, Apertus-Vision-Test |
-| Vendon | Erklär-Agent | Fristenrechner |
+| Vendon | Erklär-Agent | Fristenrechner, State |
 | Florian | Guardrail-Agent | Evaluation, Apertus-Vergleich, UI |
 
 ## Warum kein RAG
