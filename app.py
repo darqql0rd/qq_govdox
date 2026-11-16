@@ -34,7 +34,25 @@ SCHRITTE = {  # Fortschrittsanzeige pro Node
     "guardrail": "Texte prüfen", "sichere_ausgabe": "Sichere Ausgabe", "kalender": "Kalender",
 }
 
-st.set_page_config(page_title="Behördenbrief verstehen", page_icon="✉️", layout="centered")
+ROOT = Path(__file__).resolve().parent
+st.set_page_config(page_title="QQGovdox", page_icon=str(ROOT / "static" / "fih_icon.png"),
+                   layout="centered")
+
+# Kopfzeile: Schrift "Some Time Later" (Fredrick R. Brennan, SIL OFL, static/) über dem Fischbild.
+# Streamlit liefert static/ aus (enableStaticServing in .streamlit/config.toml).
+KOPF = """
+<style>
+@font-face { font-family: "Some Time Later"; src: url("app/static/some-time-later.woff2") format("woff2"); }
+.qq-kopf { height: 230px; border-radius: 16px; margin-bottom: 1.2rem;
+           background: #295bc7 url("app/static/fih.jpg") center / contain no-repeat;
+           display: flex; align-items: center; justify-content: center; }
+.qq-kopf span { font-family: "Some Time Later", sans-serif; font-size: 84px; line-height: 1;
+                color: #ffffff; letter-spacing: 2px;
+                -webkit-text-stroke: 3px #10306f; paint-order: stroke fill;
+                text-shadow: 0 4px 0 #10306f, 0 6px 14px rgba(0, 0, 0, .45); }
+</style>
+<div class="qq-kopf"><span>QQGovdox</span></div>
+"""
 
 
 @st.cache_resource
@@ -59,7 +77,7 @@ def ausfuehren(eingabe):
             for teil in graph().stream(eingabe, config(), stream_mode="updates"):
                 for node in teil:
                     if node in SCHRITTE:
-                        st.write(f"✓ {SCHRITTE[node]}")
+                        st.write(SCHRITTE[node])
         except Exception as fehler:  # z. B. LLM-Proxy nicht erreichbar
             status.update(label="Fehler", state="error")
             st.error(f"{type(fehler).__name__}: {str(fehler)[:300]}")
@@ -154,7 +172,7 @@ def zeige_ergebnis(w: dict):
 # Seite
 # ---------------------------------------------------------------------------
 
-st.title("✉️ Behördenbrief verstehen")
+st.markdown(KOPF, unsafe_allow_html=True)
 sprache = st.selectbox("Sprache der Erklärung", list(SPRACHEN), format_func=SPRACHEN.get,
                        disabled="thread" in st.session_state)
 
@@ -223,7 +241,7 @@ if frage and frage["typ"] == "bestaetigung":
 k = w.get("kalender")
 if k and k.ics_pfad and Path(k.ics_pfad).exists():
     st.success("Die Fristen sind bereit für Ihren Kalender.")
-    st.download_button("📅 Kalenderdatei (.ics) herunterladen", Path(k.ics_pfad).read_bytes(),
+    st.download_button("Kalenderdatei (.ics) herunterladen", Path(k.ics_pfad).read_bytes(),
                        file_name=Path(k.ics_pfad).name, mime="text/calendar")
 elif k and k.event_ids:
     st.success(f"{len(k.event_ids)} Termin(e) im Google Kalender eingetragen.")

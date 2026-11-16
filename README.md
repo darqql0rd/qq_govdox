@@ -48,6 +48,8 @@ pro Seite) oder einen der 45 Testbriefe wählen. Die UI stellt die Fragen des Gr
 (Zustelldatum, Bestätigung) als Eingabefelder und bietet die Fristen als `.ics`-Datei an.
 Fristen stehen oben in einem eigenen Kasten, weil sie aus dem Fristenrechner kommen, nicht vom LLM.
 Test ohne LLM: `python tests/teste_app.py`.
+Schrift im Kopf: «Some Time Later» von Fredrick R. Brennan (SIL Open Font License,
+`static/some-time-later-LICENSE.txt`), Quelle https://github.com/ctrlcctrlv/some-time-later.
 
 ## Zuständigkeiten
 
