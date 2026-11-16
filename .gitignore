@@ -8,10 +8,8 @@ __pycache__/
 venv/
 .env
 
-# PyCharm: persönliche Einstellungen
-.idea/workspace.xml
-.idea/shelf/
-.idea/usage.statistics.xml
+# PyCharm
+.idea/
 
 # Ausgaben des Agenten
 ausgabe/

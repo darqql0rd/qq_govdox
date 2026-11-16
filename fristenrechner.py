@@ -18,7 +18,7 @@ Evaluation den Code gegen sich selbst). Umgesetzt nach Gesetzestext:
   deshalb bewusst. So wird eine Frist höchstens zu früh, nie zu spät berechnet.
 
 Rechtsprüfung vom 09.11.2026: siehe Projekt-Doc "Fristen-Rechtspruefung".
-TODO Vendon: Krankenkasse Zahlungsfrist der Prämie.
+Krankenkasse: Zahlungsfrist der Prämie nur, wenn sie im Brief steht (QR-Rechnung).
 """
 
 from datetime import date, timedelta

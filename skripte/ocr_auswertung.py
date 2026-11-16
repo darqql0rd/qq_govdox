@@ -3,20 +3,24 @@
 Misst die Ähnlichkeit OCR-Text zu text.txt (difflib, Leerraum normalisiert) und schreibt
 die Tabelle für die Präsentation nach daten/ocr_auswertung.csv und .md.
 
-    python ocr_auswertung.py                 # alle Briefe, alle Varianten
-    python ocr_auswertung.py 01 11 --variante foto
+    python skripte/ocr_auswertung.py                 # alle Briefe, alle Varianten
+    python skripte/ocr_auswertung.py 01 11 --variante foto
 """
 
 import argparse
 import csv
 import difflib
+import sys
 import time
 from pathlib import Path
 
-from mocks import DATEN, aus_gold, fall_ids, lade_gold
-from nodes.ocr import MIN_WOERTER_PRO_SEITE, SCHWELLE_LESBAR, texterkennung
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
 
-AUSGABE = Path("daten/ocr_auswertung")
+from mocks import DATEN, aus_gold, fall_ids, lade_gold  # noqa: E402
+from nodes.ocr import MIN_WOERTER_PRO_SEITE, SCHWELLE_LESBAR, texterkennung  # noqa: E402
+
+AUSGABE = ROOT / "daten" / "ocr_auswertung"
 VARIANTEN = ["pdf", "scan", "foto"]
 
 

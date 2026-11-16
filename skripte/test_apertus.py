@@ -3,14 +3,15 @@
 Liest LLM_BASE_URL, LLM_API_KEY und LLM_MODEL aus der .env,
 listet die verfuegbaren Modelle und schickt eine kurze Testfrage.
 
-Aufruf im Projektordner:  python test_apertus.py
+Aufruf im Projektordner:  python skripte/test_apertus.py
 """
 import os
+from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 base_url = os.environ["LLM_BASE_URL"].rstrip("/")
 api_key = os.environ["LLM_API_KEY"]
