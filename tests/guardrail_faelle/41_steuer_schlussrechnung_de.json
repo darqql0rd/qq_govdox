@@ -1,0 +1,91 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\41_steuer_schlussrechnung_de\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "Gemeindesteueramt Talwil\nim Auftrag des Kantonalen Steueramts Hochwald\nDorfstrasse 10, 8999 Talwil                                                                                                           SH\nTel. 099 555 12 20 · steueramt@talwil.example\n\n\n\n\n                                                                                    Herr und Frau\n                                                                                    Daniel und Petra Meier\n                                                                                    Lindenstrasse 3\n                                                                                    8999 Talwil\n\n\n\n                                                                                                                        Talwil, 2. Dezember 2026\nSteuer-Nr.                        142.873.205\nSteuerperiode                     2025\n\n\n\nSchlussrechnung Staats- und Gemeindesteuern sowie direkte\nBundessteuer 2025\nSehr geehrte Frau Meier, sehr geehrter Herr Meier\nGestützt auf die rechtskräftige Veranlagung stellen wir Ihnen die Steuern 2025 wie folgt in Rechnung:\n\n                                                                                                                                          CHF\nStaatssteuer                                                                                                                           5'042.00\nGemeindesteuer Talwil (115 %)                                                                                                          5'798.30\nDirekte Bundessteuer                                                                                                                   1'312.00\nTotal Steuern                                                                                                                         12'152.30\nAbzüglich Vorauszahlungen inkl. Vergütungszins                                                                                       -10'046.20\nRestbetrag                                                                                                                             2'106.10\n\nDer Restbetrag ist bis zum 15. Januar 2027 zu bezahlen. Nach Ablauf dieser Frist wird ein Verzugszins erhoben.\nDiese Schlussrechnung ist keine anfechtbare Verfügung; Einwände gegen die Veranlagung selbst sind nicht mehr\nmöglich.\nBitte verwenden Sie den Zahlteil auf der letzten Seite.\n\n\nFreundliche Grüsse\n\n\nGemeindesteueramt Talwil\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                      Seite 1\n\f                                Gemeindesteueramt Talwil\n                     SH         im Auftrag des Kantonalen Steueramts Hochwald\n                                Dorfstrasse 10, 8999 Talwil\n\n\n\n\n                Zahlteil zu unserem Schreiben vom 02.12.2026\n\n                Bitte verwenden Sie für die Zahlung den untenstehenden Zahlteil. (Synthetisches Muster: die Kontoangaben sind\n                ungültig.)\n\n\n\n\n                Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.\n\n\n\n\nEmpfangsschein                                            Zahlteil                                       Konto / Zahlbar an\n                                                                                                         CH00 0900 0000 1428 7320 5\nKonto / Zahlbar an                                                                                       Gemeindesteueramt Talwil\nCH00 0900 0000 1428 7320 5                                                                               Dorfstrasse 10\nGemeindesteueramt Talwil\nDorfstrasse 10                                                                                           8999 Talwil\n8999 Talwil                                                                                              Referenz\nReferenz                                                                                                 00 00000 14287 32052 02500 00000\n00 00000 14287 32052 02500 00000\n                                                                                                         Zusätzliche Informationen\nZahlbar durch\nDaniel und Petra Meier\n                                                                                                         Steuern 2025\nLindenstrasse 3                                                                                          Steuer-Nr. 142.873.205\n8999 Talwil\n                                                                                                         Zahlbar durch\n                                                                                                         Daniel und Petra Meier\n                                                                                                         Lindenstrasse 3\n                                                                                                         8999 Talwil\nWährung      Betrag                                       Währung      Betrag\nCHF          2 106.10                                     CHF          2 106.10\n\n\n\n                                Annahmestelle\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": "Schlussrechnung Staats- und Gemeindesteuern 2025 (keine anfechtbare Verfügung)",
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeindesteueramt Talwil im Auftrag des Kantonalen Steueramts Hochwald",
+    "briefdatum": "2026-12-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "142.873.205"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 14287 32052 02500 00000"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 2106.1,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staatssteuer",
+        "betrag_chf": 5042.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Talwil (115 %)",
+        "betrag_chf": 5798.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 1312.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Abzüglich Vorauszahlungen inkl. Vergütungszins",
+        "betrag_chf": -10046.2,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": "2027-01-15",
+    "glaeubiger": "Gemeindesteueramt Talwil",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Schlussrechnung Staats- und Gemeindesteuern sowie direkte Bundessteuer 2025, Restbetrag nach Vorauszahlungen",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Restbetrag 2'106.10",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "bis zum 15. Januar 2027 zu bezahlen",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Dieser Brief ist eine Schlussrechnung für die Steuern 2025. Er kommt vom Gemeindesteueramt Talwil im Auftrag des Kantonalen Steueramts Hochwald. Der Brief ist vom 02.12.2026.\n\nEs geht um den Restbetrag nach Ihren Vorauszahlungen. Die Staatssteuer beträgt 5042.00 CHF. Die Gemeindesteuer Talwil (115 %) beträgt 5798.30 CHF. Die direkte Bundessteuer beträgt 1312.00 CHF. Davon abgezogen werden Vorauszahlungen inklusive Vergütungszins von 10046.20 CHF.\n\nDer Betrag, den Sie laut Brief zahlen sollen, ist 2106.10 CHF. Der Brief nennt die Zahlungsfrist 15.01.2027.\n\nOb der Betrag richtig ist, kann ich nicht beurteilen. Wenn Sie Fragen haben, wenden Sie sich direkt an das Gemeindesteueramt Talwil. Die Steuernummer 142.873.205 hilft dabei.\n\nHinweis: Dieser Prototyp stammt aus einer Lehrveranstaltung der FHNW und ist kein offizieller Dienst.",
+    "naechste_schritte": [
+      "Prüfen Sie die Positionen im Brief und vergleichen Sie sie mit Ihren Unterlagen.",
+      "Bei Fragen zum Betrag das Gemeindesteueramt Talwil anrufen oder schreiben und die Steuernummer 142.873.205 angeben.",
+      "Zahlen Sie den Betrag von 2106.10 CHF mit der Zahlungsreferenz aus dem Brief bis spätestens 15.01.2027."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

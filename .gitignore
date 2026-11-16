@@ -8,10 +8,18 @@ __pycache__/
 venv/
 .env
 
-# PyCharm: persönliche Einstellungen
-.idea/workspace.xml
-.idea/shelf/
-.idea/usage.statistics.xml
+# PyCharm
+.idea/
 
 # Ausgaben des Agenten
 ausgabe/
+
+# macOS
+.DS_Store
+
+# Google-Kalender (OAuth, nie ins Git)
+credentials.json
+token.json
+
+# LangGraph Studio (langgraph dev)
+.langgraph_api/

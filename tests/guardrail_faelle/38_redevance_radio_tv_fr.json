@@ -1,0 +1,76 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\38_redevance_radio_tv_fr\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "                     Percevia SA\n                     Organe de perception de la redevance radio-télévision (fictif) · Case postale 900, 3999 Bernfeld · Tél. 099 555\n                     70 00 · info@percevia.example\n\n\n\n\n                                                                                           Madame\n                                                                                           Karine Monnet\n                                                                                           Rue des Alpes 31\n                                                                                           1999 Valmont\n\n\n\n                                                                                                                             Bernfeld, le 1er octobre 2026\n N° de client                          RT-90 551 208\n N° de facture                         2026-1001-55120\n\n\n\nFacture redevance des ménages\nMadame,\nConformément à la législation sur la radio et la télévision, chaque ménage privé est soumis à une redevance. Nous\nvous adressons la facture pour la période ci-dessous :\n\n Période                                                                                                                                        Montant\n Redevance des ménages, 01.11.2026 - 31.10.2027                                                                                                   335.00\n\nLe montant est payable dans les 60 jours. Les ménages dont un membre perçoit des prestations complémentaires\nAVS/AI peuvent demander une exonération.\nPour toute question, consultez www.percevia.example.\n\n\nAvec nos meilleures salutations\n\n\nPercevia SA\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                           Page 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.85,
+  "brieftyp_vermutung": "Rechnung der Radio-/TV-Abgabe (Haushaltsabgabe)",
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Percevia SA",
+    "briefdatum": "2026-10-01",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "RT-90 551 208"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-1001-55120"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 335.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Redevance des ménages, 01.11.2026 - 31.10.2027",
+        "betrag_chf": 335.0,
+        "periode": "2026-2027"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Percevia SA",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Redevance des ménages 01.11.2026 - 31.10.2027",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Redevance des ménages, 01.11.2026 - 31.10.2027 ... 335.00",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Percevia SA",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Ce courrier vient de Percevia SA. Il s'agit très probablement d'une facture de la redevance radio/TV (redevance des ménages). Le montant demandé est de 335.00 CHF. Il concerne la période du 01.11.2026 au 31.10.2027. La lettre est datée du 01.10.2026. Le numéro de client est RT-90 551 208 et le numéro de facture est 2026-1001-55120. Nous ne pouvons pas identifier avec certitude le type exact de ce document. Aucun délai de paiement n'a pu être déterminé à partir de cette lettre. Pour savoir si la somme est due et jusqu'à quand payer, adressez-vous directement à Percevia SA. Vous pouvez indiquer les numéros de client et de facture.",
+    "naechste_schritte": [
+      "Vérifiez le montant de 335.00 CHF et la période indiquée sur la lettre.",
+      "Contactez Percevia SA en indiquant le numéro de client RT-90 551 208 et le numéro de facture 2026-1001-55120.",
+      "Demandez le délai de paiement et les modalités exactes avant d'effectuer un paiement."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

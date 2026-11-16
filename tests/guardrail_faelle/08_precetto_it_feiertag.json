@@ -1,0 +1,117 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\08_precetto_it_feiertag\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "Ufficio di esecuzione di Valverde\nCantone di Valcastello\nVia Cantonale 8, 6999 Valverde                                                                                                      UE\nTel. 099 555 33 10 · esecuzioni@valverde.example\nSportello: lu-ve 08.30-11.30 / 14.00-16.00\n\n\n\n                                                                                            Signor\n                                                                                            Luca Bernasconi\n                                                                                            Via dei Gelsi 21\n                                                                                            6999 Valverde\n\n\n\n                                                                                                                     Valverde, 30 aprile 2026\nEsecuzione n.                         26-070554\nEmesso il                             30.04.2026\nFunzionario                           D. Gianini\n\n\n\nPrecetto esecutivo\nEsecuzione ordinaria (art. 69 LEF). Sulla base della domanda d'esecuzione del creditore sotto indicato, Le viene\nnotificato il seguente precetto esecutivo:\n\n Creditore                                Immobiliare Monteluce Sagl, Via ai Prati 5, 6998 Vallerossa\n Rappresentante                           -\n Debitore                                 Bernasconi Luca, nato/a il 27.11.1978, Via dei Gelsi 21, 6999 Valverde\n\n\nCredito\n Voce                                                                                                                                     CHF\n Importo del credito con interessi al 5 % dal 01.03.2026                                                                             4'200.00\n Spese di diffida                                                                                                                       40.00\n Spese del presente precetto, incl. notifica (anticipate dal creditore)                                                                 70.30\n Totale (senza interessi)                                                                                                           4'310.30\n\nTitolo del credito o causa dell'obbligazione: Pigioni arretrate di gennaio e febbraio 2026 (2 x CHF 2'100.00) secondo\ncontratto di locazione del 01.04.2022; diffida del 10.03.2026.\nIl debitore è invitato a pagare al creditore, entro 20 giorni dalla notificazione, il credito indicato e le spese\nd'esecuzione. Il pagamento può essere effettuato presso l'Ufficio di esecuzione.\nSe il debitore intende contestare il debito, o una parte di esso, o il diritto di procedere in via esecutiva, deve\ndichiararlo all'Ufficio di esecuzione, verbalmente o per iscritto, entro 10 giorni dalla notificazione del presente\nprecetto (interporre opposizione). Se contesta solo una parte del credito, deve indicarne esattamente l'importo;\naltrimenti si considera contestato l'intero credito. L'opposizione non deve essere motivata.\nSe il debitore non paga né interpone opposizione, il creditore potrà chiedere la continuazione dell'esecuzione\ndecorsi 20 giorni dalla notificazione.\nFerie esecutive (art. 56 e 63 LEF): 7 giorni prima e 7 giorni dopo Pasqua e Natale, nonché dal 15 al 31 luglio. I termini continuano a decorrere;\nse un termine scade durante le ferie, è prorogato fino al terzo giorno feriale successivo alla loro fine.\n\n\n  Opposizione\n  [ ] Il debitore interpone opposizione contro l'intero credito.\n  [ ] Il debitore interpone opposizione per l'importo di CHF ______________.\n\n  Luogo, data: ______________________ Firma: ______________________\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                       Pagina 1\n\f  Attestazione di notifica\n\n  Notificato il:   04.05.26\n                          a:\n  [X] debitore personalmente [ ] persona convivente [ ] dipendente\n\n  Firma dell'agente notificatore:           D. Gian.\n\nUfficio di esecuzione di Valverde\n\n\nM. Lepori, ufficiale\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.   Pagina 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Ufficio di esecuzione di Valverde",
+    "briefdatum": "2026-04-30",
+    "zustelldatum_im_brief": "2026-05-04",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-070554"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 4310.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Importo del credito con interessi al 5 % dal 01.03.2026",
+        "betrag_chf": 4200.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Spese di diffida",
+        "betrag_chf": 40.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Spese del presente precetto, incl. notifica (anticipate dal creditore)",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Immobiliare Monteluce Sagl",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Pigioni arretrate di gennaio e febbraio 2026 (2 x CHF 2'100.00) secondo contratto di locazione del 01.04.2022",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-03-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale (senza interessi) 4'310.30",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "zustelldatum_im_brief",
+        "textstelle": "Notificato il: 04.05.26",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Creditore Immobiliare Monteluce Sagl",
+        "konfidenz": 0.97
+      }
+    ]
+  },
+  "zustelldatum": "2026-05-04",
+  "zustelldatum_quelle": "brief",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-05-15",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-05-04",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [
+        "feiertag_verschoben"
+      ],
+      "erinnerung": "2026-05-10",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-05-26",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-05-04",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [
+        "wochenende_verschoben"
+      ],
+      "erinnerung": "2026-05-21",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa è un precetto esecutivo (Zahlungsbefehl) dell'Ufficio di esecuzione di Valverde. Il creditore, la società Immobiliare Monteluce Sagl, chiede il pagamento di CHF 4'310.30. Il motivo sono affitti arretrati di gennaio e febbraio 2026 (2 x CHF 2'100.00), secondo il contratto di locazione del 01.04.2022. Sono previsti anche interessi al 5 % dal 01.03.2026 (CHF 4'200.00 di credito con interessi, CHF 40.00 di spese di diffida e CHF 70.30 di spese del precetto, incluse le spese di notifica). Il numero di riferimento è 26-070554. Il precetto Le è stato notificato il 04.05.2026.\n\nLei ha due possibilità: pagare entro il termine, oppure presentare un rigetto (Rechtsvorschlag) entro il termine. Il rigetto blocca la procedura, finché il creditore non ottiene un altro titolo. Non Le spetta a noi valutare se la richiesta sia giustificata. Questo è un prototipo didattico della FHNW, non un servizio ufficiale.",
+    "naechste_schritte": [
+      "Entro il 15.05.2026 deve presentare il rigetto (Rechtsvorschlag), se non è d'accordo con la richiesta.",
+      "Entro il 26.05.2026 deve pagare l'importo di CHF 4'310.30, se intende pagare.",
+      "Se ha dubbi sul contenuto, si rivolga all'Ufficio di esecuzione di Valverde indicando il numero 26-070554.",
+      "Consulti una consulenza legale o uno sportello di consulenza, prima di scadere i termini."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

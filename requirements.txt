@@ -2,12 +2,33 @@
 langgraph
 langchain-openai
 pydantic>=2
+python-dotenv
+langsmith
+
+# Texterkennung (nodes/ocr.py)
+python-doctr[torch]
+pypdf
+
+# Kalender-MCP (mcp_kalender/, nodes/kalender.py)
+# mcp < 2: langchain-mcp-adapters 0.3 läuft noch nicht mit mcp 2.x
+mcp[cli]<2
+langchain-mcp-adapters
+google-api-python-client
+google-auth-oauthlib
+
+# Oberfläche (app.py)
+streamlit>=1.40
+
+# LangGraph Studio (langgraph dev, siehe studio.py)
+# langgraph-api ab 0.18 verlangt mcp>=2.3, der Kalender (langchain-mcp-adapters) mcp<2
+# -> Studio-Server auf 0.17 festhalten, sonst bricht der Google-Kalender (ImportError RequestContext)
+langgraph-cli[inmem]
+langgraph-api<0.18
 
 # Notebooks
 ipykernel
 
 # Datengenerator (nur zum Neuerzeugen der Testbriefe, siehe datengenerator/README.md)
 reportlab
-pypdf
 opencv-python-headless
 numpy

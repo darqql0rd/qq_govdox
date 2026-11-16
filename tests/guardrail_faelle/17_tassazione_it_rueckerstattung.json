@@ -1,0 +1,129 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\17_tassazione_it_rueckerstattung\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "      DC\n\n                                                     Signora\nDivisione delle                                      Elena Ferrari\ncontribuzioni del\n                                                     Via San Gottardo 44\nCantone di Valcastello\n                                                     6999 Valverde\nUfficio di tassazione delle\npersone fisiche\nPiazza Governo 2, 6990\nCastelvecchio\nTel. 099 555 60 00 · tassazione\n                                                                                                                             Castelvecchio, 12 ottobre 2026\n@contribuzioni-valcastello.exa\nmple\n                                                     Decisione di tassazione 2025\nN. contribuente                                      Imposte cantonale e comunale e imposta federale\n613.920.447\n                                                     diretta\nPeriodo fiscale\n2025 (01.01.-31.12.2025)                             Gentile Signora Ferrari,\n\nComune                                               sulla base della dichiarazione d'imposta del 30.04.2026 e dei documenti allegati, per\nValverde (80 %)                                      il periodo fiscale 2025 la tassazione è la seguente:\nTariffa                                              Reddito\nPersona sola\n                                                                                                                              Dichiarato          Tassato\nTassatore\nR. Moretti, tel. 099 555 60 31                         Reddito da attività dipendente                                             71'500           71'500\n                                                       Reddito della sostanza mobiliare                                              180              180\n                                                       Spese professionali                                                        -3'900            -3'900\n                                                       Premi assicurativi e interessi su capitali a                               -3'420            -3'420\n                                                       risparmio\n                                                       Contributi pilastro 3a                                                     -5'400            -5'400\n                                                       Reddito imponibile cantonale                                               58'960           58'960\n\n                                                     La tassazione corrisponde alla Sua dichiarazione.\n                                                     Sostanza\n                                                       Sostanza imponibile                                                                         31'000\n\n\n                                                     Calcolo dell'imposta\n                                                                                                                                                     CHF\n                                                       Imposta cantonale sul reddito                                                             3'376.00\n                                                       Imposta cantonale sulla sostanza                                                             44.00\n                                                       Imposta cantonale (100 %)                                                                 3'420.00\n                                                       Imposta comunale Valverde (moltiplicatore 80 %)                                           2'736.00\n                                                       Imposta federale diretta (reddito imponibile 60'200)                                        642.50\n                                                       Totale imposte 2025                                                                       6'798.50\n                                                       Acconti versati, incl. interessi rimunerativi                                             -7'200.00\n                                                       Saldo a Suo favore (rimborso)                                                              -401.50\n\n                                                     Il saldo a Suo favore Le sarà rimborsato entro 30 giorni sul conto indicato.\n\n\n\n\n        Documento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                           Pagina 1\n\f                         Rimedi giuridici\n                         Contro la presente decisione può essere presentato reclamo scritto e motivato all'Ufficio\n                         di tassazione delle persone fisiche entro 30 giorni dalla notificazione. Il reclamo deve\n                         contenere le conclusioni e la motivazione; i mezzi di prova devono essere allegati o\n                         indicati. Lo stesso termine vale per l'imposta federale diretta (art. 132 LIFD). Il termine\n                         non è prorogabile.\n\n\n\nDistinti saluti\n\n\nDivisione delle contribuzioni del Cantone di Valcastello\nR. Moretti, tassatore\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.     Pagina 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Divisione delle contribuzioni del Cantone di Valcastello, Ufficio di tassazione delle persone fisiche",
+    "briefdatum": "2026-10-12",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "613.920.447"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": -401.5,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Reddito da attività dipendente",
+        "betrag_chf": 71500.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Reddito della sostanza mobiliare",
+        "betrag_chf": 180.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Spese professionali",
+        "betrag_chf": -3900.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Premi assicurativi e interessi su capitali a risparmio",
+        "betrag_chf": -3420.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Contributi pilastro 3a",
+        "betrag_chf": -5400.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta cantonale sul reddito",
+        "betrag_chf": 3376.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta cantonale sulla sostanza",
+        "betrag_chf": 44.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta comunale Valverde (80 %)",
+        "betrag_chf": 2736.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Imposta federale diretta",
+        "betrag_chf": 642.5,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Acconti versati, incl. interessi rimunerativi",
+        "betrag_chf": -7200.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Divisione delle contribuzioni del Cantone di Valcastello",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Steuerveranlagung 2025 (Kantons-, Gemeinde- und direkte Bundessteuer)",
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Saldo a Suo favore (rimborso) -401.50",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "Il termine non è prorogabile.",
+        "konfidenz": 0.3
+      }
+    ]
+  },
+  "zustelldatum": "2026-10-14",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-11-13",
+      "basis": "tag_nach_zustellung",
+      "ausgangsdatum": "2026-10-14",
+      "rechtsgrundlage": "DBG Art. 132",
+      "hinweise": [],
+      "erinnerung": "2026-11-08",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa è una decisione di tassazione delle imposte per l'anno 2025 (imposta cantonale, comunale e federale diretta). Il Cantone di Valcastello le comunica il risultato del calcolo. In questo caso il saldo è a suo favore: Lei riceve un rimborso di CHF 401.50. Il calcolo tiene conto del reddito da lavoro dipendente (CHF 71'500.00), delle spese professionali, dei contributi al pilastro 3a e degli acconti già versati (CHF 7'200.00, interessi compresi). Se non è d'accordo con il calcolo, può presentare un'opposizione (Einsprache). Il termine scade il 13.11.2026. Attenzione: la data indicata è calcolata a partire dalla data di ricezione che Lei ci ha comunicato (14.10.2026). Non è stato possibile verificare questa data, quindi il termine è stimato. Questa spiegazione è un prototipo didattico della FHNW e non è un servizio ufficiale.",
+    "naechste_schritte": [
+      "Controlli i importi indicati nel documento con i Suoi documenti fiscali 2025, ad esempio salario e acconti versati.",
+      "Se ha dubbi sul calcolo, presenti un'opposizione scritta prima del 13.11.2026.",
+      "Conservi la lettera e la busta con la data di ricezione come prova."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

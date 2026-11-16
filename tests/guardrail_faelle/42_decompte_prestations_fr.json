@@ -1,0 +1,91 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\42_decompte_prestations_fr\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "                   Helvaria Assurance-maladie SA\n                   Service des prestations\n                   Place de la Gare 1, 3999 Bernfeld\n                   Tél. 0800 000 002 · prestations@helvaria.example\n\n\n\nMadame                                                                              N° de client                 4.302.661\nSophie Rochat                                                                       N° de décompte               PR-2026-889104\n\nChemin des Vignes 15\n1999 Valmont\n\n\n\n                                                                                                                             Bernfeld, le 8 octobre 2026\n\n\nDécompte de prestations\nMadame,\nNous avons traité la facture suivante (système du tiers garant) :\n\n Prestation                                                                                                                                       CHF\n Consultation médecin de famille, 22.09.2026                                                                                                    284.60\n Prise en charge par l'assurance de base                                                                                                       -121.14\n Franchise 2026 (solde)                                                                                                                         150.00\n Quote-part 10 %                                                                                                                                 13.46\n À votre charge                                                                                                                                163.46\n\nLe montant à votre charge est à régler directement au fournisseur de prestations ; le remboursement de 121.14\nCHF vous sera versé dans les 10 jours.\nÉtat de votre franchise 2026 : 1'500.00 CHF atteinte.\n\n\nAvec nos meilleures salutations\n\n\nHelvaria, Service des prestations\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                         Page 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.85,
+  "brieftyp_vermutung": "Leistungsabrechnung / Décompte de prestations der Krankenkasse (Arztrechnung)",
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA, Service des prestations",
+    "briefdatum": "2026-10-08",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "4.302.661"
+      },
+      {
+        "art": "andere",
+        "wert": "PR-2026-889104"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 163.46,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Consultation médecin de famille, 22.09.2026",
+        "betrag_chf": 284.6,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Prise en charge par l'assurance de base",
+        "betrag_chf": -121.14,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Franchise 2026 (solde)",
+        "betrag_chf": 150.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Quote-part 10 %",
+        "betrag_chf": 13.46,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Consultation médecin de famille vom 22.09.2026 (Arztrechnung, Franchise und Quote-part)",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "À votre charge 163.46",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "absender",
+        "textstelle": "Helvaria Assurance-maladie SA",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Il s'agit très probablement d'un décompte de votre assurance-maladie, Helvaria Assurance-maladie SA, daté du 08.10.2026. Il concerne une consultation chez le médecin de famille du 22.09.2026. Le montant total à payer est de 163.46 CHF. Ce montant se compose de la franchise 2026 (solde) de 150.00 CHF et de la quote-part de 10 % de 13.46 CHF. L'assurance de base a déjà pris en charge 121.14 CHF de la facture de 284.60 CHF. Le courrier ne contient aucune échéance que nous puissions identifier. Nous ne pouvons pas confirmer si ce montant est correct. Nous ne savons pas non plus de quel type de document il s'agit avec certitude.",
+    "naechste_schritte": [
+      "Vérifiez le détail de la facture du médecin et le décompte de l'assurance.",
+      "Contactez Helvaria Assurance-maladie SA en indiquant le numéro de client 4.302.661 et la référence PR-2026-889104.",
+      "Demandez au service des prestations quelle est la date limite de paiement."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

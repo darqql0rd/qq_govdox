@@ -1,0 +1,50 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\39_werbebrief_it\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "AssiCheck Broker Sagl\nConsulenza assicurativa indipendente\nCorso Elvezia 50, 6990 Castelvecchio                                                                                                                     AC\nTel. 099 555 80 80 · info@assicheck.example\n\n\n\n\n                                                                                                              Signora\n                                                                                                              Sara Bianchi\n                                                                                                              Via Monte Ceneri 3\n                                                                                                              6990 Castelvecchio\n\n\n\n                                                                                                                                     Castelvecchio, 14 ottobre 2026\n\n\nPremi cassa malati 2027: risparmi fino a CHF 1'200 all'anno!\nGentile Signora Bianchi,\ni premi della cassa malati aumentano anche nel 2027. Con un confronto gratuito e senza impegno troviamo per Lei\nl'offerta più conveniente.\nApprofitti ora: ci rispedisca il tagliando allegato o ci chiami. I nostri consulenti la contatteranno entro 48 ore.\n\n  Tagliando\n  [ ] Sì, desidero un confronto gratuito dei premi\n  Nome: __________________ Telefono: __________________\n\nAssiCheck Broker Sagl è un intermediario assicurativo e può ricevere commissioni dalle compagnie partner. Messaggio pubblicitario.\n\n\n\nCordiali saluti\n\n\nIl team AssiCheck\n\n\n\n\nDocumento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                           Pagina 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": "Werbung eines Versicherungsbrokers für Krankenkassen-Prämienvergleich",
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "AssiCheck Broker Sagl",
+    "briefdatum": "2026-10-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [],
+    "periode": null,
+    "hauptbetrag_chf": null,
+    "zahlungsrichtung": "information",
+    "posten": [],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": []
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa lettera sembra essere una pubblicità di un broker assicurativo, la AssiCheck Broker Sagl. Il broker propone di confrontare i premi della cassa malati. Non si tratta di una richiesta di pagamento e non contiene importi da versare. Non abbiamo potuto riconoscere con sicurezza il tipo di lettera. Per questo non possiamo indicarle una scadenza. Non è necessario agire con urgenza. Se ha dubbi sul contenuto, chieda direttamente al mittente. Può anche verificare da sola, con calma, se le conviene cambiare cassa malati. Questo strumento è un prototipo di un corso della FHNW e non è un servizio ufficiale.",
+    "naechste_schritte": [
+      "Conservi la lettera e controlli se contiene altri documenti o scadenze.",
+      "Chieda al mittente AssiCheck Broker Sagl a quale scopo le ha scritto e se è necessaria una sua risposta.",
+      "Non firmi nulla e non paghi nulla finché non ha chiarito il contenuto."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

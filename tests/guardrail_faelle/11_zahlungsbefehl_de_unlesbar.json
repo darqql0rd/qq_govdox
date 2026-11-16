@@ -1,0 +1,113 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\11_zahlungsbefehl_de_unlesbar\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "Betreibungsamt Talwil\nKanton Hochwald\nDorfstrasse 12, 8999 Talwil                                                                                                           BT\nTel. 099 555 12 40 · betreibungsamt@talwil.example\nSchalter: Mo-Fr 08.30-11.30 / 14.00-16.30\n\n\n\n                                                                                    Frau\n                                                                                    Nicole Baumann\n                                                                                    Bachweg 2\n                                                                                    8999 Talwil\n\n\n\n                                                                                                                        Talwil, 2. November 2026\nBetreibung Nr.                    26-009964\nAusgestellt am                    02.11.2026\nSachbearbeitung                   S. Widmer\n\n\n\nZahlungsbefehl\nOrdentliche Betreibung (Art. 69 SchKG). Gestützt auf das Betreibungsbegehren des nachgenannten Gläubigers\nwird Ihnen folgender Zahlungsbefehl zugestellt:\n\nGläubiger                             Garage Moser AG, Hauptstrasse 88, 8999 Talwil\nVertreter                             -\nSchuldner                             Baumann Nicole, geb. 21.06.1979, Bachweg 2, 8999 Talwil\n\n\nForderung\nPosition                                                                                                                                  CHF\nForderungsbetrag nebst Zins zu 5 % seit 01.08.2026                                                                                     2'335.20\nKosten dieses Zahlungsbefehls inkl. Zustellung (vom Gläubiger vorgeschossen)                                                             70.30\nTotal (ohne Zins)                                                                                                                      2'405.50\n\nForderungsurkunde / Grund der Forderung: Rechnung Nr. 44102 vom 30.06.2026 (Service und Reifenwechsel).\nDer Schuldner wird aufgefordert, den Gläubiger für die angegebene Forderung samt Betreibungskosten innert 20\nTagen nach Zustellung zu befriedigen. Die Zahlung kann an das Betreibungsamt geleistet werden.\nWill der Schuldner die Forderung oder einen Teil davon oder das Recht, sie auf dem Betreibungsweg geltend zu\nmachen, bestreiten, so hat er dies innert 10 Tagen nach Zustellung dieses Zahlungsbefehls dem Betreibungsamt\nmündlich oder schriftlich zu erklären (Rechtsvorschlag). Wird nur ein Teil der Forderung bestritten, ist der\nbestrittene Betrag genau anzugeben; andernfalls gilt die ganze Forderung als bestritten. Eine Begründung ist nicht\nerforderlich.\nKommt der Schuldner diesem Zahlungsbefehl nicht nach und erhebt er keinen Rechtsvorschlag, so kann der\nGläubiger nach Ablauf von 20 Tagen seit der Zustellung das Fortsetzungsbegehren stellen.\nBetreibungsferien (Art. 56 und 63 SchKG): 7 Tage vor bis 7 Tage nach Ostern und Weihnachten sowie 15. bis 31. Juli. Die Fristen laufen\nwährend dieser Zeit weiter; endet eine Frist in den Betreibungsferien, verlängert sie sich bis zum dritten Werktag nach deren Ende.\n\n\n Rechtsvorschlag\n [ ] Der Schuldner erhebt Rechtsvorschlag gegen die ganze Forderung.\n [ ] Der Schuldner erhebt Rechtsvorschlag für den Betrag von CHF ______________.\n\n Ort, Datum: ______________________ Unterschrift Schuldner: ______________________\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                      Seite 1\n\f Zustellungsbescheinigung\n Zugestellt am: ______________ an:\n [ ] Schuldner persönlich [ ] Hausgenosse [ ] Arbeitnehmer\n\n Unterschrift Zustellbeamter: ______________________\n\n\n\nBetreibungsamt Talwil\n\n\nR. Hofmann, Betreibungsbeamter\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.   Seite 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-11-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-009964"
+      },
+      {
+        "art": "rechnung",
+        "wert": "44102"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 2405.5,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag nebst Zins zu 5 % seit 01.08.2026",
+        "betrag_chf": 2335.2,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten dieses Zahlungsbefehls inkl. Zustellung (vom Gläubiger vorgeschossen)",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Garage Moser AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Rechnung Nr. 44102 vom 30.06.2026 (Service und Reifenwechsel)",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-08-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total (ohne Zins) 2'405.50",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Garage Moser AG, Hauptstrasse 88, 8999 Talwil",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "zins",
+        "textstelle": "Forderungsbetrag nebst Zins zu 5 % seit 01.08.2026",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-11-04",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-16",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-11-04",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [
+        "wochenende_verschoben"
+      ],
+      "erinnerung": "2026-11-11",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-11-24",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-11-04",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [],
+      "erinnerung": "2026-11-19",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben einen Zahlungsbefehl vom Betreibungsamt Talwil erhalten. Die Garage Moser AG verlangt von Ihnen Geld, für Rechnung Nr. 44102 vom 30.06.2026 (Service und Reifenwechsel). Das Betreibungsamt hat den Brief am 02.11.2026 geschrieben. Sie haben ihn am 04.11.2026 erhalten.\n\nInsgesamt sollen Sie CHF 2405.50 bezahlen. Das sind CHF 2335.20 für die Forderung mit 5 % Zins seit 01.08.2026, und CHF 70.30 Kosten für diesen Zahlungsbefehl inklusive Zustellung.\n\nDas Datum des Empfangs beruht auf der Annahme, dass Sie den Brief am 04.11.2026 erhalten haben. Es ist das Datum, das Sie angegeben haben.\n\nSie haben zwei Möglichkeiten: Sie bezahlen den Betrag. Oder Sie erheben Rechtsvorschlag, wenn Sie mit der Forderung nicht einverstanden sind. Ob die Forderung berechtigt ist, können wir hier nicht beurteilen.",
+    "naechste_schritte": [
+      "Bis 16.11.2026 entscheiden, ob Sie Rechtsvorschlag erheben, und dies dem Betreibungsamt Talwil schriftlich mitteilen.",
+      "Bis 24.11.2026 den Betrag bezahlen, falls Sie die Forderung anerkennen.",
+      "Bei Fragen zur Forderung direkt bei der Garage Moser AG oder beim Betreibungsamt Talwil nachfragen."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

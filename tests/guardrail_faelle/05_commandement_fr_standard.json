@@ -1,0 +1,115 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\05_commandement_fr_standard\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "Office des poursuites du district de Valmont\nCanton du Haut-Lac\nRue du Marché 3, 1999 Valmont\nTél. 099 555 21 00 · poursuites@valmont.example\nGuichet : lu-ve 08h00-11h30 / 13h30-16h00\n\n\n                                                                                                      Madame\n                                                                                                      Sophie Rochat\n                                                                                                      Chemin des Vignes 15\n                                                                                                      1999 Valmont\n\n\n\n                                                                                                                             Valmont, le 14 septembre 2026\nPoursuite n°                              26-112093\nÉtabli le                                 14.09.2026\nGestionnaire                              M. Perrin\n\n\nCommandement de payer\nPoursuite ordinaire (art. 69 LP). Sur réquisition du créancier désigné ci-après, le présent commandement de payer\nvous est notifié :\n Créancier                                    Garage du Lac SA, Route de la Gare 22, 1998 Clairvaux\n Représentant                                 Recouvra Services Sàrl, Case postale 410, 1998 Clairvaux\n Débiteur                                     Rochat Sophie, né(e) le 04.09.1990, Chemin des Vignes 15, 1999 Valmont\n\n\nCréance\n Poste                                                                                                                                                       CHF\n Montant de la créance avec intérêts à 5 % dès le 01.07.2026                                                                                            3 260,00\n Frais de recouvrement selon contrat                                                                                                                       120,00\n Frais du présent commandement de payer, y c. notification (avancés par le créancier)                                                                       70,30\n Total (sans intérêts)                                                                                                                                  3 450,30\n\nTitre et date de la créance ou cause de l'obligation : Facture n° 7781 du 20.05.2026 pour réparation et service\ndu véhicule ; rappels des 20.06.2026 et 20.07.2026.\nLe débiteur est sommé de payer au créancier, dans les 20 jours dès la notification, la somme indiquée ainsi que les\nfrais de poursuite. Le paiement peut être effectué auprès de l'office des poursuites.\nSi le débiteur entend contester tout ou partie de la dette, ou le droit du créancier de la faire valoir par voie de\npoursuite, il doit le déclarer verbalement ou par écrit à l'office des poursuites dans les 10 jours à compter de la\nnotification du présent commandement (former opposition). Si seule une partie est contestée, le montant contesté\ndoit être indiqué avec précision, faute de quoi la dette entière est réputée contestée. L'opposition n'a pas à être\nmotivée.\nSi le débiteur ne paie pas et ne forme pas opposition, le créancier pourra requérir la continuation de la poursuite à\nl'expiration d'un délai de 20 jours dès la notification.\nFéries de poursuite (art. 56 et 63 LP) : 7 jours avant et 7 jours après Pâques et Noël, ainsi que du 15 au 31 juillet. Les délais continuent de courir pendant les\nféries ; si un délai expire pendant les féries, il est prolongé jusqu'au troisième jour ouvrable qui suit leur fin.\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                                      Page 1\n\f  Opposition\n  [ ] Le débiteur forme opposition à la totalité de la créance.\n  [ ] Le débiteur forme opposition pour un montant de CHF ______________.\n\n  Lieu, date : ______________________ Signature : ______________________\n\n\n  Attestation de notification\n  Notifié le : ______________ à :\n  [ ] débiteur en personne [ ] personne du ménage [ ] employé\n\n  Signature de l'agent notificateur : ______________________\n\n\n\nOffice des poursuites du district de Valmont\n\n\nC. Jaquier, préposé(e)\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.   Page 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Office des poursuites du district de Valmont",
+    "briefdatum": "2026-09-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-112093"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 3450.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Montant de la créance avec intérêts à 5 % dès le 01.07.2026",
+        "betrag_chf": 3260.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Frais de recouvrement selon contrat",
+        "betrag_chf": 120.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Frais du présent commandement de payer, y c. notification",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Garage du Lac SA",
+    "glaeubiger_vertreter": "Recouvra Services Sàrl",
+    "forderungsgrund": "Facture n° 7781 du 20.05.2026 pour réparation et service du véhicule; rappels des 20.06.2026 et 20.07.2026",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-07-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total (sans intérêts) 3 450,30",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Créancier Garage du Lac SA",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "zins",
+        "textstelle": "intérêts à 5 % dès le 01.07.2026",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-09-16",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-09-28",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-09-16",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [
+        "wochenende_verschoben"
+      ],
+      "erinnerung": "2026-09-23",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-10-06",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-09-16",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [],
+      "erinnerung": "2026-10-01",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Vous avez reçu un commandement de payer. C'est une demande de paiement envoyée par l'Office des poursuites du district de Valmont, dans le cadre de la poursuite n° 26-112093. Le créancier est Garage du Lac SA, représenté par Recouvra Services Sàrl. Le motif indiqué est une facture n° 7781 du 20.05.2026 pour la réparation et l'entretien d'un véhicule, ainsi que des rappels des 20.06.2026 et 20.07.2026.\n\nLe montant total à payer est de CHF 3450.30. Il comprend la créance de CHF 3260.00 avec intérêts à 5 % dès le 01.07.2026, des frais de recouvrement de CHF 120.00 selon le contrat, et des frais de CHF 70.30 pour le présent commandement.\n\nVous pouvez payer la somme. Vous pouvez aussi faire opposition, appelée « Rechtsvorschlag » ou « opposition au commandement de payer ». Cela doit être fait par écrit dans le délai indiqué. Le délai pour faire opposition court à partir de la réception du courrier, qui a eu lieu le 16.09.2026. Cette date est celle que vous avez indiquée ; le délai est donc calculé à partir de là. Pour le paiement, le délai est fixé au 06.10.2026.\n\nCe texte est une explication générale, pas un conseil juridique. Il s'agit d'un prototype de cours de la FHNW, non d'un service officiel.",
+    "naechste_schritte": [
+      "Vérifiez la somme et le motif de la facture auprès de Garage du Lac SA avant tout paiement.",
+      "Si vous voulez faire opposition, envoyez-la par écrit à l'Office des poursuites du district de Valmont au plus tard le 28.09.2026.",
+      "Si vous voulez payer, effectuez le paiement de CHF 3450.30 au plus tard le 06.10.2026.",
+      "Demandez conseil à un service juridique ou à un avocat si vous avez des doutes sur la créance."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

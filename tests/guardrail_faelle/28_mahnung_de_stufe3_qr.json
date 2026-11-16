@@ -1,0 +1,110 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\28_mahnung_de_stufe3_qr\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "                   Gemeinde Oberhalden\n   GO\n                   Abteilung Finanzen · Gemeindehausplatz 1, 8997 Oberhalden · Tel. 099 555 18 00 ·\n                   finanzen@oberhalden.example\n\n\n\n\n                                                                                   Frau\n                                                                                   Beatrice Ammann\n                                                                                   Mühlegasse 3\n                                                                                   8997 Oberhalden\n\n\n\n                                                                                                               Oberhalden, 12. November 2026\n Debitoren-Nr.                     45.2210\n Objekt                            Schulergänzende Betreuung\n Sachbearbeitung                   P. Arnold, Tel. 099 555 18 12\n\n\n\nLetzte Mahnung vor Betreibung\nSehr geehrte Frau Ammann\nTrotz unserer Mahnungen vom 15. Oktober und 29. Oktober 2026 ist die nachstehende Forderung weiterhin offen:\n\nRechnung                                                                     Datum                    Fällig                           CHF\n2026-3391 Elternbeitrag schulergänzende Betreuung                            31.08.2026               30.09.2026                     640,00\nAugust 2026\nMahngebühr 2. Mahnung                                                                                                                 10,00\nMahngebühr 3. Mahnung                                                                                                                 30,00\nTotal offener Betrag                                                                                                                680,00\n\nWir bitten Sie, den offenen Betrag von CHF 680,00 bis spätestens 23. November 2026 zu überweisen. Erfolgt die\nZahlung nicht fristgerecht, sehen wir uns gezwungen, ohne weitere Ankündigung die Betreibung einzuleiten. Die\ndadurch entstehenden Kosten gehen zu Ihren Lasten.\nAb dem 01.10.2026 wird auf dem Rechnungsbetrag ein Verzugszins von 5 % erhoben.\nSollten Sie sich in finanziellen Schwierigkeiten befinden, nehmen Sie bitte vor Ablauf der Frist mit uns Kontakt auf.\nGerne prüfen wir eine Ratenzahlung.\nFür die Zahlung verwenden Sie bitte den beiliegenden Zahlteil.\nHat sich Ihre Zahlung mit diesem Schreiben gekreuzt, betrachten Sie es bitte als gegenstandslos.\n\n\nFreundliche Grüsse\n\n\nGemeinde Oberhalden\nP. Arnold, Leiter Finanzen\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                  Seite 1\n\f                                Gemeinde Oberhalden\n                                Abteilung Finanzen\n                  GO            Gemeindehausplatz 1, 8997 Oberhalden\n\n\n\n\n                Zahlteil zu unserem Schreiben vom 12.11.2026\n\n                Bitte verwenden Sie für die Zahlung den untenstehenden Zahlteil. (Synthetisches Muster: die Kontoangaben sind\n                ungültig.)\n\n\n\n\n                Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.\n\n\n\n\nEmpfangsschein                                            Zahlteil                                      Konto / Zahlbar an\n                                                                                                        CH00 0900 0000 4522 1000 0\nKonto / Zahlbar an                                                                                      Gemeinde Oberhalden\nCH00 0900 0000 4522 1000 0                                                                              Gemeindehausplatz 1\nGemeinde Oberhalden\nGemeindehausplatz 1                                                                                     8997 Oberhalden\n8997 Oberhalden                                                                                         Referenz\nReferenz                                                                                                00 00000 00000 45221 02026 33910\n00 00000 00000 45221 02026 33910\n                                                                                                        Zusätzliche Informationen\nZahlbar durch\nBeatrice Ammann\n                                                                                                        Rechnung 2026-3391\nMühlegasse 3                                                                                            Letzte Mahnung\n8997 Oberhalden\n                                                                                                        Zahlbar durch\n                                                                                                        Beatrice Ammann\n                                                                                                        Mühlegasse 3\n                                                                                                        8997 Oberhalden\nWährung      Betrag                                       Währung      Betrag\nCHF          680.00                                       CHF          680.00\n\n\n\n                                Annahmestelle\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Oberhalden, Abteilung Finanzen",
+    "briefdatum": "2026-11-12",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "45.2210"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-3391"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 45221 02026 33910"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 680.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Rechnung 2026-3391 Elternbeitrag schulergänzende Betreuung, August 2026",
+        "betrag_chf": 640.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr 2. Mahnung",
+        "betrag_chf": 10.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Mahngebühr 3. Mahnung",
+        "betrag_chf": 30.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-23",
+    "glaeubiger": "Gemeinde Oberhalden",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Elternbeitrag schulergänzende Betreuung, August 2026",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-10-01"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 3,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total offener Betrag 680,00",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "bis spätestens 23. November 2026",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "zins",
+        "textstelle": "Ab dem 01.10.2026 wird auf dem Rechnungsbetrag ein Verzugszins von 5 % erhoben.",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-23",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-11-18",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Die Gemeinde Oberhalden hat Ihnen eine Mahnung geschickt. Sie erinnert Sie daran, dass eine Rechnung noch nicht bezahlt ist. Es handelt sich um den Elternbeitrag für die schulergänzende Betreuung im August 2026 (Rechnung 2026-3391).\n\nDer Gesamtbetrag beträgt 680.00 CHF. Dieser setzt sich zusammen aus: 640.00 CHF Elternbeitrag, 10.00 CHF Mahngebühr für die 2. Mahnung und 30.00 CHF Mahngebühr für die 3. Mahnung. Ab dem 01.10.2026 werden zudem 5 % Zins verlangt.\n\nBitte zahlen Sie den Betrag bis 23.11.2026. Für die Zahlung brauchen Sie die Zahlungsreferenz aus dem Brief. Die Referenznummer der Debitorin bzw. des Debitors ist 45.2210.\n\nFalls Sie Fragen haben oder den Betrag nicht bezahlen können, wenden Sie sich direkt an die Abteilung Finanzen der Gemeinde Oberhalden. Dort können Sie besprechen, welche Möglichkeiten es gibt.\n\nHinweis: Dieser Text stammt aus einem Prototyp einer Lehrveranstaltung der FHNW und ist kein offizieller Dienst. Er ersetzt keine Rechtsberatung.",
+    "naechste_schritte": [
+      "Prüfen Sie die Rechnung 2026-3391 und den Betrag von 680.00 CHF.",
+      "Zahlen Sie den Betrag mit der Zahlungsreferenz aus dem Brief bis 23.11.2026.",
+      "Wenn Sie nicht zahlen können, kontaktieren Sie die Abteilung Finanzen der Gemeinde Oberhalden vor dem 23.11.2026."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

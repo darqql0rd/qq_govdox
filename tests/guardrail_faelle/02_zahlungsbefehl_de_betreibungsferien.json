@@ -1,0 +1,126 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\02_zahlungsbefehl_de_betreibungsferien\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "     BO\n\n                                                   Frau\nBetreibungsamt\n                                                   Beatrice Ammann\nOberhalden-Linth\n                                                   Mühlegasse 3\nKanton Hochwald\nGemeindehausplatz 2, 8997                          8997 Oberhalden\nOberhalden\nTel. 099 555 18 70 · betreibun\ngen@oberhalden.example\n                                                                                                                               Oberhalden, 10. Dezember 2026\nBetreibung Nr.\n26-011902\n                                                   Zahlungsbefehl\nAusgestellt am\n                                                   Ordentliche Betreibung (Art. 69 SchKG). Gestützt auf das Betreibungsbegehren des\n10.12.2026\n                                                   nachgenannten Gläubigers wird Ihnen folgender Zahlungsbefehl zugestellt:\nSachbearbeitung\nK. Baumgartner                                      Gläubiger                      Sanitär Huber AG, Industriestrasse 19, 8997 Oberhalden\n                                                    Vertreter                      -\n                                                    Schuldner                      Ammann Beatrice, geb. 02.07.1975, Mühlegasse 3, 8997\n                                                                                   Oberhalden\n\n\n                                                   Forderung\n                                                    Position                                                                                                    Betrag\n                                                    Forderungsbetrag nebst Zins zu 5 % seit 30.09.2026                                                    Fr. 6420.00\n                                                    Mahnspesen gemäss AGB                                                                                    Fr. 50.00\n                                                    Kosten dieses Zahlungsbefehls inkl. Zustellung (vom Gläubiger                                            Fr. 70.30\n                                                    vorgeschossen)\n                                                    Total (ohne Zins)                                                                                    Fr. 6540.30\n\n                                                   Forderungsurkunde / Grund der Forderung: Rechnung Nr. SH-26-1187 vom\n                                                   31.08.2026 (Ersatz Boiler und Leitungen); Mahnung vom 30.09.2026.\n                                                   Der Schuldner wird aufgefordert, den Gläubiger für die angegebene Forderung samt\n                                                   Betreibungskosten innert 20 Tagen nach Zustellung zu befriedigen. Die Zahlung\n                                                   kann an das Betreibungsamt geleistet werden.\n                                                   Will der Schuldner die Forderung oder einen Teil davon oder das Recht, sie auf dem\n                                                   Betreibungsweg geltend zu machen, bestreiten, so hat er dies innert 10 Tagen nach\n                                                   Zustellung dieses Zahlungsbefehls dem Betreibungsamt mündlich oder schriftlich zu\n                                                   erklären (Rechtsvorschlag). Wird nur ein Teil der Forderung bestritten, ist der\n                                                   bestrittene Betrag genau anzugeben; andernfalls gilt die ganze Forderung als\n                                                   bestritten. Eine Begründung ist nicht erforderlich.\n                                                   Kommt der Schuldner diesem Zahlungsbefehl nicht nach und erhebt er keinen\n                                                   Rechtsvorschlag, so kann der Gläubiger nach Ablauf von 20 Tagen seit der\n                                                   Zustellung das Fortsetzungsbegehren stellen.\n                                                   Betreibungsferien (Art. 56 und 63 SchKG): 7 Tage vor bis 7 Tage nach Ostern und Weihnachten sowie 15. bis 31. Juli.\n                                                   Die Fristen laufen während dieser Zeit weiter; endet eine Frist in den Betreibungsferien, verlängert sie sich bis zum\n                                                   dritten Werktag nach deren Ende.\n\n\n\n\n       Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                                         Seite 1\n\f                        Rechtsvorschlag\n                        [ ] Der Schuldner erhebt Rechtsvorschlag gegen die ganze Forderung.\n                        [ ] Der Schuldner erhebt Rechtsvorschlag für den Betrag von CHF ______________.\n\n                        Ort, Datum: ______________________ Unterschrift Schuldner:\n                        ______________________\n\n\n                        Zustellungsbescheinigung\n\n                        Zugestellt am:       14.12.26\n                                                    an:\n                        [X] Schuldner persönlich [ ] Hausgenosse [ ] Arbeitnehmer\n\n                        Unterschrift Zustellbeamter:             K. Baumg.\n\nBetreibungsamt Oberhalden-Linth\n\n\nM. Studer, Betreibungsbeamter\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.   Seite 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_konfidenz": 0.98,
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Oberhalden-Linth",
+    "briefdatum": "2026-12-10",
+    "zustelldatum_im_brief": "2026-12-14",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-011902"
+      },
+      {
+        "art": "rechnung",
+        "wert": "SH-26-1187"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 6540.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag nebst Zins zu 5 % seit 30.09.2026",
+        "betrag_chf": 6420.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Mahnspesen gemäss AGB",
+        "betrag_chf": 50.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten dieses Zahlungsbefehls inkl. Zustellung (vom Gläubiger vorgeschossen)",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Sanitär Huber AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Rechnung für Ersatz Boiler und Leitungen",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-09-30"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Total (ohne Zins) Fr. 6540.30",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Gläubiger Sanitär Huber AG",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "zustelldatum_im_brief",
+        "textstelle": "Zugestellt am: 14.12.26",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "zins",
+        "textstelle": "Forderungsbetrag nebst Zins zu 5 % seit 30.09.2026",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": "2026-12-14",
+  "zustelldatum_quelle": "brief",
+  "fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2027-01-06",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-12-14",
+      "rechtsgrundlage": "SchKG Art. 74",
+      "hinweise": [
+        "betreibungsferien_verschoben"
+      ],
+      "erinnerung": "2027-01-01",
+      "bestaetigt": false
+    },
+    {
+      "art": "zahlung",
+      "datum": "2027-01-04",
+      "basis": "zustellung",
+      "ausgangsdatum": "2026-12-14",
+      "rechtsgrundlage": "SchKG Art. 69",
+      "hinweise": [
+        "wochenende_verschoben"
+      ],
+      "erinnerung": "2026-12-30",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Sie haben einen Zahlungsbefehl vom Betreibungsamt Oberhalden-Linth erhalten. Der Brief wurde am 10.12.2026 verfasst und am 14.12.2026 zugestellt. Die Sanitär Huber AG verlangt von Ihnen Geld für eine Rechnung über den Ersatz eines Boilers und von Leitungen (Rechnungsnummer SH-26-1187).\n\nInsgesamt sollen Sie 6540.30 CHF bezahlen. Das setzt sich so zusammen: 6420.00 CHF Forderung mit 5 % Zins seit 30.09.2026, 50.00 CHF Mahnspesen und 70.30 CHF Kosten für diesen Zahlungsbefehl inkl. Zustellung.\n\nSie haben zwei Möglichkeiten:\n- Sie bezahlen den Betrag innerhalb der Zahlungsfrist.\n- Sie erheben Rechtsvorschlag. Damit widersprechen Sie der Forderung. Dann entscheidet ein Gericht, ob Sie zahlen müssen.\n\nOb die Forderung berechtigt ist, können wir hier nicht beurteilen. Bei Fragen wenden Sie sich an das Betreibungsamt oder an eine Beratungsstelle.\n\nDieser Text stammt von einem Prototyp aus einer Lehrveranstaltung der FHNW und ist kein offizieller Dienst.",
+    "naechste_schritte": [
+      "Zahlen Sie bis spätestens 04.01.2027 die 6540.30 CHF an das Betreibungsamt, falls Sie die Forderung anerkennen.",
+      "Wenn Sie die Forderung nicht anerkennen, erheben Sie Rechtsvorschlag bis spätestens 06.01.2027.",
+      "Bewahren Sie den Brief und alle Unterlagen zur Rechnung SH-26-1187 gut auf.",
+      "Holen Sie bei Unsicherheit Rat bei einer Beratungsstelle oder dem Betreibungsamt ein."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\43_konkursandrohung_de\\brief.pdf"
+  ],
+  "nutzersprache": "de",
+  "textquelle": "pdf_text",
+  "rohtext": "Betreibungsamt Talwil\nKanton Hochwald\nDorfstrasse 12, 8999 Talwil                                                                                                           BT\nTel. 099 555 12 40 · betreibungsamt@talwil.example\nSchalter: Mo-Fr 08.30-11.30 / 14.00-16.30\n\n\n\n                                                                                    Holzbau Gerber GmbH\n                                                                                    z.H. der Geschäftsführung\n                                                                                    Sägereiweg 4\n                                                                                    8999 Talwil\n\n\n\n                                                                                                                        Talwil, 14. Oktober 2026\nBetreibung Nr.                    26-002244\nZahlungsbefehl zugestellt\nam                                12.08.2026\n\n\n\nKonkursandrohung\nGestützt auf das Fortsetzungsbegehren des nachgenannten Gläubigers wird Ihnen der Konkurs angedroht (Art.\n159 ff. SchKG).\n\nGläubiger                                      Forstbetrieb Hochwald AG, Waldstrasse 1, 8990 Hochwald-Stadt\nForderung                                      CHF 18'450.00 nebst Zins zu 5 % seit 31.05.2026\nBetreibungskosten bisher                       CHF 113.30\nKosten Konkursandrohung                        CHF 50.00\n\nDer Gläubiger kann frühestens 20 Tage nach Zustellung dieser Konkursandrohung beim Konkursgericht das\nKonkursbegehren stellen. Ein Rechtsvorschlag ist nicht mehr möglich.\nWill der Schuldner geltend machen, die Konkursandrohung sei gesetzeswidrig, kann er innert 10 Tagen seit\nZustellung bei der Aufsichtsbehörde über Schuldbetreibung und Konkurs Beschwerde führen (Art. 17 SchKG). Ist\ndie Schuld getilgt oder gestundet, kann der Schuldner beim Gericht die Aufhebung oder Einstellung der Betreibung\nverlangen (Art. 85 und 85a SchKG).\n\n\nBetreibungsamt Talwil\n\n\nR. Hofmann, Betreibungsbeamter\n\n\n\n\nSynthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                      Seite 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "unbekannt",
+  "brieftyp_konfidenz": 0.9,
+  "brieftyp_vermutung": "Konkursandrohung",
+  "briefsprache": "de",
+  "antwortsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-10-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-002244"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 18613.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderung",
+        "betrag_chf": 18450.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Betreibungskosten bisher",
+        "betrag_chf": 113.3,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Konkursandrohung",
+        "betrag_chf": 50.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Forstbetrieb Hochwald AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-05-31"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "CHF 18'450.00 nebst Zins zu 5 % seit 31.05.2026; Betreibungskosten bisher CHF 113.30; Kosten Konkursandrohung CHF 50.00",
+        "konfidenz": 0.9
+      },
+      {
+        "feld": "glaeubiger",
+        "textstelle": "Forstbetrieb Hochwald AG, Waldstrasse 1, 8990 Hochwald-Stadt",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "referenzen",
+        "textstelle": "Betreibung Nr. 26-002244",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "erklaerung": {
+    "sprache": "de",
+    "text": "Dieser Brief stammt vom Betreibungsamt Talwil und ist vom 14.10.2026. Er betrifft die Betreibung Nummer 26-002244. Vermutlich handelt es sich um eine Konkursandrohung. Das bedeutet: Eine Firma verlangt Geld von Ihnen, und wenn Sie nicht zahlen, könnte später ein Konkursverfahren eingeleitet werden. Die Gläubigerin ist die Forstbetrieb Hochwald AG.\n\nDer Brief nennt folgende Beträge:\n- Forderung: 18450.00 CHF\n- Bisherige Betreibungskosten: 113.30 CHF\n- Kosten der Konkursandrohung: 50.00 CHF\n- Gesamtbetrag: 18613.30 CHF\n\nZusätzlich verlangt die Gläubigerin Zins von 5 Prozent ab 31.05.2026.\n\nIm Brief habe ich keine Frist gefunden. Die Art des Briefs ist nicht eindeutig erkennbar. Deshalb kann ich Ihnen keine sichere Frist nennen.",
+    "naechste_schritte": [
+      "Lesen Sie den Brief vollständig durch und suchen Sie nach einer Frist oder einem Datum.",
+      "Fragen Sie beim Betreibungsamt Talwil nach, was genau der Brief bedeutet und bis wann Sie reagieren müssen.",
+      "Prüfen Sie, ob Sie den Betrag von 18613.30 CHF bezahlen können, und klären Sie die Möglichkeiten mit dem Amt oder einer Beratungsstelle.",
+      "Bewahren Sie den Brief und alle Unterlagen zur Betreibung sorgfältig auf."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

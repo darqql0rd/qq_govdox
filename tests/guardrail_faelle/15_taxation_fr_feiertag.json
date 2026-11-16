@@ -1,0 +1,126 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\15_taxation_fr_feiertag\\brief.pdf"
+  ],
+  "nutzersprache": "fr",
+  "textquelle": "pdf_text",
+  "rohtext": "                   Administration cantonale des impôts du Haut-Lac\n                   Section des personnes physiques\n                   Avenue de la Fiscalité 5, 1990 Lac-Ville\n                   Tél. 099 555 50 00 · personnes.physiques@impots-hautlac.example\n\n\n\nMonsieur                                                                            N° de contribuable           755.304.118\nJulien Favre                                                                        Période fiscale              2025 (01.01.-31.12.2025)\n                                                                                    Commune                      Valmont (70 %)\nRue des Alpes 9\n                                                                                    Barème                       Personne seule\n1999 Valmont                                                                        Taxateur                     A. Monnier, tél. 099 555 50 64\n\n\n\n\n                                                                                                                       Lac-Ville, le 23 novembre 2026\n\n\nDécision de taxation 2025\nImpôts cantonal et communal et impôt fédéral direct\nMonsieur,\nsur la base de votre déclaration d'impôt du 25.03.2026 et des pièces produites, vous êtes taxé(e)(s) pour la période\nfiscale 2025 comme suit :\nRevenu\n                                                                                                                    Déclaré                          Taxé\n Revenu de l'activité dépendante                                                                                      86 200                       86 200\n Rendement de la fortune mobilière                                                                                           340                      340\n Frais professionnels                                                                                                 -4 310                        -3 500\n Primes d'assurances et intérêts de capitaux d'épargne                                                                -2 600                        -2 600\n Cotisations au 3e pilier A                                                                                           -7 258                        -7 258\n Revenu imposable ICC                                                                                                72 372                        73 182\n\nMotif de la correction : les frais de repas ont été ramenés au forfait admis, l'employeur mettant à disposition une\ncantine subventionnée.\nFortune\n Fortune imposable                                                                                                                                 52 000\n\n\nCalcul de l'impôt\n                                                                                                                                                     CHF\n Impôt de base sur le revenu                                                                                                                      4 210,40\n Impôt de base sur la fortune                                                                                                                       73,60\n Impôt cantonal (coefficient 155 %)                                                                                                               6 640,20\n Impôt communal Valmont (coefficient 70 %)                                                                                                        2 998,80\n Impôt fédéral direct (revenu imposable 74 100)                                                                                                   1 214,30\n Total des impôts 2025                                                                                                                        10 853,30\n Acomptes versés, y c. intérêts rémunératoires                                                                                               -10 200,00\n Solde en votre défaveur                                                                                                                           653,30\n\nLe décompte final accompagné du bulletin de versement vous parviendra séparément. Le solde est payable dans\nles 30 jours dès réception du décompte ; passé ce délai, un intérêt moratoire sera perçu.\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.                            Page 1\n\f  Voies de droit\n  La présente décision peut faire l'objet d'une réclamation écrite et motivée auprès de l'Administration cantonale des\n  impôts du Haut-Lac dans les 30 jours dès sa notification. La réclamation doit contenir les conclusions et les motifs ; les\n  moyens de preuve doivent être joints ou désignés. Le même délai s'applique à l'impôt fédéral direct (art. 132 LIFD). Ce\n  délai ne peut pas être prolongé.\n\n\n\nVeuillez agréer nos salutations distinguées.\n\n\nAdministration cantonale des impôts du Haut-Lac\nA. Monnier, taxateur\n\n\n\n\nDocument de test synthétique : personnes, autorités, entreprises, adresses et montants sont fictifs. Sans effet juridique.   Page 2\n\f",
+  "seiten": 2,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_konfidenz": 0.97,
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "antwortsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Administration cantonale des impôts du Haut-Lac, Section des personnes physiques",
+    "briefdatum": "2026-11-23",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "755.304.118"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 653.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Impôt de base sur le revenu",
+        "betrag_chf": 4210.4,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Impôt de base sur la fortune",
+        "betrag_chf": 73.6,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Impôt cantonal (coefficient 155 %)",
+        "betrag_chf": 6640.2,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Impôt communal Valmont (coefficient 70 %)",
+        "betrag_chf": 2998.8,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Impôt fédéral direct (revenu imposable 74 100)",
+        "betrag_chf": 1214.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Total des impôts 2025",
+        "betrag_chf": 10853.3,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Acomptes versés, y c. intérêts rémunératoires",
+        "betrag_chf": -10200.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Solde en votre défaveur",
+        "betrag_chf": 653.3,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Administration cantonale des impôts du Haut-Lac",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Solde de l'impôt 2025 (impôt cantonal, communal et impôt fédéral direct) après veranlagung",
+    "zins": null,
+    "abweichung_von_deklaration": 7300.0,
+    "abweichungsgrund": "Frais de repas ramenés au forfait admis, l'employeur mettant à disposition une cantine subventionnée",
+    "mahnstufe": null,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Solde en votre défaveur 653,30",
+        "konfidenz": 0.95
+      },
+      {
+        "feld": "brieftyp",
+        "textstelle": "Décision de taxation 2025",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "abweichung_von_deklaration",
+        "textstelle": "Revenu imposable ICC 72 372 / 73 182",
+        "konfidenz": 0.9
+      }
+    ]
+  },
+  "zustelldatum": "2026-11-25",
+  "zustelldatum_quelle": "nutzer",
+  "fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-12-28",
+      "basis": "tag_nach_zustellung",
+      "ausgangsdatum": "2026-11-25",
+      "rechtsgrundlage": "DBG Art. 132",
+      "hinweise": [
+        "feiertag_verschoben"
+      ],
+      "erinnerung": "2026-12-23",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "fr",
+    "text": "Il s'agit d'une décision de taxation fiscale pour l'année 2025. L'administration fiscale du Haut-Lac a recalculé vos impôts. Le montant total de vos impôts 2025 est de CHF 10 853.30. Vous avez déjà versé CHF 10 200.00 d'acomptes. Il reste donc à payer un solde de CHF 653.30.\n\nLa différence vient des frais de repas. Ils ont été ramenés au forfait admis, car votre employeur met à disposition une cantine subventionnée. Le revenu imposable a ainsi augmenté de CHF 7 300.00 par rapport à votre déclaration.\n\nSi vous n'êtes pas d'accord avec cette taxation, vous pouvez faire opposition (une réclamation écrite). Le délai est fixé au 28.12.2026. Ce délai court à partir du lendemain de la réception de la lettre, que nous avons supposée être le 25.11.2026, vous l'avez indiqué vous-même. Cette date est donc une supposition de votre part.\n\nLe délai d'opposition ne vaut que si la lettre doit parvenir à l'administration avant la date limite, et non seulement être envoyée.",
+    "naechste_schritte": [
+      "Vérifiez le montant de CHF 653.30 et comparez-le avec votre déclaration d'impôt 2025.",
+      "Si vous voulez contester, envoyez votre opposition par écrit à l'administration cantonale des impôts du Haut-Lac avant le 28.12.2026.",
+      "Si vous êtes d'accord, réglez le solde de CHF 653.30 selon les indications du bordereau."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}

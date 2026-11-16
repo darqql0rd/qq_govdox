@@ -1,0 +1,102 @@
+{
+  "dokument_pfade": [
+    "C:\\Users\\QQQ\\School\\Generative AI\\qq_govdox\\daten\\briefe\\36_richiamo_it_unlesbar\\brief.pdf"
+  ],
+  "nutzersprache": "it",
+  "textquelle": "pdf_text",
+  "rohtext": "      CP\n\n                                                         Signora\nComune di Pradello\n                                                         Sara Bianchi\nCancelleria e contabilità\nVia alla Chiesa 1, 6997                                  Via Monte Ceneri 3\nPradello                                                 6990 Castelvecchio\nTel. 099 555 35 00 ·\ncontabilita@pradello.example\n\n\nN. debitore\n                                                                                                                                          Pradello, 10 novembre 2026\n20.3301\n\nOggetto                                                  Secondo richiamo - Diffida di pagamento\nTassa rifiuti\n                                                         Gentile Signora Bianchi,\nFunzionario\nR. Bettelini                                             Nonostante il nostro richiamo del 12 ottobre 2026, constatiamo che la fattura sotto\n                                                         indicata risulta ancora scoperta:\n                                                          Fattura                                                            Data         Scadenza            CHF\n                                                          2026-0980 Tassa base rifiuti 2026                                  01.08.2026   31.08.2026        165.00\n                                                          (residenza secondaria)\n                                                          Spese di richiamo                                                                                  20.00\n                                                          Totale dovuto                                                                                     185.00\n\n                                                         La invitiamo a versare l'importo di CHF 185.00 entro il 25 novembre 2026. In\n                                                         mancanza del pagamento entro tale termine, avvieremo la procedura esecutiva senza\n                                                         ulteriore preavviso. Le spese che ne deriveranno saranno a Suo carico.\n                                                         Qualora si trovasse in difficoltà finanziarie, La preghiamo di contattarci prima della\n                                                         scadenza: valuteremo volentieri un piano di pagamento rateale.\n\n                                                           Dati di pagamento\n                                                           Pagabile a: Comune di Pradello, 6997 Pradello\n                                                           IBAN: CH00 0076 4000 2033 0100 0 (fittizio)\n                                                           Riferimento: 00 00000 00000 20330 12026 09800 (fittizio)\n                                                           Importo: CHF 185.00\n\n                                                         Se il pagamento si fosse incrociato con la presente, La preghiamo di non tenerne\n                                                         conto.\n\n\n                                                         Distinti saluti\n\n\n                                                         Comune di Pradello\n                                                         R. Bettelini\n\n\n\n\n        Documento di prova sintetico: persone, autorità, ditte, indirizzi e importi sono fittizi. Senza effetto giuridico.                                    Pagina 1\n\f",
+  "seiten": 1,
+  "text_lesbar": true,
+  "text_konfidenz": null,
+  "brieftyp": "mahnung",
+  "brieftyp_konfidenz": 0.95,
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "antwortsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Comune di Pradello, Cancelleria e contabilità",
+    "briefdatum": "2026-11-10",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "20.3301"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0980"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 20330 12026 09800"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 185.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Tassa base rifiuti 2026 (residenza secondaria)",
+        "betrag_chf": 165.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Spese di richiamo",
+        "betrag_chf": 20.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-25",
+    "glaeubiger": "Comune di Pradello",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Tassa base rifiuti 2026 (residenza secondaria), inkl. Spese di richiamo",
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 2,
+    "belege": [
+      {
+        "feld": "hauptbetrag_chf",
+        "textstelle": "Totale dovuto 185.00",
+        "konfidenz": 0.98
+      },
+      {
+        "feld": "frist_im_brief",
+        "textstelle": "entro il 25 novembre 2026",
+        "konfidenz": 0.97
+      },
+      {
+        "feld": "mahnstufe",
+        "textstelle": "Secondo richiamo - Diffida di pagamento",
+        "konfidenz": 0.95
+      }
+    ]
+  },
+  "zustelldatum": null,
+  "zustelldatum_quelle": null,
+  "fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-25",
+      "basis": "brief",
+      "ausgangsdatum": null,
+      "rechtsgrundlage": null,
+      "hinweise": [],
+      "erinnerung": "2026-11-20",
+      "bestaetigt": false
+    }
+  ],
+  "erklaerung": {
+    "sprache": "it",
+    "text": "Questa è un sollecito di pagamento (secondo sollecito) del Comune di Pradello. Il Comune chiede il pagamento di CHF 185.00 per la tassa base sui rifiuti 2026 (residenza secondaria), comprensiva di spese di richiamo di CHF 20.00. Il termine di pagamento indicato nella lettera è il 25.11.2026. Il numero di fattura è 2026-0980 e il numero di debitore è 20.3301; li indichi nel pagamento. Per questa lettera non è indicata una data di ricezione: il termine è quello scritto nel sollecito. Se non è d'accordo con l'importo o ha domande, contatti direttamente il Comune. Questo testo è stato preparato da un prototipo didattico della FHNW e non è un servizio ufficiale né una consulenza legale.",
+    "naechste_schritte": [
+      "Verifichi entro il 25.11.2026 che l'importo di CHF 185.00 corrisponda alla fattura 2026-0980.",
+      "Paghi entro il 25.11.2026 usando la zahlungsreferenz 00 00000 00000 20330 12026 09800.",
+      "Se ha dubbi sull'importo o sul motivo della richiesta, contatti la Cancelleria e contabilità del Comune di Pradello prima della scadenza."
+    ]
+  },
+  "versuche": {
+    "ocr": 1
+  }
+}
