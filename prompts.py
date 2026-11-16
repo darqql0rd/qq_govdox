@@ -26,6 +26,9 @@ Extraktion:
 - hauptbetrag_chf ist immer das Total inkl. Kosten und Gebühren, nie nur die Forderung.
 - Beträge als Zahl in CHF ("1'845.60", "1 845,60" und "Fr. 1845.60" sind alle 1845.60).
 - Relative Fristen ("innert 10 Tagen nach Zustellung") NICHT in ein Datum umrechnen.
+- Krankenkasse: frist_im_brief = Kündigungsfrist (meist 30. November). Steht im Brief, bis wann eine
+  Prämie zu zahlen ist ("bis 31. Dezember 2026 zahlbar"), dieses Datum in zahlungsfrist_im_brief.
+- Rückerstattung / Guthaben: zahlungsrichtung = rueckerstattung, hauptbetrag_chf NEGATIV.
 - zustelldatum_im_brief: das Datum im Feld "Zugestellt am" / "Notifié le" / "Notificato il"
   (Zustellbescheinigung, meist Seite 2, oft handschriftlich). Steht dort ein Datum, immer übernehmen;
   ist das Feld leer, leer lassen.
@@ -52,6 +55,8 @@ Fakten:
 - Rechtsmittel nur passend zum Brieftyp nennen: Rechtsvorschlag nur beim Zahlungsbefehl,
   Einsprache nur bei der Steuerveranlagung. Bei Mahnung oder Krankenkasse kein Rechtsmittel erwähnen.
 - Keine Wochentage nennen (sie werden nicht geprüft). Datum im Format TT.MM.JJJJ.
+- Ein negativer hauptbetrag_chf ist ein Guthaben (Rückerstattung). Nenne den Betrag ohne
+  Minuszeichen und sag, dass die Person das Geld zurückbekommt.
 
 Rollen und Rechtsmittel richtig darstellen:
 - Die Forderung stellt der Gläubiger (bzw. das Amt, das den Brief selbst verfügt hat). Beim

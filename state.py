@@ -189,6 +189,12 @@ class Extraktion(BaseModel):
         "30. November), NICHT das Datum für den Franchise-Wechsel oder die Prämienzahlung "
         "(meist 31. Dezember). Relative Fristen wie '10 Tage nach Zustellung' leer lassen.",
     )
+    zahlungsfrist_im_brief: BriefDatum | None = Field(
+        None,
+        description="Nur Krankenkasse: Datum, bis wann eine Prämie bezahlt sein muss, wenn es "
+        "ausdrücklich im Brief steht, z. B. 'Die Prämie für Januar 2027 ist bis 31. Dezember 2026 "
+        "zahlbar' / 'payable jusqu'au' / 'pagabile entro'. Sonst leer lassen. Nicht die Kündigungsfrist.",
+    )
 
     # --- Zahlungsbefehl ---
     glaeubiger: str | None = Field(
@@ -219,7 +225,8 @@ class Extraktion(BaseModel):
     )
 
 
-    @field_validator("briefdatum", "zustelldatum_im_brief", "frist_im_brief", mode="before")
+    @field_validator("briefdatum", "zustelldatum_im_brief", "frist_im_brief",
+                     "zahlungsfrist_im_brief", mode="before")
     @classmethod
     def _datum(cls, v, info):
         return parse_datum_oder_none(v, info.field_name)

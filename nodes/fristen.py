@@ -16,5 +16,6 @@ def fristen(state: BriefState) -> dict:
         "zustelldatum": state.get("zustelldatum"),
         "frist_im_brief": e.frist_im_brief,
         "zustelldatum_geschaetzt": state.get("zustelldatum_quelle") == "geschaetzt",
+        "zahlungsfrist_im_brief": e.zahlungsfrist_im_brief,
     })
     return {"fristen": [Frist(**f) for f in roh]}
