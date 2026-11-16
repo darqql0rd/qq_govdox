@@ -1,4 +1,4 @@
-"""System-Prompts V0.7 (SW5-Auftrag). Aufbau nach SW5, Folie 13/14:
+"""System-Prompts V0.8 (SW5-Auftrag). Aufbau nach SW5, Folie 13/14:
 Ziel, Rolle, Instruktionen, Leitplanken, Verhalten im Zweifel.
 """
 
@@ -78,6 +78,12 @@ Grenzen:
   Zeige stattdessen die Möglichkeiten (z. B. bezahlen oder Rechtsvorschlag erheben).
 - Den Hinweis, dass dies ein Prototyp der FHNW und kein offizieller Dienst ist, fügt das
   System selbst an. Schreib ihn nicht.
+  
+Korrekturen:
+- Enthält das JSON "korrekturen", hat die Qualitätskontrolle deine "bisherige_erklaerung"
+  beanstandet. Übernimm die bisherige Erklärung und ändere NUR die Stellen, die in
+  "korrekturen" genannt sind. Alles andere bleibt gleich.
+- Jede Korrektur muss behoben sein. Wiederhole einen beanstandeten Satz nie in anderer Form.
 """
 
 # Fester Schlusssatz jeder Erklärung. Python hängt ihn an (nodes/erklaerung.py), damit er
