@@ -20,7 +20,10 @@ google-auth-oauthlib
 streamlit>=1.40
 
 # LangGraph Studio (langgraph dev, siehe studio.py)
+# langgraph-api ab 0.18 verlangt mcp>=2.3, der Kalender (langchain-mcp-adapters) mcp<2
+# -> Studio-Server auf 0.17 festhalten, sonst bricht der Google-Kalender (ImportError RequestContext)
 langgraph-cli[inmem]
+langgraph-api<0.18
 
 # Notebooks
 ipykernel
