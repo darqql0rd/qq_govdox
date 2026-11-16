@@ -193,6 +193,12 @@ KONTROLLFAELLE = [
      mit_text("01", anhaengen=" Dann entscheidet ein Gericht, ob Sie zahlen müssen.")),
     ("'müssen nichts bezahlen' (Verneinung)",
      mit_text("01", anhaengen=" Sie müssen jetzt noch nichts bezahlen.")),
+    # Lauf 16.11., Brief 24: Franchise 300 steht im Brief (Tabelle), aber nicht in der Extraktion
+    ("Betrag aus dem Brieftext: Franchise 300 (Brief 24)",
+     mit_text("24", anhaengen=" Per una persona la franchigia è di CHF 300.00.")),
+    # Lauf 16.11., Brief 40: Werbebrief ohne Zustelldatum, "angenommen" meint etwas anderes
+    ("'angenommen' ohne Zustelldatum (Werbebrief 40)",
+     mit_text("40", anhaengen=" Wenn Sie das Angebot angenommen haben, erhalten Sie eine Rechnung.")),
     # Lauf 16.11., Brief 06: Satz endete mit Datum, "doit" und "arrivé" galten als ein Satz
     ("Satzende nach Datum: 'doit … 28.09.2026. Comme … est arrivé …' (Lauf 16.11., Brief 06)",
      mit_text("05", anhaengen=" Cette opposition doit être faite avant le 28.09.2026. Comme le "

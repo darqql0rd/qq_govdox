@@ -117,9 +117,24 @@ def teste_feiertage() -> int:
     return len(fehler)
 
 
+def teste_krankenkasse() -> int:
+    """Kündigung und Franchise aus frist_im_brief, Zahlung nur mit zahlungsfrist_im_brief (21/25)."""
+    def arten(**kw):
+        roh = fristen_berechnen.invoke({"brieftyp": "krankenkasse_praemie", **kw})
+        return {f["art"]: f["datum"] for f in roh}
+    ohne_qr = arten(frist_im_brief=date(2026, 11, 30))
+    mit_qr = arten(frist_im_brief=date(2026, 11, 30), zahlungsfrist_im_brief=date(2026, 12, 31))
+    nur_zahlung = arten(zahlungsfrist_im_brief=date(2026, 12, 31))
+    ok = (ohne_qr == {"kuendigung": date(2026, 11, 30), "franchise_wechsel": date(2026, 12, 31)}
+          and mit_qr == {**ohne_qr, "zahlung": date(2026, 12, 31)}
+          and nur_zahlung == {"zahlung": date(2026, 12, 31)})
+    print(f"  {'✓' if ok else '✗'} Krankenkasse: Zahlungsfrist nur, wenn sie im Brief steht")
+    return 0 if ok else 1
+
+
 if __name__ == "__main__":
     print("Rechtsfälle:")
-    total = teste_rechtsfaelle() + teste_feiertage()
+    total = teste_rechtsfaelle() + teste_feiertage() + teste_krankenkasse()
     total += teste_gold()
     print("Alle Tests bestanden" if total == 0 else f"{total} Fehler")
     sys.exit(1 if total else 0)

@@ -80,7 +80,7 @@ def termin_daten(frist: Frist, state: BriefState) -> dict:
     if referenzen:
         zeilen.append(f"{t['referenz']}: {', '.join(referenzen)}")
     if e and e.hauptbetrag_chf is not None:
-        zeilen.append(f"{t['betrag']}: CHF {e.hauptbetrag_chf:,.2f}".replace(",", "'"))
+        zeilen.append(f"{t['betrag']}: CHF {abs(e.hauptbetrag_chf):,.2f}".replace(",", "'"))
     if frist.rechtsgrundlage:
         zeilen.append(f"{t['rechtsgrundlage']}: {frist.rechtsgrundlage}")
     if "eingang_massgebend" in frist.hinweise:

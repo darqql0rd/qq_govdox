@@ -140,7 +140,22 @@ def belegte_betraege(state: BriefState) -> set[float]:
     posten = [p.get("betrag_chf") for p in ex.get("posten") or [] if p.get("betrag_chf") is not None]
     if posten:
         werte.add(round(abs(sum(posten)), 2))
+    werte.update(zahlen_im_rohtext(state))
     return werte
+
+
+# Zahlen, die wörtlich im Brief stehen, sind belegt, auch wenn die Extraktion sie nicht hat
+# (Lauf 16.11., Brief 24: Franchise "300" steht nur in einer Tabellenspalte, ohne "CHF").
+# Der Rohtext wird dafür nur deterministisch gelesen. Ein erfundener oder falsch abgeschriebener
+# Betrag fällt weiter auf, solange er nicht zufällig sonst im Brief steht.
+_ZAHL = re.compile(r"(?<![\d.,'’])(\d{1,3}(?:['’  ]\d{3})+|\d+)(?:[.,](\d{2}))?(?![\d])")
+
+
+def zahlen_im_rohtext(state: BriefState) -> set[float]:
+    text = state.get("rohtext") or ""
+    for _, start, ende in daten_im_text(text):  # Daten ausblenden (09.11.2026 ist kein Betrag)
+        text = text[:start] + " " * (ende - start) + text[ende:]
+    return {_zahl(m[1], m[2]) for m in _ZAHL.finditer(text)}
 
 
 _ANREDEN = re.compile(
@@ -395,11 +410,13 @@ def pruefe_text(text: str, betrifft: str, state: BriefState, verlangte_sprache: 
                               detail=f"{treffer!r}: Es fordert der Gläubiger, das Betreibungsamt "
                                      "stellt nur zu"))
 
-    # "Annahme" nur, wenn das Zustelldatum wirklich geschätzt ist
+    # "Annahme" nur, wenn das Zustelldatum wirklich geschätzt ist. Ohne Zustelldatum (Mahnung,
+    # Krankenkasse, unbekannter Brief) meint "angenommen" etwas anderes (Lauf 16.11., Brief 40:
+    # Werbebrief, "Angebot angenommen") -> keine Prüfung.
     geschaetzt = state.get("zustelldatum_quelle") == "geschaetzt" or any(
         "zustelldatum_geschaetzt" in (_dump(f).get("hinweise") or [])
         for f in state.get("fristen", []))
-    m = _ANNAHME.search(text)
+    m = _ANNAHME.search(text) if state.get("zustelldatum") else None
     if m and not geschaetzt:
         quelle = {"brief": "steht im Brief", "nutzer": "hat die Person angegeben"}.get(
             state.get("zustelldatum_quelle"), "ist nicht geschätzt")

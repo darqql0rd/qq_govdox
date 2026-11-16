@@ -7,10 +7,15 @@
 """
 
 import argparse
+import sys
 from datetime import date
 from uuid import uuid4
 
 from dotenv import load_dotenv
+
+# Windows schreibt bei Umleitung in eine Datei (| Out-File) sonst cp1252 und bricht bei ✓/✗ ab
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
 
 load_dotenv()  # vor den LangChain-Imports, damit LangSmith-Tracing aktiv ist
 

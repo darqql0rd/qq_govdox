@@ -4,7 +4,18 @@ from langchain_core.messages import HumanMessage, SystemMessage
 
 from llm import strukturiert
 from prompts import ANALYSE_SYSTEM
-from state import AnalyseErgebnis, BriefState
+from state import AnalyseErgebnis, BriefState, Extraktion
+
+
+def vorzeichen_korrigieren(e: Extraktion) -> Extraktion:
+    """Rückerstattung = negativer Hauptbetrag (state.py, Vorzeichen wie die Summe der Posten).
+
+    Haiku schreibt den Betrag oft positiv, auch wenn es zahlungsrichtung="rueckerstattung" setzt
+    (Läufe 16.11., Briefe 13 und 17). Das Vorzeichen folgt deshalb aus Python, nicht vom LLM.
+    """
+    if e.zahlungsrichtung == "rueckerstattung" and e.hauptbetrag_chf and e.hauptbetrag_chf > 0:
+        return e.model_copy(update={"hauptbetrag_chf": -e.hauptbetrag_chf})
+    return e
 
 
 def analyse(state: BriefState) -> dict:
@@ -15,7 +26,7 @@ def analyse(state: BriefState) -> dict:
         HumanMessage(f"<brief>\n{state['rohtext']}\n</brief>"),
     ]
     ergebnis: AnalyseErgebnis = llm.invoke(nachrichten)
-    e = ergebnis.extraktion
+    e = vorzeichen_korrigieren(ergebnis.extraktion)
 
     update = {
         "brieftyp": ergebnis.brieftyp,

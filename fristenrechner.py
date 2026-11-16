@@ -141,11 +141,13 @@ def _frist(art, datum, basis, ausgang=None, grundlage=None, hinweise=None) -> di
 @tool
 def fristen_berechnen(brieftyp: str, zustelldatum: date | None = None,
                       frist_im_brief: date | None = None,
-                      zustelldatum_geschaetzt: bool = False) -> list[dict]:
+                      zustelldatum_geschaetzt: bool = False,
+                      zahlungsfrist_im_brief: date | None = None) -> list[dict]:
     """Berechnet die Fristen eines Schweizer Behördenbriefs deterministisch.
 
     Für Zahlungsbefehl und Steuerveranlagung ab dem Zustelldatum, für Mahnung und
-    Krankenkasse aus der Frist, die im Brief steht. Bei 'unbekannt' keine Frist.
+    Krankenkasse aus der Frist, die im Brief steht (Krankenkasse: Kündigung, Franchise-Wechsel
+    und, falls im Brief, die Zahlungsfrist der ersten Prämie). Bei 'unbekannt' keine Frist.
     Nicht für Beträge oder Zinsen.
     """
     hinweis_zustellung = ["zustelldatum_geschaetzt"] if zustelldatum_geschaetzt else []
@@ -165,13 +167,19 @@ def fristen_berechnen(brieftyp: str, zustelldatum: date | None = None,
     if brieftyp == "mahnung" and frist_im_brief:
         return [_frist("zahlung", frist_im_brief, "brief")]  # Mahnfrist nicht verschoben
 
-    if brieftyp == "krankenkasse_praemie" and frist_im_brief:
-        # Annahme laut datengenerator/README: höhere Franchise bis 31.12. (vor Fedlex-Prüfung)
-        return [
-            _frist("kuendigung", frist_im_brief, "fixdatum", grundlage="KVG Art. 7 Abs. 2",
-                   hinweise=["eingang_massgebend"]),
-            _frist("franchise_wechsel", date(frist_im_brief.year, 12, 31), "fixdatum",
-                   hinweise=["eingang_massgebend"]),
-        ]
+    if brieftyp == "krankenkasse_praemie":
+        fristen = []
+        if frist_im_brief:
+            # Annahme laut datengenerator/README: höhere Franchise bis 31.12. (vor Fedlex-Prüfung)
+            fristen += [
+                _frist("kuendigung", frist_im_brief, "fixdatum", grundlage="KVG Art. 7 Abs. 2",
+                       hinweise=["eingang_massgebend"]),
+                _frist("franchise_wechsel", date(frist_im_brief.year, 12, 31), "fixdatum",
+                       hinweise=["eingang_massgebend"]),
+            ]
+        if zahlungsfrist_im_brief:
+            # QR-Rechnung im Brief: "Prämie für Januar ... bis 31. Dezember zahlbar" (21, 25)
+            fristen.append(_frist("zahlung", zahlungsfrist_im_brief, "brief"))
+        return fristen
 
     return []
