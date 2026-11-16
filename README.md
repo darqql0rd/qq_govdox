@@ -61,16 +61,28 @@ Test ohne LLM: `python tests/teste_app.py`.
 ## Graph in LangGraph Studio (LangSmith)
 
 ```bash
-langgraph dev
+langgraph dev --tunnel --no-reload --allow-blocking
 ```
 
-Startet einen lokalen Server und öffnet LangGraph Studio im Browser
-(https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024, LangSmith-Login nötig).
-Dort sieht man den Graphen, kann einen Brief starten (Eingabe z. B.
-`{"dokument_pfade": ["daten/briefe/03_zahlungsbefehl_de_vertreter_ohne_zustelldatum/brief.pdf"], "nutzersprache": "de"}`),
-die Fragen (Zustelldatum, Bestätigung) beantworten und den State nach jedem Node ansehen.
+Startet einen lokalen Server mit einer öffentlichen https-Adresse (`…trycloudflare.com`, bei
+jedem Start neu). `--no-reload` ist nötig, sonst lädt der Server wegen eigener Dateien
+(`.langgraph_api/`) ständig neu. `--allow-blocking` ist nötig für den Google-Kalender:
+Der Kalender-Node startet den MCP-Server als Unterprozess, was der Dev-Server sonst als
+«BlockingError» abbricht (in UI und `main.py` kein Problem). Ohne Tunnel blockieren Firefox, Brave und Safari den Zugriff
+auf localhost meist.
+
+Verbinden (getestet mit Firefox, Tracking-Schutz für smith.langchain.com aus):
+
+1. Warten, bis im Terminal «Server started» steht.
+2. https://eu.smith.langchain.com/studio/ öffnen → «Connect to a local server».
+3. Base-URL = Tunnel-Adresse aus dem Terminal, **ohne `/` am Ende**
+   (sonst ruft Studio `//assistants/search` auf → 404).
+4. «Advanced Settings» → dieselbe Adresse bei den erlaubten Domains/Origins hinzufügen → Connect.
+
+In Studio sieht man den Graphen, kann einen Brief starten, z. B.
+`{"dokument_pfade": ["daten/briefe/03_zahlungsbefehl_de_vertreter_ohne_zustelldatum/brief.pdf"], "nutzersprache": "de"}`,
+die Fragen beantworten (`18.11.2026`, `ja`) und den State nach jedem Node ansehen.
 Konfiguration: `langgraph.json`, Einstieg `studio.py` (ohne eigenen Checkpointer, den stellt der Server).
-Brave/Safari blockieren den Zugriff auf localhost teils, dann Chrome/Edge oder `langgraph dev --tunnel`.
 
 ## Warum kein RAG
 
