@@ -53,6 +53,27 @@ def vergleiche(fall: str, ende: dict) -> bool:
     return all(checks.values())
 
 
+def guardrail_status(ende: dict) -> tuple[bool, int]:
+    """Gibt aus, ob der Guardrail die Texte freigegeben hat, und gibt (freigegeben, Versuche) zurück.
+
+    Bei "guardrail_limit" endet der Graph vor der Bestätigung: Die Person würde die
+    Erklärung nicht sehen, auch wenn Fristen und Betrag stimmen.
+    """
+    ergebnis = ende.get("guardrail")
+    versuche = (ende.get("versuche") or {}).get("guardrail", 0)
+    if ergebnis is None:
+        print("  ✗ Guardrail: nicht gelaufen")
+        return False, versuche
+    if ergebnis.bestanden:
+        zusatz = f" (nach {versuche} Versuchen)" if versuche > 1 else ""
+        print(f"  ✓ Guardrail bestanden{zusatz}")
+        return True, versuche
+    print(f"  ✗ Guardrail-Limit nach {versuche} Versuchen – Person sieht die Erklärung nicht")
+    for v in ergebnis.verstoesse:
+        print(f"      {v.regel} ({v.betrifft}): {v.detail}")
+    return False, versuche
+
+
 def automatische_antwort(fall: str, frage: dict):
     """Beantwortet einen Interrupt so, wie es die Person im Testfall tun würde.
 
@@ -72,7 +93,9 @@ def main(muster: list[str], variante: str = "pdf"):
     # pdf: Rohtext ist text.txt (Idealfall, kein OCR); scan/foto: nur die Bilder, der OCR-Node liest
     felder = EINGABE if variante == "pdf" else set(FELDER_PRO_NODE["eingabe"])
     faelle = [f for f in fall_ids() if any(f.startswith(m) or m in f for m in muster)]
-    ok = 0
+    ok = 0           # Brieftyp, Fristen, Betrag, Injection wie gold.json
+    ok_freigabe = 0  # zusätzlich vom Guardrail freigegeben
+    limit, nach_neuversuch = [], []
     for fall in faelle:
         print(f"\n=== {fall} ===")
         try:
@@ -101,6 +124,7 @@ def main(muster: list[str], variante: str = "pdf"):
             print(f"  {'✓' if richtig else '✗'} Unlesbar (erwartet {unlesbar_erwartet}, "
                   f"erkannt {not ende['text_lesbar']}, Konfidenz {ende.get('text_konfidenz')})")
             ok += richtig
+            ok_freigabe += richtig  # kein Text, also nichts für den Guardrail
             continue
 
         if "erklaerung" in ende:
@@ -115,8 +139,18 @@ def main(muster: list[str], variante: str = "pdf"):
             k = ende["kalender"]
             ziel = f"{len(k.event_ids)} Termin(e) im Google Kalender" if k.event_ids else k.ics_pfad
             print(f"  Kalender: {ziel}" + (f" (Fehler: {k.fehler})" if k.fehler else ""))
-        ok += vergleiche(fall, ende)
+        richtig = vergleiche(fall, ende)
+        freigegeben, versuche = guardrail_status(ende)
+        ok += richtig
+        ok_freigabe += richtig and freigegeben
+        if not freigegeben:
+            limit.append(fall[:2])
+        elif versuche > 1:
+            nach_neuversuch.append(fall[:2])
     print(f"\n{ok}/{len(faelle)} Fälle vollständig korrekt")
+    print(f"{ok_freigabe}/{len(faelle)} korrekt und vom Guardrail freigegeben")
+    print(f"  Guardrail-Limit: {len(limit)} {limit}")
+    print(f"  Bestanden nach Neuversuch: {len(nach_neuversuch)} {nach_neuversuch}")
 
 
 if __name__ == "__main__":
