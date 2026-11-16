@@ -89,7 +89,8 @@ def nach_bestaetigung(state: BriefState) -> str:
     return "kalender" if b and b.bestaetigt and state.get("fristen") else END
 
 
-def baue_graph(checkpointer=None):
+def baue_builder() -> StateGraph:
+    """Nodes und Kanten, noch nicht kompiliert (für baue_graph und studio.py)."""
     b = StateGraph(BriefState)
     # LLM_RETRY nur bei Nodes mit LLM-Aufruf. Nicht bei interrupt()-Nodes: ein Retry würde
     # die Frage an die Person nochmals stellen. OCR läuft lokal, Fristen sind reines Python.
@@ -118,10 +119,14 @@ def baue_graph(checkpointer=None):
     b.add_edge("sichere_ausgabe", "bestaetigung")
     b.add_conditional_edges("bestaetigung", nach_bestaetigung, ["kalender", END])
     b.add_edge("kalender", END)
+    return b
+
+
+def baue_graph(checkpointer=None):
     if checkpointer is None:
         serde = JsonPlusSerializer(allowed_msgpack_modules=ERLAUBTE_MODELLE)
         checkpointer = MemorySaver(serde=serde)
-    return b.compile(checkpointer=checkpointer)
+    return baue_builder().compile(checkpointer=checkpointer)
 
 
 if __name__ == "__main__":
