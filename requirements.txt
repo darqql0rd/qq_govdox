@@ -16,6 +16,9 @@ langchain-mcp-adapters
 google-api-python-client
 google-auth-oauthlib
 
+# Oberfläche (app.py)
+streamlit>=1.40
+
 # Notebooks
 ipykernel
 

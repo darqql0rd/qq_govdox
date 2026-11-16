@@ -16,6 +16,8 @@ Bestätigung in den Kalender ein.
 | `daten/briefe/` | 45 synthetische Testbriefe mit PDF, Scan, Handyfoto, Textebene und Gold-Label |
 | `datengenerator/` | Skripte, mit denen die Testbriefe erzeugt werden (siehe dortiges README) |
 | `mcp_kalender/` | Kalender-MCP-Server: trägt bestätigte Fristen in den Google Kalender ein (siehe unten) |
+| `app.py` | Web-Oberfläche (Streamlit), siehe «Oberfläche» unten |
+| `main.py` | Alle oder einzelne Testbriefe durch den Graphen schicken und mit `gold.json` vergleichen |
 
 ## Loslegen
 
@@ -34,6 +36,18 @@ from mocks import mock_bis, aus_gold
 state = mock_bis("zahlungsbefehl", "fristen")                 # handgeschriebener Mock
 state = aus_gold("01_zahlungsbefehl_de_wochenende", "foto")   # Fall aus dem Datensatz
 ```
+
+## Oberfläche
+
+```bash
+streamlit run app.py
+```
+
+Öffnet sich im Browser (http://localhost:8501). Brief hochladen (PDF oder Fotos, eine Datei
+pro Seite) oder einen der 45 Testbriefe wählen. Die UI stellt die Fragen des Graphen
+(Zustelldatum, Bestätigung) als Eingabefelder und bietet die Fristen als `.ics`-Datei an.
+Fristen stehen oben in einem eigenen Kasten, weil sie aus dem Fristenrechner kommen, nicht vom LLM.
+Test ohne LLM: `python tests/teste_app.py`.
 
 ## Zuständigkeiten
 
