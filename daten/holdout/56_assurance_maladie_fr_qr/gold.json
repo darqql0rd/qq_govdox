@@ -1,0 +1,79 @@
+{
+  "id": "56_assurance_maladie_fr_qr",
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Helvaria Assurance-maladie SA",
+    "briefdatum": "2026-10-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "4.611.204"
+      },
+      {
+        "art": "police",
+        "wert": "HV-2027-1120385"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 46112 04270 11203 85000"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 377.5,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Assurance de base LAMal, modèle Telmed, sans accidents (versicherte Person 1)",
+        "betrag_chf": 331.5,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Assurance de base LAMal, modèle Telmed, sans accidents (versicherte Person 1)",
+        "betrag_chf": 356.2,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Complémentaire Ambulatoire (LCA) (versicherte Person 1)",
+        "betrag_chf": 21.3,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Complémentaire Ambulatoire (LCA) (versicherte Person 1)",
+        "betrag_chf": 21.3,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-16",
+  "erwartete_fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30"
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-12-31"
+    }
+  ],
+  "testzweck": [
+    "praemienvergleich",
+    "qr_rechnung",
+    "layout_A"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "54_steuerveranlagung_de_auffahrt",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Kantonales Steueramt Hochwald",
+    "briefdatum": "2026-04-10",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "139.877.420"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 1625.5,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 6550.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Linthausen",
+        "betrag_chf": 7860.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 2215.5,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -15000.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 2400.0,
+    "abweichungsgrund": "Mietertrag der Einliegerwohnung gemäss Mietvertrag auf CHF 16'800 korrigiert",
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-04-14",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-05-15"
+    }
+  ],
+  "testzweck": [
+    "feiertag",
+    "abweichung",
+    "betragsformat_fr_praefix",
+    "layout_C"
+  ]
+}

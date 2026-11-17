@@ -1,0 +1,61 @@
+{
+  "id": "48_zahlungsbefehl_de_pfingsten",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Oberhalden-Linth",
+    "briefdatum": "2026-05-13",
+    "zustelldatum_im_brief": "2026-05-15",
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-004402"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 1358.65,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 1288.35,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 70.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Zahnarztpraxis Dr. Lienhard AG",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": "Honorarrechnung Nr. 26-0177 vom 15.01.2026 (Zahnbehandlung)",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-02-28"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-05-15",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-05-26"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-06-04"
+    }
+  ],
+  "testzweck": [
+    "feiertag",
+    "zustelldatum_handschrift",
+    "betragsformat_fr_praefix",
+    "layout_A"
+  ]
+}

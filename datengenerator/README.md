@@ -20,6 +20,8 @@ python3 generator.py                 # alles erzeugen (ca. 1.5 Min.)
 python3 generator.py --ohne-bilder   # nur PDFs + gold.json (schnell)
 python3 generator.py --nur 12_       # einzelne Briefe neu erzeugen
 python3 pruefe_gold.py               # Schema, Summen, Datumsformate, Datenschutz prüfen
+python3 generator.py --holdout       # Hold-out 46-65 aus katalog_holdout.py nach ../daten/holdout
+python3 pruefe_gold.py --holdout     # dasselbe für den Hold-out
 python3 fristen.py                   # Selbsttest der Fristberechnung
 ```
 
@@ -33,6 +35,7 @@ python3 fristen.py                   # Selbsttest der Fristberechnung
 | `render.py` | 4 Layouts (A–D), Logos, Fusszeile, Wasserzeichen, Injection-Blöcke, QR-Zahlteil |
 | `bilder.py` | `scan.jpg` (300 dpi) und `foto.jpg` (Perspektive, Drehung, Schatten, Unschärfe, JPG) |
 | `pruefe_gold.py` | Konsistenzprüfung der Gold-Labels |
+| `katalog_holdout.py` | Parameter der 20 Hold-out-Briefe (46-65), siehe `daten/holdout/README.md` |
 | `fonts/Caveat-Regular.ttf` | Handschrift für «Zugestellt am» (SIL Open Font License) |
 
 Ausgabe je Brief in `../daten/briefe/<id>/`: `brief.pdf`, `scan.jpg`, `foto.jpg`, `gold.json`, zusätzlich

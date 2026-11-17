@@ -1,0 +1,80 @@
+{
+  "id": "59_rappel_fr_stufe3_qr_zins",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Commune de Fontanelle",
+    "briefdatum": "2026-11-09",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "33.0592"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0611"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-0612"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 33059 22026 06110"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 633.6,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Taxe d'épuration 2026",
+        "betrag_chf": 418.6,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Taxe déchets urbains 2026",
+        "betrag_chf": 155.0,
+        "periode": "2026"
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 20.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Mahngebühr",
+        "betrag_chf": 40.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": "2026-11-23",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-07-31"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 3
+  },
+  "zustelldatum_annahme": "2026-11-11",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-11-23"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe3",
+    "qr_rechnung",
+    "verzugszins",
+    "betragsformat_leerzeichen_komma",
+    "layout_B"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "58_mahnung_de_stufe1_wasserzeichen",
+  "brieftyp": "mahnung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Rietwil",
+    "briefdatum": "2026-10-06",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "debitor",
+        "wert": "14.0721"
+      },
+      {
+        "art": "rechnung",
+        "wert": "2026-1904"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 14072 12026 19040"
+      }
+    ],
+    "periode": "2026-2027",
+    "hauptbetrag_chf": 540.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Musikschule Elternbeitrag 1. Semester 2026/27",
+        "betrag_chf": 540.0,
+        "periode": "2026-2027"
+      }
+    ],
+    "frist_im_brief": "2026-10-20",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": 1
+  },
+  "zustelldatum_annahme": "2026-10-08",
+  "erwartete_fristen": [
+    {
+      "art": "zahlung",
+      "datum": "2026-10-20"
+    }
+  ],
+  "testzweck": [
+    "mahnstufe1",
+    "wasserzeichen",
+    "ohne_betreibungsdrohung",
+    "layout_D"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "52_taxation_fr_abweichung",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Administration cantonale des impôts du Haut-Lac",
+    "briefdatum": "2026-09-07",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "757.402.336"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 688.17,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 6163.42,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Fontanelle",
+        "betrag_chf": 2703.95,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 1020.8,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -9200.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 1130.0,
+    "abweichungsgrund": "Frais de formation continue non admis (pas de lien avec l'activité actuelle)",
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-09-09",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-10-09"
+    }
+  ],
+  "testzweck": [
+    "abweichung",
+    "nachzahlung",
+    "betragsformat_leerzeichen_komma",
+    "layout_D"
+  ]
+}

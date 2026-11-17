@@ -1,0 +1,66 @@
+{
+  "id": "50_zahlungsbefehl_de_grossbetrag_vertreter",
+  "brieftyp": "zahlungsbefehl",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Talwil",
+    "briefdatum": "2026-11-04",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-010811"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 49950.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderungsbetrag",
+        "betrag_chf": 48600.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Verzugsschaden",
+        "betrag_chf": 1250.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Zahlungsbefehl inkl. Zustellung",
+        "betrag_chf": 100.3,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Bauunternehmung Rüegg AG",
+    "glaeubiger_vertreter": "Advokatur Seeblick",
+    "forderungsgrund": "Werklohn gemäss Werkvertrag vom 14.08.2025 (Anbau Garage)",
+    "zins": {
+      "prozent": 5.0,
+      "ab": "2026-03-31"
+    },
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-06",
+  "erwartete_fristen": [
+    {
+      "art": "rechtsvorschlag",
+      "datum": "2026-11-16"
+    },
+    {
+      "art": "zahlung",
+      "datum": "2026-11-26"
+    }
+  ],
+  "testzweck": [
+    "vertreter",
+    "zustelldatum_leer",
+    "grossbetrag",
+    "layout_D"
+  ]
+}

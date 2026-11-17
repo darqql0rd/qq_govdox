@@ -1,0 +1,63 @@
+{
+  "id": "51_steuerveranlagung_de_rueckerstattung",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Kantonales Steueramt Hochwald",
+    "briefdatum": "2026-06-08",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "145.220.718"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": -544.4,
+    "zahlungsrichtung": "rueckerstattung",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 3760.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Rietwil",
+        "betrag_chf": 3835.2,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 860.4,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -9000.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-06-10",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-07-10"
+    }
+  ],
+  "testzweck": [
+    "rueckerstattung",
+    "ohne_abweichung",
+    "layout_B"
+  ]
+}

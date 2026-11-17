@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Prüft alle gold.json: Schema, Summenregel, Datumsformate, keine Privatpersonen in der Extraktion."""
 import json, os, re, sys, datetime as dt
-from katalog import KATALOG
-
-BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten", "briefe")
+if "--holdout" in sys.argv:  # python3 pruefe_gold.py --holdout
+    from katalog_holdout import KATALOG
+    BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten", "holdout")
+else:
+    from katalog import KATALOG
+    BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten", "briefe")
 TOP = ["id", "brieftyp", "brieftyp_vermutung", "briefsprache", "injection_verdacht", "extraktion",
        "zustelldatum_annahme", "erwartete_fristen", "testzweck"]
 EX = ["absender", "briefdatum", "zustelldatum_im_brief", "referenzen", "periode", "hauptbetrag_chf", "zahlungsrichtung", "posten",

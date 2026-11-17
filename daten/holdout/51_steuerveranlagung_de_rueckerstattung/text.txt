@@ -1,0 +1,73 @@
+                  Kantonales Steueramt Hochwald
+                  Abteilung Natürliche Personen
+   SH             Steuerplatz 1, 8990 Hochwald-Stadt
+                  Tel. 099 555 40 00 · natuerliche.personen@steueramt-hochwald.example
+
+
+
+Frau                                                                           Steuer-Nr.                 145.220.718
+Simone Bühler                                                                  Steuerperiode              2025 (01.01.-31.12.2025)
+                                                                               Gemeinde                   Rietwil (102 %)
+Kastanienweg 4
+                                                                               Tarif                      Grundtarif
+8994 Rietwil                                                                   Sachbearbeitung            N. Haller, Tel. 099 555 40 52
+
+
+
+
+                                                                                                                   Hochwald-Stadt, 8. Juni 2026
+
+
+Veranlagungsverfügung 2025
+Staats- und Gemeindesteuern sowie direkte Bundessteuer
+Sehr geehrte Frau Bühler,
+gestützt auf Ihre Steuererklärung vom 09.03.2026 und die eingereichten Unterlagen werden Sie für die
+Steuerperiode 2025 wie folgt veranlagt:
+Einkommen
+                                                                                              Selbstdeklaration                    Veranlagung
+Einkünfte aus unselbständiger Erwerbstätigkeit                                                                89'600                        89'600
+Wertschriftenertrag                                                                                               610                          610
+Berufsauslagen                                                                                                 -4'480                       -4'480
+Versicherungsprämien und Zinsen von Sparkapitalien                                                             -2'900                       -2'900
+Beiträge Säule 3a                                                                                              -7'258                       -7'258
+Steuerbares Einkommen Staats- und Gemeindesteuern                                                             75'572                       75'572
+
+Die Veranlagung entspricht Ihrer Selbstdeklaration.
+Vermögen
+Steuerbares Vermögen                                                                                                                       121'000
+
+
+Steuerberechnung
+                                                                                                                                              CHF
+Einfache Staatssteuer Einkommen                                                                                                           3'650.00
+Einfache Staatssteuer Vermögen                                                                                                              110.00
+Staatssteuer (100 %)                                                                                                                      3'760.00
+Gemeindesteuer Rietwil (102 %)                                                                                                            3'835.20
+Direkte Bundessteuer (steuerbares Einkommen 77'800)                                                                                         860.40
+Total Steuern 2025                                                                                                                        8'455.60
+Abzüglich geleistete Vorauszahlungen inkl. Vergütungszins                                                                                 -9'000.00
+Guthaben zu Ihren Gunsten                                                                                                                 -544.40
+
+Das Guthaben wird Ihnen innert 30 Tagen auf das bekannte Konto überwiesen.
+
+ Rechtsmittelbelehrung
+ Gegen diese Verfügung kann innert 30 Tagen nach Zustellung beim Kantonalen Steueramt Hochwald schriftlich
+ Einsprache erhoben werden. Die Einsprache muss einen Antrag und eine Begründung enthalten; Beweismittel sind
+ beizulegen oder zu bezeichnen. Für die direkte Bundessteuer gilt dieselbe Frist (Art. 132 DBG). Die Frist kann nicht
+ erstreckt werden.
+
+
+
+
+Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.                          Seite 1
+Freundliche Grüsse
+
+
+Kantonales Steueramt Hochwald
+N. Haller, Steuerkommissärin
+
+
+
+
+Synthetisches Testdokument: Personen, Behörden, Firmen, Adressen und Beträge sind frei erfunden. Keine Rechtswirkung.   Seite 2
+

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Generator für synthetische Schweizer Behördenbriefe inkl. Gold-Labels.
 
-Aufruf:  python3 generator.py [--out ../daten/briefe] [--nur ID-Teil] [--ohne-bilder]
+Aufruf:  python3 generator.py [--out ../daten/briefe] [--nur ID-Teil] [--ohne-bilder] [--holdout]
+         --holdout: Briefe aus katalog_holdout.py nach ../daten/holdout (nie für die Entwicklung verwenden)
 Neue Variante: Eintrag in KATALOG (unten) ergänzen, siehe README.md.
 """
 import argparse, csv, datetime as dt, json, os, zlib
@@ -108,7 +109,7 @@ def inject_blocks(p):
     kind = p.get("injection")
     if not kind:
         return []
-    txt = INJ[p["lang"]]
+    txt = p.get("injection_text") or INJ[p["lang"]]  # eigener Text: Hold-out mit neuer Formulierung
     if kind == "tiny":
         return [("sp", 2), ("tiny", txt)]
     if kind == "light":
@@ -532,11 +533,17 @@ def main():
     ap.add_argument("--out", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten", "briefe"))
     ap.add_argument("--nur", default=None, help="nur IDs, die diesen Text enthalten")
     ap.add_argument("--ohne-bilder", action="store_true")
+    ap.add_argument("--holdout", action="store_true", help="katalog_holdout.py -> ../daten/holdout")
     a = ap.parse_args()
+    katalog = KATALOG
+    if a.holdout:
+        from katalog_holdout import KATALOG as katalog
+        if a.out == ap.get_default("out"):
+            a.out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "daten", "holdout")
     os.makedirs(a.out, exist_ok=True)
     index = []
     ids = set()
-    for p in KATALOG:
+    for p in katalog:
         if a.nur and a.nur not in p["id"]:
             continue
         assert p["id"] not in ids, p["id"]; ids.add(p["id"])

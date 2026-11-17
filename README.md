@@ -47,11 +47,12 @@ Retry-Policy für Verbindungs- und Formatfehler (`llm.py`).
 | `fristenrechner.py`, `datum.py` | Fristen nach SchKG/ZPO und Datums-Parsing, deterministisch in Python |
 | `mocks.py` | Handgeschriebene Mock-States und `aus_gold()` zum Laden der Testbriefe |
 | `main.py` | Testbriefe durch den Graphen schicken und mit `gold.json` vergleichen (Evaluation) |
-| `laeufe.ps1` | Evaluationsläufe: 3× Haiku, 1× Apertus über alle 45 Briefe |
+| `laeufe.ps1` | Evaluationsläufe: 3× Haiku, 1× Apertus über alle 45 Briefe (`-Holdout`: Briefe 46–65) |
 | `app.py` | Web-Oberfläche (Streamlit), siehe «Oberfläche» unten |
 | `studio.py`, `langgraph.json` | Einstieg für LangGraph Studio |
 | `mcp_kalender/` | Kalender-MCP-Server: trägt bestätigte Fristen in den Google Kalender ein (siehe unten) |
 | `daten/briefe/` | 45 synthetische Testbriefe mit PDF, Scan, Handyfoto, Textebene und Gold-Label |
+| `daten/holdout/` | 20 weitere Briefe (46–65), erst nach dem Einfrieren der Pipeline ausgewertet (siehe dortiges README) |
 | `daten/laeufe/` | Protokolle und Auswertungen aller Evaluationsläufe (siehe dortiges README) |
 | `datengenerator/` | Skripte, mit denen die Testbriefe erzeugt werden (siehe dortiges README) |
 | `tests/` | Tests ohne LLM (`teste_*.py`) und gespeicherte Guardrail-Fälle |
@@ -74,7 +75,9 @@ Bekannte Grenzen:
 
 - Prompts und Guardrail wurden mit Haiku an diesen 45 Briefen entwickelt; für neue Briefe ist
   die Quote eher optimistisch, und der Apertus-Vergleich misst auch, wie gut ein Modell ohne
-  Anpassung in die Pipeline passt.
+  Anpassung in die Pipeline passt. Deshalb gibt es 20 Hold-out-Briefe (`daten/holdout/`), die
+  erst nach dem Einfrieren ausgewertet und getrennt berichtet werden. Sie stammen aus demselben
+  Generator, messen also neue Fälle derselben Art, nicht echte Behördenbriefe.
 - Der Guardrail prüft, ob Erklärung und Antwort zu den extrahierten Fakten passen, nicht ob die
   Fakten selbst stimmen. Ein Fehler in der Analyse geht deshalb durch (z. B. Konkursandrohung
   als Zahlungsbefehl erkannt).
@@ -133,6 +136,7 @@ Schrift im Kopf: «Some Time Later» von Fredrick R. Brennan (SIL Open Font Lice
 python main.py 01                    # ein Brief (Anfang der Fall-ID genügt)
 python main.py _ --variante foto     # alle 45 Briefe als Handyfoto (auch: pdf, scan)
 powershell -ExecutionPolicy Bypass -File .\laeufe.ps1   # 3× Haiku + 1× Apertus, Ausgabe in daten/laeufe/
+python main.py _ --variante foto --daten daten/holdout   # Hold-out 46–65 (oder: laeufe.ps1 -Holdout)
 ```
 
 `main.py` braucht eine `.env` (Vorlage `.env.example`). Die Tests laufen ohne LLM:
