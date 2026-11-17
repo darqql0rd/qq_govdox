@@ -38,7 +38,8 @@
     "mahnstufe": null
   },
   "zustelldatum_annahme": "2026-09-14",
-  "erwartete_fristen": [
+  "erwartete_fristen": [],
+  "info_fristen": [
     {
       "art": "zahlung",
       "datum": "2026-10-14",

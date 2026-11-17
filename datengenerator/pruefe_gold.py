@@ -24,7 +24,10 @@ def iso(v, wo):
 for p in KATALOG:
     g = json.load(open(os.path.join(BASE, p["id"], "gold.json"), encoding="utf-8"))
     i = p["id"]; e = g["extraktion"]
-    if list(g) != TOP: fehler.append(f"{i}: Top-Felder {list(g)}")
+    # optional: info_fristen (nur Information, z. B. Fristen ausserhalb des Scopes; wird nicht evaluiert)
+    if [k for k in g if k != "info_fristen"] != TOP: fehler.append(f"{i}: Top-Felder {list(g)}")
+    for f in g.get("info_fristen", []):
+        iso(f["datum"], i)
     if list(e) != EX: fehler.append(f"{i}: Extraktionsfelder")
     if g["brieftyp"] not in TYP: fehler.append(f"{i}: brieftyp")
     if (g["brieftyp"] == "unbekannt") != bool(g["brieftyp_vermutung"]):

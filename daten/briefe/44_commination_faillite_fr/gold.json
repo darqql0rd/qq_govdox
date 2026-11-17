@@ -39,16 +39,16 @@
     "glaeubiger_vertreter": null,
     "forderungsgrund": null,
     "zins": {
-      "satz_prozent": 5.0,
-      "seit": "2026-06-30",
-      "auf_betrag_chf": 9870.0
+      "prozent": 5.0,
+      "ab": "2026-06-30"
     },
     "abweichung_von_deklaration": null,
     "abweichungsgrund": null,
     "mahnstufe": null
   },
   "zustelldatum_annahme": "2026-11-06",
-  "erwartete_fristen": [
+  "erwartete_fristen": [],
+  "info_fristen": [
     {
       "art": "beschwerde",
       "datum": "2026-11-16",
