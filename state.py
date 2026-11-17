@@ -30,7 +30,7 @@ Ergänzt in v2.1 (für den erweiterten Testdatensatz):
 - brieftyp_vermutung: was ein "unbekannter" Brief vermutlich ist
 - injection_verdacht: Analyse-Agent markiert Anweisungen im Brief früh
 
-Owner: Melvin. Änderungen nur per Pull Request, damit kein Node still bricht.
+Owner: Vendon. Änderungen nur per Pull Request, damit kein Node still bricht.
 Teamentscheide sind mit "Entscheid:" kommentiert.
 """
 

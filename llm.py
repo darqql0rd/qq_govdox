@@ -55,6 +55,12 @@ def get_llm(model: str | None = None) -> ChatOpenAI:
     (Claude Haiku 5.5, GPT-5) akzeptieren nur ihren Standardwert. Für Apertus und
     andere offene Modelle für reproduzierbare Ergebnisse LLM_TEMPERATURE=0 setzen.
     """
+    fehlend = [v for v in ("LLM_MODEL", "LLM_BASE_URL", "LLM_API_KEY") if not os.getenv(v)]
+    if fehlend and not (model and fehlend == ["LLM_MODEL"]):
+        raise RuntimeError(
+            f"LLM nicht konfiguriert, es fehlt {', '.join(fehlend)}. .env.example nach .env kopieren "
+            "und Endpunkt, Key und Modell eintragen (siehe README, «Loslegen»). Ohne Key laufen "
+            "die Tests in tests/ und das Notebook.")
     extra = {}
     if os.getenv("LLM_TEMPERATURE"):
         extra["temperature"] = float(os.environ["LLM_TEMPERATURE"])
