@@ -1,0 +1,49 @@
+{
+  "id": "63_acomptes_provisoires_fr",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Provisorische Steuerrechnung (Vorauszahlungen)",
+  "briefsprache": "fr",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Administration cantonale des impôts du Haut-Lac",
+    "briefdatum": "2026-11-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "755.304.118"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 10860.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Impôts cantonaux et communaux 2027 (estimé)",
+        "betrag_chf": 9640.0,
+        "periode": "2027"
+      },
+      {
+        "bezeichnung": "Impôt fédéral direct 2027 (estimé)",
+        "betrag_chf": 1220.0,
+        "periode": "2027"
+      }
+    ],
+    "frist_im_brief": "2027-03-31",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-04",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "verwechslung_steuer",
+    "betragsformat_leerzeichen_komma",
+    "layout_A"
+  ]
+}

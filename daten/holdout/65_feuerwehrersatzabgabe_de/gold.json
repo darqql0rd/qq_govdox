@@ -1,0 +1,52 @@
+{
+  "id": "65_feuerwehrersatzabgabe_de",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Rechnung Feuerwehrersatzabgabe",
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Gemeinde Rietwil",
+    "briefdatum": "2026-10-12",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "rechnung",
+        "wert": "2026-FW-0319"
+      },
+      {
+        "art": "debitor",
+        "wert": "14.2290"
+      },
+      {
+        "art": "zahlungsreferenz",
+        "wert": "00 00000 00000 14229 02026 03190"
+      }
+    ],
+    "periode": "2026",
+    "hauptbetrag_chf": 175.0,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Feuerwehrersatzabgabe 2026",
+        "betrag_chf": 175.0,
+        "periode": "2026"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-14",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "ausser_scope",
+    "qr_rechnung",
+    "layout_D"
+  ]
+}

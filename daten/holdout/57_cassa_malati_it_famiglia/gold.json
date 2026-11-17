@@ -1,0 +1,92 @@
+{
+  "id": "57_cassa_malati_it_famiglia",
+  "brieftyp": "krankenkasse_praemie",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Alpinea Assicurazione malattia e infortuni SA",
+    "briefdatum": "2026-10-23",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "kunde",
+        "wert": "77-702-118"
+      },
+      {
+        "art": "police",
+        "wert": "AL-27-74409"
+      }
+    ],
+    "periode": "2027",
+    "hauptbetrag_chf": 1069.1,
+    "zahlungsrichtung": "information",
+    "posten": [
+      {
+        "bezeichnung": "Assicurazione di base LAMal, medico di famiglia, senza infortuni (versicherte Person 1)",
+        "betrag_chf": 471.2,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Assicurazione di base LAMal, medico di famiglia, senza infortuni (versicherte Person 1)",
+        "betrag_chf": 503.8,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Assicurazione di base LAMal, Telmed, senza infortuni (versicherte Person 2)",
+        "betrag_chf": 402.6,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Assicurazione di base LAMal, Telmed, senza infortuni (versicherte Person 2)",
+        "betrag_chf": 429.9,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Assicurazione di base LAMal, medico di famiglia, con infortuni (versicherte Person 3)",
+        "betrag_chf": 112.4,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Assicurazione di base LAMal, medico di famiglia, con infortuni (versicherte Person 3)",
+        "betrag_chf": 118.6,
+        "periode": "2027-monatlich"
+      },
+      {
+        "bezeichnung": "Complementare dentale bambini (LCA) (versicherte Person 3)",
+        "betrag_chf": 16.8,
+        "periode": "2026-monatlich"
+      },
+      {
+        "bezeichnung": "Complementare dentale bambini (LCA) (versicherte Person 3)",
+        "betrag_chf": 16.8,
+        "periode": "2027-monatlich"
+      }
+    ],
+    "frist_im_brief": "2026-11-30",
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-27",
+  "erwartete_fristen": [
+    {
+      "art": "kuendigung",
+      "datum": "2026-11-30"
+    },
+    {
+      "art": "franchise_wechsel",
+      "datum": "2026-12-31"
+    }
+  ],
+  "testzweck": [
+    "praemienvergleich",
+    "familie",
+    "betragsformat_fr_praefix",
+    "layout_C"
+  ]
+}

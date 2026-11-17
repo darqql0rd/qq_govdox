@@ -4,11 +4,13 @@
     python main.py 01 02 03           # mehrere
     python main.py zahlungsbefehl     # alle Briefe, deren ID das Wort enthält
     python main.py 01 --variante foto # Handyfoto statt PDF-Text, mit OCR-Node (auch: scan)
+    python main.py _ --daten daten/holdout  # Hold-out-Briefe 46-65 (nur für die Schlussauswertung)
 """
 
 import argparse
 import sys
 from datetime import date
+from pathlib import Path
 from uuid import uuid4
 
 from dotenv import load_dotenv
@@ -22,16 +24,19 @@ load_dotenv()  # vor den LangChain-Imports, damit LangSmith-Tracing aktiv ist
 from langgraph.types import Command             # noqa: E402
 
 from graph import baue_graph                    # noqa: E402
-from mocks import aus_gold, fall_ids, lade_gold  # noqa: E402
+from mocks import DATEN, aus_gold, fall_ids, lade_gold  # noqa: E402
 from state import FELDER_PRO_NODE               # noqa: E402
 
 # Nur diese Felder gehen in den Graphen – alles andere muss der Agent selbst herausfinden.
 # (aus_gold liefert auch die Gold-Extraktion; die darf der Agent nicht sehen.)
 EINGABE = set(FELDER_PRO_NODE["eingabe"]) | set(FELDER_PRO_NODE["ocr"])
 
+# Datensatz-Ordner: daten/briefe (Entwicklung, 01-45) oder daten/holdout (46-65), siehe --daten
+daten = DATEN
+
 
 def vergleiche(fall: str, ende: dict) -> bool:
-    gold = lade_gold(fall)
+    gold = lade_gold(fall, daten)
     erwartet = {(f["art"], f["datum"]) for f in gold["erwartete_fristen"]}
     erhalten = {(f.art, f.datum.isoformat()) for f in ende.get("fristen", [])}
     betrag = ende["extraktion"].hauptbetrag_chf if "extraktion" in ende else None
@@ -90,7 +95,7 @@ def automatische_antwort(fall: str, frage: dict):
     Bestätigung: immer Ja.
     """
     if frage["typ"] == "zustelldatum":
-        annahme = lade_gold(fall).get("zustelldatum_annahme")
+        annahme = lade_gold(fall, daten).get("zustelldatum_annahme")
         return date.fromisoformat(annahme).strftime("%d.%m.%Y") if annahme else "weiss nicht"
     if frage["typ"] == "bestaetigung":
         return "ja"
@@ -101,14 +106,14 @@ def main(muster: list[str], variante: str = "pdf"):
     graph = baue_graph()
     # pdf: Rohtext ist text.txt (Idealfall, kein OCR); scan/foto: nur die Bilder, der OCR-Node liest
     felder = EINGABE if variante == "pdf" else set(FELDER_PRO_NODE["eingabe"])
-    faelle = [f for f in fall_ids() if any(f.startswith(m) or m in f for m in muster)]
+    faelle = [f for f in fall_ids(daten) if any(f.startswith(m) or m in f for m in muster)]
     ok = 0           # Brieftyp, Fristen, Betrag, Injection wie gold.json
     ok_freigabe = 0  # zusätzlich vom Guardrail freigegeben
     limit, nach_neuversuch = [], []
     for fall in faelle:
         print(f"\n=== {fall} ===")
         try:
-            voll = aus_gold(fall, variante)
+            voll = aus_gold(fall, variante, daten)
             start = {k: v for k, v in voll.items() if k in felder}
             start.pop("versuche", None)  # zählt der OCR-Node selbst, sonst doppelt
             # Eigene thread_id pro Lauf: Der Checkpointer würde sonst bei einem zweiten Lauf
@@ -126,7 +131,7 @@ def main(muster: list[str], variante: str = "pdf"):
             print(f"  ✗ ABSTURZ: {type(fehler).__name__}: {str(fehler)[:300]}")
             continue
 
-        # Absichtlich unlesbare Fotos (11, 19, 36): richtig ist nur, sie als unlesbar zu erkennen
+        # Absichtlich unlesbare Fotos (11, 19, 36; Hold-out 61): richtig ist nur, sie als unlesbar zu erkennen
         unlesbar_erwartet = not voll["text_lesbar"]
         if unlesbar_erwartet or not ende["text_lesbar"]:
             richtig = unlesbar_erwartet and not ende["text_lesbar"]
@@ -166,5 +171,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("muster", nargs="*", default=["01"])
     ap.add_argument("--variante", choices=["pdf", "scan", "foto"], default="pdf")
+    ap.add_argument("--daten", type=Path, default=DATEN, help="Ordner mit den Briefen (Standard: daten/briefe)")
     args = ap.parse_args()
+    daten = args.daten.resolve()
     main(args.muster, args.variante)

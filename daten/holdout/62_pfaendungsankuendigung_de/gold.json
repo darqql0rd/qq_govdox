@@ -1,0 +1,54 @@
+{
+  "id": "62_pfaendungsankuendigung_de",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Pfändungsankündigung",
+  "briefsprache": "de",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Betreibungsamt Oberhalden-Linth",
+    "briefdatum": "2026-11-10",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "betreibung",
+        "wert": "26-007315"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": 2563.3,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Forderung",
+        "betrag_chf": 2460.0,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Betreibungskosten bisher",
+        "betrag_chf": 93.3,
+        "periode": null
+      },
+      {
+        "bezeichnung": "Kosten Pfändungsankündigung",
+        "betrag_chf": 10.0,
+        "periode": null
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": "Velocenter Linth GmbH",
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-12",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "verwechslung_zahlungsbefehl",
+    "pfaendung",
+    "layout_B"
+  ]
+}

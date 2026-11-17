@@ -1,0 +1,38 @@
+{
+  "id": "64_materiale_di_voto_it",
+  "brieftyp": "unbekannt",
+  "brieftyp_vermutung": "Abstimmungsunterlagen",
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Comune di Sorvalle",
+    "briefdatum": "2026-11-02",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "andere",
+        "wert": "E-04418"
+      }
+    ],
+    "periode": null,
+    "hauptbetrag_chf": null,
+    "zahlungsrichtung": "information",
+    "posten": [],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": null,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-11-04",
+  "erwartete_fristen": [],
+  "testzweck": [
+    "negativfall",
+    "ausser_scope",
+    "ohne_betrag",
+    "layout_C"
+  ]
+}

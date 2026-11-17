@@ -1,0 +1,64 @@
+{
+  "id": "53_tassazione_it_wochenende",
+  "brieftyp": "steuerveranlagung",
+  "brieftyp_vermutung": null,
+  "briefsprache": "it",
+  "injection_verdacht": false,
+  "extraktion": {
+    "absender": "Divisione delle contribuzioni del Cantone di Valcastello",
+    "briefdatum": "2026-10-14",
+    "zustelldatum_im_brief": null,
+    "referenzen": [
+      {
+        "art": "steuernummer",
+        "wert": "619.330.871"
+      }
+    ],
+    "periode": "2025",
+    "hauptbetrag_chf": 719.6,
+    "zahlungsrichtung": "zu_zahlen",
+    "posten": [
+      {
+        "bezeichnung": "Staats-/Kantonssteuer",
+        "betrag_chf": 5260.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Gemeindesteuer Castelvecchio",
+        "betrag_chf": 4471.0,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Direkte Bundessteuer",
+        "betrag_chf": 1488.6,
+        "periode": "2025"
+      },
+      {
+        "bezeichnung": "Vorauszahlungen",
+        "betrag_chf": -10500.0,
+        "periode": "2025"
+      }
+    ],
+    "frist_im_brief": null,
+    "glaeubiger": null,
+    "glaeubiger_vertreter": null,
+    "forderungsgrund": null,
+    "zins": null,
+    "abweichung_von_deklaration": 0.0,
+    "abweichungsgrund": null,
+    "mahnstufe": null
+  },
+  "zustelldatum_annahme": "2026-10-16",
+  "erwartete_fristen": [
+    {
+      "art": "einsprache",
+      "datum": "2026-11-16"
+    }
+  ],
+  "testzweck": [
+    "wochenende",
+    "ohne_abweichung",
+    "nachzahlung",
+    "layout_A"
+  ]
+}
