@@ -436,7 +436,9 @@ def aus_gold(fall_id: str, variante: str = "pdf", daten: Path = DATEN,
         "zustelldatum": (zustellung or date.fromisoformat(g["zustelldatum_annahme"]))
         if braucht_zustellung else None,
         "zustelldatum_quelle": ("brief" if zustellung else "nutzer") if braucht_zustellung else None,
-        "fristen": [
+        # Bei "unbekannt" berechnet der Graph keine Fristen; gold.json nennt dort nur zur
+        # Information Fristen ausserhalb des Scopes (z. B. "beschwerde" bei der Konkursandrohung)
+        "fristen": [] if g["brieftyp"] == "unbekannt" else [
             Frist(art=f["art"], datum=date.fromisoformat(f["datum"]),
                   basis=_BASIS.get((g["brieftyp"], f["art"]), "brief"))
             for f in g["erwartete_fristen"]

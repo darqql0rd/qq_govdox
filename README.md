@@ -41,7 +41,7 @@ Retry-Policy für Verbindungs- und Formatfehler (`llm.py`).
 |---|---|
 | `graph.py` | LangGraph-Graph: Nodes, Kanten, Routing |
 | `nodes/` | Ein Modul pro Node (OCR, Analyse, Fristen, Erklärung, Antwort, Guardrail, sichere Ausgabe, Bestätigung, Kalender, Zustelldatum) |
-| `state.py` | State-Schema des Graphen (Vertrag zwischen den Nodes). Owner: Melvin, Änderungen per Pull Request |
+| `state.py` | State-Schema des Graphen (Vertrag zwischen den Nodes). Owner: Vendon, Änderungen per Pull Request |
 | `prompts.py` | System-Prompts aller LLM-Agenten |
 | `llm.py` | LLM-Anbindung (LiteLLM-Proxy der FHNW oder Apertus), Retry |
 | `fristenrechner.py`, `datum.py` | Fristen nach SchKG/ZPO und Datums-Parsing, deterministisch in Python |
@@ -56,7 +56,7 @@ Retry-Policy für Verbindungs- und Formatfehler (`llm.py`).
 | `datengenerator/` | Skripte, mit denen die Testbriefe erzeugt werden (siehe dortiges README) |
 | `tests/` | Tests ohne LLM (`teste_*.py`) und gespeicherte Guardrail-Fälle |
 | `skripte/` | Hilfsskripte: OCR-Auswertung, Guardrail-Fälle speichern, Apertus-Verbindungstest |
-| `notebooks/00_state_und_mocks.ipynb` | Übersicht: Schema, Mocks, Datensatz, Graph-Skelett mit Dummy-Nodes |
+| `notebooks/00_state_und_mocks.ipynb` | Aus der Aufbauphase: State-Vertrag, Mocks, Datensatz, Graph-Skelett mit Dummy-Nodes (läuft ohne API-Key) |
 
 ## Ergebnisse
 
@@ -83,15 +83,30 @@ Bekannte Grenzen:
 
 ## Loslegen
 
+Entwickelt mit Python 3.14 (Windows), Tests auch unter Linux mit Python 3.13. `requirements.txt` enthält docTR mit PyTorch für die Texterkennung
+von Fotos (gross, erste Installation dauert einige Minuten).
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate          # Windows; unter Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Dann `notebooks/00_state_und_mocks.ipynb` öffnen und alle Zellen ausführen.
+**Ohne API-Key** laufen die Tests (siehe «Evaluation und Tests») und das Notebook
+`notebooks/00_state_und_mocks.ipynb` (State-Vertrag, Datensatz, Graph-Skelett mit Dummy-Nodes).
+Die Protokolle aller Evaluationsläufe liegen in `daten/laeufe/`.
 
-Für den eigenen Node:
+**Mit API-Key** läuft der ganze Agent: `.env.example` nach `.env` kopieren und einen OpenAI-kompatiblen
+Endpunkt eintragen (wir nutzen den LiteLLM-Proxy der FHNW mit Claude Haiku, alternativ Apertus
+über die Swiss AI Plattform). Dann:
+
+```bash
+python llm.py                      # Verbindung testen, verfügbare Modelle anzeigen
+streamlit run app.py               # Oberfläche: Testbrief wählen oder eigenen Brief hochladen
+python main.py 03                  # ein Testbrief in der Konsole, mit Vergleich gegen gold.json
+```
+
+Einzelne Nodes lassen sich mit einem passenden State aufrufen:
 
 ```python
 from mocks import mock_bis, aus_gold
@@ -136,12 +151,15 @@ python tests/teste_app.py
 
 ## Zuständigkeiten
 
-| Person | Agent | Weitere Bausteine |
-|---|---|---|
-| Melvin | Antwort-Agent | LangGraph-Graph, Routing, Human-in-the-loop |
-| Nayan | Analyse-Agent | Texterkennung/OCR (docTR), Kalender-MCP|
-| Vendon | Erklär-Agent | Fristenrechner, State |
-| Florian | Guardrail-Agent | Evaluation, Apertus-Vergleich, UI |
+| Person | GitHub | Agent | Weitere Bausteine |
+|---|---|---|---|
+| Melvin | `GingFreecssQQ` | Antwort-Agent | LangGraph-Graph, Routing, Human-in-the-loop |
+| Nayan | `Tayo0o0` | Analyse-Agent | Texterkennung/OCR (docTR), Kalender-MCP |
+| Vendon | `Vendoni` | Erklär-Agent | Fristenrechner, State |
+| Florian | `darqql0rd` | Guardrail-Agent | Evaluation, Apertus-Vergleich, UI |
+
+Commits von `Claude` bzw. mit «Co-Authored-By: Claude» sind mit Claude (Anthropic) als
+Programmierassistent entstanden; die fachlichen Entscheide und die Evaluation liegen beim Team.
 
 ## Graph in LangGraph Studio (LangSmith)
 
@@ -168,6 +186,19 @@ In Studio sieht man den Graphen, kann einen Brief starten, z. B.
 `{"dokument_pfade": ["daten/briefe/03_zahlungsbefehl_de_vertreter_ohne_zustelldatum/brief.pdf"], "nutzersprache": "de"}`,
 die Fragen beantworten (`18.11.2026`, `ja`) und den State nach jedem Node ansehen.
 Konfiguration: `langgraph.json`, Einstieg `studio.py` (ohne eigenen Checkpointer, den stellt der Server).
+
+## Warum Claude Haiku
+
+- Die heiklen Teile sind deterministisch in Python: Fristen (Fristenrechner), Prüfung (Guardrail),
+  Fallback (sichere Ausgabe), Vorzeichen und Datumsformate. Das LLM klassifiziert, extrahiert in ein
+  festes Schema und formuliert. Dafür reicht ein kleines, schnelles Modell.
+- Zuverlässige strukturierte Ausgabe (`with_structured_output`) und gute Texte in DE/FR/IT.
+- Schnell und günstig: 3–6 LLM-Aufrufe pro Brief, 45 Briefe mehrfach evaluiert (~19 min pro Lauf).
+- Über den LiteLLM-Proxy der FHNW verfügbar; Haiku akzeptiert nur die Standard-Temperatur, deshalb
+  die Spanne über drei Läufe.
+- Apertus (offenes Schweizer Modell) haben wir im gleichen Graphen verglichen (siehe «Ergebnisse»):
+  interessant für echte Briefe mit Personendaten, in dieser auf Haiku abgestimmten Pipeline aber
+  deutlich schwächer (20/45).
 
 ## Warum kein RAG
 
