@@ -1,5 +1,5 @@
 {
-"id": "37_bussenverfuegung_de",
+  "id": "37_bussenverfuegung_de",
   "brieftyp": "unbekannt",
   "brieftyp_vermutung": "Bussenverfügung (Übertretungsstrafsache)",
   "briefsprache": "de",
@@ -43,7 +43,8 @@
     "mahnstufe": null
   },
   "zustelldatum_annahme": "2026-10-09",
-  "erwartete_fristen": [
+  "erwartete_fristen": [],
+  "info_fristen": [
     {
       "art": "einsprache",
       "datum": "2026-10-19",
