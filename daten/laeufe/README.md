@@ -25,6 +25,7 @@ nicht im Git).
 | 2026-11-16_foto_haiku_3.txt | foto | 41/45 | wie haiku_1; 40 freigegeben, 1 am Limit |
 | 2026-11-16_foto_apertus.txt | foto | 20/45 | gleicher Stand mit Apertus-v1.5-70B, `temperature=0`; 16 freigegeben, 6 am Limit, 48 min |
 | 2026-11-16_auswertung.md | – | – | Auswertung der Läufe vom 16.11.: Haiku vs. Apertus, Guardrail-Befund |
+| 2026-11-18_holdout_foto_haiku_1.txt | foto | 14/20 (Hold-out) | Briefe 46–65, eingefrorener Stand; 14 freigegeben, 0 am Limit; Fehler: 47, 60 Injection, 49 Zustelldatum, 61 unlesbar, 62 Pfändungsankündigung, 63 Betrag |
 
 ## Befunde
 
