@@ -1,7 +1,8 @@
 # Auswertung Hold-out 46–65 (18.11.2026)
 
-Ein Lauf über die 20 Hold-out-Briefe (`daten/holdout/`, siehe dortiges README), `--variante foto`,
-`claude-haiku-5-5`, Protokoll `2026-11-18_holdout_foto_haiku_1.txt`. Code- und Prompt-Stand wie
+Zwei Läufe über die 20 Hold-out-Briefe (`daten/holdout/`, siehe dortiges README), `--variante foto`,
+`claude-haiku-5-5`, ausgeführt von Nayan. Protokoll von Lauf 1: `2026-11-18_holdout_foto_haiku_1.txt`.
+Lauf 2 ergab laut Nayan dasselbe Ergebnis mit denselben sechs Fehlern; sein Protokoll ist nicht im Repo. Code- und Prompt-Stand wie
 am 16.11. (master nach #26/#27, Pipeline unverändert). Die Briefe wurden erst nach dem Einfrieren
 erzeugt und vorher von niemandem durch die Pipeline geschickt.
 
@@ -13,12 +14,13 @@ nicht behoben; sonst wären die Briefe nicht mehr ungesehen.
 | Datensatz | korrekt | korrekt und Guardrail freigegeben | Guardrail-Limit | nach Neuversuch |
 |---|---|---|---|---|
 | Entwicklung 01–45 (16.11., 3 Läufe) | 42 / 42 / 41 von 45 (≈ 93 %) | 41 / 42 / 40 | je 1 | je 3 |
-| **Hold-out 46–65 (18.11., 1 Lauf)** | **14/20 (70 %)** | 14 | 0 | 1 (49) |
+| **Hold-out 46–65 (18.11., 2 Läufe)** | **14 / 14 von 20 (70 %)** | 14 / 14 | 0 | 1 (49, Lauf 1) |
 
 Der Abstand von gut 20 Prozentpunkten ist der erwartete Effekt: Prompts und Guardrail wurden an
 den 45 Briefen entwickelt. Der Hold-out stammt aus demselben Generator, die 70 % sind also eher
-eine obere Schranke für echte Briefe. Mit 20 Briefen und einem Lauf ist die Zahl grob (ein Brief
-= 5 Prozentpunkte).
+eine obere Schranke für echte Briefe. Mit 20 Briefen ist die Zahl grob (ein Brief = 5 Prozentpunkte);
+dass beide Läufe dieselben sechs Briefe verfehlen, zeigt aber, dass die Fehler systematisch sind
+und kein Zufall, wie schon bei 01–45.
 
 Richtig gelöst wurden unter anderem alle neuen Fristfälle: Fristende in den Oster-Betreibungsferien
 (46), Pfingstmontag (48), Auffahrt (54), Wochenende (53), leeres Zustelldatum mit Annahme (47, 50),
@@ -73,7 +75,4 @@ wird aber für den Hold-out bewusst nicht mehr eingebaut.
 
 ## Offen
 
-- Nur ein Lauf. Zwei weitere Haiku-Läufe (`laeufe.ps1 -Holdout -OhneApertus`, je etwa 8–10 min)
-  würden zeigen, welche Fehler systematisch sind; bei 01–45 waren die inhaltlichen Fehler in
-  allen Läufen gleich.
 - Apertus auf dem Hold-out nicht ausgeführt.
