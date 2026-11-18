@@ -70,6 +70,12 @@ Geprüft werden Brieftyp, Fristen, Betrag und Injection-Erkennung gegen `gold.js
 | Claude Haiku 5.5 (3 Läufe) | 42 / 42 / 41 | 41 / 42 / 40 | ~19 min |
 | Apertus v1.5 70B (1 Lauf) | 20 | 16 | 48 min |
 
+**Hold-out** (20 Briefe 46–65, erst nach dem Einfrieren erzeugt, 2 Läufe Haiku am 18.11.,
+[`daten/laeufe/2026-11-18_holdout_auswertung.md`](daten/laeufe/2026-11-18_holdout_auswertung.md)):
+**14/20** in beiden Läufen, mit denselben Fehlern, alle 14 vom Guardrail freigegeben. Fehler: 2 neu formulierte Injections nicht gemeldet
+(aber keine Ausgabe folgt ihnen), 1 handschriftliches Zustelldatum, 1 unlesbares Foto nicht erkannt,
+Pfändungsankündigung als Zahlungsbefehl (vom Guardrail freigegeben), 1 Betragszeile.
+
 Entwicklung mit Haiku: 29/45 (erster Foto-Lauf, 04.11.) → 34–38 (Graph mit Guardrail, 06.–09.11.) → 41–42 (16.11.).
 Bekannte Grenzen:
 
