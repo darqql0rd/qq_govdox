@@ -92,11 +92,11 @@ Bekannte Grenzen:
 
 ## Loslegen
 
-Entwickelt mit Python 3.14 (Windows), Tests auch unter Linux mit Python 3.13. `requirements.txt` enthält docTR mit PyTorch für die Texterkennung
+**Voraussetzung: Python 3.11 oder neuer.** Entwickelt mit Python 3.14 (Windows), Tests auch unter Linux mit Python 3.13. `requirements.txt` enthält docTR mit PyTorch für die Texterkennung
 von Fotos (gross, erste Installation dauert einige Minuten).
 
 ```bash
-python -m venv .venv
+python -m venv .venv                  # macOS/Linux: python3 -m venv .venv
 .venv\Scripts\activate          # Windows; unter Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 `notebooks/00_state_und_mocks.ipynb` (State-Vertrag, Datensatz, Graph-Skelett mit Dummy-Nodes).
 Die Protokolle aller Evaluationsläufe liegen in `daten/laeufe/`.
 
-**Mit API-Key** läuft der ganze Agent: `.env.example` nach `.env` kopieren und einen OpenAI-kompatiblen
+**Mit API-Key** läuft der ganze Agent: `.env.example` nach `.env` kopieren (Windows: `copy .env.example .env`, macOS/Linux: `cp .env.example .env`) und einen OpenAI-kompatiblen
 Endpunkt eintragen (wir nutzen den LiteLLM-Proxy der FHNW mit Claude Haiku, alternativ Apertus
 über die Swiss AI Plattform). Dann:
 
@@ -142,6 +142,7 @@ Schrift im Kopf: «Some Time Later» von Fredrick R. Brennan (SIL Open Font Lice
 python main.py 01                    # ein Brief (Anfang der Fall-ID genügt)
 python main.py _ --variante foto     # alle 45 Briefe als Handyfoto (auch: pdf, scan)
 powershell -ExecutionPolicy Bypass -File .\laeufe.ps1   # 3× Haiku + 1× Apertus, Ausgabe in daten/laeufe/
+# laeufe.ps1 nur unter Windows; auf macOS/Linux die main.py-Befehle direkt verwenden
 python main.py _ --variante foto --daten daten/holdout   # Hold-out 46–65 (oder: laeufe.ps1 -Holdout)
 ```
 
