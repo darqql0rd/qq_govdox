@@ -6,6 +6,19 @@ Krankenkassen-Prämie, Mahnung), der Agent erklärt ihn in einfacher Sprache (DE
 berechnet Fristen deterministisch, entwirft eine Antwort und trägt die Fristen nach
 Bestätigung in den Kalender ein.
 
+## Dokumentation
+
+| Dokument | Inhalt |
+|---|---|
+| [`docs/projektbericht.md`](docs/projektbericht.md) | **Hier anfangen:** Problemstellung, Lösungsansatz, Architektur, Entscheide und verworfene Alternativen, Daten, Evaluation, Grenzen, nächste Schritte |
+| [`docs/fristen_rechtsgrundlagen.md`](docs/fristen_rechtsgrundlagen.md) | Fristenrechner: Gesetzesartikel, Betreibungsferien, Feiertage, Rechtsprüfung vom 09.11. |
+| [`daten/laeufe/2026-11-16_auswertung.md`](daten/laeufe/2026-11-16_auswertung.md) | Evaluation über 45 Briefe: 3× Haiku, 1× Apertus |
+| [`daten/laeufe/2026-11-18_holdout_auswertung.md`](daten/laeufe/2026-11-18_holdout_auswertung.md) | Evaluation über 20 Hold-out-Briefe |
+| [`datengenerator/README.md`](datengenerator/README.md), [`daten/holdout/README.md`](daten/holdout/README.md) | Wie die Testbriefe und Gold-Labels entstehen |
+
+Jedes Python-Modul beginnt mit einem Docstring, der seine Aufgabe und die bewussten Entscheide
+beschreibt.
+
 ## Ablauf
 
 ```mermaid
@@ -39,6 +52,7 @@ Retry-Policy für Verbindungs- und Formatfehler (`llm.py`).
 
 | Pfad | Inhalt |
 |---|---|
+| `docs/` | Projektbericht und Rechtsgrundlagen der Fristen |
 | `graph.py` | LangGraph-Graph: Nodes, Kanten, Routing |
 | `nodes/` | Ein Modul pro Node (OCR, Analyse, Fristen, Erklärung, Antwort, Guardrail, sichere Ausgabe, Bestätigung, Kalender, Zustelldatum) |
 | `state.py` | State-Schema des Graphen (Vertrag zwischen den Nodes). Owner: Vendon, Änderungen per Pull Request |
@@ -89,6 +103,13 @@ Bekannte Grenzen:
   als Zahlungsbefehl erkannt).
 - Systematische Fehler mit Haiku: Brief 04 (handschriftliches Datum im Foto), 13 (falsche
   Betragszeile bei Rückerstattung), 14 (Injection nicht erkannt).
+- Kantonale Feiertage fehlen bewusst (Frist höchstens zu früh), siehe
+  [`docs/fristen_rechtsgrundlagen.md`](docs/fristen_rechtsgrundlagen.md).
+- Der Checkpointer (`MemorySaver`) liegt im Arbeitsspeicher; für einen echten Betrieb bräuchte es
+  einen persistenten Checkpointer.
+
+Nächste Schritte (Plausibilitätsprüfung der Analyse, eigener Injection-Check, echte geschwärzte
+Briefe) stehen im [Projektbericht](docs/projektbericht.md#8-nächste-schritte).
 
 ## Loslegen
 
